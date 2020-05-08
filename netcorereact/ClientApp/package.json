@@ -2,7 +2,7 @@
   "name": "netcorereact",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mark123.azurewebsites.net/web5/",
+  "homepage": "https://studionine.azurewebsites.net/test/",
   "dependencies": {
     "bootstrap": "^3.4.1",
     "react": "^16.0.0",
