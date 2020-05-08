@@ -19,6 +19,8 @@ namespace netcorereact
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .CaptureStartupErrors(true)     // test
+                .UseSetting(WebHostDefaults.DetailedErrorsKey,"true")   // test
                 .UseStartup<Startup>();
     }
 }

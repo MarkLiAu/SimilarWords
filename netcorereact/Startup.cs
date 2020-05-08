@@ -38,6 +38,7 @@ namespace netcorereact
             }
             else
             {
+                app.UseDeveloperExceptionPage();        // test
                 app.UseExceptionHandler("/Error");
                 app.UseHsts();
             }
