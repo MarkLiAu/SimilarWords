@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.1082
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "netcorereact", "netcorereact\netcorereact.csproj", "{0D79C6A6-B075-483A-A364-E6400F772D56}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarkLiCore", "MarkLiCore\MarkLiCore.csproj", "{60F67EFE-6CC5-4F0F-BBB5-D5593EBA6039}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0D79C6A6-B075-483A-A364-E6400F772D56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D79C6A6-B075-483A-A364-E6400F772D56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D79C6A6-B075-483A-A364-E6400F772D56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60F67EFE-6CC5-4F0F-BBB5-D5593EBA6039}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60F67EFE-6CC5-4F0F-BBB5-D5593EBA6039}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60F67EFE-6CC5-4F0F-BBB5-D5593EBA6039}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60F67EFE-6CC5-4F0F-BBB5-D5593EBA6039}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
