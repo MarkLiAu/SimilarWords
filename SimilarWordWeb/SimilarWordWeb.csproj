@@ -22,10 +22,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="data\WordSimilarityList.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\WordSimilarityLib\WordSimilarityLib.csproj">
       <Private>true</Private>
     </ProjectReference>
@@ -54,11 +50,6 @@
         <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       </ResolvedFileToPublish>
     </ItemGroup>
-    
-    <ItemGroup>
-      <Content Include="data\WordSimilarityList.txt" />
-    </ItemGroup>
-
 
   </Target>
 
