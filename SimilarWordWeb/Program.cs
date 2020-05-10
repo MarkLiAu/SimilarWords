@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace netcorereact
+namespace SimilarWordWeb
 {
     public class Program
     {
@@ -19,8 +19,6 @@ namespace netcorereact
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .CaptureStartupErrors(true)     // test
-                .UseSetting(WebHostDefaults.DetailedErrorsKey,"true")   // test
                 .UseStartup<Startup>();
     }
 }

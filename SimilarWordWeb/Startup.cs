@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace netcorereact
+namespace SimilarWordWeb
 {
     public class Startup
     {
@@ -38,7 +38,6 @@ namespace netcorereact
             }
             else
             {
-                app.UseDeveloperExceptionPage();        // test
                 app.UseExceptionHandler("/Error");
                 app.UseHsts();
             }

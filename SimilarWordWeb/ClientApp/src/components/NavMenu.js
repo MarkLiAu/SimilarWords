@@ -12,7 +12,7 @@ export class NavMenu extends Component {
       <Navbar inverse fixedTop fluid collapseOnSelect>
         <Navbar.Header>
           <Navbar.Brand>
-            <Link to={'/'}>Similar Word</Link>
+            <Link to={'/'}>SimilarWordWeb</Link>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
@@ -33,11 +33,11 @@ export class NavMenu extends Component {
                 <Glyphicon glyph='th-list' /> Fetch data
               </NavItem>
             </LinkContainer>
-            <LinkContainer to={'/wordsearch'}>
-              <NavItem>
-                <Glyphicon glyph='th-list' /> Word Search
+                    <LinkContainer to={'/wordsearch'}>
+                        <NavItem>
+                            <Glyphicon glyph='th-list' /> Word Search
               </NavItem>
-            </LinkContainer>
+                    </LinkContainer>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

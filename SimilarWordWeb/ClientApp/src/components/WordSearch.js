@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import { WordData } from './WordData';
 
 export class WordSearch extends Component {
-    // displayName = WordSearch.name
+  displayName = WordSearch.name
 
   constructor(props) {
     super(props);
