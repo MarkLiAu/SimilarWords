@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
@@ -22,24 +22,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\data\" />
+    <Content Remove="wwwroot\data\WordSimilarityList.txt" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\data\COCA20000.txt" />
-    <None Include="wwwroot\data\COCAList20000.txt" />
-    <None Include="wwwroot\data\CollinsL0.txt" />
-    <None Include="wwwroot\data\CollinsL0E.txt" />
-    <None Include="wwwroot\data\CollinsL1.txt" />
-    <None Include="wwwroot\data\CollinsL1E.txt" />
-    <None Include="wwwroot\data\CollinsL2.txt" />
-    <None Include="wwwroot\data\CollinsL2E.txt" />
-    <None Include="wwwroot\data\CollinsL3.txt" />
-    <None Include="wwwroot\data\CollinsL3E.txt" />
-    <None Include="wwwroot\data\CollinsL4.txt" />
-    <None Include="wwwroot\data\CollinsL4E.txt" />
-    <None Include="wwwroot\data\CollinsL5.txt" />
-    <None Include="wwwroot\data\CollinsL5E.txt" />
+    <None Include="wwwroot\data\WordSimilarityList.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WordSimilarityLib\WordSimilarityLib.csproj" />
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">

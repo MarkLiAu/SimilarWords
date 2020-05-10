@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "netcorereact", "netcorereact\netcorereact.csproj", "{0D79C6A6-B075-483A-A364-E6400F772D56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WordSimilarityLib", "WordSimilarityLib\WordSimilarityLib.csproj", "{960C40A5-3CFD-4CCA-B59B-8FA830B94835}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarkLiCore", "MarkLiCore\MarkLiCore.csproj", "{60F67EFE-6CC5-4F0F-BBB5-D5593EBA6039}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimilarWordWeb", "SimilarWordWeb\SimilarWordWeb.csproj", "{034725A0-D4A4-426E-ACCF-49211FF6128A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core3", "Core3\Core3.csproj", "{14C098A6-6FE2-4F33-975F-3CEDB361DF33}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsFormsCore", "WindowsFormsCore\WindowsFormsCore.csproj", "{C5614FB5-0707-4215-B513-510643692535}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,18 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0D79C6A6-B075-483A-A364-E6400F772D56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0D79C6A6-B075-483A-A364-E6400F772D56}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0D79C6A6-B075-483A-A364-E6400F772D56}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0D79C6A6-B075-483A-A364-E6400F772D56}.Release|Any CPU.Build.0 = Release|Any CPU
-		{60F67EFE-6CC5-4F0F-BBB5-D5593EBA6039}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{60F67EFE-6CC5-4F0F-BBB5-D5593EBA6039}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{60F67EFE-6CC5-4F0F-BBB5-D5593EBA6039}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{60F67EFE-6CC5-4F0F-BBB5-D5593EBA6039}.Release|Any CPU.Build.0 = Release|Any CPU
-		{14C098A6-6FE2-4F33-975F-3CEDB361DF33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{14C098A6-6FE2-4F33-975F-3CEDB361DF33}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{14C098A6-6FE2-4F33-975F-3CEDB361DF33}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{14C098A6-6FE2-4F33-975F-3CEDB361DF33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{960C40A5-3CFD-4CCA-B59B-8FA830B94835}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{960C40A5-3CFD-4CCA-B59B-8FA830B94835}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{960C40A5-3CFD-4CCA-B59B-8FA830B94835}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{960C40A5-3CFD-4CCA-B59B-8FA830B94835}.Release|Any CPU.Build.0 = Release|Any CPU
+		{034725A0-D4A4-426E-ACCF-49211FF6128A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{034725A0-D4A4-426E-ACCF-49211FF6128A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{034725A0-D4A4-426E-ACCF-49211FF6128A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{034725A0-D4A4-426E-ACCF-49211FF6128A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5614FB5-0707-4215-B513-510643692535}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5614FB5-0707-4215-B513-510643692535}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5614FB5-0707-4215-B513-510643692535}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5614FB5-0707-4215-B513-510643692535}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

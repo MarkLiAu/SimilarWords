@@ -31,7 +31,7 @@ export class WordSearch extends React.Component<RouteComponentProps<{}>, WordSea
             <div>{this.state.pronounciation} </div>
             <div>{this.state.honomony} </div>
             <div>{this.state.explanationShort} </div>
-            <div>{this.state.explanationLong} </div>
+            <div><b>{this.state.explanationLong}</b> </div>
        </div>;
     }
 

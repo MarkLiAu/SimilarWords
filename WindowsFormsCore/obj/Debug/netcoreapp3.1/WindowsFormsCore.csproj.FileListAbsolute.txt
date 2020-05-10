@@ -1,0 +1,16 @@
+F:\bj_program\Git_DotNetProjects\WindowsFormsCore\bin\Debug\netcoreapp3.1\WindowsFormsCore.exe
+F:\bj_program\Git_DotNetProjects\WindowsFormsCore\bin\Debug\netcoreapp3.1\WindowsFormsCore.deps.json
+F:\bj_program\Git_DotNetProjects\WindowsFormsCore\bin\Debug\netcoreapp3.1\WindowsFormsCore.runtimeconfig.json
+F:\bj_program\Git_DotNetProjects\WindowsFormsCore\bin\Debug\netcoreapp3.1\WindowsFormsCore.runtimeconfig.dev.json
+F:\bj_program\Git_DotNetProjects\WindowsFormsCore\bin\Debug\netcoreapp3.1\WindowsFormsCore.dll
+F:\bj_program\Git_DotNetProjects\WindowsFormsCore\bin\Debug\netcoreapp3.1\WindowsFormsCore.pdb
+F:\bj_program\Git_DotNetProjects\WindowsFormsCore\obj\Debug\netcoreapp3.1\WindowsFormsCore.csprojAssemblyReference.cache
+F:\bj_program\Git_DotNetProjects\WindowsFormsCore\obj\Debug\netcoreapp3.1\WindowsFormsCore.csproj.CoreCompileInputs.cache
+F:\bj_program\Git_DotNetProjects\WindowsFormsCore\obj\Debug\netcoreapp3.1\WindowsFormsCore.AssemblyInfoInputs.cache
+F:\bj_program\Git_DotNetProjects\WindowsFormsCore\obj\Debug\netcoreapp3.1\WindowsFormsCore.AssemblyInfo.cs
+F:\bj_program\Git_DotNetProjects\WindowsFormsCore\obj\Debug\netcoreapp3.1\WindowsFormsCore.dll
+F:\bj_program\Git_DotNetProjects\WindowsFormsCore\obj\Debug\netcoreapp3.1\WindowsFormsCore.pdb
+F:\bj_program\Git_DotNetProjects\WindowsFormsCore\obj\Debug\netcoreapp3.1\WindowsFormsCore.genruntimeconfig.cache
+F:\bj_program\Git_DotNetProjects\WindowsFormsCore\bin\Debug\netcoreapp3.1\WordSimilarityLib.dll
+F:\bj_program\Git_DotNetProjects\WindowsFormsCore\bin\Debug\netcoreapp3.1\WordSimilarityLib.pdb
+F:\bj_program\Git_DotNetProjects\WindowsFormsCore\obj\Debug\netcoreapp3.1\WindowsFormsCore.csproj.CopyComplete

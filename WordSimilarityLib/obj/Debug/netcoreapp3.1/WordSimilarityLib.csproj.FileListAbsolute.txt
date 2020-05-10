@@ -1,0 +1,9 @@
+F:\bj_program\Git_DotNetProjects\WordSimilarityLib\obj\Debug\netcoreapp3.1\WordSimilarityLib.csprojAssemblyReference.cache
+F:\bj_program\Git_DotNetProjects\WordSimilarityLib\obj\Debug\netcoreapp3.1\WordSimilarityLib.csproj.CoreCompileInputs.cache
+F:\bj_program\Git_DotNetProjects\WordSimilarityLib\obj\Debug\netcoreapp3.1\WordSimilarityLib.AssemblyInfoInputs.cache
+F:\bj_program\Git_DotNetProjects\WordSimilarityLib\obj\Debug\netcoreapp3.1\WordSimilarityLib.AssemblyInfo.cs
+F:\bj_program\Git_DotNetProjects\WordSimilarityLib\bin\Debug\netcoreapp3.1\WordSimilarityLib.deps.json
+F:\bj_program\Git_DotNetProjects\WordSimilarityLib\bin\Debug\netcoreapp3.1\WordSimilarityLib.dll
+F:\bj_program\Git_DotNetProjects\WordSimilarityLib\bin\Debug\netcoreapp3.1\WordSimilarityLib.pdb
+F:\bj_program\Git_DotNetProjects\WordSimilarityLib\obj\Debug\netcoreapp3.1\WordSimilarityLib.dll
+F:\bj_program\Git_DotNetProjects\WordSimilarityLib\obj\Debug\netcoreapp3.1\WordSimilarityLib.pdb

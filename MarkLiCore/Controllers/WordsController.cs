@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using WordSimilarityLib;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -25,23 +27,27 @@ namespace TestWebCore.api
         //    return "value";
         //}
 
-        private Word ErrorInfo(string name, Exception ex)
+        private List<Word> ErrorInfo(string name, Exception ex)
         {
             Word w = new Word(name);
-            w.explanationShort=w.explanationLong = ex.Message + ";" + ex.StackTrace;
-            return w;
+            w.meaningShort= ex.Message + ";" + ex.StackTrace;
+            return new List<Word>() { w };
         }
 
         // GET api/<controller>/5
         [HttpGet("{name}")]
-        public Word Get(string name)
+        public List<Word> Get(string name)
         {
             try
             {
-                Words words = new Words();
-                Word word = words.search(name);
+                WordDictionary wd = new WordDictionary();
+                if(WordDictionary.WordList.Count()<=0) 
+                    wd.ReadFile(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/data/WordSimilarityList.txt"));
 
-                return word;
+                List<Word> result =wd.FindSimilarWords(name);
+
+
+                return result;
             }
             catch(Exception ex) 
             {
