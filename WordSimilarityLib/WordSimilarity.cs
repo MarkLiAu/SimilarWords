@@ -276,6 +276,10 @@ namespace WordSimilarityLib
 
                 string name = ss[1].Trim();
                 if (!IsSingleWord(name)) continue;
+                if(name=="cool")
+                {
+                    name = name;
+                }
                 if (WordList.ContainsKey(name) && WordList[name].frequency<=0) WordList[name].frequency = ++seq;
             }
         }

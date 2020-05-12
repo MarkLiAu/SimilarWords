@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { WordData } from './WordData';
+import { Col, Grid, Row } from 'react-bootstrap';
 
 export class WordSearch extends Component {
   displayName = WordSearch.name
@@ -23,7 +23,7 @@ export class WordSearch extends Component {
             });
     };
 
-    ShowList = (list) => {
+    ShowListZZZ = (list) => {
         if (typeof (list) === "undefined") return (<div></div>);
         return (
             <div>
@@ -50,6 +50,29 @@ export class WordSearch extends Component {
             </div >
         );
     }
+
+    ShowList = (list) => {
+        if (typeof (list) === "undefined") return (<div></div>);
+        return (
+            <Grid fluid>
+                {list.map(w =>
+                    <Row key={w.name}>
+                        <col>
+                            {w.frequency}
+                        </col>
+                        <col>
+                            {w.pronounciation}
+                        </col>
+                        <col>
+                            {w.meaningShort}
+                        </col>
+
+                    </Row>
+                )}
+            </Grid>
+        )
+    };
+
 
     KeyPressed = (event) => {
         if (event.key === 'Enter') {

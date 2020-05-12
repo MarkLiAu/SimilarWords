@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ConsoleCore": {
+      "commandName": "Project",
+      "workingDirectory": "D:\\Bj\\Git_DotNetProjects\\ConsoleCore"
+    }
+  }
+}

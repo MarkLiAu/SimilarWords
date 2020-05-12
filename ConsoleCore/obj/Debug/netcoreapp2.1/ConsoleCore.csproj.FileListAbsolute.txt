@@ -1,0 +1,14 @@
+D:\Bj\Git_DotNetProjects\ConsoleCore\bin\Debug\netcoreapp2.1\ConsoleCore.deps.json
+D:\Bj\Git_DotNetProjects\ConsoleCore\bin\Debug\netcoreapp2.1\ConsoleCore.runtimeconfig.json
+D:\Bj\Git_DotNetProjects\ConsoleCore\bin\Debug\netcoreapp2.1\ConsoleCore.runtimeconfig.dev.json
+D:\Bj\Git_DotNetProjects\ConsoleCore\bin\Debug\netcoreapp2.1\ConsoleCore.dll
+D:\Bj\Git_DotNetProjects\ConsoleCore\bin\Debug\netcoreapp2.1\ConsoleCore.pdb
+D:\Bj\Git_DotNetProjects\ConsoleCore\bin\Debug\netcoreapp2.1\WordSimilarityLib.dll
+D:\Bj\Git_DotNetProjects\ConsoleCore\bin\Debug\netcoreapp2.1\WordSimilarityLib.pdb
+D:\Bj\Git_DotNetProjects\ConsoleCore\obj\Debug\netcoreapp2.1\ConsoleCore.csproj.CoreCompileInputs.cache
+D:\Bj\Git_DotNetProjects\ConsoleCore\obj\Debug\netcoreapp2.1\ConsoleCore.AssemblyInfoInputs.cache
+D:\Bj\Git_DotNetProjects\ConsoleCore\obj\Debug\netcoreapp2.1\ConsoleCore.AssemblyInfo.cs
+D:\Bj\Git_DotNetProjects\ConsoleCore\obj\Debug\netcoreapp2.1\ConsoleCore.csproj.CopyComplete
+D:\Bj\Git_DotNetProjects\ConsoleCore\obj\Debug\netcoreapp2.1\ConsoleCore.dll
+D:\Bj\Git_DotNetProjects\ConsoleCore\obj\Debug\netcoreapp2.1\ConsoleCore.pdb
+D:\Bj\Git_DotNetProjects\ConsoleCore\obj\Debug\netcoreapp2.1\ConsoleCore.csprojAssemblyReference.cache
