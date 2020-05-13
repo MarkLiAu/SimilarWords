@@ -150,8 +150,8 @@ namespace WordSimilarityLib
 
             foreach (var w in WordList)
             {
-                if (w.Key == name) continue;
-                double val = WordCompare(name, w.Key);
+                if (w.Key.ToLower() == name.ToLower()) continue;
+                double val = WordCompare(name.ToLower(), w.Key.ToLower());
                 if (val < 0.7) continue;
                 matchList.Add((1 - val).ToString("0.000000") + w.Value.frequency.ToString("00000"), w.Key);
             }
@@ -159,6 +159,7 @@ namespace WordSimilarityLib
             List<Word> result = new List<Word>();
             Word w1st;
             if(WordList.ContainsKey(name)) w1st = WordList[name];
+            else if (WordList.ContainsKey(name.ToLower())) w1st = WordList[name.ToLower()];
             else { w1st = new Word(name); w1st.meaningShort = "(not found)"; }
             result.Add(w1st);
             foreach (var m in matchList) result.Add(WordList[m.Value]);
