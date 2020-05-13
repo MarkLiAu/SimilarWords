@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Col, Grid, Row } from 'react-bootstrap';
+// import { WordData } from './WordData';
 
 export class WordSearch extends Component {
   displayName = WordSearch.name
@@ -23,13 +23,7 @@ export class WordSearch extends Component {
             });
     };
 
-    ExternalDictLink = (name) => {
-        return (
-            <a href={'https://www.collinsdictionary.com/dictionary/english/' + name} target="_blank">{name}</a>
-            );
-    }
-
-    ShowListZZZ = (list) => {
+    ShowList = (list) => {
         if (typeof (list) === "undefined") return (<div></div>);
         return (
             <div>
@@ -56,23 +50,6 @@ export class WordSearch extends Component {
             </div >
         );
     }
-
-    ShowList = (list) => {
-        if (typeof (list) === "undefined") return (<div></div>);
-        return (
-            <Grid fluid>
-                {list.map(w =>
-                    <Row key={w.name}>
-                        <col>
-                            hello
-                        </col>
-
-                    </Row>
-                )}
-            </Grid>
-        )
-    };
-
 
     KeyPressed = (event) => {
         if (event.key === 'Enter') {
