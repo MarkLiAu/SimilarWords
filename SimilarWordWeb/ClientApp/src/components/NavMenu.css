@@ -2,6 +2,10 @@
     margin-right: 10px;
 }
 
+.descriptionDiv {
+    border-bottom: 1px solid lightgrey;
+}
+
 /* Highlighting rules for nav menu items */
 .navbar .navbar-nav .active a,
 .navbar .navbar-nav .active a:hover,

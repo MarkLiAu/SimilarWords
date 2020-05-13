@@ -33,12 +33,20 @@ export class NavMenu extends Component {
                 <Glyphicon glyph='th-list' /> Fetch data
               </NavItem>
             </LinkContainer>
-                    <LinkContainer to={'/wordsearch'}>
-                        <NavItem>
-                            <Glyphicon glyph='th-list' /> Word Search
+            <LinkContainer to={'/wordsearch'}>
+              <NavItem>
+                  <Glyphicon glyph='th-list' /> Word Search
               </NavItem>
-                    </LinkContainer>
-          </Nav>
+            </LinkContainer>
+
+           <LinkContainer to={'/bootstrapTest1'}>
+              <NavItem>
+                   <Glyphicon glyph='th-list' /> Test 1
+              </NavItem>
+           </LinkContainer>
+
+
+         </Nav>
         </Navbar.Collapse>
       </Navbar>
     );

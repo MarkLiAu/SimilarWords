@@ -5,6 +5,7 @@ import { Home } from './components/Home';
 import { FetchData } from './components/FetchData';
 import { Counter } from './components/Counter';
 import { WordSearch } from './components/WordSearch';
+import { bootstrapTest1 } from './components/bootstrap1';
 
 export default class App extends Component {
   displayName = App.name
@@ -16,6 +17,7 @@ export default class App extends Component {
         <Route path='/counter' component={Counter} />
         <Route path='/fetchdata' component={FetchData} />
         <Route path='/wordsearch' component={WordSearch} />
+        <Route path='/bootstrapTest1' component={bootstrapTest1} />
       </Layout>
     );
   }
