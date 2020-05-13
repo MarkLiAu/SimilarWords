@@ -23,6 +23,12 @@ export class WordSearch extends Component {
             });
     };
 
+    ExternalDictLink = (name) => {
+        return (
+            <a href={'https://www.collinsdictionary.com/dictionary/english/' + name} target="_blank">{name}</a>
+            );
+    }
+
     ShowListZZZ = (list) => {
         if (typeof (list) === "undefined") return (<div></div>);
         return (
@@ -58,13 +64,7 @@ export class WordSearch extends Component {
                 {list.map(w =>
                     <Row key={w.name}>
                         <col>
-                            {w.frequency}
-                        </col>
-                        <col>
-                            {w.pronounciation}
-                        </col>
-                        <col>
-                            {w.meaningShort}
+                            hello
                         </col>
 
                     </Row>

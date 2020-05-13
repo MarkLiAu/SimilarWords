@@ -7,12 +7,11 @@ export class Layout extends Component {
 
   render() {
     return (
-        <Grid fluid >
+        <div >
         <NavMenu />
-        <Row>
             {this.props.children}
-        </Row>
-      </Grid>
+       
+      </div>
     );
   }
 }
