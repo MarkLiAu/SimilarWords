@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2vJ2P+0FLunP5UFR1OG5MLZileREgLfp6zYyUGG4Ii0XaC10eFTbtciCM8j3ZmzNEWOi//qN1EGBUogbqIToRQ==",
+  "dgSpecHash": "N7g+YPI47Gxt7/p6XSF21c2CauesHPkdbZlanm2VN31ESc6eMYH+FNnXLBhH9wvt/KYN+UVVr91RWP7jZxc17w==",
   "success": true,
-  "projectFilePath": "F:\\bj_program\\Git_DotNetProjects\\WordSimilarityLib\\WordSimilarityLib.csproj",
+  "projectFilePath": "F:\\bj_coding\\Git_DotNetProjects\\WordSimilarityLib\\WordSimilarityLib.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bj10\\.nuget\\packages\\microsoft.netcore.app\\2.0.0\\microsoft.netcore.app.2.0.0.nupkg.sha512",
     "C:\\Users\\bj10\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.0.0\\microsoft.netcore.dotnetapphost.2.0.0.nupkg.sha512",

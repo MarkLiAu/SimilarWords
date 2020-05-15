@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "WindowsFormsCore": {
-      "commandName": "Project",
-      "workingDirectory": "F:\\bj_program\\Git_DotNetProjects\\WindowsFormsCore"
-    }
-  }
-}

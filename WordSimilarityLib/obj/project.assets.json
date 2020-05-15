@@ -676,23 +676,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mark.li\\.nuget\\packages\\": {},
+    "C:\\Users\\bj10\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Bj\\Git_DotNetProjects\\WordSimilarityLib\\WordSimilarityLib.csproj",
+      "projectUniqueName": "F:\\bj_coding\\Git_DotNetProjects\\WordSimilarityLib\\WordSimilarityLib.csproj",
       "projectName": "WordSimilarityLib",
-      "projectPath": "D:\\Bj\\Git_DotNetProjects\\WordSimilarityLib\\WordSimilarityLib.csproj",
-      "packagesPath": "C:\\Users\\mark.li\\.nuget\\packages\\",
-      "outputPath": "D:\\Bj\\Git_DotNetProjects\\WordSimilarityLib\\obj\\",
+      "projectPath": "F:\\bj_coding\\Git_DotNetProjects\\WordSimilarityLib\\WordSimilarityLib.csproj",
+      "packagesPath": "C:\\Users\\bj10\\.nuget\\packages\\",
+      "outputPath": "F:\\bj_coding\\Git_DotNetProjects\\WordSimilarityLib\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\mark.li\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\bj10\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

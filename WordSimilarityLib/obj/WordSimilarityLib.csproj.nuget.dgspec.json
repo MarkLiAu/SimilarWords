@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\bj_program\\Git_DotNetProjects\\WordSimilarityLib\\WordSimilarityLib.csproj": {}
+    "F:\\bj_coding\\Git_DotNetProjects\\WordSimilarityLib\\WordSimilarityLib.csproj": {}
   },
   "projects": {
-    "F:\\bj_program\\Git_DotNetProjects\\WordSimilarityLib\\WordSimilarityLib.csproj": {
+    "F:\\bj_coding\\Git_DotNetProjects\\WordSimilarityLib\\WordSimilarityLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\bj_program\\Git_DotNetProjects\\WordSimilarityLib\\WordSimilarityLib.csproj",
+        "projectUniqueName": "F:\\bj_coding\\Git_DotNetProjects\\WordSimilarityLib\\WordSimilarityLib.csproj",
         "projectName": "WordSimilarityLib",
-        "projectPath": "F:\\bj_program\\Git_DotNetProjects\\WordSimilarityLib\\WordSimilarityLib.csproj",
+        "projectPath": "F:\\bj_coding\\Git_DotNetProjects\\WordSimilarityLib\\WordSimilarityLib.csproj",
         "packagesPath": "C:\\Users\\bj10\\.nuget\\packages\\",
-        "outputPath": "F:\\bj_program\\Git_DotNetProjects\\WordSimilarityLib\\obj\\",
+        "outputPath": "F:\\bj_coding\\Git_DotNetProjects\\WordSimilarityLib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

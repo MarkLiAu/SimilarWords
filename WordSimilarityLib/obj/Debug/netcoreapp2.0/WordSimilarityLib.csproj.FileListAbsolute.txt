@@ -16,3 +16,12 @@ D:\Bj\Git_DotNetProjects\WordSimilarityLib\obj\Debug\netcoreapp2.0\WordSimilarit
 D:\Bj\Git_DotNetProjects\WordSimilarityLib\obj\Debug\netcoreapp2.0\WordSimilarityLib.AssemblyInfo.cs
 D:\Bj\Git_DotNetProjects\WordSimilarityLib\obj\Debug\netcoreapp2.0\WordSimilarityLib.dll
 D:\Bj\Git_DotNetProjects\WordSimilarityLib\obj\Debug\netcoreapp2.0\WordSimilarityLib.pdb
+F:\bj_coding\Git_DotNetProjects\WordSimilarityLib\bin\Debug\netcoreapp2.0\WordSimilarityLib.deps.json
+F:\bj_coding\Git_DotNetProjects\WordSimilarityLib\bin\Debug\netcoreapp2.0\WordSimilarityLib.dll
+F:\bj_coding\Git_DotNetProjects\WordSimilarityLib\bin\Debug\netcoreapp2.0\WordSimilarityLib.pdb
+F:\bj_coding\Git_DotNetProjects\WordSimilarityLib\obj\Debug\netcoreapp2.0\WordSimilarityLib.csprojAssemblyReference.cache
+F:\bj_coding\Git_DotNetProjects\WordSimilarityLib\obj\Debug\netcoreapp2.0\WordSimilarityLib.csproj.CoreCompileInputs.cache
+F:\bj_coding\Git_DotNetProjects\WordSimilarityLib\obj\Debug\netcoreapp2.0\WordSimilarityLib.AssemblyInfoInputs.cache
+F:\bj_coding\Git_DotNetProjects\WordSimilarityLib\obj\Debug\netcoreapp2.0\WordSimilarityLib.AssemblyInfo.cs
+F:\bj_coding\Git_DotNetProjects\WordSimilarityLib\obj\Debug\netcoreapp2.0\WordSimilarityLib.dll
+F:\bj_coding\Git_DotNetProjects\WordSimilarityLib\obj\Debug\netcoreapp2.0\WordSimilarityLib.pdb
