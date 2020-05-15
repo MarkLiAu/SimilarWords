@@ -148,19 +148,23 @@ namespace WordSimilarityLib
         {
             SortedList<string, string> matchList = new SortedList<string, string>();
 
+            bool found = false;
+
             foreach (var w in WordList)
             {
-                if (w.Key == name) continue;
-                double val = WordCompare(name, w.Key);
+                if (w.Key.ToLower() == name.ToLower()) found = true;
+                double val = WordCompare(name.ToLower(), w.Key.ToLower());
                 if (val < 0.7) continue;
                 matchList.Add((1 - val).ToString("0.000000") + w.Value.frequency.ToString("00000"), w.Key);
             }
 
             List<Word> result = new List<Word>();
-            Word w1st;
-            if(WordList.ContainsKey(name)) w1st = WordList[name];
-            else { w1st = new Word(name); w1st.meaningShort = "(not found)"; }
-            result.Add(w1st);
+            if (!found)
+            {
+                Word w1st = new Word(name);
+                w1st.meaningShort = "(not found)";
+                result.Add(w1st);
+            }
             foreach (var m in matchList) result.Add(WordList[m.Value]);
             return result;
         }
@@ -280,6 +284,21 @@ namespace WordSimilarityLib
             }
         }
 
+        // read word sequency file, skip 1st line
+        public List<string> ReadFrequency(string file)
+        {
+            string[] lines = File.ReadAllLines(file);
+            List<string> result = new List<string>();
+            for(int n=1;n<lines.Length;n++)
+            {
+                if (lines[n] == "") continue;
+                string[] ss = lines[n].Split(new char[] { ' ','\t',',',';'});
+                if (ss.Length == 1) result.Add(ss[0].Trim());
+                else if (ss.Length >=2 ) result.Add(ss[1].Trim());
+            }
+            return result;
+        }
+
 
         // check if only a-z, A-Z
         public bool IsSingleWord(string s)
@@ -291,6 +310,96 @@ namespace WordSimilarityLib
         public string RemoveChinese(string s)
         {
             return Regex.Replace(s, @"[^\u0020-\u007E]", string.Empty); 
+        }
+
+
+        public void test1_11(string dataPath)
+        {
+            //wordDictionary.ReadCollins(Path.Combine(Directory.GetCurrentDirectory(), "data/CollinsL5E.txt"),1);
+            //wordDictionary.ReadCollins(Path.Combine(Directory.GetCurrentDirectory(), "data/CollinsL4E.txt"), 1);
+            //wordDictionary.ReadCollins(Path.Combine(Directory.GetCurrentDirectory(), "data/CollinsL3E.txt"), 1);
+            //wordDictionary.ReadCollins(Path.Combine(Directory.GetCurrentDirectory(), "data/CollinsL2E.txt"), 1);
+            //wordDictionary.ReadCollins(Path.Combine(Directory.GetCurrentDirectory(), "data/CollinsL1E.txt"), 1);
+            ReadCOCA20000Words(Path.Combine(dataPath, "COCA-20000Words.txt"));
+            ReadCOCAFrequency(Path.Combine(dataPath, "COCAFrequency20000.txt"));
+
+            SaveFile(Path.Combine(dataPath, "WordSimilarityList.txt"));
+
+            ReadFile(Path.Combine(dataPath, "WordSimilarityList.txt"));
+
+            FindSimilarWords("good");
+
+        }
+
+        // combine words from Collins list
+        public void CombineList1(string dataPath)
+        {
+
+            ReadCollins(dataPath + @"\CollinsL5E.txt", 1);
+            ReadCollins(dataPath + @"\CollinsL4E.txt", 1);
+            ReadCollins(dataPath + @"\CollinsL3E.txt", 1);
+            ReadCollins(dataPath + @"\CollinsL2E.txt", 1);
+            ReadCollins(dataPath + @"\CollinsL1E.txt", 1);
+
+
+            List<string> seqList = new List<string>();
+            foreach (var d in WordList) if (IsSingleWord(d.Key)) seqList.Add(d.Key);
+
+            ReadFile(Path.Combine(dataPath, "WordSimilarityList-v1.txt"));
+
+            for (int n = 0; n < seqList.Count; n++)
+                if (!WordList.ContainsKey(seqList[n]))
+                {
+                    Word w = new Word(seqList[n]);
+                    w.frequency = n + 1;
+                    WordList[seqList[n]] = w;
+                }
+
+            SaveFile(Path.Combine(dataPath, "WordSimilarityList.txt"));
+
+        }
+
+        public void test1(string dataPath)
+        {
+            CombineList1(dataPath);
+            return;
+
+            ReadCollins(dataPath + @"\CollinsL5E.txt",1);
+            ReadCollins(dataPath + @"\CollinsL4E.txt", 1);
+            ReadCollins(dataPath + @"\CollinsL3E.txt", 1);
+            ReadCollins(dataPath + @"\CollinsL2E.txt", 1);
+            ReadCollins(dataPath + @"\CollinsL1E.txt", 1);
+
+
+            List<string> seqList= new List<string>();
+            foreach (var d in WordList) if(IsSingleWord(d.Key)) seqList.Add(d.Key);
+
+            ReadFile(Path.Combine(dataPath, "WordSimilarityList.txt"));
+            foreach (var d in WordList) d.Value.pronounciation= d.Value.meaningLong=d.Value.meaningShort=d.Value.meaningOther=d.Value.soundUrl=d.Value.similarWords = "0";
+
+            //wordDictionary.ReadCollins(Path.Combine(Directory.GetCurrentDirectory(), "data/CollinsL5E.txt"),1);
+            //wordDictionary.ReadCollins(Path.Combine(Directory.GetCurrentDirectory(), "data/CollinsL4E.txt"), 1);
+            //wordDictionary.ReadCollins(Path.Combine(Directory.GetCurrentDirectory(), "data/CollinsL3E.txt"), 1);
+            //wordDictionary.ReadCollins(Path.Combine(Directory.GetCurrentDirectory(), "data/CollinsL2E.txt"), 1);
+            //wordDictionary.ReadCollins(Path.Combine(Directory.GetCurrentDirectory(), "data/CollinsL1E.txt"), 1);
+            // ReadCOCA20000Words(Path.Combine(dataPath, "COCA-20000Words.txt"));
+
+
+            //sw.Write(v.Value.name); sw.Write(delimeter);
+            //sw.Write(v.Value.pronounciation); sw.Write(delimeter);
+            //sw.Write(v.Value.frequency); sw.Write(delimeter);
+            //sw.Write(v.Value.similarWords); sw.Write(delimeter);
+            //sw.Write(v.Value.meaningShort); sw.Write(delimeter);
+            //sw.Write(v.Value.meaningLong); sw.Write(delimeter);
+            //sw.Write(v.Value.meaningOther); sw.Write(delimeter);
+            //sw.Write(v.Value.soundUrl); sw.Write(delimeter);
+            //sw.Write(v.Value.exampleSoundUrl);
+
+            for (int n = 0; n < seqList.Count; n++) if (!WordList.ContainsKey(seqList[n])) { Word w = new Word(seqList[n]); w.pronounciation = w.similarWords = "0"; w.frequency = n + 1; WordList[seqList[n]] = w; }
+            for (int n = 0; n < seqList.Count; n++) if (WordList.ContainsKey(seqList[n])) WordList[seqList[n]].pronounciation = (n + 1).ToString();
+
+            SaveFile(Path.Combine(dataPath, "FrequencyList.txt"));
+
         }
 
     }
