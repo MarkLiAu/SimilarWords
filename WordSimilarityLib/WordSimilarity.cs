@@ -12,7 +12,8 @@ namespace WordSimilarityLib
     public class Word
     {
         public string name { set; get; }
-        public string pronounciation { get; set; }
+        public string pronounciation { get; set; }          // British
+        public string pronounciationAm { get; set; }        // American
         public int frequency { get; set; }
         public string similarWords { get; set; }
         public string meaningShort { get; set; }
@@ -56,11 +57,12 @@ namespace WordSimilarityLib
         {
             using (StreamWriter sw = new StreamWriter(file))
             {
-                sw.WriteLine(string.Format("name{0}pronounciation{0}frequency{0}similarWords{0}meaningShort{0}meaningLong{0}meaningOther{0}soundUrl{0}exampleSoundUrl", delimeter));
+                sw.WriteLine(string.Format("name{0}pronounciation{0}pronounciationAm{0}frequency{0}similarWords{0}meaningShort{0}meaningLong{0}meaningOther{0}soundUrl{0}exampleSoundUrl", delimeter));
                 foreach (var v in WordList)
                 {
                     sw.Write(v.Value.name); sw.Write(delimeter);
                     sw.Write(v.Value.pronounciation); sw.Write(delimeter);
+                    sw.Write(v.Value.pronounciationAm); sw.Write(delimeter);
                     sw.Write(v.Value.frequency); sw.Write(delimeter);
                     sw.Write(v.Value.similarWords); sw.Write(delimeter);
                     sw.Write(v.Value.meaningShort); sw.Write(delimeter);
@@ -93,15 +95,16 @@ namespace WordSimilarityLib
                     {
                         if (ss[i].Trim() == "") continue;
                         if (columns[i].ToLower() == "pronounciation") w.pronounciation = ss[i];
+                        else if (columns[i].ToLower() == "pronounciationam") w.pronounciationAm = ss[i];
                         else if (columns[i].ToLower() == "frequency") w.frequency = Convert.ToInt32(ss[i]);
                         else if (columns[i].ToLower() == "similarwords") w.similarWords = ss[i];
                         else if (columns[i].ToLower() == "meaningshort") w.meaningShort = ss[i];
                         else if (columns[i].ToLower() == "meaninglong") w.meaningLong = ss[i];
                         else if (columns[i].ToLower() == "meaningother") w.meaningOther = ss[i];
                         else if (columns[i].ToLower() == "soundurl") w.soundUrl = ss[i];
-                        else if (columns[i].ToLower() == "examplesoundrrl") w.exampleSoundUrl = ss[i];
+                        else if (columns[i].ToLower() == "examplesoundurl") w.exampleSoundUrl = ss[i];
                     }
-                    WordList[w.name] = w;
+                    WordList[w.name.ToLower()] = w;     // use lowcase for search
                 }
             }
             return WordList.Count();
@@ -120,7 +123,7 @@ namespace WordSimilarityLib
             // same characters
             string s1 = String.Concat(word1.OrderBy(c => c));
             string s2 = String.Concat(word2.OrderBy(c => c));
-            if (s1 == s2) return 0.9;
+            if (s1 == s2) return 0.85;
 
             // check similarity from start and end
             int sameFront = 0;
@@ -148,23 +151,27 @@ namespace WordSimilarityLib
         {
             SortedList<string, string> matchList = new SortedList<string, string>();
 
-            bool found = false;
+            List<Word> result = new List<Word>();
 
+            // find the word first
+            Word w1st = new Word(name);
+            w1st.meaningShort = "(not found)";
+
+            string nameLowcase = name.ToLower();
+            if (WordList.ContainsKey(nameLowcase)) w1st = WordList[nameLowcase];
+
+            // search the list
             foreach (var w in WordList)
             {
-                if (w.Key.ToLower() == name.ToLower()) found = true;
-                double val = WordCompare(name.ToLower(), w.Key.ToLower());
+                if (w.Key == nameLowcase) continue;
+                double val = WordCompare(nameLowcase, w.Key);
+                if (w1st.pronounciation.Length > 0 && w.Value.pronounciation == w1st.pronounciation) val = 0.9; // same pronoun
                 if (val < 0.7) continue;
-                matchList.Add((1 - val).ToString("0.000000") + w.Value.frequency.ToString("00000"), w.Key);
+                matchList.Add((1 - val).ToString("0.000000") + w.Value.frequency.ToString("00000"), w.Key);     // sort by compare Val and frequency
             }
 
-            List<Word> result = new List<Word>();
-            if (!found)
-            {
-                Word w1st = new Word(name);
-                w1st.meaningShort = "(not found)";
-                result.Add(w1st);
-            }
+            result.Add(w1st);
+
             foreach (var m in matchList) result.Add(WordList[m.Value]);
             return result;
         }
@@ -359,9 +366,21 @@ namespace WordSimilarityLib
 
         }
 
+        public void splitPronounciation(string dataPath)
+        {
+            ReadFile(Path.Combine(dataPath, "WordSimilarityList.txt"));
+            foreach (var d in WordList)
+            {
+                string[] ss = d.Value.pronounciation.Replace("Br", "").Replace("Am", "").Split(' ',StringSplitOptions.RemoveEmptyEntries);
+                if (ss.Length < 2) continue;
+                d.Value.pronounciation = ss[0];
+                d.Value.pronounciationAm = ss[1];
+            }
+            SaveFile(Path.Combine(dataPath, "WordSimilarityList.txt"));
+        }
         public void test1(string dataPath)
         {
-            CombineList1(dataPath);
+            // splitPronounciation(dataPath);
             return;
 
             ReadCollins(dataPath + @"\CollinsL5E.txt",1);

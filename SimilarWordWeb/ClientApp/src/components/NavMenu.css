@@ -3,7 +3,11 @@
 }
 
 .descriptionDiv {
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid red;
+}
+
+.margin-r {
+    margin-right:3px;
 }
 
 /* Highlighting rules for nav menu items */

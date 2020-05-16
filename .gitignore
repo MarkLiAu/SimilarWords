@@ -1,3 +1,7 @@
 .vs/
-bin/
-obj/
+SimilarWordWeb\bin
+SimilarWordWeb\obj
+WordSimilarityLib\bin
+WordSimilarityLib\obj
+ConsoleCore\bin
+ConsoleCore\obj
