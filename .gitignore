@@ -1,7 +1,15 @@
 .vs/
-/SimilarWordWeb/bin
-/SimilarWordWeb/obj
-/ConsoleCore/bin
-/ConsoleCore/obj
-/WordSimilarityLib/obj
-/WordSimilarityLib/bin
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+bin/
+Bin/
+obj/
+Obj/
