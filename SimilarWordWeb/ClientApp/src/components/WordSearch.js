@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Col, Grid, Row } from 'react-bootstrap';
 
+const ListHeader = () => <Row className="descriptionDiv">
+    <Col xs={3} md={1}>word</Col>
+    <Col xs={1} md={1}>Seq</Col>
+    <Col xs={3} md={1}>Pronounciation</Col>
+    <Col xs={4} md={2}>Dictionary</Col>
+</Row>
+
 export class WordSearch extends Component {
   displayName = WordSearch.name
 
@@ -16,6 +23,11 @@ export class WordSearch extends Component {
     }
     componentDidMount() {
         console.log('componentDidMount');
+        document.title = this.state.word2search + '-Similar Word';
+    }
+
+    componentDidUpdate() {
+        console.log('componentDidUpdate');
         document.title = this.state.word2search + '-Similar Word';
     }
 
@@ -70,14 +82,9 @@ export class WordSearch extends Component {
         if (typeof (list) === "undefined") return (<div></div>);
         return (
             <Grid fluid>
-                <Row className="descriptionDiv">
-                    <Col xs={3} md={1}>word</Col>
-                    <Col xs={1} md={1}>Seq</Col>
-                    <Col xs={3} md={1}>Pronounciation</Col>
-                    <Col xs={4} md={2}>Dictionary</Col>
-                </Row>
+                <ListHeader> </ListHeader>
                 {list.map(w => {
-                    if (Number(w.frequency) > this.state.frequency) return '';
+                    if (w.name.toLowerCase()!=this.state.word2search.toLowerCase().trim() &&  Number(w.frequency) > this.state.frequency) return '';
                     return (
                         <Row key={w.name} className="descriptionDiv" style={{ borderBottom: 1 + 'px' }} >
                             <Col xs={3} md={1}> {this.ShowWordName(w.name) } </Col>
