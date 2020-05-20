@@ -45,6 +45,12 @@ export class NavMenu extends Component {
               </NavItem>
            </LinkContainer>
 
+           <LinkContainer to={'/testform'}>
+              <NavItem>
+                   <Glyphicon glyph='th-list' /> Test Form
+              </NavItem>
+           </LinkContainer>
+
 
          </Nav>
         </Navbar.Collapse>

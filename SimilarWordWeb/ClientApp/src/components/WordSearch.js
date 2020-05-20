@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import { Col, Grid, Row } from 'react-bootstrap';
+import { Col, Grid, Row, Checkbox } from 'react-bootstrap';
 import DisplayWord from './DisplayWord';
 
 const ListHeader = () => <Row className="descriptionDiv">
@@ -152,9 +152,8 @@ export class WordSearch extends Component {
             <h3>Similar Words</h3>
 
                 <input value={this.state.wordInput} placeholder={this.state.word2search} onChange={this.WordChanged} onKeyPress={this.KeyPressed} ></input>
-            <button type="submit" onClick={this.SubmitSearch}>Search</button>
-            <input className="form-check-input" type="checkbox" id="Showall" name="Showall" onChange={this.ShowAllChanged}></input>
-            <label className="form-check-label" >Show All</label>
+                <button type="submit" onClick={this.SubmitSearch}>Search</button>
+                <Checkbox inline onChange={this.ShowAllChanged}>Show All</Checkbox> 
 
             {this.ShowList(this.state.words)}
         </div>

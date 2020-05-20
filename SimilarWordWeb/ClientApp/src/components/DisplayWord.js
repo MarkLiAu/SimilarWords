@@ -13,6 +13,9 @@ const DisplayWord = ({ word }) => {
 
         <Panel>
             {word.name}
+            {word.frequency}
+            {word.pronounciation}
+
         </Panel>
 
 
