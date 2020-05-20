@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { Col, Grid, Row } from 'react-bootstrap';
+import DisplayWord from './DisplayWord';
 
 const ListHeader = () => <Row className="descriptionDiv">
     <Col xs={3} md={1}>word</Col>
@@ -8,6 +9,26 @@ const ListHeader = () => <Row className="descriptionDiv">
     <Col xs={3} md={1}>Pronounciation</Col>
     <Col xs={4} md={2}>Dictionary</Col>
 </Row>
+
+const ShowDictLink = (name) => {
+    return (
+        <Fragment>
+            <a title="Collins" href={'https://www.collinsdictionary.com/dictionary/english/' + name} target="_blank">CL</a>
+            <span>|</span>
+            <a title='Longman' href={'https://www.ldoceonline.com/dictionary/' + name} target="_blank">LM</a>
+            <span>|</span>
+            <a title='Merriam Webster' href={'https://www.merriam-webster.com/dictionary/' + name} target="_blank">MW</a>
+            <span>|</span>
+            <a title='Oxford Learners' href={'https://www.oxfordlearnersdictionaries.com/definition/english/' + name + '_1'} target="_blank">OX</a>
+            <span>|</span>
+            <a title='Cambridge' href={'https://dictionary.cambridge.org/dictionary/english/' + name} target="_blank">CA</a>
+            <span>|</span>
+            <a title='Macmilland' href={'https://www.macmillandictionary.com/dictionary/british/' + name + '_1'} target="_blank">MA</a>
+            <span>|</span>
+            <a title='Lexico' href={'https://www.lexico.com/definition/' + name} target="_blank">LX</a>
+        </Fragment>
+    )
+}
 
 export class WordSearch extends Component {
   displayName = WordSearch.name
@@ -73,9 +94,10 @@ export class WordSearch extends Component {
             return <b className='text-primary'>{name}</b>
         }
         else {
-            return <Link to={'/WordSearch/' + name} onClick={() => { this.SearchWord(name) }} >{name} </Link> 
+            return <Link to={'/WordSearch/' + name} onClick={() => { this.SearchWord(name) }} >{name} </Link>
         }
     }
+
 
     ShowList = (list) => {
         console.log('ShowList');
@@ -86,27 +108,21 @@ export class WordSearch extends Component {
                 {list.map(w => {
                     if (w.name.toLowerCase()!=this.state.word2search.toLowerCase().trim() &&  Number(w.frequency) > this.state.frequency) return '';
                     return (
-                        <Row key={w.name} className="descriptionDiv" style={{ borderBottom: 1 + 'px' }} >
+                        <Fragment>
+                                <DisplayWord word={w}></DisplayWord>
+                        <Row className="show-grid" key={w.name} className="descriptionDiv" style={{ borderBottom: 1 + 'px' }} >
                             <Col xs={3} md={1}> {this.ShowWordName(w.name) } </Col>
                             <Col xs={1} md={1}>{w.frequency}</Col>
                             <Col xs={3} md={1}>{w.pronounciation}</Col>
-                            <Col xs={4} md={2}>
-                                <a title="Collins" href={'https://www.collinsdictionary.com/dictionary/english/' + w.name} target="_blank">CL</a>
-                                <span>|</span>
-                                <a title='Longman' href={'https://www.ldoceonline.com/dictionary/' + w.name} target="_blank">LM</a>
-                                <span>|</span>
-                                <a title='Merriam Webster' href={'https://www.merriam-webster.com/dictionary/' + w.name} target="_blank">MW</a>
-                                <span>|</span>
-                                <a title='Oxford Learners' href={'https://www.oxfordlearnersdictionaries.com/definition/english/' + w.name+'_1'} target="_blank">OX</a>
-                                <span>|</span>
-                                <a title='Cambridge' href={'https://dictionary.cambridge.org/dictionary/english/' + w.name} target="_blank">CA</a>
-                                <span>|</span>
-                                <a title='Macmilland' href={'https://www.macmillandictionary.com/dictionary/british/' + w.name + '_1'} target="_blank">MA</a>
-                                <span>|</span>
-                                <a title='Lexico' href={'https://www.lexico.com/en/definition/' + w.name} target="_blank">LX</a>
-                            </Col>
-                        <Col  xsOffset={1} xs={11} mdOffset={0} md={7}>{w.meaningShort}</Col>
+                            <Col xs={4} md={2}> <ShowDictLink name={w.name}></ShowDictLink>   </Col>
                         </Row>
+                        <Row>
+                        </Row>
+
+                        </Fragment>
+
+
+                       
                     )})
                 }
 

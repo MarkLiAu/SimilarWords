@@ -366,6 +366,37 @@ namespace WordSimilarityLib
 
         }
 
+        // combine words from Oxford 5000
+        public void CombineOxford5000(string dataPath)
+        {
+            string[] lines = File.ReadAllLines(dataPath + @"\Oxford5000seq.txt");
+            List<string> result = new List<string>();
+            for (int n = 1; n < lines.Length; n++)
+            {
+                if (lines[n] == "") continue;
+                string[] ss = lines[n].Split(new char[] { ' ' });
+                if (ss.Length <= 1) continue;
+                result.Add(ss[0]);
+            }
+
+
+            List<string> seqList = result;
+
+            ReadFile(Path.Combine(dataPath, "WordSimilarityList-v3.txt"));
+
+            for (int n = 0; n < seqList.Count; n++)
+                if (!WordList.ContainsKey(seqList[n]))
+                {
+                    Word w = new Word(seqList[n]);
+                    w.frequency = n + 1;
+                    WordList[seqList[n]] = w;
+                }
+
+            SaveFile(Path.Combine(dataPath, "WordSimilarityList.txt"));
+
+        }
+
+
         public void splitPronounciation(string dataPath)
         {
             ReadFile(Path.Combine(dataPath, "WordSimilarityList.txt"));
@@ -381,6 +412,7 @@ namespace WordSimilarityLib
         public void test1(string dataPath)
         {
             // splitPronounciation(dataPath);
+            CombineOxford5000(dataPath);
             return;
 
             ReadCollins(dataPath + @"\CollinsL5E.txt",1);
