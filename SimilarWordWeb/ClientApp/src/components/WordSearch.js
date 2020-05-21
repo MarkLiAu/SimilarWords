@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import { Col, Grid, Row, Checkbox } from 'react-bootstrap';
+import { Col, Grid, Row,Checkbox, Panel, PanelGroup } from 'react-bootstrap';
 import DisplayWord from './DisplayWord';
 
 const ListHeader = () => <Row className="descriptionDiv">
@@ -31,16 +31,16 @@ const ShowDictLink = (name) => {
 }
 
 export class WordSearch extends Component {
-  displayName = WordSearch.name
+    displayName = WordSearch.name
 
-  constructor(props) {
-      super(props);
-      console.log("constructor");
+    constructor(props) {
+        super(props);
+        console.log("constructor");
 
-      let w = typeof (this.props.match === null || this.props.match.params.name) === 'undefined' ? '' : this.props.match.params.name; 
-      console.log(w);
-      this.state = { word2search: w,  wordInput: w, frequency: 10000  };
-      this.SearchWord(w);
+        let w = typeof (this.props.match === null || this.props.match.params.name) === 'undefined' ? '' : this.props.match.params.name;
+        console.log(w);
+        this.state = { word2search: w, wordInput: w, frequency: 10000 };
+        this.SearchWord(w);
     }
     componentDidMount() {
         console.log('componentDidMount');
@@ -53,22 +53,23 @@ export class WordSearch extends Component {
     }
 
     WordChanged = (e) => {
-            this.setState({
-                wordInput: e.target.value
-            });
+        this.setState({
+            wordInput: e.target.value
+        });
     }
 
     SearchWord = (word) => {
-        console.log("SearchWord:"+word);
+        console.log("SearchWord:" + word);
         console.log(this.state);
         if (word.length <= 0) return;
+        //if (word === this.state.word2search) return;
         //return;
         fetch('api/Words/' + word)
             .then(response => response.json())
             .then(data => {
                 console.log('fetch back');
                 this.props.history.push('/Wordsearch/' + word);
-                this.setState({ words: data, word2search:word, wordInput:'' });
+                this.setState({ words: data, word2search: word, wordInput: '' });
             });
     }
 
@@ -89,52 +90,20 @@ export class WordSearch extends Component {
     //        });
     //};
 
-    ShowWordName = (name) => {
-        if (name == this.state.word2search) {
-            return <b className='text-primary'>{name}</b>
-        }
-        else {
-            return <Link to={'/WordSearch/' + name} onClick={() => { this.SearchWord(name) }} >{name} </Link>
-        }
-    }
+    //ShowWordName = (name) => {
+    //    if (name == this.state.word2search) {
+    //        return <b className='text-primary'>{name}</b>
+    //    }
+    //    else {
+    //        return <Link to={'/WordSearch/' + name} onClick={() => { this.SearchWord(name) }} >{name} </Link>
+    //    }
+    //}
 
 
-    ShowList = (list) => {
-        console.log('ShowList');
-        if (typeof (list) === "undefined") return (<div></div>);
-        return (
-            <Grid fluid>
-                <ListHeader> </ListHeader>
-                {list.map(w => {
-                    if (w.name.toLowerCase()!=this.state.word2search.toLowerCase().trim() &&  Number(w.frequency) > this.state.frequency) return '';
-                    return (
-                        <Fragment>
-                                <DisplayWord word={w}></DisplayWord>
-                        <Row className="show-grid" key={w.name} className="descriptionDiv" style={{ borderBottom: 1 + 'px' }} >
-                            <Col xs={3} md={1}> {this.ShowWordName(w.name) } </Col>
-                            <Col xs={1} md={1}>{w.frequency}</Col>
-                            <Col xs={3} md={1}>{w.pronounciation}</Col>
-                            <Col xs={4} md={2}> <ShowDictLink name={w.name}></ShowDictLink>   </Col>
-                        </Row>
-                        <Row>
-                        </Row>
-
-                        </Fragment>
-
-
-                       
-                    )})
-                }
-
-            </Grid>
-
-
-        );
-    }
 
     ShowAllChanged = (e) => {
-        console.log( 'ShowAllChanged');
-       this.setState({
+        console.log('ShowAllChanged');
+        this.setState({
             frequency: e.target.checked ? 50000 : 10000
         });
 
@@ -148,15 +117,35 @@ export class WordSearch extends Component {
     render() {
         console.log('render');
         return (
-        <div>
-            <h3>Similar Words</h3>
-
+            <div className='bj_center'>
+                <Panel>
                 <input value={this.state.wordInput} placeholder={this.state.word2search} onChange={this.WordChanged} onKeyPress={this.KeyPressed} ></input>
+                <span>{' '}</span>
                 <button type="submit" onClick={this.SubmitSearch}>Search</button>
-                <Checkbox inline onChange={this.ShowAllChanged}>Show All</Checkbox> 
+                <span>{' '}</span>
+                <Checkbox inline onChange={this.ShowAllChanged} > Show All </Checkbox>
+                </Panel>
+                <PanelGroup accordion id="accordion-example">
 
-            {this.ShowList(this.state.words)}
-        </div>
+                    <ShowListComp maxFeq={this.state.frequency} list={this.state.words}></ShowListComp>
+                </PanelGroup>
+            </div>
+        );
+    }
+}
+        
+        
+const ShowListComp = ({maxFeq, list }) => {
+    console.log('ShowList');
+    if (typeof (list) === "undefined") return (<div></div>);
+    console.log(maxFeq);
+    return (
+            list.map( (w,idx) => {
+                if (idx>0 && Number(w.frequency) > maxFeq) return '';
+                return (
+                    <DisplayWord key={w.name} word={w} idx={idx} SearchWord={this.SearchWord}></DisplayWord>
+                )
+            })
+
     );
-  }
 }

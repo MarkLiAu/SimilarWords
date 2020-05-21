@@ -7,3 +7,13 @@
 body {
     padding: 0px;
 }
+
+
+.bj_center{
+    margin:auto;
+    width:100%;
+}
+
+.bj_margin_b{
+    margin-bottom:4px;
+}
