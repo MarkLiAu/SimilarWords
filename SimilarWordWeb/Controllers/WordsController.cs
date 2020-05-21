@@ -21,13 +21,6 @@ namespace SimilarWordWeb.Controllers
         }
 
 
-        private List<Word> ErrorInfo(string name, Exception ex)
-        {
-            Word w = new Word(name);
-            w.meaningShort = ex.Message + ";" + ex.StackTrace;
-            return new List<Word>() { w };
-        }
-
         // GET api/<controller>/5
         [HttpGet("{name}")]
         public List<Word> Get(string name)
@@ -45,7 +38,7 @@ namespace SimilarWordWeb.Controllers
             }
             catch (Exception ex)
             {
-                return ErrorInfo(name, ex);
+                return new List<Word>() { new Word(name,-1,ex.Message+ex.StackTrace) };
             }
         }
 
@@ -59,8 +52,24 @@ namespace SimilarWordWeb.Controllers
 
         // POST api/<controller>
         [HttpPost]
-        public void Post([FromBody]string value)
+        public Word Post([FromBody]Word word)
         {
+            try
+            {
+                WordDictionary wd = new WordDictionary();
+                if (WordDictionary.WordList.Count() <= 0)
+                    wd.ReadFile(Path.Combine(Directory.GetCurrentDirectory(), @"data\WordSimilarityList.txt"));
+
+                if (wd.UpdateWord(word)) return word;
+
+                return new Word("ERROR", -1, "failed to update");
+
+            }
+            catch (Exception ex)
+            {
+                return new Word("ERROR", -1, ex.Message + ex.StackTrace);
+            }
+
         }
 
         // PUT api/<controller>/5

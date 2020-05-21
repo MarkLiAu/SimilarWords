@@ -35,6 +35,13 @@ namespace WordSimilarityLib
             exampleSoundUrl = "";
         }
 
+        // quick simple word
+        public Word(string s, int f, string ms) : this(s)
+        {
+            frequency = f;
+            meaningShort = ms;
+        }
+
         public Word(Word word)
         {
             name = word.name;
@@ -52,6 +59,7 @@ namespace WordSimilarityLib
     public class WordDictionary
     {
         static public Dictionary<string, Word> WordList = new Dictionary<string, Word>();
+        static public string dataFile = "";
 
         public void SaveFile(string file, string delimeter = "\t")
         {
@@ -107,6 +115,7 @@ namespace WordSimilarityLib
                     WordList[w.name.ToLower()] = w;     // use lowcase for search
                 }
             }
+            dataFile = file;
             return WordList.Count();
         }
 
@@ -174,6 +183,15 @@ namespace WordSimilarityLib
 
             foreach (var m in matchList) result.Add(WordList[m.Value]);
             return result;
+        }
+
+        public bool UpdateWord(Word word)
+        {
+            if (word == null || string.IsNullOrWhiteSpace(word.name)) return false;
+            if (string.IsNullOrWhiteSpace(dataFile)) return false;
+            WordList[word.name.ToLower()] = word;
+            SaveFile(dataFile);
+            return true;
         }
 
         /*
