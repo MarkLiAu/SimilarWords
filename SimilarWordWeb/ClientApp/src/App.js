@@ -22,7 +22,7 @@ export default class App extends Component {
             <Route path='/fetchdata' component={FetchData} />
             <Route path='/wordsearch/:name' component={WordSearch} />
             <Route path='/wordsearch' component={WordSearch} />
-            <Route path='/wordedit/:word' component={WordEdit} />
+            <Route path='/wordedit/:name' component={WordEdit} />
             <Route path='/bootstrapTest1' component={WordEdit} />
             <Route path='/*' component={NotFound} />
         </Switch>
