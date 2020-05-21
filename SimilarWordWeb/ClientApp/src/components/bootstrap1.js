@@ -1,99 +1,59 @@
 ﻿import React, {Component } from 'react';
 // import './App.scss';
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Table } from 'react-bootstrap';
+import {Nav,Navbar,NavDropdown,Form,FormControl,Button, Panel,PanelGroup } from 'react-bootstrap';
 export class bootstrapTest1 extends Component {
     render() {
         return (
-            <div>
-                OK
-                <header>
-                    <Form inline>
-                        <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                        <Button variant="outline-success">Search</Button>
-                    </Form>
-
-                        <Navbar expand="lg" variant="dark" bg="dark">
-                            <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-                            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                        </Navbar>
-
-                </header>
-                <div className="container">
-                    <div className="row mt-5">
-                        <div className="col-lg-4 mb-4 grid-margin">
-                            <div className="card h-100">
-                                <h4 className="card-header">Card Title</h4>
-                                <div className="card-body">
-                                    <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-                                </div>
-                                <div className="card-footer">
-                                    <Button variant="btn btn-primary">Learn More</Button>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 mb-4 grid-margin">
-                            <div className="card h-100">
-                                <h4 className="card-header">Card Title</h4>
-                                <div className="card-body">
-                                    <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam eos, nam perspiciatis natus commodi similique totam consectetur praesentium molestiae atque exercitationem ut consequuntur, sed eveniet, magni nostrum sint fuga.</p>
-                                </div>
-                                <div className="card-footer">
-                                    <Button variant="btn btn-primary">Learn More</Button>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 mb-4 grid-margin">
-                            <div className="card h-100">
-                                <h4 className="card-header">Card Title</h4>
-                                <div className="card-body">
-                                    <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-                                </div>
-                                <div className="card-footer">
-                                    <Button variant="btn btn-primary">Learn More</Button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row mb-4">
-                        <div className="col-sm-12 grid-margin">
-                            <div className="card h-100">
-                                <h4 className="card-header">Table</h4>
-                                <div className="card-body">
-                                    <Table striped bordered hover>
-                                        <thead>
-                                            <tr>
-                                                <th>#</th>
-                                                <th>First Name</th>
-                                                <th>Last Name</th>
-                                                <th>Username</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>Mark</td>
-                                                <td>Otto</td>
-                                                <td>@mdo</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>Jacob</td>
-                                                <td>Thornton</td>
-                                                <td>@fat</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td colSpan="2">Larry the Bird</td>
-                                                <td>@twitter</td>
-                                            </tr>
-                                        </tbody>
-                                    </Table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <PanelGroup accordion id="accordion-example">
+                <Panel eventKey="1">
+                    <Panel.Heading>
+                        <Panel.Title toggle>Collapsible Group Item #1</Panel.Title>
+                    </Panel.Heading>
+                    <Panel.Body collapsible>
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                        dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                        moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                        wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                        butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                        aesthetic synth nesciunt you probably haven't heard of them accusamus
+                        labore sustainable VHS.
+    </Panel.Body>
+                </Panel>
+                <Panel eventKey="2">
+                    <Panel.Heading>
+                        <Panel.Title toggle>Collapsible Group Item #2</Panel.Title>
+                    </Panel.Heading>
+                    <Panel.Body collapsible>
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                        dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                        moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                        wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                        butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                        aesthetic synth nesciunt you probably haven't heard of them accusamus
+                        labore sustainable VHS.
+    </Panel.Body>
+                </Panel>
+                <Panel eventKey="3">
+                    <Panel.Heading>
+                        <Panel.Title toggle>Collapsible Group Item #3</Panel.Title>
+                    </Panel.Heading>
+                    <Panel.Body collapsible>
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                        dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                        moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                        wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                        butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                        aesthetic synth nesciunt you probably haven't heard of them accusamus
+                        labore sustainable VHS.
+    </Panel.Body>
+                </Panel>
+            </PanelGroup>
         )
     }
 

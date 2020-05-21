@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import { Col, Grid, Row,Checkbox, Panel } from 'react-bootstrap';
+import { Col, Grid, Row,Checkbox, Panel, PanelGroup } from 'react-bootstrap';
 import DisplayWord from './DisplayWord';
 
 const ListHeader = () => <Row className="descriptionDiv">
@@ -124,8 +124,11 @@ export class WordSearch extends Component {
                 <button type="submit" onClick={this.SubmitSearch}>Search</button>
                 <span>{' '}</span>
                 <Checkbox inline onChange={this.ShowAllChanged} > Show All </Checkbox>
-                 </Panel>
-                <ShowListComp maxFeq={this.state.frequency}  list={this.state.words}></ShowListComp>
+                </Panel>
+                <PanelGroup accordion id="accordion-example">
+
+                    <ShowListComp maxFeq={this.state.frequency} list={this.state.words}></ShowListComp>
+                </PanelGroup>
             </div>
         );
     }

@@ -7,6 +7,7 @@ import { Counter } from './components/Counter';
 import { WordSearch } from './components/WordSearch';
 import { bootstrapTest1 } from './components/bootstrap1';
 import { NotFound } from './components/NotFound';
+import WordEdit from './components/WordEdit';
 
 export default class App extends Component {
   displayName = App.name
@@ -21,7 +22,8 @@ export default class App extends Component {
             <Route path='/fetchdata' component={FetchData} />
             <Route path='/wordsearch/:name' component={WordSearch} />
             <Route path='/wordsearch' component={WordSearch} />
-            <Route path='/bootstrapTest1' component={bootstrapTest1} />
+            <Route path='/wordedit/:word' component={WordEdit} />
+            <Route path='/bootstrapTest1' component={WordEdit} />
             <Route path='/*' component={NotFound} />
         </Switch>
 

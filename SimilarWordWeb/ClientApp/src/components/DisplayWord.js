@@ -16,7 +16,7 @@ const DisplayWord = ({ word, idx, SearchWord }) => {
             <Panel.Heading >
                 <Panel.Title toggle >
                     {word.name}
-                    {' ' + word.pronounciation}
+                    {' ' + word.pronounciation+'   '+ (word.frequency>10000? '*' :'')}
             </Panel.Title>
             </Panel.Heading>
             <Panel.Collapse>
@@ -25,6 +25,10 @@ const DisplayWord = ({ word, idx, SearchWord }) => {
                     {idx === 0 ? <Label bsStyle='primary'>{word.name}</Label>  : <Link to={'/WordSearch/' + word.name} onClick={() => SearchWord(word.name)} >   {word.name} </Link>}
                     <Badge>{word.frequency}</Badge>
                     <p>{word.meaningShort}</p>
+                    <Link to={{ pathname: '/wordedit/' + word.name, state: { word: word } } } >   
+                            Edit
+                    </Link>
+
                     <p className='bj_center'><ShowDictLink name={word.name}></ShowDictLink></p>
                     
                 </Panel.Body>
@@ -33,7 +37,6 @@ const DisplayWord = ({ word, idx, SearchWord }) => {
 
     );
 }
-
 
 const ShowWordName = ({ name }) => {
     //if (name == this.state.word2search) {
@@ -49,19 +52,19 @@ const ShowWordName = ({ name }) => {
 const ShowDictLink = ({ name }) => {
     return (
         <Fragment>
-            <a title="Collins" href={'https://www.collinsdictionary.com/dictionary/english/' + name} target="_blank">Collins</a>
+            <a title="Collins" href={'https://www.collinsdictionary.com/dictionary/english/' + name} target="_blank">Coll</a>
             <span>|</span>
-            <a title='Longman' href={'https://www.ldoceonline.com/dictionary/' + name} target="_blank">Longman</a>
+            <a title='Longman' href={'https://www.ldoceonline.com/dictionary/' + name} target="_blank">Long</a>
             <span>|</span>
-            <a title='Merriam Webster' href={'https://www.merriam-webster.com/dictionary/' + name} target="_blank">Merriam</a>
+            <a title='Merriam Webster' href={'https://www.merriam-webster.com/dictionary/' + name} target="_blank">Merr</a>
             <span>|</span>
             <a title='Oxford Learners' href={'https://www.oxfordlearnersdictionaries.com/definition/english/' + name + '_1'} target="_blank">Oxford</a>
             <span>|</span>
-            <a title='Cambridge' href={'https://dictionary.cambridge.org/dictionary/english/' + name} target="_blank">Cambridge</a>
+            <a title='Cambridge' href={'https://dictionary.cambridge.org/dictionary/english/' + name} target="_blank">Camb</a>
             <span>|</span>
-            <a title='Macmilland' href={'https://www.macmillandictionary.com/dictionary/british/' + name + '_1'} target="_blank">Macmilland</a>
+            <a title='Macmilland' href={'https://www.macmillandictionary.com/dictionary/british/' + name + '_1'} target="_blank">Macm</a>
             <span>|</span>
-            <a title='Lexico' href={'https://www.lexico.com/definition/' + name} target="_blank">Lexico</a>
+            <a title='Lexico' href={'https://www.lexico.com/definition/' + name} target="_blank">Lexi</a>
         </Fragment>
     )
 }
