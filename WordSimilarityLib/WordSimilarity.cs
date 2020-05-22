@@ -22,9 +22,9 @@ namespace WordSimilarityLib
         public string soundUrl { get; set; }
         public string exampleSoundUrl { get; set; }
 
-        public Word(string s)
+        public Word()
         {
-            name = s;
+            name = "";
             pronounciation = "";
             frequency = 0;
             similarWords = "";
@@ -33,6 +33,11 @@ namespace WordSimilarityLib
             meaningOther = "";
             soundUrl = "";
             exampleSoundUrl = "";
+        }
+
+        public Word(string s) : this()
+        {
+            name = s;
         }
 
         // quick simple word

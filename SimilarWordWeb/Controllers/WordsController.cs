@@ -52,9 +52,9 @@ namespace SimilarWordWeb.Controllers
 
         // POST api/<controller>
         [HttpPost]
-        public string Post([FromBody] string s)
+        public string Post([FromBody] Word w)
         {
-            return "Got "+s;
+            return "Got ";
         }
 
         public Word PostAA([FromBody]Word word)
@@ -79,19 +79,19 @@ namespace SimilarWordWeb.Controllers
         
 
         // PUT api/<controller>/5
-        [HttpPut("{name}")]
-        public string Put(string name, [FromBody]Word w)
+        [HttpPut]
+        public string PutAAA([FromBody]Word w)
         {
                 Word word = new Word("test");
             return "done";
 
         }
 
-        public Word PutZZ(string name, [FromBody]Word w)
+        [HttpPut("{name}")]
+        public Word Put(string name, [FromBody]Word word)
         {
             try
             {
-                Word word = new Word("test");
                 WordDictionary wd = new WordDictionary();
                 if (WordDictionary.WordList.Count() <= 0)
                     wd.ReadFile(Path.Combine(Directory.GetCurrentDirectory(), @"data\WordSimilarityList.txt"));
@@ -99,7 +99,7 @@ namespace SimilarWordWeb.Controllers
                 //foreach (var d in WordDictionary.WordList) d.Value.meaningLong = "";
                 //wd.SaveFile(Path.Combine(Directory.GetCurrentDirectory(), @"data\WordSimilarityList.txt"));
 
-                // if (wd.UpdateWord(word)) return word;
+                if (wd.UpdateWord(word)) return word;
 
                 return new Word("ERROR", -1, "failed to update");
 

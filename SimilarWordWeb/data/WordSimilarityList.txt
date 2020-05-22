@@ -14906,7 +14906,7 @@ woman	['wʊmən]	['wʊmən]	104		When a little girl grows up, she becomes a woma
 US			564						
 life	[laɪf]	[laɪf]	107		Plants, animals, insects, bacteria, viruses, algae, mold and humans all have life: they grow, eat, make waste, change, and reproduce. Rocks and minerals, not doing any of these, do not have life.		n.一生；生命；生活；人生		
 child	[tʃaɪld]	[tʃaɪld]	108		A child is a young person who's typically older than a baby but younger than a teen. As a child, you probably had your parents watching over you as you played in a sandbox.		n.小孩；子女；产物		
-work	[wɜːk]	[wɜːrk]	109		The word work has many shades of meaning, but most involve putting in an effort of some sort. You're not going to become an Olympic ice skater overnight. You'll need to do a serious amount of work to get there.		n.工作；职业；工作内容；职责；活计；工作所需的材料；工作地点；努力；工作成果；行为结果；作品 v.工作；做事；使工作；争取；管理；运行；操作；奏效；产生…影响；造成；抽搐；逐渐移动 [复]works：工厂；修建；机器部件；全套物品		
+work	[wɜːk]	[wɜːrk]	109		abc The word work has many shades of meaning, but most involve putting in an effort of some sort. You're not going to become an Olympic ice skater overnight. You'll need to do a serious amount of work to get there.	abc	n.工作；职业；工作内容；职责；活计；工作所需的材料；工作地点；努力；工作成果；行为结果；作品 v.工作；做事；使工作；争取；管理；运行；操作；奏效；产生…影响；造成；抽搐；逐渐移动 [复]works：工厂；修建；机器部件；全套物品		
 May			312						
 should	[ʃəd]	[ʃəd]	113				aux.应该；可能；应当；竟然；将要		
 call	[kɔːl]	[kɔːl]	114		When you call, you shout or cry out so that someone can hear you. You might call to a bicyclist who's veering dangerously into traffic.		vt.呼叫；打电话；把 ...称为 n.打电话；访问；召唤；呼叫；把 ... 看作 vi.呼叫；(短暂的)拜访		
