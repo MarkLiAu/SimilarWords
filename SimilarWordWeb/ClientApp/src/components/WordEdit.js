@@ -11,8 +11,8 @@ const EditWord = ({ name, location }) => {
         console.log("CallUpdateApi");
         console.log(word);
         console.log(JSON.stringify(word));
-        fetch('api/Words/'+word.name, {
-            method: 'PUT',
+        fetch('api/Words/', {
+            method: 'POST',
             body: word,
             headers: {
                 'Content-Type': 'application/json'

@@ -52,7 +52,12 @@ namespace SimilarWordWeb.Controllers
 
         // POST api/<controller>
         [HttpPost]
-        public Word Post([FromBody]Word word)
+        public string Post([FromBody] string s)
+        {
+            return "Got "+s;
+        }
+
+        public Word PostAA([FromBody]Word word)
         {
             try
             {
@@ -71,10 +76,18 @@ namespace SimilarWordWeb.Controllers
             }
 
         }
+        
 
         // PUT api/<controller>/5
         [HttpPut("{name}")]
-        public Word Put(string name, [FromBody]string s)
+        public string Put(string name, [FromBody]Word w)
+        {
+                Word word = new Word("test");
+            return "done";
+
+        }
+
+        public Word PutZZ(string name, [FromBody]Word w)
         {
             try
             {
@@ -118,5 +131,9 @@ namespace SimilarWordWeb.Controllers
                 return "ERROR:"+ ex.Message + ex.StackTrace;
             }
         }
+
+
+
+        ////////////////////////////////////////////////////////////// end
     }
 }
