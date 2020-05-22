@@ -12,7 +12,7 @@ const DisplayWord = ({ word, idx, SearchWord }) => {
 
     return (
 
-        <Panel className='bj_margin_b' eventKey={word.name} id={'panel' + word.name }  >
+        <Panel className='bj_margin_b' eventKey={idx.toString()} id={'panel' + word.name }  >
             <Panel.Heading >
                 <Panel.Title toggle >
                     {word.name}
@@ -65,6 +65,8 @@ const ShowDictLink = ({ name }) => {
             <a title='Macmilland' href={'https://www.macmillandictionary.com/dictionary/british/' + name + '_1'} target="_blank">Macm</a>
             <span>|</span>
             <a title='Lexico' href={'https://www.lexico.com/definition/' + name} target="_blank">Lexi</a>
+            <span>|</span>
+            <a title='Iciba' href={'http://www.iciba.com/word?w=' + name} target="_blank">Iciba</a>
         </Fragment>
     )
 }

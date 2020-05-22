@@ -125,7 +125,7 @@ export class WordSearch extends Component {
                 <span>{' '}</span>
                 <Checkbox inline onChange={this.ShowAllChanged} > Show All </Checkbox>
                 </Panel>
-                <PanelGroup accordion id="accordion-example">
+                <PanelGroup accordion id="accordion-example" defaultActiveKey='0'>
 
                     <ShowListComp maxFeq={this.state.frequency} list={this.state.words}></ShowListComp>
                 </PanelGroup>

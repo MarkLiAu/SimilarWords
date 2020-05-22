@@ -26,6 +26,7 @@ namespace WordSimilarityLib
         {
             name = "";
             pronounciation = "";
+            pronounciationAm = "";
             frequency = 0;
             similarWords = "";
             meaningShort = "";
@@ -117,6 +118,8 @@ namespace WordSimilarityLib
                         else if (columns[i].ToLower() == "soundurl") w.soundUrl = ss[i];
                         else if (columns[i].ToLower() == "examplesoundurl") w.exampleSoundUrl = ss[i];
                     }
+                    if (w.pronounciation.Contains("Br"))
+                        w.pronounciation = "";
                     WordList[w.name.ToLower()] = w;     // use lowcase for search
                 }
             }

@@ -832,7 +832,7 @@ scan	[skæn]	[skæn]	3528		When you scan a subway car to see if your friend is o
 fool	[fuːl]	[fuːl]	3529		In the Middle Ages, a fool was a clown or jester. Today fools are simply idiots who clown around.		n.傻瓜；小丑；奶油果蓉 v.愚弄；欺骗；开玩笑；干蠢事；玩弄；鬼混		
 deadline	['dedlaɪn]	['dedlaɪn]	3530		A deadline is a date or time when something must be finished. At work and school, most projects have deadlines. If you don’t get your paper in by the deadline, you won’t get a good grade.		n.最后期限；(鉴于边上的)警戒线；截止时间		
 rear	[rɪə(r)]	[rɪr]	3531				adj.后面的；后方的；背面的 n.后部；尾部；后方 v.举起；养育；饲养		
-processing	Br Am		3532		The noun processing means a complex treatment or process — for example, the processing that coffee beans go through before becoming a hot drink.		n.进程；步骤；数据处理；整理；配制		
+processing			3532		The noun processing means a complex treatment or process — for example, the processing that coffee beans go through before becoming a hot drink.		n.进程；步骤；数据处理；整理；配制		
 ranch	[rɑːntʃ]	[ræntʃ]	3533				n.牧场		
 coastal	['kəʊstl]	['koʊstl]	3534				adj.沿海的；海岸的；沿岸的		
 undertake	[ˌʌndə'teɪk]	[ˌʌndər'teɪk]	3535		When you undertake a task or challenge, you attempt to accomplish it. If you want to undertake a verbal challenge right now, try saying “sushi chef” ten times quickly without messing up.		v.承担；从事；保证；答应		
@@ -1262,7 +1262,7 @@ tray	[treɪ]	[treɪ]	3920				n.托盘；盘
 pioneer	[ˌpaɪə'nɪə(r)]	[ˌpaɪə'nɪr]	3921		A pioneer is one of the first settlers in a new place. If you desperately want to experience life in space, maybe you will be one of the pioneers who live in the first moon settlement.		n.先锋；开拓者；先驱 v.开辟；首倡		
 organizational	[ˌɔːɡənaɪ'zeɪʃənl]	[ˌɔːɡənaɪ'zeɪʃənl]	3922				adj.组织的		
 textbook	['tekstbʊk]	['tekstbʊk]	3923				n.课本；教科书		
-uh	Br Am		3924				abbr.上半部分 (=upper half)		
+uh			3924				abbr.上半部分 (=upper half)		
 nasty	['nɑːsti]	['næsti]	3925		Something nasty is filthy, foul, dirty, or awful. Nasty isn't a word for anything nice.		adj.下流的；严重的；令人不快的；难懂的；危害的		
 shrink	[ʃrɪŋk]	[ʃrɪŋk]	3926		Shrink is the informal word you can use to talk about a therapist. Talking about your problems with her can hopefully help you shrink them, or make them smaller.		vi.收缩；退缩；萎缩；畏惧，害怕 vt.使收缩 n.收缩；萎缩 n.精神科医生		
 model	['mɒdl]	['mɑːdl]	462		To model something is to show it off. To make a model of your favorite car is to create a miniature version of it. To be a model is to be so gorgeous that you’re photographed for a living.		n.模范；模特儿；模型 adj.模范的；作模型用的 v.做模型；模仿；塑造		
@@ -2344,9 +2344,9 @@ shield	[ʃiːld]	[ʃiːld]	4895		A shield is a cover that protects whatever is b
 newcomer	['njuːkʌmə(r)]	['nuːkʌmər]	4896		When you show up at your first meeting of the local swim club and you're the only one who didn't bring a towel, it may be because you're a newcomer, or someone who's new at participating in a particular group.		n.新来的人；新手；新近出现的事物		
 triangle	['traɪæŋɡl]	['traɪæŋɡl]	4897				n.三角(形)		
 aspiration	[ˌæspə'reɪʃn]	[ˌæspə'reɪʃn]	4898		If your aspiration, or ambition, is to climb Mt. Everest someday, you better start training, because it’s a long, hard climb that requires a lot of preparation.		n.抱负；热望；志向；渴望 n.吸引术；抽吸；吸气；发送气音		
-financing	Br Am		4899		Financing is the process of finding money for something you want. If you don't have enough money to buy the hot new video-game, you could try telling your parents that you need help financing your leisure activities.		n.融资；资金供应 动词finance的现在分词.		
+financing			4899		Financing is the process of finding money for something you want. If you don't have enough money to buy the hot new video-game, you could try telling your parents that you need help financing your leisure activities.		n.融资；资金供应 动词finance的现在分词.		
 narrator	[nə'reɪtə(r)]	[nə'reɪtər]	4900		"A narrator is the storyteller in a book or movie. One of the most famous literary narrators is Mark Twain's character Huck Finn, who tells the story of ""Huckleberry Finn."""		n.叙述者；讲解员		
-fried	Br Am		4901		Things that are fried are cooked in very hot fat or oil. You can order fried rice at a Chinese restaurant, or fried clams at your favorite seafood place.		adj.炸过的 弗里德(Alfred Hermann,1864-1921，奥地利著述家、记者，曾获1911年诺贝尔和平奖）		
+fried			4901		Things that are fried are cooked in very hot fat or oil. You can order fried rice at a Chinese restaurant, or fried clams at your favorite seafood place.		adj.炸过的 弗里德(Alfred Hermann,1864-1921，奥地利著述家、记者，曾获1911年诺贝尔和平奖）		
 suitcase	['suːtkeɪs]	['suːtkeɪs]	4902				n.手提箱		
 inclined	[ɪn'klaɪnd]	[ɪn'klaɪnd]	4903		If you're inclined to do something, you want to do it, you like doing it, and you may even have an inherent talent for doing it. Alternatively, if the sidewalk outside your house is inclined, that means it slopes upward.		adj. 倾向于 ... 的		
 calcium	['kælsiəm]	['kælsiəm]	4904				n.钙		
@@ -2413,7 +2413,7 @@ vine	[vaɪn]	[vaɪn]	4961				n.藤；蔓；攀爬植物
 guardian	['ɡɑːdiən]	['ɡɑːrdiən]	4962		"A guardian is a keeper or protector who looks after the welfare of other people or their property. In legal language, guardian is typically used as an alternative to ""parent."""		n.保护人；监护人		
 obey	[ə'beɪ]	[ə'beɪ]	4963				v.服从；遵守；顺从；听从		
 thoughtful	['θɔːtfl]	['θɔːtfl]	4964		You are thoughtful if you consider how your actions and words will affect other people’s feelings. It is thoughtful to cook your friend's favorite dish when you invite him over for dinner.		adj.深思的；体贴的		
-shocked	Br Am		4965				adj.震惊的 动词shock的过去式和过去分词.		
+shocked			4965				adj.震惊的 动词shock的过去式和过去分词.		
 tech	[tek]	[tek]	4966				n.技术学校；技术；技术人员		
 methodology	[ˌmeθə'dɒlədʒi]	[ˌmeθə'dɑːlədʒi]	4967		A methodology is a plan-of-attack, especially when that plan-of-attack is used repeatedly.		n.方法学；一套方法		
 simulation	[ˌsɪmju'leɪʃn]	[ˌsɪmju'leɪʃn]	4968		A simulation is a representation of something, not the real thing, like the simulation of life in New York City, seen in movies that were shot on Hollywood sound stages and on the streets of Toronto.		n.模拟；仿真；赝品		
@@ -3404,7 +3404,7 @@ implicit	[ɪm'plɪsɪt]	[ɪm'plɪsɪt]	5879		Use the adjective implicit when you
 unlimited	[ʌn'lɪmɪtɪd]	[ʌn'lɪmɪtɪd]	5880				adj.(数或量)极大的；无限的；不受限制的		
 dictator	[dɪk'teɪtə(r)]	['dɪkteɪtər]	5881		A dictator is someone who has absolute power — or who at least behaves as if they do by bossing others around.		n.独裁者		
 inhale	[ɪn'heɪl]	[ɪn'heɪl]	5882		"To inhale is to breathe in. It is the opposite of ""exhale,"" which is to breathe out."		v.吸入；吸气；吞咽		
-interestingly	Br Am		5883				adv.有趣地		
+interestingly			5883				adv.有趣地		
 genetically	[dʒə'netɪkli]	[dʒə'netɪkli]	5884				adv.遗传(基因)方面		
 forthcoming	[ˌfɔːθ'kʌmɪŋ]	[ˌfɔːrθ'kʌmɪŋ]	5885		"You know when you go to a movie and they show the previews under the heading ""coming soon?"" They could just as well say forthcoming, because it means the same thing. Only who would want to see that stuffy movie?"		adj.即将到来的；现成的；乐意帮助的		
 environmentally	[ɪnˌvaɪrən'mentəli]	[ɪnˌvaɪrən'mentəli]	5886				adv.在环境方面地		
@@ -3608,7 +3608,7 @@ heck	[hek]	[hek]	6074				int. （hell的委婉语）见鬼 n. 用以加强语气
 declining	[dɪ'klaɪnɪŋ]	[dɪ'klaɪnɪŋ]	6075				adj.下降的；衰落的 动词decline的现在分词.		
 blonde	[blɒnd]	[blɑːnd]	6076		"Blonde (with an ""e"" at the end) is usually used to describe the yellowish-colored hair of a female. Marilyn Monroe had famously blonde hair, but only from bleaching — she was naturally a brunette."		adj.金发碧眼的；白皙的；（头发）亚麻色的 n.金发女郎		
 conform	[kən'fɔːm]	[kən'fɔːrm]	6077		To conform means to adapt to fit in with new conditions. So if you travel to Morocco, you should conform to the local custom and adjust your usually skin-bearing wardrobe to one that is more modest.		v.使一致；遵从		
-Taliban	Br Am		6078				n.塔利班		
+Taliban			6078				n.塔利班		
 book	[bʊk]	[bʊk]	220		"For a lot of kids, ""Harry Potter and the Sorcerer's Stone"" was their first experience of really falling in love with a book, or a collection of printed words or illustrations bound together."		n.书；本子 v.预订；记录在案		
 cuff	[kʌf]	[kʌf]	6079		A cuff is the very end of a long sleeve or the rolled bottom of your jeans. You might prefer to wear a cuff on the bottom of your pants in order to show off your striped socks.		n.袖口；手铐 n.巴掌 v.为...上袖口；带手铐 v.轻拍；掴		
 worthwhile	[ˌwɜːθ'waɪl]	[ˌwɜːrθ'waɪl]	6080		Things that are worthwhile are good — they're worth the time or money you spend on them.		adj.值得(做)的		
@@ -3903,7 +3903,7 @@ glue	[ɡluː]	[ɡluː]	6350		Glue is a liquid adhesive, used to stick two items 
 visibility	[ˌvɪzə'bɪləti]	[ˌvɪzə'bɪləti]	6351		Use the noun visibility to describe how well you can see something, like the great visibility from the top of a mountain on a clear day.		n.能见度；可见性		
 unified	['juːnɪfaɪd]	['juːnɪfaɪd]	6352		When people or groups are all on the same page, working for the same goals and doing the same thing, they are unified.		adj.统一的 动词unify的过去式和过去分词.		
 shining	['ʃaɪnɪŋ]	['ʃaɪnɪŋ]	6353				adj.光亮的；华丽的		
-restructuring	Br Am		6354				n.重组；结构调整 动词restructure的现在分词.		
+restructuring			6354				n.重组；结构调整 动词restructure的现在分词.		
 sideline	['saɪdlaɪn]	['saɪdlaɪn]	6355				n.(球场)边线；副业；附带出售的商品 v.使退出比赛；把…排挤在核心之外		
 mankind	[mæn'kaɪnd]	[mæn'kaɪnd]	6356		Mankind is every single human being — all of us. The discovery of cures for diseases benefits all of mankind, while global warming is not so kind to mankind.		n.人类；男人		
 incorrect	[ˌɪnkə'rekt]	[ˌɪnkə'rekt]	6357		Incorrect things are wrong or mistaken. Driving the incorrect direction on the highway can be dangerous. Turn around!		adj.不正确的；错误的		
@@ -3947,7 +3947,7 @@ ginger	['dʒɪndʒə(r)]	['dʒɪndʒər]	6390		Ginger is a plant with a thick ro
 extraordinarily	[ɪk'strɔːdnrəli]	[ɪk'strɔːdnrəli]	6391				adv.非常(格外)		
 fuzzy	['fʌzi]	['fʌzi]	6392		Fuzzy things are soft, downy, or furry. Few people can resist the charms of a tiny, fuzzy kitten.		adj.毛茸茸的；模糊的；含糊不清的（感情）		
 puzzled	['pʌzld]	['pʌzld]	6393				adj.困惑的；迷惑的 动词puzzle的过去式和过去分词.		
-um	Br Am		6394				int.嗯		
+um			6394				int.嗯		
 reconstruct	[ˌriːkən'strʌkt]	[ˌriːkən'strʌkt]	6395		"If the verb to ""construct"" means to build something, then to reconstruct means to build it again. You can reconstruct a building, a city, or even an idea."		v.重建；修复；重现		
 openness	['əʊpənnəs]	['oʊpənnəs]	6396				n.直率；公开；开放；空旷		
 pancake	['pænkeɪk]	['pænkeɪk]	6397				n.薄煎饼 v.（使）平坠着陆；（使）平展		
@@ -4221,7 +4221,7 @@ foresee	[fɔː'siː]	[fɔːr'siː]	6647		When you foresee something, you predict
 sport	[spɔːt]	[spɔːrt]	607		"Sport has many definitions, the most familiar of which is a game involving physical exertion — think tennis or hockey. Randomly, sport can also mean to wear, as in, ""he looked sharp sporting a yellow sport coat."""		n.运动；体育 vi.嬉戏；炫耀；戏弄 adj.运动的；户外穿戴的		
 oneself	[wʌn'self]	[wʌn'self]	6648				pron.自己；自身		
 wade	[weɪd]	[weɪd]	6649		To wade is to walk through water. If you've been fishing without a boat, chances are you've gone for a wade to reach your precious prize (and if it got away, exaggerated how big it was.)		v.跋涉；涉水 n.跋涉		
-enhanced	Br Am		6650		As an adjective, enhanced describes something that has been increased or made better, like a weather report whose enhanced maps show viewers exactly where a storm is taking place — the old maps couldn't do that.		adj.加强的；提高的 动词enhance的过去式和过去分词形式.		
+enhanced			6650		As an adjective, enhanced describes something that has been increased or made better, like a weather report whose enhanced maps show viewers exactly where a storm is taking place — the old maps couldn't do that.		adj.加强的；提高的 动词enhance的过去式和过去分词形式.		
 bracket	['brækɪt]	['brækɪt]	6651		A bracket is a punctuation mark that's used to set a word or phrase aside from the rest of a sentence. Sometimes dates or other numbers in a sentence are enclosed by brackets.		n.档次；括号；支架 vt.支撑；放在括号内；归入一类		
 dust	[dʌst]	[dʌst]	2013		Dust is the fine, powdery substance that settles on surfaces over time or is blown around outdoors. A junk shop might be full of beautiful old furniture and books, all covered with dust.		n.灰尘；尘土；粉尘 vt.去掉 ... 的灰尘；撒粉末于 vi.除尘		
 harmless	['hɑːmləs]	['hɑːrmləs]	6652		Things that can't hurt you are harmless. It might be hard for you to believe her when your sister tells you that her enormous pet snake is completely harmless.		adj.无害的；无恶意的		
@@ -4249,7 +4249,7 @@ rewrite	[ˌriː'raɪt]	[ˌriː'raɪt]	6670		When you rewrite something, you star
 dictatorship	[ˌdɪk'teɪtəʃɪp]	[ˌdɪk'teɪtərʃɪp]	6671		A dictatorship is a government or a social situation where one person makes all the rules and decisions without input from anyone else.		n.专政；独裁（权）		
 moan	[məʊn]	[moʊn]	6672				n.呻吟声；抱怨声 vt.抱怨；呻吟 vi.呻吟；抱怨		
 procession	[prə'seʃn]	[prə'seʃn]	6673		A procession of mimes walking through the streets of your town would be surprising and somewhat terrifying. A line or group of people moving together in a deliberate way is a procession.		n.队伍；行列 v.列队行进		
-em	Br Am		6674				abbr.电磁的（=electromagnetic） abbr.电子显微镜（=electron microscope） abbr.端边的（=end matched） abbr.地雷工程师（=engineer of mines） abbr.现役军人（=enlisted man）		
+em			6674				abbr.电磁的（=electromagnetic） abbr.电子显微镜（=electron microscope） abbr.端边的（=end matched） abbr.地雷工程师（=engineer of mines） abbr.现役军人（=enlisted man）		
 automaker	['ɔːtəʊmeɪkə(r)]	['ɔːtoʊmeɪkər]	6675				n.汽车制造者		
 cracker	['krækə(r)]	['krækər]	6676		A cracker is a snack. It’s a thin, savory, crisp biscuit, like a saltine. It’s also anything that cracks, like a firecracker or a computer code cracker, or of course, that thin, savory snack that cracks when you break it.		n.薄脆饼干；发出爆裂声的东西；爆竹；裂化设备；黑客；迷人的女子；自夸的人；穷苦白人 (复)crackers：n. 胡桃钳 Cracker n.佛罗里达州和乔治亚州当地居民的别名		
 sitcom	['sɪtkɒm]	['sɪtkɑːm]	6677		Sitcom is short for “situation comedy.” It’s a funny TV show with a realistic setting, like an apartment full of wacky roommates or a restaurant where a regular cast of characters cracks jokes from week to week.		n.情景喜剧（=situation comedy） SITCOM. n.单收入、有两个孩子及沉重房贷负担的家庭(=Single Income Two Children Oppressive Mortgage)		
@@ -4404,7 +4404,7 @@ crate	[kreɪt]	[kreɪt]	6812		A crate is a wooden container that's made for tran
 uranium	[ju'reɪniəm]	[ju'reɪniəm]	6813				n.铀		
 tailor	['teɪlə(r)]	['teɪlər]	6814		A tailor helps make your clothes fit you better. Similarly, when you tailor something to the needs of others, you are adjusting what you do to best suit them rather than taking a general approach.		n.裁缝 vt.缝制；调整使适合 vi.做裁缝		
 marvel	['mɑːvl]	['mɑːrvl]	6815		"The Latin source of the word marvel is mirari, ""to wonder at,"" and that's exactly what marvel means when it's a verb. You may marvel at the depth of the Grand Canyon or at the size of a pimple."		n.奇异的事物；令人吃惊的人 v.惊异于；惊异		
-Kurdish	Br Am		6816				n.库尔德语 adj.库尔德人的		
+Kurdish			6816				n.库尔德语 adj.库尔德人的		
 brighten	['braɪtn]	['braɪtn]	6817				v.使变亮；使生辉；发亮；开颜		
 scattered	['skætəd]	['skætərd]	6818		When things are scattered, they’re spread out all over the place. If the forecast calls for scattered showers, it’ll rain here and there.		adj.分散的；稀疏的		
 ceramic	[sə'ræmɪk]	[sə'ræmɪk]	6819				adj.陶器的 n.陶器；陶瓷学		
@@ -4433,8 +4433,8 @@ fiery	['faɪəri]	['faɪəri]	6839		When something is very hot or intense, it's 
 fireworks	['faɪəwɜːks]	['faɪəˌwɜːks]	6840				n.烟火		
 specification	[ˌspesɪfɪ'keɪʃn]	[ˌspesɪfɪ'keɪʃn]	6841		"We sometimes call them ""specs,"" but a specification has no relationship to eyeglasses! Instead, it is an explicit detail of a design, presenting the exact way something specific must be constructed. For example, blueprints contain the specifications for a building."		n.规格；详述		
 pardon	['pɑːdn]	['pɑːrdn]	6842		If you belch, interrupt a conversation, or leave the table during dinner, you’re expected to say “Pardon me.” Once you’ve requested your companions’ pardon, or forgiveness, you can assume you have it; you don’t need to wait for their response.		n.原谅，宽恕，饶恕；赦免，赦免状 vt.原谅；宽恕，饶恕；赦免，免于治罪		
-Hawaiian	Br Am		6843				n.夏威夷人；夏威夷语 adj.夏威夷的；夏威夷语的		
-Texan	Br Am		6844				adj.德克萨斯州(人)的 n.德克萨斯州人		
+Hawaiian			6843				n.夏威夷人；夏威夷语 adj.夏威夷的；夏威夷语的		
+Texan			6844				adj.德克萨斯州(人)的 n.德克萨斯州人		
 dig	[dɪɡ]	[dɪɡ]	2189		When you dig, you scoop or shovel up dirt, sand, or some other material. Your dog might whine to go outside so she can dig a hole in your dad's garden.		v.挖；掘；翻土；探究；戳；捅 n.推；戳；挖掘；挖苦；住所		
 walnut	['wɔːlnʌt]	['wɔːlnʌt]	6845				n.核桃；核桃木；核桃色；茶色		
 computing	[kəm'pjuːtɪŋ]	[kəm'pjuːtɪŋ]	6846		Computing is the act of calculating something––adding it up, multiplying it, or doing more complex math functions to it. Computers are named for this process, because they can compute faster than most people.		n.计算；计算机使用或操作 动词compute的现在分词.		
@@ -4455,7 +4455,7 @@ shoot	[ʃuːt]	[ʃuːt]	667				v.发射；开枪；疾驰；拍照 n.发射；�
 climb	[klaɪm]	[klaɪm]	1409		To climb is to go higher. When you ascend a mountain, you climb it, and when a song rises in popularity, it climbs the charts.		v.攀登；爬；上升 n.爬；攀爬处		
 ideally	[aɪ'diːəli]	[aɪ'diːəli]	6860				adv.理想地；完美地；观念上地		
 dispute	[dɪ'spjuːt]	[dɪ'spjuːt]	2394		"If kids can't settle their own argument, they may need someone to mediate their dispute, or conflict. You can often tell this is the case if you hear the loud cry, ""Mom!"""		v.争论；辩驳；争议；质疑 n.争论；争端；争吵		
-HMO	Br Am		6861				abbr.卫生维护组织（=Health Maintenance Organization）		
+HMO			6861				abbr.卫生维护组织（=Health Maintenance Organization）		
 dependency	[dɪ'pendənsi]	[dɪ'pendənsi]	6862				n.依赖；属国；从属物		
 broccoli	['brɒkəli]	['brɑːkəli]	6863				n.西兰花；花椰菜；甘蓝花		
 yoga	['jəʊɡə]	['joʊɡə]	6864		"Yoga is an ancient form of physical and mental exercise that is still popular today. It involves lots of stretching and holding poses with funny names, like ""downward dog."""		n.【U】瑜珈		
@@ -4551,7 +4551,7 @@ bowling	['bəʊlɪŋ]	['boʊlɪŋ]	6950		If you love bowling you're a fan of rol
 revised	[rɪ'vaɪzd]	[rɪ'vaɪzd]	6951		Use the adjective revised to describe something that's been updated or improved, such as a revised draft of your paper that includes corrections and new sentences that help explain your ideas.		adj.经过修订的；改进的		
 sift	[sɪft]	[sɪft]	6952		To bake a cake, you sift the flour to get out the lumps. When you sift, you separate out one thing from another.		v.筛下；筛分；详察		
 capitalize	['kæpɪtəlaɪz]	['kæpɪtəlaɪz]	6953		To capitalize is to put something in capital letters, particularly the first letters, Like This. To capitalize also means to take advantage of a situation.		vt.以大写字母写；使 ... 资本化；估价 vi.利用		
-industrialized	Br Am		6954				adj.工业化的 动词industrialize的过去式和过去分词形式.		
+industrialized			6954				adj.工业化的 动词industrialize的过去式和过去分词形式.		
 specific	[spə'sɪfɪk]	[spə'sɪfɪk]	881		If you describe something as specific it signals that you're being precise. Say you ask your friend to meet you at a specific time and place — it means you want to meet her at, say, Ray's Pizza at 3:00 PM, not just anywhere.		adj.明确的；特殊的；具有特效的 n.特效药；详情；特性		
 cap	[kæp]	[kæp]	2053		A cap is a hat that fits snugly on your head. You might wear a bathing cap when you swim, to keep your hair dry.		n.帽子；盖子；顶；上限 vt.超过；加盖于；戴帽；覆盖；完成；设限 vi.脱帽致意		
 bail	[beɪl]	[beɪl]	6955		Bail can be a verb or a noun. When you bail (verb) someone out of jail, you post money, also known as bail (noun), to assure the authorities that person won't try to run away before going to trial.		n.保释；杓；把手；保证金；担保人 vt.保释；往外舀水；使摆脱困境 vi.舀空		
@@ -4749,7 +4749,7 @@ solitude	['sɒlɪtjuːd]	['sɑːlətuːd]	7135		Solitude is the state of being a
 drunken	['drʌŋkən]	['drʌŋkən]	7136				adj.常醉的；喝醉的		
 dissent	[dɪ'sent]	[dɪ'sent]	7137		To dissent is to publicly disagree with an official opinion or decision. Dissent is also a noun referring to public disagreement.		n.异议 v.持异议		
 sculptor	['skʌlptə(r)]	['skʌlptər]	7138				n.雕刻家		
-Kurd	Br Am		7139				n.库德人		
+Kurd			7139				n.库德人		
 haze	[heɪz]	[heɪz]	7140		Haze is the fog or mist that's caused by small particles in the air. There is often a haze hovering over the city of Los Angeles.		n.薄雾；迷糊 vi.变模糊 vt.戏弄		
 mince	[mɪns]	[mɪns]	7141		To mince is to chop into tiny bits. Your favorite soup recipe might include directions to mince four cloves of garlic.		n.切碎物；粉碎；肉馅 v.切碎；矫揉做作地说，委婉地说；小步走路		
 scenery	['siːnəri]	['siːnəri]	7142		Scenery is a word for how a place looks, especially a beautiful, outdoorsy place. Also, scenery is fake background in a play.		n.风景；背景；布景		
@@ -5103,7 +5103,7 @@ transparency	[træns'pærənsi]	[træns'pærənsi]	7475		The condition of being 
 gold	[ɡəʊld]	[ɡoʊld]	1134		Gold is a relatively soft, shiny precious metal. Many kinds of jewelry, including necklaces, bangles, and wedding rings are traditionally made of gold.		adj.金色的；金制的 n.金币；金黄色；金牌；金子		
 continuum	[kən'tɪnjʊəm]	[kən'tɪnjʊəm]	7476		A continuum is something that keeps on going, changing slowly over time, like the continuum of the four seasons.		n.连续；连续统；闭连集		
 resolve	[rɪ'zɒlv]	[rɪ'zɑːlv]	1997		To resolve is to settle or make a decision about something — often formal. A college's board of directors might resolve to recruit more minority students. As a noun, resolve refers to a strong determination to do something.		vt.解决；决定；表决；分解 vi.决定；分解 n.决心；坚决		
-zoning	Br Am		7477				n.分区 动词zone的现在分词形式.		
+zoning			7477				n.分区 动词zone的现在分词形式.		
 nebula	['nebjələ]	['nebjələ]	7478		A nebula is a massive cloud of gas and dust in outer space. A nebula is sometimes the birthplace of stars, such as the Orion Nebula where new stars — a youthful million years old — are still forming.		n.[天]星云；[医]角膜云翳		
 quake	[kweɪk]	[kweɪk]	7479		When you quake, you tremble and shiver. A scary sound in a dark basement might make you quake.		v.震动；颤抖 n.震动；地震		
 guided	['ɡaɪdɪd]	['ɡaɪdɪd]	7480				adj.有指导的；【军事】制导的 动词guide的过去式和过去分词形式.		
@@ -5114,7 +5114,7 @@ muffin	['mʌfɪn]	['mʌfɪn]	7484		A muffin is a small baked good made from batt
 doctorate	['dɒktərət]	['dɑːktərət]	7485		A doctorate is an advanced university degree. Another name for a doctorate is a PhD. If you stick in school long enough, you just might end up with a doctorate (and a whole lot of debt).		n.博士学位		
 fort	[fɔːt]	[fɔːrt]	7486		A fort is a place that's made strong and secure enough to be defended during a war. Although it’s usually a military word, you can also make a fort with chairs and a blanket to defend against annoying little siblings.		n.堡垒；要塞		
 drawback	['drɔːbæk]	['drɔːbæk]	7487				n.缺点；退税；退款；不利条件；弊		
-dazzling	Br Am		7488		Things that are dazzling seem stunning and extraordinary — they impress you enormously. A dazzling circus act amazes you with its daring and skill.		adj.令人眼花缭乱的；耀眼的 动词dazzle的现在分词.		
+dazzling			7488		Things that are dazzling seem stunning and extraordinary — they impress you enormously. A dazzling circus act amazes you with its daring and skill.		adj.令人眼花缭乱的；耀眼的 动词dazzle的现在分词.		
 freight	[freɪt]	[freɪt]	7489		Like many nouns that can mean an action as well as an actual thing, freight refers to either the sending of goods or the goods themselves. It can also mean the charge for sending goods. You pay freight for the freight of your freight.		n.（货运）运费；货运；货物 vt.装货于；运送		
 stink	[stɪŋk]	[stɪŋk]	7490		When things stink, they smell terrible. If you throw food scraps in your kitchen trash can, it will eventually start to stink.		n.臭味；臭气 vi.发臭味；招人讨厌		
 demeanor	[dɪ'miːnə]	[dɪ'miːnə]	7491		Your demeanor is defined as being either your facial appearance or your behavior. When playing poker, don't let your demeanor give away how good your cards are.		n.行为；风度；举止		
@@ -5407,7 +5407,7 @@ longevity	[lɒn'dʒevəti]	[lɔːn'dʒevəti]	7763		Something with longevity has
 overlap	[ˌəʊvə'læp]	[ˌoʊvər'læp]	7764		When things overlap, part or all of one thing covers part or all of the other, like roofing shingles or flat noodles in a lasagna dish.		vt.重叠；重复 vi.有重叠部分 n.重叠部分；重复		
 muse	[mjuːz]	[mjuːz]	7765		As a verb, to muse is to consider something thoughtfully. As a noun, it means a person — especially a woman — who is a source of artistic inspiration.		v.沉思；冥想 n.沉思；[大写]（希腊神话）缪斯；艺术家的灵感；诗人		
 inflate	[ɪn'fleɪt]	[ɪn'fleɪt]	7766		Using your own breath or an air pump, you can inflate a balloon — or anything else you need to pump air into. When you inflate something you fill it with air (or any other gas) to make it expand.		vt.使膨胀；使得意；使通货膨胀 vi.膨胀		
-stunned	Br Am		7767		When you're stunned, you're thrown for a loop: either by shocking news or a blow to the head.		adj.震惊的；惊讶的 动词stun的过去式和过去分词.		
+stunned			7767		When you're stunned, you're thrown for a loop: either by shocking news or a blow to the head.		adj.震惊的；惊讶的 动词stun的过去式和过去分词.		
 infuse	[ɪn'fjuːz]	[ɪn'fjuːz]	7768		To infuse is to steep something in a liquid to extract the flavors from it. You'll impress your friends with your cooking if you infuse rosemary and thyme in broth and then use the liquid to marinate chicken.		vt.注入；使获得；鼓舞；泡制；倾注（液体）		
 trickle	['trɪkl]	['trɪkl]	7769		To trickle is to weakly flow out of something, like a faucet. A trickle is like a drip.		vi.滴流；慢慢移动 n.细流；徐徐地流		
 variant	['veəriənt]	['veriənt]	7770		A variant is another version of something. You could say chimps and apes and gorillas are variants in the primate family.		n.变体 adj.不同的		
@@ -5662,7 +5662,7 @@ insulin	['ɪnsjəlɪn]	['ɪnsəlɪn]	8007				n.胰岛素
 midday	[ˌmɪd'deɪ]	[ˌmɪd'deɪ]	8008		As a noun, the word midday refers to the middle of the day. You should avoid the sun at midday, especially if you have very fair skin.		n.正午；中午		
 barber	['bɑːbə(r)]	['bɑːrbər]	8009		A barber is a person whose job is cutting hair in a barbershop. Your barber might have a tendency to cut your hair a little shorter than you like.		n.理发师 vi.当理发师 vt.给…理发；修剪		
 unsafe	[ʌn'seɪf]	[ʌn'seɪf]	8010				adj.不安全的；危险的；靠不住的		
-Indonesian	Br Am		8011				n.印尼人；印尼语群 adj.印尼的		
+Indonesian			8011				n.印尼人；印尼语群 adj.印尼的		
 scant	[skænt]	[skænt]	8012		"Scant is an adjective that means ""a tiny amount,"" like your scant attendance at practice this week that results in being benched from the big game."		adj.不充分的；不足的 v.减缩；限制；忽略		
 rocker	['rɒkə(r)]	['rɑːkər]	8013				n. 摇轴； 套钩； 镰刀弯； 摇滚乐演奏者		
 liken	['laɪkən]	['laɪkən]	8014		When you liken one thing to another, you compare them and point out what they have in common. You might liken your long walk to school to your ancestors' voyage across the ocean to the New World.		v.比作；比拟；使像		
@@ -5728,7 +5728,7 @@ motivational	[ˌməʊtɪ'veɪʃənl]	[ˌməʊtɪ'veɪʃənl]	8071				adj.激发�
 motherhood	['mʌðəhʊd]	['mʌðərhʊd]	8072				n.母亲身份；母性		
 singular	['sɪŋɡjələ(r)]	['sɪŋɡjələr]	8073		If something is extraordinary, remarkable, or one of a kind, you can say it is singular. A singular opportunity to sing onstage with a rock star is a remarkable opportunity.		adj.单数的；奇特的；非凡的 n.单数		
 hypocrisy	[hɪ'pɒkrəsi]	[hɪ'pɑːkrəsi]	8074		People who go to church but don't believe in god? People who are vegetarians on a moral basis but wear leather jackets? They are engaging in hypocrisy, or behavior that is different from what they say they believe.		n.伪善		
-federally	Br Am		8075				adv.同盟地；联邦地；联邦政府地		
+federally			8075				adv.同盟地；联邦地；联邦政府地		
 amused	[ə'mjuːzd]	[ə'mjuːzd]	8076		"The word amused means ""pleasantly occupied"" or ""entertained.” If you love dogs, you’ll be amused just watching puppies frolic in the park all day. If you love everything, you’re easily amused."		adj.愉快的；顽皮的；被逗乐的；觉得好笑的		
 autism	['ɔːtɪzəm]	['ɔːtɪzəm]	8077		Autism is a mental condition that is marked by an absorption with the self, including difficulty relating to and communicating with other people and difficulty understanding abstract concepts. A person who has autism is described as “autistic.”		n.自闭症；孤独症		
 overt	[əʊ'vɜːt]	[oʊ'vɜːrt]	8078		Overt means open and done in plain sight. An overt attempt to get your teacher off-track might fail. Instead, try asking subtle questions about her kids, and she'll stay off topic all class.		adj.公开的；明显的；公然的		
@@ -5817,7 +5817,7 @@ rewarding	[rɪ'wɔːdɪŋ]	[rɪ'wɔːrdɪŋ]	8156				adj.有报酬的；有益�
 nausea	['nɔːziə]	['nɔːziə]	8157		When you feel like you might throw up, that's nausea. I know you're feeling sea sick, but if our boat sinks, nausea will be the least of your problems.		n.恶心；反胃；作呕；极端的厌恶		
 academically	[ˌækə'demɪkli]	[ˌækə'demɪkli]	8158				adv.学业上；学术上；理论上		
 asparagus	[ə'spærəɡəs]	[ə'spærəɡəs]	8159		Asparagus is a bright green vegetable that is tender and sweet when it's cooked. Asparagus grows straight up out of the ground in a spear shape.		n.芦笋		
-editing	Br Am		8160		Editing is when you make changes, especially to a written document, that improve the finished product. A good English teacher will tell you that editing is just as important as writing.		n.编辑 动词edit的现在分词形式.		
+editing			8160		Editing is when you make changes, especially to a written document, that improve the finished product. A good English teacher will tell you that editing is just as important as writing.		n.编辑 动词edit的现在分词形式.		
 optics	['ɒptɪks]	['ɑːptɪks]	8161				n.光学		
 horseback	['hɔːsbæk]	['hɔːrsbæk]	8162				n.马背 adv.在马背上地 adj.在马背上的；臆断的		
 fuss	[fʌs]	[fʌs]	8163		"If you are making a fuss, settle down! A fuss is a state of excitement, and it's usually about something not worth worrying or ""fussing"" about."		n.大惊小怪；小题大作；强烈不满或争吵 vi.无事自扰；焦急；对小事激动 vt.扰乱；使焦躁		
@@ -5913,7 +5913,7 @@ unthinkable	[ʌn'θɪŋkəbl]	[ʌn'θɪŋkəbl]	8249				adj.不可能的；难�
 lining	['laɪnɪŋ]	['laɪnɪŋ]	8250		When a different material covers the inside of something, like the clear membrane on the inner layer of an eggshell, you can call it a lining.		n.衬里；内层		
 grab	[ɡræb]	[ɡræb]	1329		When you grab something, you clutch at it. When a party-goer breaks open a piñata, the other guests usually grab wildly at the candy that cascades out of it.		v.抓住；攫取 n.抓取物；抓		
 beet	[biːt]	[biːt]	8251		A beet is a reddish-purple colored root vegetable. You can roast beets, slice them, and add them to a salad.		n.甜菜根；甜菜		
-framed	Br Am		8252		Something that's framed is surrounded by or held inside a frame. A framed photograph has a border around it, and is often behind a protective piece of glass.		adj.遭到陷害的 动词frame的过去式和过去分词.		
+framed			8252		Something that's framed is surrounded by or held inside a frame. A framed photograph has a border around it, and is often behind a protective piece of glass.		adj.遭到陷害的 动词frame的过去式和过去分词.		
 banish	['bænɪʃ]	['bænɪʃ]	8253		To banish is to get rid of. Think very carefully before you banish someone from your group. Someday, you may want that person around again.		vt.驱逐；流放；消除		
 gloom	[ɡluːm]	[ɡluːm]	8254		Gloom is a hazy darkness or dimness. The gloom of a moonless autumn evening is perfect for trick-or-treating, but not so perfect for sizing up your candy stash.		n.黑暗；阴暗；忧郁 v.(使)变黑；(使)变忧郁		
 salient	['seɪliənt]	['seɪliənt]	8255		If something stands out in a very obvious way, it can be called salient. It's time to find new friends if the differences between you and your current friends are becoming more and more salient.		adj.突出的；显著的；跳跃的 n.突出部分		
@@ -6444,7 +6444,7 @@ wilt	[wɪlt]	[wɪlt]	8754		When things droop from heat, lack of water, or illnes
 flowing	['fləʊɪŋ]	['floʊɪŋ]	8755				adj.流动的；平滑的 动词flow的现在分词形式.		
 termination	[ˌtɜːmɪ'neɪʃn]	[ˌtɜːrmɪ'neɪʃn]	8756		"Whether it refers to getting fired from a job, a contract running out, or the assassination of a deep-cover spy, termination is ""the end of the line."""		n.终止；结束；词尾；结果		
 faulty	['fɔːlti]	['fɔːlti]	8757		Something that's faulty is full of mistakes — it's wrong. Faulty logic often leads people to make terrible decisions, since they're based on an incorrect way of thinking.		adj.有缺陷的；不合格的；有错误的；有缺点的		
-unfairly	Br Am		8758				adv.不公平地；不正当地		
+unfairly			8758				adv.不公平地；不正当地		
 acquit	[ə'kwɪt]	[ə'kwɪt]	8759		To acquit someone is to clear them of charges. Acquitting also has to do with how you carry or present yourself.		v.宣布无罪；开释；原谅；表现		
 promised	['prɒmɪs]	['prɑːmɪs]	8760				n.诺言；预示；约定；(有)希望 v.允诺；发誓；答应；有希望		
 forceful	['fɔːsfl]	['fɔːrsfl]	8761		Something forceful is strong and firm. A politician's forceful speech is self-assured and energetic, and it makes the audience sit up and take notice.		adj.有力的；强烈的		
@@ -6474,7 +6474,7 @@ stakeholder	['steɪkhəʊldə(r)]	['steɪkhoʊldər]	8782		A stakeholder is a pe
 willow	['wɪləʊ]	['wɪloʊ]	8783				n.柳树；柳木制品		
 savage	['sævɪdʒ]	['sævɪdʒ]	8784		A polar bear in a zoo might look like an adorable giant stuffed animal, but if you met a hungry one in its native environment, it would seem more savage — wild and fierce — than cute.		adj.野性的；凶猛的；粗鲁的；荒野的；原始的 n.野蛮人；粗人；凶恶的人 vt.激烈抨击；猛烈攻击		
 clipping	['klɪpɪŋ]	['klɪpɪŋ]	8785				n.剪；剪报；剪取物；英语构词法中的截略法 v.动词clip的现在分词		
-mashed	Br Am		8786				adj.捣烂的 动词mash的过去式和过去分词形式.		
+mashed			8786				adj.捣烂的 动词mash的过去式和过去分词形式.		
 clinician	[klɪ'nɪʃn]	[klɪ'nɪʃn]	8787				n.临床医生		
 styling	['staɪlɪŋ]	['staɪlɪŋ]	8788				n.造型；式样；设计 动词style的现在分词.		
 mantra	['mæntrə]	['mæntrə]	8789		A mantra is a motivating chant, like the “I think I can, I think I can” you repeat over and over to yourself on the last stretch of every marathon you run.		n.口头禅；颂歌；咒语(尤指四吠陀经典内作为咒文或祷告唱念的)		
@@ -6604,7 +6604,7 @@ cornerback	['kɔːnəbæk]	['kɔːrnərbæk]	8908				n.(美式橄榄球)侧卫
 osteoporosis	[ˌɒstiəʊpə'rəʊsɪs]	[ˌɑːstioʊpə'roʊsɪs]	8909		Osteoporosis is a condition, most common in elderly women, of fragile, porous bones. Osteoporosis is the culprit behind many fractured bones and curved spines.		n.骨质疏松症		
 dearly	['dɪəli]	['dɪrli]	8910				adv.深深地；真挚地；昂贵地		
 exemplary	[ɪɡ'zempləri]	[ɪɡ'zempləri]	8911		Exemplary people excel at what they do and are excellent examples to others. Something exemplary is so good that it is an example for others to follow.		adj.可仿效的；模范的		
-mapping	Br Am		8912				n.绘图；[数]映象 动词map的现在分词形式.		
+mapping			8912				n.绘图；[数]映象 动词map的现在分词形式.		
 euro	['jʊərəʊ]	['jʊroʊ]	8913		The currency of money in most countries that belong to the European Union is called the euro. If you buy a cup of coffee in France, it may cost three euros.		n.欧元（符号€） adj.【大写】欧洲的，欧盟的		
 favorably	['feɪvərəblɪ]	['feɪvərəblɪ]	8914				adv.赞同地；亲切地；好意地 =favourably.		
 gleam	[ɡliːm]	[ɡliːm]	8915		A gleam is a bright flash of light. If you were lost on a dark, stormy night, you'd be hugely relieved to see the gleam of a roadside diner's sign up ahead.		v.闪烁；隐约地闪现 n.微光；闪光；闪现		
@@ -6628,7 +6628,7 @@ perverse	[pə'vɜːs]	[pər'vɜːrs]	8932		Something that's perverse is deviant 
 handmade	[ˌhænd'meɪd]	[ˌhænd'meɪd]	8933		Something that's handmade wasn't made by a machine, but formed, built, or constructed by an actual person. A handmade sweater from your grandma is one she knit herself.		adj.手工制作的		
 electronically	[ɪˌlek'trɒnɪkli]	[ɪˌlek'trɑːnɪkli]	8934				adv.电子地；通过电子手段		
 subsistence	[səb'sɪstəns]	[səb'sɪstəns]	8935		Subsistence means the minimal resources that are necessary for survival. If you work for subsistence, you'll probably receive food, water, and lodging (internet access not included).		n.生存；生计；存在		
-fragmented	Br Am		8936				adj.成碎片的；片断的		
+fragmented			8936				adj.成碎片的；片断的		
 babe	[beɪb]	[beɪb]	8937				n.小孩；不知世故的人；女孩(=girl)		
 legion	['liːdʒən]	['liːdʒən]	8938		A legion is a horde or a large number of people or things. It was originally a term for a military unit.		n.军团；众多的人 adj.很多的		
 proficiency	[prə'fɪʃnsi]	[prə'fɪʃnsi]	8939		If you have proficiency with something, you are pretty good at it. If you have proficiency with Spanish, you can understand and communicate well in that language.		n.熟练；精通		
@@ -7065,7 +7065,7 @@ improbable	[ɪm'prɒbəbl]	[ɪm'prɑːbəbl]	9349		Your parents might tell you i
 cringe	[krɪndʒ]	[krɪndʒ]	9350		"When you cringe, your body language shows you don't like what you see and hear. You close your eyes and grimace. You may even jerk your body away from the offensive sight or sound, like the old picture of you in an ""awkward stage"" that makes you cringe whenever you see it."		vi.畏缩；觉得尴尬不安或难为情；阿谀，奉承 n.畏缩；阿谀，奉承		
 climax	['klaɪmæks]	['klaɪmæks]	9351		When something — like a movie or piece of music — reaches its most important or exciting part, that's the climax. A climax is a high point.		n.高潮；极点；层进法；[生]顶极群落；巅峰，最高峰		
 trudge	[trʌdʒ]	[trʌdʒ]	9352		The noun trudge describes a long, difficult walk. You know those stories your grandparents tell about how they used to walk six miles uphill in the brutal cold every morning just to get to school? They're describing a trudge.		v.缓慢或吃力地走 n.长途跋涉		
-czar	Br Am		9353		Czar is a Russian word for ruler or emperor. Those kinds of czars are long gone, but we still use the word to describe people in charge of something important.		n.沙皇；独揽大权者		
+czar			9353		Czar is a Russian word for ruler or emperor. Those kinds of czars are long gone, but we still use the word to describe people in charge of something important.		n.沙皇；独揽大权者		
 breeder	['briːdə(r)]	['briːdər]	9354				n.饲养动物的人；培育植物的人；[核]增殖(反应)堆		
 smuggler	['smʌɡlə(r)]	['smʌɡlər]	9355				n.走私者		
 roadway	['rəʊdweɪ]	['roʊdweɪ]	9356				n.车行道		
@@ -7309,7 +7309,7 @@ eject	[i'dʒekt]	[i'dʒekt]	9578		It’s good to eject yourself from a burning s
 unauthorized	[ʌn'ɔːθəraɪzd]	[ʌn'ɔːθəraɪzd]	9579				adj.未经授权的；未经批准的		
 flatly	['flætli]	['flætli]	9580				adv.断然地；平淡地		
 marshal	['mɑːʃl]	['mɑːrʃl]	9581		A federal marshal knocks on your door. You panic: a marshal is a law officer. What do you do? You marshal your thoughts, that is, put them in order.		n.陆空军元帅；典礼官；司仪官 v.整顿；配置；汇集		
-staffing	Br Am		9582				n.安置职工；人员配备 动词staff的现在分词.		
+staffing			9582				n.安置职工；人员配备 动词staff的现在分词.		
 remarry	[ˌriː'mæri]	[ˌriː'mæri]	9583				v.(使)再婚		
 stipulate	['stɪpjuleɪt]	['stɪpjuleɪt]	9584		To stipulate something means to demand that it be part of an agreement. So when you make a contract or deal, you can stipulate that a certain condition must be met.		v.规定；保证 adj.有明文规定的		
 oatmeal	['əʊtmiːl]	['oʊtmiːl]	9585				n.燕麦片；燕麦粥；浅棕色		
@@ -7464,7 +7464,7 @@ neglected	[nɪ'ɡlektɪd]	[nɪ'ɡlektɪd]	9724		If you are neglected, no one giv
 onslaught	['ɒnslɔːt]	['ɑːnslɔːt]	9725		Onslaught is a military term that refers to an attack against an enemy. It's safe to say that no one wants to be caught on the receiving end of an onslaught, because there will be lots of danger, destruction and probably death.		n.猛攻；攻击；抨击		
 garner	['ɡɑːnə(r)]	['ɡɑːrnər]	9726		To garner means to gather or earn. If you want to run for office without belonging to a political party, you must garner enough signatures — usually a few thousand — to get onto the ballot.		v.贮藏；收集；得到 n.谷仓 Garner. n.加纳(姓氏)		
 schoolchild	['skuːltʃaɪld]	['skuːltʃaɪld]	9727				n.学童		
-militarily	Br Am		9728				adv.在军事上；从军事角度		
+militarily			9728				adv.在军事上；从军事角度		
 blah	[blɑː]	[blɑː]	9729				n.废话；蠢话；夸夸其谈；厌烦；烦躁、倦怠；不适；（电影等）不卖座 adj.无趣的；闷闷不乐的		
 eminent	['emɪnənt]	['emɪnənt]	9730		Anyone highly regarded or prominent is eminent. People that are eminent are giants in their field.		adj.著名的；卓越的		
 richly	['rɪtʃli]	['rɪtʃli]	9731				adv.完全地；丰富地；富裕地；浓厚地		
@@ -7630,7 +7630,7 @@ urgently	['ɜːdʒəntli]	['ɜːdʒəntli]	9886				adv.紧急的；迫切地
 penalize	['piːnəlaɪz]	['piːnəlaɪz]	9887				v.处罚；使不利		
 vice	[vaɪs]	[vaɪs]	9888		A vice is a moral failing or a bad habit. Traditional examples of vice include drinking alcohol, smoking tobacco, and gambling in card games.		n.缺点；恶习；邪恶；罪行；生理缺陷 adj.副的；代理的 prep.代替 pref.代理的；副的 n.老虎钳		
 vulgar	['vʌlɡə(r)]	['vʌlɡər]	9889		Someone who's vulgar has bad taste, and could also be called unrefined or unsophisticated. Your snobby neighbor might mutter about your family's vulgar taste if you paint your house with rainbow stripes.		adj.通俗的；粗俗的；乡土的 n.平民，百姓		
-improperly	Br Am		9890				adv.不正确地；不适当地		
+improperly			9890				adv.不正确地；不适当地		
 destabilize	[ˌdiː'steɪbəlaɪz]	[ˌdiː'steɪbəlaɪz]	9891		To destabilize something is to undermine it, or to make it much less stable. Seeming uncertain or confused can destabilize a teacher's ability to control a class.		v.使不稳定；使动摇		
 edgy	['edʒi]	['edʒi]	9892		If you're edgy, you're uptight, tense, or anxious. You might find yourself getting nervous and edgy right before you take a difficult test.		adj.急躁的；尖利的；刀口锐利的		
 wrongly	['rɒŋli]	['rɔːŋli]	9893				adv.错误地；不恰当地；不公正地		
@@ -7802,7 +7802,7 @@ fearless	['fɪələs]	['fɪrləs]	10049				adj.无畏的；大胆的；勇敢的
 manufactured	[mænjʊ'fæktʃəd]	[mænjʊ'fæktʃəd]	10050				adj.制成的；人造的 动词manufacture的过去式和过去分词.		
 barbed	[bɑːbd]	[bɑːrbd]	10051		Something that's barbed is sharp or spiky. Barbed wire has very sharp points at intervals along its length, to keep animals or people in (or out of) a yard.		adj.有倒钩的；有刺的；讽刺的 动词barb的过去式和过去分词.		
 dormant	['dɔːmənt]	['dɔːrmənt]	10052		That old dog was dormant for so long he was confused for a furry doormat, but a doormat is likely to stay dormant, or inactive, because it is lifeless: that old dog has some life in him yet.		adj.休眠的；睡眠的；静止的；潜伏的；匿名的；（动物等）冬眠的		
-Californian	Br Am		10053				n.加州人；加利福尼亚州人 adj.加州的		
+Californian			10053				n.加州人；加利福尼亚州人 adj.加州的		
 birch	[bɜːtʃ]	[bɜːrtʃ]	10054				n.桦树；桦木；用桦条抽打 v.用桦条抽打		
 manpower	['mænpaʊə(r)]	['mænpaʊər]	10055		Manpower is the total number of people who can work to get something done. How quickly you clean your house after a big party will depend on how much manpower you've got.		n.人力 Manpower. n.公司(财富500强公司之一；总部所在地美国；主要经营临时帮助)		
 disarmament	[dɪs'ɑːməmənt]	[dɪs'ɑːrməmənt]	10056				n.缴械；裁军		
@@ -8097,7 +8097,7 @@ exhale	[eks'heɪl]	[eks'heɪl]	10334		When you breathe, you inhale and exhale. I
 fray	[freɪ]	[freɪ]	10335		Fray is all about friction––a frayed rope has been rubbed so much its fibers are wearing away. People experiencing friction––fighting loudly––are involved in a fray.		v.恼火；紧张 v.磨损 n.吵闹；吵架；争斗 n.磨损处		
 manhood	['mænhʊd]	['mænhʊd]	10336		The word manhood describes both the adult period in a male human's life, and the qualities that make him a man. Some people believe that a boy reaches manhood when he hits puberty, while others maintain that manhood is based on becoming independent and responsible. Peter Pan just opted out.		n.成年；勇气；男子气概		
 childish	['tʃaɪldɪʃ]	['tʃaɪldɪʃ]	10337		If you act immature or bratty, you're being childish. A childish dinner guest might pout because you didn't make dessert.		adj.孩子气的；幼稚的		
-RBI	Br Am		10338				abbr.[棒球] Run Batted In；打点		
+RBI			10338				abbr.[棒球] Run Batted In；打点		
 discretionary	[dɪ'skreʃənəri]	[dɪ'skreʃəneri]	10339		Discretionary means it's up to you to decide. Bathing regularly is a discretionary act, so you can opt not to do it if you want; note, however, that your friends might disagree with us on this.		adj.自由裁量的；任意的， 自由决定的，酌情行事的， 便宜行事的		
 connecting	[kə'nektɪŋ]	[kə'nektɪŋ]	10340				adj.连接的 动词connect的现在分词. n.连接(套管)		
 generational	[ˌdʒenə'reɪʃənl]	[ˌdʒenə'reɪʃənl]	10341				adj.世代的		
@@ -8143,7 +8143,7 @@ cub	[kʌb]	[kʌb]	10378		A cub is a baby animal. A mother fox sometimes carries 
 allure	[ə'lʊə(r)]	[ə'lʊr]	10379		If you find yourself making eyes at that stranger across the coffee shop, chances are there is an allure about him or her — something mysteriously, powerfully attractive and tempting.		v.诱惑；吸引 n.诱惑力；吸引力		
 unruly	[ʌn'ruːli]	[ʌn'ruːli]	10380		Unruly means lacking in restraint or not submitting to authority. Spitballs, shouting kids, a shouting teacher––these are all signs of an unruly classroom. Often, one unruly student is all it takes.		adj.难控制的；无法无天的；任性的		
 distraught	[dɪ'strɔːt]	[dɪ'strɔːt]	10381		"If you are upset, you are distraught. If you want to explain why you are pulling your hair out, just utter ""Leave me alone; I'm distraught"" It'll work."		adj.心烦意乱；忧心如焚的；发狂的		
-Alaskan	Br Am		10382				adj.阿拉斯加的 n.阿拉斯加人		
+Alaskan			10382				adj.阿拉斯加的 n.阿拉斯加人		
 grassland	['ɡrɑːslænd]	['ɡræslænd]	10383				n.牧场；草地		
 quiet	['kwaɪət]	['kwaɪət]	1293		To be quiet means you don't make any noise. When you’re trying not to wake a sleeping lion, you will be quiet when you run by it.		adj.安静的；宁静的；平静的 n.安静；平静；闲适 vt.使平静；使安心 vi.平静下来		
 approximate	[ə'prɒksɪmət]	[ə'prɑːksɪmət]	10384		To approximate is to calculate the value of something based on informed knowledge. A computer program can approximate the value of a house based on square footage, number of rooms, year built, and other relevant factors.		adj.近似的；大约的 v.接近；约等于		
@@ -8212,7 +8212,7 @@ contracting	['kɒntræktɪŋ]	['kɒntræktɪŋ]	10446				adj.缔约的；收缩�
 temp	[temp]	[temp]	10447				n.临时雇员 v.临时做工 abbr.暂时的(=temporary) 温度(=temperature).		
 midway	[ˌmɪd'weɪ]	[ˌmɪd'weɪ]	10448		Anything midway between two points is halfway between them. A midway is also a place at a carnival where sideshow entertainment is located.		adj.中途的；中间的 adv.中途地；中间地 n.中途；中间；娱乐场；折中办法		
 attendee	[ˌæten'diː]	[ˌæten'diː]	10449		An attendee is a person who shows up at an event or meeting. If you go to your family reunion every summer, you can say you're a regular attendee.		n.出席者；在场者		
-Venetian	Br Am		10450				adj.威尼斯城的 n.威尼斯人		
+Venetian			10450				adj.威尼斯城的 n.威尼斯人		
 bullpen	['bʊlpen]	['bʊlpen]	10451		The bullpen is the small area on a baseball field where pitchers warm up, throwing practice pitches to a catcher. The bullpen is often situated in the foul zone along the side of the field.		n.牛栏；犯人候审间；[棒]候补球员练球区		
 exodus	['eksədəs]	['eksədəs]	10452		If the fire alarm goes off in your building, be sure to join the exodus of people who are heading outside to the parking lot. This is a departure of a large number of people.		n.大批的离去 Exodus：（《圣经·旧约》中的）出埃及记.		
 bystander	['baɪstændə(r)]	['baɪstændər]	10453				n.旁观者；看热闹的人；局外人		
@@ -9067,7 +9067,7 @@ gunner	['ɡʌnə(r)]	['ɡʌnər]	11283				n.炮手；枪手
 inescapable	[ˌɪnɪ'skeɪpəbl]	[ˌɪnɪ'skeɪpəbl]	11284		Something that's inescapable is impossible to get away from. A reluctant swimmer may stop trying to talk his mom out of making him go to swimming lessons once he realizes that learning to swim is inescapable.		adj.无法逃脱的；不可避免的		
 onlooker	['ɒnlʊkə(r)]	['ɑːnlʊkər]	11285				n.旁观者		
 pun	[pʌn]	[pʌn]	11286		A pun is a play on words. If a bird flying overhead takes a poop on the cake you’re carrying, you could say “Isn’t that just the icing on the cake!” But only if you want to be punny.		n.双关语 vt.说双关语		
-biologically	Br Am		11287				adv.生物学地		
+biologically			11287				adv.生物学地		
 aggregate	['æɡrɪɡət]	['æɡrɪɡət]	11288		To aggregate is to collect many units into one. If you're writing a novel, you might create a character who is an aggregate of five or six real people.		adj.合计的；总的 n.总计；进球总数；集料 v.（使）聚集；总计		
 immortality	[ˌɪmɔː'tæləti]	[ˌɪmɔːr'tæləti]	11289		If you achieve immortality that means you’ll live forever. If you find a magic potion, maybe you can literally live forever. Otherwise you’ll have to gain immortality by doing something so great that people never forget you.		n.不朽；永生		
 loudspeaker	[ˌlaʊd'spiːkə(r)]	[ˌlaʊd'spiːkər]	11290				n.扬声器；喇叭		
@@ -9091,7 +9091,7 @@ spook	[spuːk]	[spuːk]	11307				n.幽灵；间谍 vt.鬼怪般出没；吓唬�
 elongated	['iːlɒŋɡeɪtɪd]	[ɪ'lɔːŋɡeɪtɪd]	11308		Something that's elongated is stretched out, or extended so that it's longer than usual. Some painters, like El Greco, are known for their strange, elongated figures.		adj.细长的；拉长了的 动词elongate的过去式和过去分词形式.		
 stranded	['strændɪd]	['strændɪd]	11309		If you’re stuck somewhere with no way of getting anywhere else, you’re stranded. If you run out of gas while driving in the desert, you'll be stranded until someone finds you. Good luck!		adj.搁浅的；处于困境的 动词strand的过去式和过去分词.		
 compatibility	[kəmˌpætə'bɪləti]	[kəmˌpætə'bɪləti]	11310		Compatibility has to do with how people or things get along. A married couple should have a lot of compatibility; people who always argue don't have any.		n.和谐共处；协调；兼容		
-coloring	Br Am		11311				n.着色；特色 动词color的现在分词.		
+coloring			11311				n.着色；特色 动词color的现在分词.		
 manually	['mænjuəli]	['mænjuəli]	11312		Something that's done manually is done by hand, rather than by machine. If the recycling you leave by the curb is sorted manually, people divide it by hand into metal, plastic, glass, and paper.		adv.用手；手动地		
 kicker	['kɪkə(r)]	['kɪkər]	11313		A kicker is someone who kicks. It’s usually a football player, but even a donkey can be one. A kicker is also a surprise. You might know you have a test, but the kicker is that you have to take it blindfolded.		n.踢者；意外的结局；爱唱反调的人		
 agitation	[ˌædʒɪ'teɪʃn]	[ˌædʒɪ'teɪʃn]	11314		Agitation is the act of stirring things up, like the agitation of a washing machine that moves the water, detergent, and clothes around and gets the dirt out or the agitation of political activists who want people to work together to do something.		n.激动；鼓动；搅动		
@@ -9160,7 +9160,7 @@ nagging	['næɡɪŋ]	['næɡɪŋ]	11372				adj.纠缠不休的；抱怨的；唠
 brothel	['brɒθl]	['brɑːθl]	11373				n.妓院		
 digging	[dʌɡ]	[dʌɡ]	11374				n.挖 动词dig的现在分词.		
 bandwidth	['bændwɪdθ]	['bændwɪdθ]	11375				n.频带宽度；通带宽度		
-fractured	Br Am		11376				adj.断裂的 动词fracture的过去式和过去分词.		
+fractured			11376				adj.断裂的 动词fracture的过去式和过去分词.		
 auspice	['ɔːspɪs]	['ɔːspɪs]	11377				n.预兆；吉兆；赞助；主办		
 bloodstream	['blʌdstriːm]	['blʌdstriːm]	11378				n.血流		
 vulture	['vʌltʃə(r)]	['vʌltʃər]	11379		A vulture is a type of bird — with a bald head and neck — that feeds on dead animals.		n.秃鹰；兀鹰；贪婪的人		
@@ -9216,7 +9216,7 @@ mire	['maɪə(r)]	['maɪər]	11428		A mire is mushy ground like quicksand, so if
 burly	['bɜːli]	['bɜːrli]	11429		The adjective burly describes someone (usually male) who is muscular and beefy. Types of people that you might describe as burly? Football players, wrestlers, and bouncers at nightclubs.		adj.结实的；魁梧的		
 defensively	[dɪ'fensɪvli]	[dɪ'fensɪvli]	11430				adv.防御地；守势地		
 gymnasium	[dʒɪm'neɪziəm]	[dʒɪm'neɪziəm]	11431		A gymnasium is a place people go to exercise or participate in sports. Your neighborhood gymnasium might be a good place to play basketball, pump iron, or to check out the other gym rats.		n.体育馆；健身房 (复数）gymnasia或gymnasiums.		
-mmm	Br Am		11432				int.嗯		
+mmm			11432				int.嗯		
 panorama	[ˌpænə'rɑːmə]	[ˌpænə'ræmə]	11433		A panorama is a wide, unbroken view, or a picture of one. Pay more for your hotel room in Hawaii and you'll likely get a balcony with a picture perfect panorama of the ocean.		n.全景；全景画；概观；一连串景象或事物		
 trustworthy	['trʌstwɜːði]	['trʌstwɜːrði]	11434		Trustworthy describes something you can believe in — it's completely reliable. Your favorite newspaper can be trustworthy — they always print the truth — and people can be trustworthy too. You only tell your secrets to a trustworthy friend.		adj.可信赖的		
 trilogy	['trɪlədʒi]	['trɪlədʒi]	11435		If you’ve just started a trilogy of books, you’ll be reading for a while. A trilogy is something that has three parts, so you'll have three books to read.		n.三部曲		
@@ -9235,7 +9235,7 @@ marquee	[mɑː'kiː]	[mɑːr'kiː]	11446		A marquee is the roof-like overhang at
 drying	['draɪɪŋ]	['draɪɪŋ]	11447				n.弄干 动词dry的现在分词形式.		
 finder	['faɪndə(r)]	['faɪndər]	11448				n.发现者；探测器		
 whimsical	['wɪmzɪkl]	['wɪmzɪkl]	11449		Whimsical means full of or characterized by whims, which are odd ideas that usually occur to you very suddenly. If you decide at the last minute to fly to Europe, you could say you went there on a whim.		adj.异想天开的；古怪的；反复无常的		
-Croat	Br Am		11450				n.克罗地亚人；克罗地亚语 adj.克罗地亚人的；克罗地亚语的		
+Croat			11450				n.克罗地亚人；克罗地亚语 adj.克罗地亚人的；克罗地亚语的		
 style	[staɪl]	[staɪl]	874		Artists, musicians, and even chefs have their own personal style — a word used to describe the unique ways in which people express themselves.		n.文体；风格；式样；时尚；类型		
 grinder	['ɡraɪndə(r)]	['ɡraɪndər]	11451				n.磨工；研磨器；磨床		
 mounting	['maʊntɪŋ]	['maʊntɪŋ]	11452				adj.逐渐增加的 n.底托；上马；架设 动词mount的现在分词.		
@@ -9277,7 +9277,7 @@ ordain	[ɔː'deɪn]	[ɔːr'deɪn]	11485		An ordained minister is one who's been 
 pep	[pep]	[pep]	11486				n.活力；锐气 v.鼓舞精神；使精力充沛		
 stiffly	[stɪfli]	[stɪfli]	11487		Use the adverb stiffly to describe something that's done in an awkward or rigid way. If you stiffly introduce yourself to your new neighbor, you're a little inept about it, not very graceful or smooth.		adv.顽固地；僵硬地；拘谨地		
 unaffected	[ˌʌnə'fektɪd]	[ˌʌnə'fektɪd]	11488		When bad weather or a mean aunt or some other force takes over and you still don't change, you're unaffected. If your party was unaffected by the rain and Aunt Emma's no-fun attitude, then everyone probably had a good time.		adj.不受影响的；不矫揉造作的；自然的		
-checkbook	Br Am		11489				n.支票簿 =chequebook.		
+checkbook			11489				n.支票簿 =chequebook.		
 vestige	['vestɪdʒ]	['vestɪdʒ]	11490		Vestige is an elegant word. It's all about shadows, and gives us a way to talk about traces or reminders of something that has disappeared or is disappearing.		n.丝毫；遗迹；痕迹；退化的器官		
 discernible	[dɪ'sɜːnəbəl]	[dɪ'sɜːrnəbəl]	11491		Discernible means noticeable. If your extra hours training are having no discernible influence on your basketball game, it means your game has not changed.		adj.可辨别的		
 khaki	['kɑːki]	['kɑːki]	11492				n.卡其布；土黄色 adj.卡其布的；土黄色的		
@@ -9321,7 +9321,7 @@ arcane	[ɑː'keɪn]	[ɑːr'keɪn]	11529		Something arcane is understood or known
 quail	[kweɪl]	[kweɪl]	11530		Smaller than the chicken and not as well known as the pigeon, quail is like the often-overlooked middle child of the ground-dwelling bird family. Quail can also mean to cringe in fear or pain. So if you are a quail, you might quail at the thought of quail-hunting season.		n.鹌鹑 vi.畏缩；胆怯		
 err	[ɜː(r)]	[er]	11531		Err is just a formal way of saying you've made a mistake or done something wrong. A married man might err by going on a date with another woman, but he will surely feel the repercussions of his wrongdoing when he gets home!		v.犯错；做错		
 overdose	['əʊvədəʊs]	['oʊvərdoʊs]	11532				n.配药量过多；过量 v.（使）服过量的药		
-observational	Br Am		11533				adj.根据观察的；监视的		
+observational			11533				adj.根据观察的；监视的		
 covering	['kʌvərɪŋ]	['kʌvərɪŋ]	11534				n.覆盖物 adj.掩护的；掩盖的		
 renegade	['renɪɡeɪd]	['renɪɡeɪd]	11535		A renegade is a person who has deserted their cause or defied convention; they're rebels and sometimes outlaws, or even traitors.		n.叛徒；变节者；判党者		
 assisted	[ə'sɪst]	[ə'sɪst]	11536				vt.帮助；协助 vi.帮助；出席 n.帮助；协助；助攻；协助的器械		
@@ -9333,7 +9333,7 @@ dredge	[dredʒ]	[dredʒ]	11540		When a harbor becomes filled with silt, you dred
 caterpillar	['kætəpɪlə(r)]	['kætərpɪlər]	11541		A caterpillar is a fuzzy, worm-like insect that transforms into a butterfly or a moth. Many caterpillars are striped and colorful.		n.毛虫 Caterpillar. n.卡特彼勒(财富500强公司之一；总部所在地美国；主要经营工业农业设备)		
 doc	[dɒk]	[dɑːk]	11542				abbr.数据控制工作室工作人员（=Data Optimizing Computer）		
 instil	[ɪn'stɪl]	[ɪn'stɪl]	11543				v.逐步渗透；逐渐灌输 =instill.		
-personalized	Br Am		11544				adj.标出名字的 动词personalize的过去式和过去分词形式.		
+personalized			11544				adj.标出名字的 动词personalize的过去式和过去分词形式.		
 semblance	['sembləns]	['sembləns]	11545		Semblance is all about illusion. Cramming all of your dirty clothes into the closet gives the semblance, or false appearance, that you've done your laundry — but the stench might give you away.		n.假象；类似；外观；假装；外表		
 blunder	['blʌndə(r)]	['blʌndər]	11546		A blunder is an embarrassing mistake. Accidentally called your new boyfriend by your old boyfriend's name? Ouch. That's a blunder you don't want to repeat.		n.大错 v.失策；绊倒；弄糟		
 hoax	[həʊks]	[hoʊks]	11547		If you put on big fake feet, stomp through your muddy backyard and tell everyone you saw Bigfoot fixing a steak on your grill, you are playing a hoax on your friends.		v.欺骗；哄骗；愚弄 n.愚弄人；恶作剧		
@@ -9449,7 +9449,7 @@ beep	[biːp]	[biːp]	11652		A beep is a brief warning sound. You might give a qu
 constitutionally	[ˌkɒnstɪ'tjuːʃənəlɪ]	[ˌkɒnstə'tuːʃənəlɪ]	11653				adv.按宪法规定的；本质地；天生地；体质上		
 implied	[ɪm'plaɪd]	[ɪm'plaɪd]	11654				adj.含蓄的；暗含的；暗示的 动词imply的过去式和过去分词.		
 intercom	['ɪntəkɒm]	['ɪntərkɑːm]	11655		"An intercom is a device that makes it possible for people to communicate between different rooms or areas of a building. Airplanes use intercoms so the pilot can tell passengers, ""Fasten your seat belts!"""		n.对讲机		
-reformed	Br Am		11656				adj.改革过的；新教的；在行为和性格上改进的；改革派的 动词reform的过去式和过去分词.		
+reformed			11656				adj.改革过的；新教的；在行为和性格上改进的；改革派的 动词reform的过去式和过去分词.		
 gouge	[ɡaʊdʒ]	[ɡaʊdʒ]	11657		Gouge means stealing by overcharging. If your local gas station puts the price of gas way up because a storm is coming, you may say that the station owner gouges prices — and that's illegal.		v.用圆凿子挖；挖出；欺骗 n.圆凿；凿；凿孔；欺诈		
 inefficiency	[ˌɪnɪ'fɪʃntənsi]	[ˌɪnɪ'fɪʃntənsi]	11658				n.无效率；无能		
 tote	[təʊt]	[toʊt]	11659		A tote is a bag or basket used to carry things. Toting also refers to lugging things around.		vt.携带；手提；搬运 n.手提；装载 n.【英】（赛马、赛狗的）赌金计算器		
@@ -9501,12 +9501,12 @@ uncontrolled	[ˌʌnkən'trəʊld]	[ˌʌnkən'troʊld]	11702				adj.不受抑制�
 nozzle	['nɒzl]	['nɑːzl]	11703		A nozzle is the spout at the end of a hose that water flows through.		n.喷嘴		
 banned	[bæn]	[bæn]	11704		When something is banned, it's illegal or not allowed. If you're wearing a banned t-shirt to school, it means there's a rule forbidding that particular kind of shirt.		v.禁止；剥夺权利 n.禁令；禁止		
 cashmere	['kæʃmɪə(r)]	['kæʒmɪr]	11705		Cashmere is an extremely soft wool that comes from a particular kind of goat. The goat itself is also called a cashmere.		n.开士米；山羊绒；软毛织物		
-minimally	Br Am		11706				adv.最低限度地；最低程度地		
+minimally			11706				adv.最低限度地；最低程度地		
 flaunt	[flɔːnt]	[flɔːnt]	11707		"Flaunt is ""to display proudly or show off,"" like when you flaunt your new Italian leather jacket by wearing it to the beach and pretending you're cold to make sure everyone sees it."		v.挥动；夸耀；（厚颜无耻地）炫耀；飘扬；张扬		
 apex	['eɪpeks]	['eɪpeks]	11708		When there's no mountain left to climb and nothing but blue sky above, you know you've reached the highest peak — the apex.		n.顶点；最高点；尖端		
 slant	[slɑːnt]	[slænt]	11709				n.倾斜；斜面；个人的观点或见解；倾向性；偏见 vt.使倾斜；歪曲 vi.倾斜		
 tortoise	['tɔːtəs]	['tɔːrtəs]	11710				n.龟		
-crumpled	Br Am		11711				adj.弯扭的；变皱的 动词crumple的过去式和过去分词形式.		
+crumpled			11711				adj.弯扭的；变皱的 动词crumple的过去式和过去分词形式.		
 payout	['peɪaʊt]	['peɪaʊt]	11712				n.支出；花费		
 hip	[hɪp]	[hɪp]	2307		Your hip is the area of your body at the top and side of your thigh, beside your pelvis. You might have a habit of closing the refrigerator door by bumping it with your hip.		n.臀部；髋；屋脊 adj.时髦的；通晓的 int.（欢呼声）嘿		
 repressed	[rɪ'prest]	[rɪ'prest]	11713		If something is repressed, it's restrained or held in. You may be full of repressed anger toward your brother over that terrifying incident from 4 years ago involving the frog and your hooded sweatshirt.		adj.感情被压抑的；不能公开表达的 动词repress的过去式和过去分词.		
@@ -9537,7 +9537,7 @@ minister	['mɪnɪstə(r)]	['mɪnɪstər]	1707		You might meet a minister of the 
 pennant	['penənt]	['penənt]	11736				n.长三角旗；信号旗；奖旗		
 hotline	['hɒtlaɪn]	['hɑːtlaɪn]	11737				n.电话咨询服务专线；热线；各国政府首脑之间通话的热线		
 eleventh	[ɪ'levnθ]	[ɪ'levnθ]	11738				n.第十一 adj.第十一的；十一分之一的		
-Parisian	Br Am		11739				n.巴黎人 adj.巴黎（人）的		
+Parisian			11739				n.巴黎人 adj.巴黎（人）的		
 siding	['saɪdɪŋ]	['saɪdɪŋ]	11740				n.壁板；墙板；铁路旁轨；侧线 动词side的现在分词形式.		
 chassis	['ʃæsi]	['ʃæsi]	11741		A chassis is the frame of a car. If you warp the chassis of your mom’s car when you make a Dukes of Hazzard jump, she's going to be mad. Pronounce chassis CHASS-ee (singular) and CHASS-eez (plural).		n.底盘；底架；起落架		
 miniseries	['mɪnisɪəriːz]	['mɪnisɪriːz]	11742				n.电视连续短剧		
@@ -9628,7 +9628,7 @@ evocative	[ɪ'vɒkətɪv]	[ɪ'vɑːkətɪv]	11824		Use the adjective evocative w
 acronym	['ækrənɪm]	['ækrənɪm]	11825		Are the members of your after-school club tripping over the title “Organization for Lovers of Apple Pie”? Why not use each of the words’ first letters to make an acronym, and call it OFLOAP? There, that’s better.		n.首字母缩略词		
 swipe	[swaɪp]	[swaɪp]	11826				v.重击；猛打；偷窃；在解码器上刮刷（信用卡等卡） n.重击；猛打；尖刻的评论		
 exhibitor	[ɪɡ'zɪbɪtə(r)]	[ɪɡ'zɪbɪtər]	11827				n.展出者；参展者；提出人		
-unbelievably	Br Am		11828				adv.难以相信地		
+unbelievably			11828				adv.难以相信地		
 observable	[əb'zɜːvəbl]	[əb'zɜːrvəbl]	11829				adj.可观察到的；值得注意的；可遵守的 n.[物]可观察量(观察符号)		
 charging	[tʃɑːdʒɪŋ]	['tʃɑːdʒɪŋ]	11830				n.充电；装料；炉料 动词charge的现在分词形式.		
 oceanic	[ˌəʊʃi'ænɪk]	[ˌoʊʃi'ænɪk]	11831				adj.海洋的；海洋产出的；无垠的		
@@ -9869,7 +9869,7 @@ looking	['lʊkɪŋ]	['lʊkɪŋ]	12062				adj.有 ... 样子的；有 ... 相貌�
 decode	[ˌdiː'kəʊd]	[ˌdiː'koʊd]	12063		When you translate a message from symbols or code into language, you decode it. British code breakers worked during World War II to decode Germany's coded messages.		v.解码；译解；译码		
 teeming	['tiːmɪŋ]	['tiːmɪŋ]	12064		Teeming means completely full, especially with living things. If your grandmother's apartment is teeming with cats, she sure has a lot of them.		adj.充满的；热闹的；丰富的 动词teem的现在分词形式.		
 dialectic	[ˌdaɪə'lektɪk]	[ˌdaɪə'lektɪk]	12065		Dialectic is a formal system of reasoning that arrives at the truth through the exchange of logical arguments.		n.逻辑论证法；辩证法 adj.辩证的		
-Andean	Br Am		12066				adj.安第斯山脉的 n.安第斯山人		
+Andean			12066				adj.安第斯山脉的 n.安第斯山人		
 persevere	[ˌpɜːsɪ'vɪə(r)]	[ˌpɜːrsə'vɪr]	12067		Use the verb persevere when you want to persist in anything and continue despite difficulties or obstacles.		v.坚持；不屈不挠		
 embroider	[ɪm'brɔɪdə(r)]	[ɪm'brɔɪdər]	12068		"To embroider means to decorate with needlework. Picture your great grandmother's pillowcases or Hester Prynne's famous scarlet letter ""A"" — both of those objects are probably embroidered."		v.刺绣；镶边；装饰		
 traditionalist	[trə'dɪʃənəlɪst]	[trə'dɪʃənəlɪst]	12069		A traditionalist wants things to stay the same. If you prefer vinyl albums to MP3 players, you just might be a traditionalist.		n.传统主义者；因循守旧者 adj.传统的；因循守旧的		
@@ -10129,7 +10129,7 @@ innocuous	[ɪ'nɒkjuəs]	[ɪ'nɑːkjuəs]	12316		Something that's innocuous isn'
 sherry	['ʃeri]	['ʃeri]	12317				n.雪利酒		
 Algerian	[æl'dʒɪəriən]	[æl'dʒɪriən]	12318				adj.阿尔及利亚的 n.阿尔及利亚人		
 blackened	['blækən]	['blækən]	12319				v.(使)变黑；诽谤		
-issuer	Br Am		12320				n.发行者；开发票据的人		
+issuer			12320				n.发行者；开发票据的人		
 Guatemalan	[ˌɡwɑːtə'mɑːlən]	[ˌɡwɑːtə'mɑːlən]	12321				adj.危地马拉的 n.危地马拉人		
 codify	['kəʊdɪfaɪ]	['kɑːdɪfaɪ]	12322		To codify is to arrange information in a logical order that others can follow. Legislators may try to codify, or gather and organize, all laws related to a particular issue to make it easier to understand.		v.把…编成法典；整理；编纂		
 mascot	['mæskət]	['mæskɑːt]	12323		"A mascot is an animal or character that represents a group. If your high school soccer team is called ""the weasels,"" it means that a weasel must be your school's mascot."		n.吉祥物；幸运儿		
@@ -10218,7 +10218,7 @@ gill	[ɡɪl]	[ɡɪl]	12399		A gill is the body part that helps a fish breathe un
 toothpaste	['tuːθpeɪst]	['tuːθpeɪst]	12400				n.牙膏		
 slither	['slɪðə(r)]	['slɪðər]	12401		Slither means to move in a sideways motion, usually silently. Snakes, of all kinds, slither, from the original snake in the Garden of Eden, to that untrustworthy-looking individual who approaches you in the street.		v.（使）滑行；（使）滑动		
 agile	['ædʒaɪl]	['ædʒl]	12402		On water skis she was agile and made sharp turns and long arcs cutting through the water, but she was a lot less agile on the snowboard, landing on her face and hands as she clunked down the slopes.		adj.（动作）敏捷的；灵活的；（头脑）机灵的		
-widowed	Br Am		12403				adj.寡居的；鳏居的 动词widow的过去式和过去分词.		
+widowed			12403				adj.寡居的；鳏居的 动词widow的过去式和过去分词.		
 prank	[præŋk]	[præŋk]	12404		Pretending to be someone else on the phone or putting a whoopee cushion on someone's chair are two very old types of a prank, or practical joke, played at someone else's expense.		n.开玩笑；恶作剧；戏谑 v.盛装；装饰；打扮		
 hoarse	[hɔːs]	[hɔːrs]	12405		A hoarse voice is deep and rough and kind of hard to make out. People get hoarse when they're sick, or when they are calling in sick to work.		adj.沙哑的；嘶哑的；刺耳的		
 septic	['septɪk]	['septɪk]	12406		Septic is connected to dangerous waste products. If your house is not connected to your town or city's sewer, your waste from drains and toilets goes into a septic tank.		adj.腐败的；败血的		
@@ -10259,7 +10259,7 @@ bunch	[bʌntʃ]	[bʌntʃ]	2360		A group or cluster of something is a bunch. It c
 qualifying	[k'wɒlɪfaɪɪŋ]	[k'wɒlɪfaɪɪŋ]	12439				adj.使具有资格的 动词qualify的现在分词形式.		
 blob	[blɒb]	[blɑːb]	12440				n.小圆块；小斑点；一滴 v.弄脏		
 retro	['retrəʊ]	['retroʊ]	12441				adj.（时装或化妆）重新流行的 n.减速火箭(=retrorocket)；重新流行 pref.表示“向后”、“回归”、“在后面”		
-entrepreneurship	Br Am		12442				n.企业家身份；企业家精神；创业精神		
+entrepreneurship			12442				n.企业家身份；企业家精神；创业精神		
 developmentally	[dɪ'veləpmənt]	[dɪ'veləpmənt]	12443				n.发展；开发；生长；进展；[摄]显影；新开发区		
 eastward	['iːstwəd]	['iːstwəd]	12444				adj.向东的 adv.向东 n.东面		
 game	[ɡeɪm]	[ɡeɪm]	250		A game is a contest or pastime. Football, checkers, Monopoly, volleyball, Ms. Pacman — they're all fun games to play.		n.游戏；运动会；比赛；一场比赛；比赛得分；猎物；花招 v.赌博 adj.勇敢的；乐意的；跛的		
@@ -10315,7 +10315,7 @@ gratefully	['ɡreɪtfəli]	['ɡreɪtfəli]	12492				adv.感激地
 springtime	['sprɪŋtaɪm]	['sprɪŋtaɪm]	12493				n.春季；青春期；初期		
 biochemical	[ˌbaɪəʊ'kemɪkl]	[ˌbaɪəʊ'kemɪkl]	12494		Something that's biochemical relates to chemical processes that occur in living beings, like the chemical reactions in your body.		adj.生物化学的		
 pallet	['pælət]	['pælət]	12495		Pallet is a busy noun, but it’s mainly a slab or framework of wood used for carrying things. The most common type of pallet is the kind used to move cargo.		n.简陋的小床；托盘		
-underpinning	Br Am		12496				n.支撑；建筑物下面的基础；支柱 动词underpin的现在分词.		
+underpinning			12496				n.支撑；建筑物下面的基础；支柱 动词underpin的现在分词.		
 psychoanalysis	[ˌsaɪkəʊə'næləsɪs]	[ˌsaɪkoʊə'næləsɪs]	12497		Psychoanalysis is a type of long-term therapy that explores the origins of a patient's mental state.		n.心理分析		
 quarantine	['kwɒrəntiːn]	['kwɔːrəntiːn]	12498		If you contract something highly infectious, such as pinkeye, please quarantine yourself so that you don’t infect others with it. This means you’ll have to stay in isolation and avoid contact with other people.		n.隔离；检疫期间；封锁交通；四十天 vt.检疫；停止交涉 vi.检疫		
 playfully	['pleɪfəli]	['pleɪfəli]	12499				adv.开玩笑地		
@@ -10368,7 +10368,7 @@ turret	['tʌrət]	['tɜːrət]	12543		A turret is a small tower that is taller t
 coolly	['kuːlli]	['kuːlli]	12544		When you do or say something coolly, it's done with a calm smoothness. If your friend is struggling to get the lid off a jar, you might take it from him, tap it on the counter, and coolly unscrew the lid.		adv.冷冷地；沉着地		
 stammer	['stæmə(r)]	['stæmər]	12545		"To stammer — or to have a stammer — is to speak haltingly and to have trouble getting the words out. A stammer is also called a ""stutter."""		vi.口吃；结巴 vt.结结巴巴地说 n.结巴；口吃		
 conspicuously	[kən'spɪkjuəsli]	[kən'spɪkjuəsli]	12546		When you do something conspicuously, you do it in a way that's very obvious or easy to see. If you're conspicuously reading a novel during math class, your teacher will probably notice.		adv.明显地；惹人注目地		
-donut	Br Am		12547		A donut is a round, deep fried cake, usually with a hole in the center. Your favorite breakfast might be a chocolate donut and a cup of coffee.		n.炸面圈		
+donut			12547		A donut is a round, deep fried cake, usually with a hole in the center. Your favorite breakfast might be a chocolate donut and a cup of coffee.		n.炸面圈		
 cleverly	['klevəli]	['klevəli]	12548				adv.聪明地		
 quasar	['kweɪzɑː(r)]	['kweɪzɑːr]	12549		A quasar is a starlike object in space that may emit energy, light, and radio waves.		n.类星体		
 squatter	['skwɒtə(r)]	['skwɑːtər]	12550				n.未经允许即住下来的人；蹲着的人；新开垦地的定居者		
@@ -10423,7 +10423,7 @@ infrequently	[ɪn'friːkwəntli]	[ɪn'friːkwəntli]	12596				adv.罕见地；�
 detract	[dɪ'trækt]	[dɪ'trækt]	12597		If you detract from something — like an achievement or an opinion or an object — you take away some of its value or diminish it. That dent in the door of your car may detract from its overall value.		vi.减损 vt.转移		
 vortex	['vɔːteks]	['vɔːrteks]	12598		Think vortex and picture a tornado or whirlpool — swirling around, causing destruction.		n.漩涡；旋风		
 husk	[hʌsk]	[hʌsk]	12599				n.外壳；皮；无用之物；支架 v.剥壳；削皮		
-interrelated	Br Am		12600				adj.相关的 动词interrelate的过去式和过去分词形式.		
+interrelated			12600				adj.相关的 动词interrelate的过去式和过去分词形式.		
 affectionately	[ə'fekʃənətli]	[ə'fekʃənətli]	12601				adv.热情地；体贴地		
 externally	[ɪk'stɜːnəli]	[ɪk'stɜːnəli]	12602				adv.外部地；外面地；外表上地		
 stubble	['stʌbl]	['stʌbl]	12603		Stubble is the prickly hair that grows back after being shaved. You might find stubble on a man's chin or on a woman's leg.		n.短须；麦茬		
@@ -10648,7 +10648,7 @@ freshness	[freʃnəs]	[freʃnəs]	12820				n.新鲜；精神饱满
 befall	[bɪ'fɔːl]	[bɪ'fɔːl]	12821		Befall is an old-fashioned or literary way of saying something happened by chance. Bad luck befalls a heroine who drops her lucky rabbit foot.		v.发生；降临		
 custodian	[kʌ'stəʊdiən]	[kʌ'stoʊdiən]	12822		You may know the custodian at your school — the person who's in charge of taking care of the building, in keeping it clean, making sure the heat works, and the roof doesn't leak.		n.管理人；保管人；监护人		
 genealogy	[ˌdʒiːni'ælədʒi]	[ˌdʒiːni'ælədʒi]	12823		Your genealogy is the story of your ancestry, sometimes referred to as your family tree. Most Americans can trace their genealogy back to Europe, Africa, and Asia, but that's not a hard and fast rule.		n.家系；宗谱		
-likable	Br Am		12824		A likable person is agreeable and friendly. It's very easy to be fond of someone who's likable.		adj.可爱的；值得喜欢的		
+likable			12824		A likable person is agreeable and friendly. It's very easy to be fond of someone who's likable.		adj.可爱的；值得喜欢的		
 countdown	['kaʊntdaʊn]	['kaʊntdaʊn]	12825				n.倒数计秒		
 incessant	[ɪn'sesnt]	[ɪn'sesnt]	12826		Something incessant continues without interruption. When you're on a cross country flight, it's tough to tolerate the incessant crying of a baby.		adj.不断的；无尽的		
 rotating	[rəʊ'teɪtɪŋ]	[rəʊ'teɪtɪŋ]	12827				adj.旋转的 动词rotate的现在分词.		
@@ -10768,11 +10768,11 @@ discouraging	[dɪs'kʌrɪdʒɪŋ]	[dɪs'kʌrɪdʒɪŋ]	12937				adj.令人气馁
 grading	['ɡreɪdɪŋ]	['ɡreɪdɪŋ]	12938		When your teacher stays up until four in the morning assigning scores to student work, that's the grading of papers. Grading can also mean smoothing a surface, as in grading a lawn before planting seeds.		n.等级；分阶段；坡度缓和 动词grade的现在分词.		
 affluence	['æfluəns]	['æfluəns]	12939		Affluence means great wealth and abundance, such as the great riches found by ancient explorers who exploited the new worlds of North and South America.		n.富裕		
 documented	['dɒkjʊməntɪd]	['dɒkjʊməntɪd]	12940		Something that is documented has been written down or recorded. Even if you cannot yet bench-press your 500-pound goal, keeping a written log of your workout schedule at least ensures that your fitness efforts are documented.		adj.备有证明文件的；有执照的 动词document的过去式和过去分词形式.		
-Kenyan	Br Am		12941				n.肯尼亚人 adj.肯尼亚共和国(人)的		
+Kenyan			12941				n.肯尼亚人 adj.肯尼亚共和国(人)的		
 throbbing	[θrɒbɪŋ]	[θrɒbɪŋ]	12942				adj.跳动的；悸动的 动词throb的现在分词.		
 Nordic	['nɔːdɪk]	['nɔːrdɪk]	12943				adj.(尤指斯堪的纳维亚的)北欧的；北欧人的；[体育]北欧两项滑雪的 n.北欧人；有北欧身形特征的人		
 dabble	['dæbl]	['dæbl]	12944		You dabble when you are a little bit involved in an activity, such as an art form or a hobby. Maybe you only dabble in mystery novels, but you are very knowledgeable about comic books.		v.喷洒；玩水；泼溅；涉猎；浅尝		
-Pulitzer	Br Am		12945				n.普利策(Joseph；生于匈牙利的美国新闻业经营者)		
+Pulitzer			12945				n.普利策(Joseph；生于匈牙利的美国新闻业经营者)		
 tycoon	[taɪ'kuːn]	[taɪ'kuːn]	12946		If you are meeting with someone who is considered a tycoon in his industry, keep in mind that he is very successful and probably accustomed to high-stakes negotiations.		n.企业界的大亨；（日本幕府的）将军		
 blower	['bləʊə(r)]	['bloʊər]	12947				n.鼓风机；吹风机		
 agility	[ə'dʒɪləti]	[ə'dʒɪləti]	12948		Agility is the ability to be quick and graceful. You might have agility on the basketball court or in the courtroom, or even with your gaming remote.		n.敏捷；灵活；轻快		
@@ -10967,7 +10967,7 @@ traumatize	['trɔːmətaɪz]	['traʊmətaɪz]	13126				vt.使受损伤；使受�
 sonnet	['sɒnɪt]	['sɑːnɪt]	13127		A sonnet is a poem, often a love poem, of 14 rhyming lines. Is that a love letter from your secret admirer or a formal sonnet?		n.十四行诗		
 cameo	['kæmiəʊ]	['kæmioʊ]	13128		If your friend gives you a piece of jewelry that has a raised carving of a face in profile showing all the curves and shapes, that’s called a cameo.		n.刻有浮雕的宝石或贝壳；（文艺或戏剧）小品；小品文		
 excluding	[ɪk'skluːdɪŋ]	[ɪk'skluːdɪŋ]	13129				prep.除…之外 动词exclude的现在分词形式.		
-cobblestone	Br Am		13130				n.（常用复数）圆石；鹅卵石		
+cobblestone			13130				n.（常用复数）圆石；鹅卵石		
 potted	['pɒtɪd]	['pɑːtɪd]	13131				adj.盆栽的；罐装的；摘要的；喝醉的 动词pot的过去式和过去分词形式		
 rampage	['ræmpeɪdʒ]	['ræmpeɪdʒ]	13132		A rampage is when a group of people is destructive and out of control, like an angry, violent riot following an unpopular political decision.		n.暴怒；狂暴行为 v.狂暴地乱冲		
 impotence	['ɪmpətəns]	['ɪmpətəns]	13133		Impotence is the state of being weak or unable to accomplish something, like the impotence a broom in clearing a foot of snow from your sidewalk.		n.无能；[医]阳萎		
@@ -11056,7 +11056,7 @@ elated	[i'leɪtɪd]	[i'leɪtɪd]	13213		If you're elated you aren't just happy �
 null	[nʌl]	[nʌl]	13214		Null means having no value; in other words null is zero, like if you put so little sugar in your coffee that it’s practically null. Null also means invalid, or having no binding force.		adj.无效的；无价值的；无效力的 n.零；空 vt.使无效		
 thoroughfare	['θʌrəfeə(r)]	['θɜːroʊfer]	13215		A thoroughfare is a public road that can get you from one place to another. When it snows, plows try to remove the snow from the thoroughfares so the school busses can take everyone to school. You’re welcome.		n.通路；大道		
 errant	['erənt]	['erənt]	13216		Something or someone described as errant has gone astray or done wrong by going in an unexpected direction. An errant bird might end up in northern Canada while his friends fly to southern Mexico for the winter.		adj.错误的；脱离正途的；漫游的		
-spectacularly	Br Am		13217				adv.壮观地；令人吃惊地；引人注目地		
+spectacularly			13217				adv.壮观地；令人吃惊地；引人注目地		
 laundering	['lɔːndərɪŋ]	['lɔːndərɪŋ]	13218				n.洗烫 动词launder的现在分词形式.		
 concluding	[kən'kluːdɪŋ]	[kən'kluːdɪŋ]	13219		"The adjective concluding means ""bringing to a close,"" or ""final."" If you're writing a mystery novel, you'll want to reveal in your concluding chapter the person whodunit."		adj.结束的		
 quarter	['kwɔːtə(r)]	['kwɔːrtər]	1264		A quarter is one-fourth of something. If you cut a pizza into four pieces and share it with three friends, each of you will eat a quarter of the pizza.		n.四分之一；一刻钟；一季；25美分；区；方向 v.四等分 adj.四分之一的		
@@ -11081,7 +11081,7 @@ omelet	['ɒmlɪt]	['ɒmlɪt]	13237				n.煎蛋；鸡蛋卷
 effortless	['efətləs]	['efərtləs]	13238		Something effortless is easy to do — or at least appears that way. Great basketball players make scoring three-point shots look effortless. If you always know just what to wear, you have an effortless sense of style.		adj.容易的；不费力气的；应付自如的		
 paleontologist	[pælɪɒn'tɒlədʒɪst]	[pælɪɒn'tɒlədʒɪst]	13239		A paleontologist is a scientist who studies fossils. If your basement is filled with fossils found while out on hikes, then you're an amateur paleontologist.		n.古生物学者 =palaeontologist.		
 bicker	['bɪkə(r)]	['bɪkər]	13240		When you bicker, you argue in a petty way, like two kids squabbling in the backseat on a long car trip, or politicians taking cheap shots at each other but avoiding discussion of important issues.		v.斗嘴；闪烁；发出潺潺声 n.口角；潺潺流水声		
-tenderly	Br Am		13241				adv.温柔地；柔和地		
+tenderly			13241				adv.温柔地；柔和地		
 bemoan	[bɪ'məʊn]	[bɪ'moʊn]	13242		"Some people love to complain, don't they? Complainers also tend to bemoan things, which can be translated to ""Oh no! Why me?"""		v.悲叹；哀叹；叹息；为 ... 惋惜；认为遗憾		
 clique	[kliːk]	[kliːk]	13243		A clique is an exclusive group of people or friends. Before Rudolph pulled Santa's sled through the fog, the clique of flying reindeer never let him play their reindeer games.		n.派系；小集团		
 pedophile	['piːdəʊfaɪl]	['piːdoʊfaɪl]	13244		A pedophile is someone who's sexually attracted to children. Some pedophiles also rape or molest children. There's nothing much worse than a pedophile.		n.恋童癖者		
@@ -11203,7 +11203,7 @@ spurn	[spɜːn]	[spɜːrn]	13357		If you reject your mother's offer to buy you a
 unwarranted	[ʌn'wɒrəntɪd]	[ʌn'wɔːrəntɪd]	13358		When something is unwarranted it's not called-for under the given circumstances. For example, debating the merits of someone's talent is one thing, but calling them stupid is unwarranted.		adj.无根据的；不必要的；未经授权的；无保证的		
 acquittal	[ə'kwɪtl]	[ə'kwɪtl]	13359		"Acquittal is a legal word that defendants love to hear because it means ""not guilty."""		n.开释；宣告无罪		
 lyric	['lɪrɪk]	['lɪrɪk]	13360		The word lyric claims its emotional place in music and poetry, with the words to a song being called the lyrics, while A lyric poem is one steeped in personal emotions, making it song-like.		adj.抒情的 n.抒情诗；歌词		
-predetermined	Br Am		13361				adj.预订的 动词predetermine的过去式和过去分词形式.		
+predetermined			13361				adj.预订的 动词predetermine的过去式和过去分词形式.		
 transformative	[ˌtræns'fɔːmətɪv]	[ˌtræns'fɔːmətɪv]	13362				adj.起改造作用的；有改革能力的		
 pander	['pændə(r)]	['pændər]	13363		If a campaigning politician wants to pander to a crowd of pet owners, he might deliver a speech while embracing his own pet poodle. To pander is to appease or gratify, and often in a negative, self-serving way.		v.迎合；拉皮条 n.拉皮条者		
 motivator	['məʊtɪveɪtə(r)]	['məʊtɪveɪtə(r)]	13364				n.激发因素；动因		
@@ -11290,7 +11290,7 @@ perfectionist	[pə'fekʃənɪst]	[pər'fekʃənɪst]	13443		A perfectionist is s
 noxious	['nɒkʃəs]	['nɑːkʃəs]	13444		Something noxious is harmful and could be even fatal — whether it is colorless, odorless, and invisible like carbon monoxide, or dark, strong-smelling, and obvious, like black smoke from a fire. People are called noxious too when they hurt others with cruelty or mental anguish.		adj.有害的；有毒的		
 pivot	['pɪvət]	['pɪvət]	13445		To pivot is to turn or rotate, like a hinge. Or a basketball player pivoting back and forth on one foot to protect the ball.		n.枢；中心；旋转 adj.在枢轴上转动的；关键的 vt.装枢轴于；以 ... 为中心 vi.在枢轴上转动		
 dispersal	[dɪ'spɜːsl]	[dɪ'spɜːrsl]	13446		Dispersal is the act of spreading something around. This could be positive (like a dispersal of money) or negative (like a dispersal of a crowd because of a bomb).		n.散布；传播；分散；疏散区		
-Siberian	Br Am		13447				adj.西伯利亚的 n.西伯利亚人		
+Siberian			13447				adj.西伯利亚的 n.西伯利亚人		
 aerosol	['eərəsɒl]	['erəsɔːl]	13448		An aerosol is a substance released in very fine mist, like oven cleaner or air freshener. An aerosol contains tiny particles of liquid or solid suspended within a gas.		n.浮质；喷雾剂；气溶胶		
 morbidity	[mɔː'bɪdəti]	[mɔː'bɪdəti]	13449		"The noun morbidity means ""the quality of being unhealthful."" If you can't watch your sister's morbidity get any worse, you might sign her up with a nutritionist and a personal trainer."		n.病态；发病率		
 shaking	['ʃeɪkɪŋ]	['ʃeɪkɪŋ]	13450				n.摇动；震动 动词shake的现在分词.		
@@ -11301,7 +11301,7 @@ atrium	['eɪtriəm]	['eɪtriəm]	13454		If you're in the atrium of a building, y
 perceptive	[pə'septɪv]	[pər'septɪv]	13455		If someone calls you perceptive, they mean you are good at understanding things or figuring things out. Perceptive people are insightful, intelligent, and able to see what others cannot.		adj.敏感的；有洞察力的；感知的		
 legalization	[ˌliːgəlaɪ'zeɪʃ]	[ˌliːɡlːə'zeɪʃən]	13456				n.合法化；公认		
 cyst	[sɪst]	[sɪst]	13457		A cyst is a small growth that forms in the body. That squishy, fluid-filled mass on your calf could be a cyst.		n.包囊；囊肿 pref.表示“囊、胞”		
-detectable	Br Am		13458		If you can or ought to be able to notice something, it's detectable. An odor in your fridge is detectable. Or, there can be a detectable coolness in someone's behavior toward you.		adj.可发现的；可察觉的；可探测出的		
+detectable			13458		If you can or ought to be able to notice something, it's detectable. An odor in your fridge is detectable. Or, there can be a detectable coolness in someone's behavior toward you.		adj.可发现的；可察觉的；可探测出的		
 righteousness	['raɪtʃəsnəs]	['raɪtʃəsnəs]	13459		Righteousness is a feeling or way of life that is all about doing the right thing: righteousness shows great concern for morals and ethics.		n.正当；正义；正直 形容词righteous的名词形式.		
 ethereal	[i'θɪəriəl]	[i'θɪriəl]	13460		Ethereal is something airy and insubstantial, such as a ghostly figure at the top of the stairs. It might also be something delicate and light, like a translucent fabric, or a singer’s delicate voice.		adj.天上的；飘逸的；精致的；飘渺的；乙醚的		
 swine	[swaɪn]	[swaɪn]	13461		A swine is a pig or a big ol’ nasty hog. Swine have short legs, thick bodies, and they eat just about anything. If someone acts like a pig, call him a swine.		n.猪；令人不快的人或事		
@@ -11347,7 +11347,7 @@ censure	['senʃə(r)]	['senʃər]	13500		Censure is a noun referring to very str
 cultured	['kʌltʃəd]	['kʌltʃərd]	13501		A cultured person usually enjoys art, music, expensive restaurants, and other things considered fancy or educated.		adj.人工培养的；有教养的 动词culture的过去式和过去分词形式.		
 musty	['mʌsti]	['mʌsti]	13502		Musty is an unclean, stale and possibly moldy smell. If something smells musty that means it’s probably been sitting in a damp corner without any air for a little too long.		adj.发霉的；霉臭的；落伍的		
 resounding	[rɪ'zaʊndɪŋ]	[rɪ'zaʊndɪŋ]	13503				adj.响亮的；巨大的；令人瞩目的 动词resound的现在分词形式.		
-Audubon	Br Am		13504				n.奥杜邦		
+Audubon			13504				n.奥杜邦		
 predation	[prɪ'deɪʃn]	[prɪ'deɪʃn]	13505		Predation is the act of preying on someone or something, especially when you're talking about animals. Nature shows can be hard to watch when they show the predation of an animal on a smaller, cuter animal.		n.掠食		
 neoliberal	[ˌniːəʊ'lɪbərəl]	[ˌniːoʊ'lɪbərəl]	13506				n.新自由主义者；[ Neoliberalism ]的相关形容词		
 hopper	['hɒpə(r)]	['hɑːpər]	13507		A hopper is a funnel-shaped device used to move material from one receptacle to another.		n.跳跃者（物或昆虫）；储料器；贮煤槽 Hopper. n.霍伯(人名)		
@@ -11671,7 +11671,7 @@ invoice	['ɪnvɔɪs]	['ɪnvɔɪs]	13817		An invoice is an itemized statement of 
 inflationary	[ɪn'fleɪʃənri]	[ɪn'fleɪʃəneri]	13818				adj.通货膨胀的		
 preponderance	[prɪ'pɒndərəns]	[prɪ'pɑːndərəns]	13819		If there's a preponderance of something, there is A LOT of it. If you are a prosecutor, you are looking for a preponderance of evidence to convince the jury that the defendant is guilty.		n.优势；多数		
 pantheon	['pænθiən]	['pænθiɑːn]	13820		In the pantheon of great movie stars, Marilyn Monroe might well be considered the brightest of them all. The actual Pantheon was a temple built by the Romans — but we use it to mean any group of exalted figures.		n.万神殿；众神；名流；伟人		
-saber	Br Am		13821		A saber is an old fashioned sword with a curved blade. Saberswere used in many historic battles, including the Napoleonic Wars in the early 19th century.		n.军刀；佩剑 v.用马刀砍 =sabre(美).		
+saber			13821		A saber is an old fashioned sword with a curved blade. Saberswere used in many historic battles, including the Napoleonic Wars in the early 19th century.		n.军刀；佩剑 v.用马刀砍 =sabre(美).		
 deceit	[dɪ'siːt]	[dɪ'siːt]	13822		Deceit is purposeful falsehood. If you want to keep your true love true to you, avoid any acts of deceit.		n.欺骗；诡计；不诚实		
 Balkan	['bɒlkən]	['bɒlkən]	13823				n.巴尔干半岛 adj.巴尔干半岛的；巴尔干人的		
 issuing	['ɪʃuː]	['ɪʃuː]	13824				n.议题；问题；期刊号；一次发行额；发行；子女 v.发表；公布；正式发给；发行；流出		
@@ -11686,7 +11686,7 @@ amiable	['eɪmiəbl]	['eɪmiəbl]	13832		A friendly, pleasant person could be de
 toy	[tɔɪ]	[tɔɪ]	2152				n.玩具		
 Tamil	['tæmɪl]	['tæmɪl]	13833				n.坦米尔人；坦米尔语 adj.坦米尔人的；坦米尔语的		
 adage	['ædɪdʒ]	['ædɪdʒ]	13834		"An adage is a saying, a noun that hasn't traveled far from its Latin root, aio meaning ""I say."" Moms and dads love adages such as ""early to bed early to rise"" and ""an apple a day keeps the doctor away."""		n.格言；谚语；古话		
-mm	Br Am		13835				abbr.毫米(=millimeter)		
+mm			13835				abbr.毫米(=millimeter)		
 shelve	[ʃelv]	[ʃelv]	13836				v.放在架子上；搁置；倾斜		
 sampler	['sɑːmplə(r)]	['sæmplər]	13837				n.刺绣样本；集锦；采样员；取样器		
 psychoanalytic	[ˌsaɪkəʊˌænə'lɪtɪk]	[ˌsaɪkəʊˌænə'lɪtɪk]	13838				adj.心理分析的 =psychoanalytical.		
@@ -11768,7 +11768,7 @@ chewing	[t'ʃuːɪŋ]	[t'ʃuːɪŋ]	13909				n.咀嚼 动词chew的现在分词.
 fragility	[frə'dʒɪləti]	[frə'dʒɪləti]	13910		Fragility is a state of being delicate or breakable. The fragility of your grandmother's juice glasses might make you nervous about taking even one sip.		n.脆弱；虚弱；易碎		
 powered	['paʊəd]	['paʊərd]	13911				adj.装有发动机的；有动力装置的；产生动力的 动词power的过去式和过去分词形式.		
 nightstand	['naɪtstænd]	['naɪtstænd]	13912				n. 床头几		
-defector	Br Am		13913				n.背叛者；叛离者		
+defector			13913				n.背叛者；叛离者		
 impressed	[ɪm'pres]	[ɪm'pres]	13914		"If you're impressed, then you like what you see or you feel like saying, ""wow!"" People are impressed by brains, beauty, money, and lots of other qualities."		n.印记；印象；特征 v.使 ... 有印象；影响；印刻；传送		
 payday	['peɪdeɪ]	['peɪdeɪ]	13915				n.发薪日；支付日；交割日		
 orgy	['ɔːdʒi]	['ɔːrdʒi]	13916		If you have an orgy of presents or snacks or even new ideas, you have so many it's almost obscene. In this figurative use, orgy means an event where there is just too much of a good thing!		n.纵酒狂欢；放荡		
@@ -11829,7 +11829,7 @@ hiding	['haɪdɪŋ]	['haɪdɪŋ]	13970				n.隐藏；躲藏；痛打 动词hide�
 irritated	['ɪrɪteɪtɪd]	['ɪrɪteɪtɪd]	13971		When you're irritated, you're annoyed. You'd probably be irritated if someone ate the leftover Indian food that you were saving for lunch.		adj.恼怒的 动词irritate的过去式和过去分词.		
 concise	[kən'saɪs]	[kən'saɪs]	13972		If something is concise, it's short and gets right to the point. A concise edition of your diary might be 50 pages of the most important entries.		adj.简明的；简要的		
 boisterous	['bɔɪstərəs]	['bɔɪstərəs]	13973		Boisterous is a word used to describe someone spirited, loud, and slightly out of control — like someone with a spring in their step and a song in their heart singing to strangers on the street.		adj.喧闹的；狂暴的		
-environmentalism	Br Am		13974				n.环境保护论		
+environmentalism			13974				n.环境保护论		
 passively	['pæsɪvli]	['pæsɪvli]	13975				adv.被动地；顺从地		
 deceptively	[dɪ'septɪvli]	[dɪ'septɪvli]	13976				adv.骗人地；靠不住地；虚伪地		
 bile	[baɪl]	[baɪl]	13977		In medicine, bile is a fluid secreted by the liver and used to help breakdown fats. Because it used to be associated with anger, feeling your bile rise is the same as feeling mounting anger.		n.胆汁；坏脾气；愤怒		
@@ -11943,7 +11943,7 @@ extradition	[ˌekstrə'dɪʃn]	[ˌekstrə'dɪʃn]	14080		A legal word, extraditi
 bourgeoisie	[ˌbʊəʒwɑː'ziː]	[ˌbʊrʒwɑː'ziː]	14081		This word is used to describe a class of people who fall somewhere between the lowest and highest classes. Bourgeoisie is often used insultingly.		n.中产阶级；资产阶级		
 dank	[dæŋk]	[dæŋk]	14082		You can describe something that is unpleasantly cool, damp, and clammy as dank. If you have ever visited a cave or unfinished basement, you know how a dank place feels. Yuck.		adj.阴湿的 n.潮湿；沼泽地		
 hitherto	[ˌhɪðə'tuː]	[ˌhɪðər'tuː]	14083		Use the adverb hitherto when you're describing a state or circumstance that existed up until now. If you find a hitherto undiscovered hidden tunnel in your cellar, you're the first to discover it.		adv.到目前为止；迄今		
-dryly	Br Am		14084		If you say something dryly, you say it in a funny but matter-of-fact way. Your friend's dryly humorous comments might be your favorite thing about watching soap operas with him.		adv.冷淡地；讽剌地；枯躁无味地 =drily.		
+dryly			14084		If you say something dryly, you say it in a funny but matter-of-fact way. Your friend's dryly humorous comments might be your favorite thing about watching soap operas with him.		adv.冷淡地；讽剌地；枯躁无味地 =drily.		
 protectionism	[prə'tekʃənɪzəm]	[prə'tekʃənɪzəm]	14085				n.贸易保护主义		
 disrespectful	[ˌdɪsrɪ'spektfl]	[ˌdɪsrɪ'spektfl]	14086		"Disrespectful words and actions are rude and show a lack of respect. If you want to ""dis"" someone, be disrespectful towards them."		adj.无礼的；不尊敬的		
 jasmine	['dʒæzmɪn]	['dʒæzmɪn]	14087				n.茉莉；淡黄色		
@@ -11989,7 +11989,7 @@ rescind	[rɪ'sɪnd]	[rɪ'sɪnd]	14122		If get a call saying a company has decide
 tanned	[tæn]	[tæn]	14123				n.棕褐色；黝黑 v.晒黑；鞣(革)；痛打 adj.棕褐色的		
 gruff	[ɡrʌf]	[ɡrʌf]	14124		Gruff is an abrupt or forbidding tone. It's the kind of short, brusque response you'd give a telemarketer who called you in the middle of dinner — right before you hung up.		adj.粗鲁的；生硬的；粗糙的；粗哑的		
 unintentionally	[ˌʌnɪn'tenʃənəli]	[ˌʌnɪn'tenʃənəli]	14125				adv.非故意地		
-tainted	Br Am		14126		If something's tainted, it's ruined or spoiled. If you leave milk on the counter overnight, it could be tainted. But a charity that uses its funds to buy board members tropical vacations could also be considered tainted.		adj.感染的；污染的 动词taint的过去式和过去分词.		
+tainted			14126		If something's tainted, it's ruined or spoiled. If you leave milk on the counter overnight, it could be tainted. But a charity that uses its funds to buy board members tropical vacations could also be considered tainted.		adj.感染的；污染的 动词taint的过去式和过去分词.		
 sweatshop	['swetʃɒp]	['swetʃɑːp]	14127		A sweatshop is a factory where workers are exploited and not allowed to unionize. You might not sweat in a sweatshop, but you probably work hard and under lousy conditions.		n.血汗工厂(工作条件恶劣而工资低的工厂)		
 slog	[slɒɡ]	[slɑːɡ]	14128		When you slog, you toil at something, working hard and often slowly to get a difficult job done. You might slog with your shovel through the pile of snow in your driveway.		v.艰难行进；猛击；苦干；决出胜负 n.苦工；长途跋涉		
 moot	[muːt]	[muːt]	14129		When a point is moot, it's too trivial to think about. If your basketball team loses by 40 points, the bad call by the official in the first quarter is moot: it isn't important.		n.大会；讨论会；辩论会 adj.未决议的；抽象论的 v.使成为无实用性的东西		
@@ -12034,7 +12034,7 @@ eroding	[ɪ'rəʊd]	[ɪ'roʊd]	14167				vt.腐蚀；侵蚀；逐步毁坏，削�
 winter	['wɪntə(r)]	['wɪntər]	1123				n.冬季；冬天 adj.冬天的；冬季生长的 vi.过冬 vt.对 ... 进行过冬保护		
 illusory	[ɪ'luːsəri]	[ɪ'luːsəri]	14168		If something is based on something that is not real, you can say it is illusory. Tales of seeing Elvis and Big Foot eating together at McDonalds are probably based on an illusory experience.		adj.虚幻的；幻觉的		
 hydroelectric	[ˌhaɪdrəʊɪ'lektrɪk]	[ˌhaɪdroʊɪ'lektrɪk]	14169				adj.水力发电的		
-Chechen	Br Am		14170				n.车臣 adj.车臣的		
+Chechen			14170				n.车臣 adj.车臣的		
 heretofore	[ˌhɪətu'fɔː(r)]	[ˌhɪrtu'fɔːr]	14171		"When someone says heretofore, they're describing things that have happened up to the present moment. This formal word means ""thus far"" and often appears in legal or other official documents."		adv.以前；迄今为止		
 sojourn	['sɒdʒən]	['soʊdʒɜːrn]	14172		A sojourn is a short stay or visit. If you want a fancy way to say that you took a trip to the countryside, you might talk about your country sojourn.		n.旅居；逗留 v.旅居；逗留		
 inappropriately	[ˌɪnə'prəʊpriətli]	[ˌɪnə'prəʊpriətli]	14173				adv.不适当地		
@@ -12085,7 +12085,7 @@ barbershop	['bɑːbəʃɒp]	['bɑːrbərʃɑːp]	14217		A barbershop is one of t
 jaded	['dʒeɪdɪd]	['dʒeɪdɪd]	14218		If you've done something so much that it doesn't excite you anymore but just leaves you tired, consider yourself jaded. If someone says you look a little jaded, it just means that you look tired.		adj.疲倦不堪的；厌倦或缺乏热情的		
 vindication	[ˌvɪndɪ'keɪʃn]	[ˌvɪndɪ'keɪʃn]	14219		Vindication is a sweet thing — when you get vindication, you've been proven right or justified in doing something. Everyone accused of a crime craves vindication.		n.辩护；证明无罪或正确；洗冤；证实		
 lazily	['leɪzɪlɪ]	['leɪzɪlɪ]	14220				adv.懒惰地；慢吞吞地		
-Salvadoran	Br Am		14221				adj.萨尔瓦多的(萨尔瓦多人的) n.萨尔瓦多(萨尔瓦多人)		
+Salvadoran			14221				adj.萨尔瓦多的(萨尔瓦多人的) n.萨尔瓦多(萨尔瓦多人)		
 tryout	['traɪaʊt]	['traɪaʊt]	14222				n.测验；试用；试验；预赛		
 outstrip	[ˌaʊt'strɪp]	[ˌaʊt'strɪp]	14223		While outstrip might make you think about undressing, it really means outdoing. If the productivity of your garden outstrips your neighbor's, expect the neighborhood to come calling for fresh vegetables.		v.超过；跑过		
 reposition	[ˌriːpə'zɪʃən]	[ˌriːpə'zɪʃən]	14224				n.新位置；储藏 vt.调换位置；保存		
@@ -12220,7 +12220,7 @@ wimp	[wɪmp]	[wɪmp]	14347				n.懦弱的人；无用的人
 betrayed	[bɪ'treɪ]	[bɪ'treɪ]	14348				vt.背叛；出卖；泄露；显露		
 dissonance	['dɪsənəns]	['dɪsənəns]	14349		Disagreeable sounds can be called dissonance. You know it's dissonance if you have the strong desire to cover your ears with your hands.		n.不一致；不和谐 [音]不协和音.		
 refractor	[rɪ'fræktə(r)]	[rɪ'fræktər]	14350				n.折射媒体；折射望远镜；折射透镜		
-geologic	Br Am		14351				adj.地质的		
+geologic			14351				adj.地质的		
 elucidate	[i'luːsɪdeɪt]	[i'luːsɪdeɪt]	14352		If you elucidate something, you explain it very clearly. If you don't understand fractions, a visit to the pie shop may elucidate the subject for you.		v.阐明；说明		
 lubricant	['luːbrɪkənt]	['luːbrɪkənt]	14353				n.润滑剂		
 fuselage	['fjuːzəlɑːʒ]	['fjuːsəlɑːʒ]	14354		The main part of an airplane — the part in which you sit as a passenger — is called the fuselage. Your luggage rides in the fuselage too.		n.机身		
@@ -12295,7 +12295,7 @@ landed	['lændɪd]	['lændɪd]	14421				adj.拥有土地的；不动产的 动�
 metaphorically	[ˌmetə'fɒrɪkli]	[ˌmetə'fɒrɪkli]	14422				adv.用比喻地		
 cam	[kæm]	[kæm]	14423				abbr.计算机辅助制造=computer-aided manufacturing n.凸轮		
 rump	[rʌmp]	[rʌmp]	14424				n.[鸟]尾部；[兽]臀部；余党		
-shh	Br Am		14425				int.嘘；安静一点		
+shh			14425				int.嘘；安静一点		
 forgery	['fɔːdʒəri]	['fɔːrdʒəri]	14426		If you painted a copy of the Mona Lisa and sold it to a museum, claiming it was the original, your painting could be called a forgery, and the crime you've committed is also forgery.		n.伪造；伪造罪；伪造物		
 lymphoma	[lɪm'fəʊmə]	[lɪm'foʊmə]	14427				n.淋巴瘤		
 raider	['reɪdə(r)]	['reɪdər]	14428				n.袭击者；侵入者；袭击用的飞机或舰艇；抢劫者		
@@ -12330,12 +12330,12 @@ trove	[trəʊv]	[troʊv]	14456				n.贵重发现物；珍藏品
 mackerel	['mækrəl]	['mækrəl]	14457				n.鲭；鲭鱼		
 peculiarity	[pɪˌkjuːli'ærəti]	[pɪˌkjuːli'ærəti]	14458				n.特质；特性；怪癖；古怪		
 liquidate	['lɪkwɪdeɪt]	['lɪkwɪdeɪt]	14459		If you liquidate something, you get rid of it. When a huge retailer has to close all of its stores, it liquidates everything, meaning the inventory and even the shelves and display cases are sold to bargain-hunters, to raise money for the company to pay its debts.		v.清算；清偿；消除		
-tinted	Br Am		14460				adj.带色彩的 动词tint的过去式和过去分词.		
+tinted			14460				adj.带色彩的 动词tint的过去式和过去分词.		
 blanch	[blɑːntʃ]	[blæntʃ]	14461		To blanch is to turn pale, usually as the result of a physical or psychological shock. Nineteenth century literary heroines were frequently blanching — before they fainted, that is.		v.漂白；（使）变白；烫洗		
 posterity	[pɒ'sterəti]	[pɑː'sterəti]	14462		"Posterity is a noun meaning ""future generations."" These people of the future could be your children and great-great grandchildren, or any people who are born after you."		n.后代		
 stumbling	['stəmblɪŋ]	['stəmblɪŋ]	14463				adj.蹒跚的；阻碍的 动词stumble的现在分词.		
 methamphetamine	[ˌmeθæm'fetəmiːn]	[ˌmeθæm'fetəmiːn]	14464				n.[药]甲基苯丙胺；脱氧麻黄碱（中枢兴奋药）		
-figuratively	Br Am		14465		The adverb figuratively describes something symbolic, not actual. If a friend invites you to tonight's concert but you already have plans with your family, you might say — figuratively — that your hands are tied.		adv.比喻地；借喻地		
+figuratively			14465		The adverb figuratively describes something symbolic, not actual. If a friend invites you to tonight's concert but you already have plans with your family, you might say — figuratively — that your hands are tied.		adv.比喻地；借喻地		
 bullish	['bʊlɪʃ]	['bʊlɪʃ]	14466				adj.似牡牛的；看涨的；上扬的；乐观的		
 cappuccino	[ˌkæpu'tʃiːnəʊ]	[ˌkæpu'tʃiːnoʊ]	14467		A cappuccino is a hot drink made with espresso and steamed milk. You might order a cappuccino at your favorite neighborhood cafe.		n.热牛奶咖啡；卡布其诺		
 beefy	['biːfi]	['biːfi]	14468		Someone who's beefy has a big, dense, muscular body. Your beefy, loud-voiced gym teacher might turn out to be a sweet and thoughtful person.		adj.强壮的；装满的；装满牛肉的		
@@ -12409,7 +12409,7 @@ demoralize	[dɪ'mɒrəlaɪz]	[dɪ'mɔːrəlaɪz]	14534		The verb demoralize desc
 chastity	['tʃæstəti]	['tʃæstəti]	14535		If you practice chastity, it means you aren’t having sex of any kind, perhaps because you’re waiting until you get married, or maybe because you believe sex is evil.		n.贞节；纯洁		
 amends	[ə'mendz]	[ə'mendz]	14536		So you blew the surprise party by mentioning it in passing to the birthday girl. Now, you have to do something to make amends, or reparations, to the boyfriend who worked all day to set up the party.		n.赔偿；赔罪；补偿 名词amend的复数形式.		
 decadent	['dekədənt]	['dekədənt]	14537		If your friend vacations in lavish hotels, wears thousand-dollar shoes, and refuses to eat cheese that costs less than $20 an ounce, you might say her lifestyle is decadent.		adj.堕落的；颓废的；衰落的 n.堕落者；颓废派艺术家		
-Aztec	Br Am		14538				n.阿芝特克人；阿芝特克语 adj.阿芝特克人的；阿芝特克语的		
+Aztec			14538				n.阿芝特克人；阿芝特克语 adj.阿芝特克人的；阿芝特克语的		
 leasing	[liːsɪŋ]	[liːsɪŋ]	14539				n.出租 动词lease的现在分词.		
 motorcade	['məʊtəkeɪd]	['moʊtərkeɪd]	14540		A motorcade is a line of cars traveling together, usually slowly and ceremonially. If the President comes to town, you are bound to see a motorcade.		n.(汽)车队		
 peep	[piːp]	[piːp]	14541				n.瞥见；偷看；初现 n.吱吱叫 v.窥视；慢慢露出 v.吱吱叫		
@@ -12490,7 +12490,7 @@ projecting	[prə'dʒektɪŋ]	[prə'dʒektɪŋ]	14612				adj.突出的；伸出�
 opulent	['ɒpjələnt]	['ɑːpjələnt]	14613		"Opulent is a word that you will hear a lot around rich people looking to show off. ""Remember the opulent buffet at Carrie’s sweet sixteen? Sixteen chocolate cakes iced in gold leaf!"""		adj.富裕的；充足的		
 allowable	[ə'laʊəbl]	[ə'laʊəbl]	14614				adj.容许的；可减免(的税收部分)		
 crossfire	['krɒsfaɪə(r)]	['krɔːsfaɪər]	14615		Crossfire is when weapons are being fired from different directions, crossing the same general area. Getting caught in crossfire during a shootout can be deadly.		n.交叉火力；困境；相互指责；串报		
-enraged	Br Am		14616		To be enraged is to be full of anger. Enraged people are in a fury.		adj.激怒的 动词enrage的过去式和过去分词.		
+enraged			14616		To be enraged is to be full of anger. Enraged people are in a fury.		adj.激怒的 动词enrage的过去式和过去分词.		
 songbird			14617						
 lowering	['ləʊərɪŋ]	['loʊərɪŋ]	14618				adj.天阴沉的；闷闷不乐的 动词lower的现在分词形式.		
 boob	[buːb]	[buːb]	14619		Boob is a word for a woman's breast — it's also a word for an idiot. So if you're staring at a lady's boobs, you probably look like a boob.		n.笨蛋；蠢材；(俚)女性的乳房 v.犯错		
@@ -12613,7 +12613,7 @@ latte	['lɑːteɪ]	['lɑːteɪ]	14735		A latte is a milky espresso drink you can
 orbiter	['ɔːbɪtə(r)]	['ɔːrbɪtər]	14736				n.轨道飞行器；人造卫星		
 singularity	[ˌsɪŋɡju'lærəti]	[ˌsɪŋɡju'lærəti]	14737		The singularity of something is a quality that's unusual or unique. You might note the singularity of a Hollywood movie that features a female lead role and no romance, for example.		n.单独；奇异		
 unsuitable	[ʌn'suːtəbl]	[ʌn'suːtəbl]	14738		Something that's unsuitable doesn't work well or is out of place. A kitchen knife is unsuitable for sawing firewood.		adj.不适宜的；不合适的		
-flooded	Br Am		14739		Something flooded is overflowing with water. A flooded river bursts over its banks, covering the surrounding land.		adj.充满的，充斥的；浸没的，淹没的；灌溉的 v.淹没，发生水灾（动词flood的过去式和过去分词）		
+flooded			14739		Something flooded is overflowing with water. A flooded river bursts over its banks, covering the surrounding land.		adj.充满的，充斥的；浸没的，淹没的；灌溉的 v.淹没，发生水灾（动词flood的过去式和过去分词）		
 clothesline	['kləʊðzlaɪn]	['kloʊzˌlaɪn]	14740				n.晾衣绳 vt.（用胳膊勾住脖子）击倒对手		
 daze	[deɪz]	[deɪz]	14741		A daze is a type of confusion, when you have a lack of clarity. When you first wake up, you might be in a bit of a daze, shuffling about the house before your brain really starts working.		vt. 使 ... 茫然； 使 ... 眩目 n. 恍惚； 晕眩		
 mercifully	['mɜːsɪfəli]	['mɜːrsɪfəli]	14742				adv.仁慈地；宽厚地；幸好		
@@ -12638,7 +12638,7 @@ lefty	['lefti]	['lefti]	14760				n.左撇子；左翼份子 adj.左手的
 separating	['sepəreɪtɪŋ]	['sepəreɪtɪŋ]	14761				adj.分开的；分离的 动词separate的现在分词.		
 synonym	['sɪnənɪm]	['sɪnənɪm]	14762		A synonym is a word that means the same thing as another word. If you replace a word in a sentence with its synonym, the meaning of the sentence won't really change that much.		n.近义词		
 godfather	['ɡɒdfɑːðə(r)]	['ɡɑːdfɑːðər]	14763				n. 教父 vt. 做 ... 教父		
-umm	Br Am		14764				Unlversal Measuring Microscope		
+umm			14764				Unlversal Measuring Microscope		
 communique	[kə'mjuːnɪkeɪ]	[kəˌmjuːnə'keɪ]	14765		A communique is an official message that's sent between people or to a media outlet. A company might release a communique to the local newspaper announcing the name of the new CEO.		n.公报		
 intergenerational	[ˌɪntədʒenə'reɪʃənl]	[ˌɪntədʒenə'reɪʃənəl]	14766				adj.两代人之间的		
 squeaky	['skwiːki]	['skwiːki]	14767				adj.吱吱响的；发轧声的；短促尖声的		
@@ -12657,7 +12657,7 @@ splay	[spleɪ]	[spleɪ]	14779				v.展开；张开；拓宽；成喇叭口形 n.
 posse	['pɒsi]	['pɑːsi]	14780		A posse is group of people who help the police force when necessary. In a classic Western movie, when the sheriff gathers together a posse, its members usually work to find and arrest the bad guys.		n.一队；地方治安团队		
 naivete	[nɑː'iːvteɪ]	[nɑ'iːvteɪ]	14781		If you suggest that world peace could be achieved by handing out cookies in warring nations, you would be revealing a certain amount of naivete. This is a lack of wisdom and sophistication.		n.天真；质朴		
 circumscribe	['sɜːkəmskraɪb]	['sɜːrkəmskraɪb]	14782		To circumscribe is to limit or restrict. If you spend too much time watching TV instead of fulfilling other obligations, you might circumscribe your TV-watching time to one hour daily (or two hours, if your favorite show is on).		v.限制；划一条线包围；确定...的范围；画（几何图形的）外接圆		
-pita	Br Am		14783				n.(中东地区和南美的)皮塔饼；龙舌兰；龙舌兰纤维		
+pita			14783				n.(中东地区和南美的)皮塔饼；龙舌兰；龙舌兰纤维		
 monotonous	[mə'nɒtənəs]	[mə'nɑːtənəs]	14784		When something goes on and on and on and on and on, the same way, for a long time, that's monotonous. Monotonous things are boring and repetitive, like that long story you've heard your brother tell a hundred times before.		adj.单调的		
 unwritten	[ˌʌn'rɪtn]	[ˌʌn'rɪtn]	14785				adj.不成文的；没有写的；没有记录的；口头的		
 tried	[traɪd]	[traɪd]	14786				adj.可靠的；备受苦难的 动词try的过去式和过去分词.		
@@ -12676,7 +12676,7 @@ graphical	['ɡræfɪkl]	['ɡræfɪkl]	14798				adj.图解的；绘图的；生�
 clapboard	['klæpbɔːd]	['klæbərd]	14799				n.护墙板；隔板；桶板 v.遮以护墙板		
 numbered	['nʌmbəd]	['nʌmbəd]	14800				adj.有限的；总计的；指日可数的 动词number的过去式和过去分词形式.		
 counterattack	['kaʊntərəˌtæk]	['kaʊntərəˌtæk]	14801				n.反击；反攻 v.反击；反攻		
-dismayed	Br Am		14802		When you're dismayed, you're aghast, or shocked by disappointment. Your dismayed teacher's face showed that she expected the test grades to be much higher.		adj.惊慌的；灰心的 动词dismay的过去式和过去分词.		
+dismayed			14802		When you're dismayed, you're aghast, or shocked by disappointment. Your dismayed teacher's face showed that she expected the test grades to be much higher.		adj.惊慌的；灰心的 动词dismay的过去式和过去分词.		
 emigrant	['emɪɡrənt]	['emɪɡrənt]	14803		An emigrant is a person who leaves his or her home country to live permanently in another country. Many Irish emigrants came to the United States in the late 1800s.		n.移民；侨民 adj.移民的；移居的		
 classically	['klæsɪkli]	['klæsɪkli]	14804				adv.古典主义地；拟古地；正规地，传统地；典型地		
 forged	['fɔːdʒd]	['fɔːdʒd]	14805				adj.锻造的；伪造的 动词forge的过去时和过去分词.		
@@ -12781,7 +12781,7 @@ rote	[rəʊt]	[roʊt]	14901		Rote means learning a fact by repeating it. Rote me
 phosphate	['fɒsfeɪt]	['fɑːsfeɪt]	14902				n.磷酸盐；磷肥；磷酸果汁汽水		
 unsavory	['ʌn'seɪvərɪ]	[ʌn'seɪvərɪ]	14903		Call something unsavory if it's unappetizing, tasteless, or morally offensive. Curdled sour milk is pretty unsavory, as are the dirty details of the latest political scandal.		adj.没味的；不香的；难吃的；难闻的；令人不快的		
 auditing	['ɔːdɪtɪŋ]	['ɔːdɪtɪŋ]	14904				n.审计；查账；决算 动词audit的现在分词.		
-hah	Br Am		14905				int.嘿；哈(用来表示吃惊或兴奋) =ha. abbr.公顷(=hectare)		
+hah			14905				int.嘿；哈(用来表示吃惊或兴奋) =ha. abbr.公顷(=hectare)		
 falsehood	['fɔːlshʊd]	['fɔːlshʊd]	14906		A falsehood is a lie. If your mom has an uncanny knack for knowing when you're telling a falsehood, it means she always knows when you're stretching the truth.		n.谎言；虚假		
 amputate	['æmpjuteɪt]	['æmpjuteɪt]	14907		Use the verb amputate when you need to describe the surgical removal of a limb, such as an arm or a leg. For example, a doctor might amputate an accident victim's badly crushed arm.		v.切断；截（肢）		
 councilman	['kaʊnslmən]	['kaʊnslmən]	14908				n.议员；市议会议员		
@@ -12796,7 +12796,7 @@ supremely	[suː'priːmli]	[suː'priːmli]	14916				adv.无上地；崇高地；�
 operatic	[ˌɒpə'rætɪk]	[ˌɒpə'rætɪk]	14917				adj.歌剧的；歌剧风格的		
 mass	[mæs]	[mæs]	1775		Anything that has weight and shape has mass. In fact, mass is the quality that gives things weight anywhere there's gravity.		n.大量；块；众多 adj.大规模的；群众的 v.集中 Mass. n.弥撒曲；弥撒		
 peculiarly	[pɪ'kjuːliəli]	[pɪ'kjuːliərli]	14918				adv.古怪地；特有地		
-Irishman	Br Am		14919				n.爱尔兰人；爱尔兰人的后裔		
+Irishman			14919				n.爱尔兰人；爱尔兰人的后裔		
 debatable	[dɪ'beɪtəbl]	[dɪ'beɪtəbl]	14920		We know the sky is blue and the earth has one moon. But is there life on other planets? And how old is the universe anyway? Such things are debatable.		adj.有疑问的，有争议的；成问题的		
 evaluative	[ɪ'væljuətɪv]	[ɪ'væljuətɪv]	14921		To be evaluative is to consider or judge something carefully. Find yourself deeply contemplating whether the new polka dot paint job really brightened up your kitchen? Then you are looking at those dots with an evaluative eye.		adj.可估价的		
 uninterested	[ʌn'ɪntrəstɪd]	[ʌn'ɪntrəstɪd]	14922		Uninterested describes someone who doesn't pay attention or care. If you're uninterested in touring old homes and shopping for antiques, you might be bored on vacation with your aunt and her friends.		adj.不感兴趣的		
@@ -12901,7 +12901,7 @@ unsustainable	[ˌʌnsə'steɪnəbl]	[ˌʌnsə'steɪnəbl]	15017				adj.不能持
 velvety	['velvəti]	['velvəti]	15018		Anything velvety is smooth or soft in some way, like creamy chocolate or a soothing voice.		adj.像天鹅绒般柔软光滑的；醇和的		
 uplift	['ʌplɪft]	['ʌplɪft]	15019				v.鼓舞；提高（道德水准等） n.（精神或情绪方面的）振作；（地质学）隆起		
 knitting	['nɪtɪŋ]	['nɪtɪŋ]	15020				n.编织；编织物 动词knit的现在分词.		
-CPA	Br Am		15021				注册会计师 Certified Public Accountant		
+CPA			15021				注册会计师 Certified Public Accountant		
 frailty	['freɪlti]	['freɪlti]	15022		Frailty describes a quality that's shared by a sick kitten, an elderly man, and a shoddily built go cart. They all have a delicate weakness or vulnerability and seem to require some kind of care.		n.脆弱；意志薄弱；虚弱；弱点		
 mathematically	[ˌmæθə'mætɪkli]	[ˌmæθə'mætɪkli]	15023				adv.精确地；以数学		
 inaccuracy	[ɪn'ækjərəsi]	[ɪn'ækjərəsi]	15024		Inaccuracy is the quality of having errors. A travel guide to Iowa's capital, Pearis, population 413, home of the Dallas Cowboys baseball team, would be plagued by inaccuracy.		n.不准确；错误		
@@ -13090,14 +13090,14 @@ congregational	[ˌkɒŋɡrɪ'ɡeɪʃnəl]	[ˌkɒŋɡrɪ'ɡeɪʃnəl]	15204				ad
 colt	[kəʊlt]	[koʊlt]	15205		A colt is a male horse that's younger than four years old. When your colt is older than four, you can call him a stallion, gelding, or simply a horse.		n.小马；无经验的年轻人 Colt. n.柯尔特公司(美国著名的制枪厂商)		
 barrel	['bærəl]	['bærəl]	2725		A barrel is a big container used to store liquids. If you're moving a barrel, it's best to tip it on its side because its shape bulges at the center, so that it's easy to roll.		n.桶；枪管；一桶的量；炮管；大量；笔管；汽油桶 vi.快速移动 vt.把 ... 装桶		
 misbehavior	['mɪsbɪ'heɪvjə]	[ˌmɪsbɪ'heɪvjə]	15206				n.粗鲁行为；品行不端 =misbehaviour(英).		
-Inca	Br Am		15207				n.印加人(古代秘鲁土著人)		
+Inca			15207				n.印加人(古代秘鲁土著人)		
 genial	['dʒiːniəl]	['dʒiːniəl]	15208		If you're friendly and outgoing, you're genial. You can be a genial host or a genial guest.		adj.友好的；(气候)温暖的		
 magnolia	[mæɡ'nəʊliə]	[mæɡ'noʊliə]	15209				n.木兰；木兰属植物		
 inhalation	[ˌɪnhə'leɪʃn]	[ˌɪnhə'leɪʃn]	15210		An inhalation is an inward breath. When you swim to the surface of a pool after being under water, you'll take a deep inhalation.		n.吸入；吸入药剂		
 afoot	[ə'fʊt]	[ə'fʊt]	15211		Something that's afoot is already happening, underway, or being prepared. You might reassure your fellow French club members that plans are afoot for a fund raiser to support your upcoming trip to Québec.		adj.徒步的；在准备中的；在进行中 adv.徒步地；在准备中地；在进行中		
 toolbox	['tuːlbɒks]	['tuːlbɑːks]	15212				n.工具箱		
 horrid	['hɒrɪd]	['hɔːrɪd]	15213		Horrid things are absolutely dreadful — they horrify or disgust you. A horrid dream can make you wake with a gasp and lie there with your heart pounding.		adj.可怕的；恐怖的；讨厌的；很不友好的		
-forego	Br Am		15214		If you forego something, you choose to give it up. If you forego dessert after dinner, you are skipping dessert.		v.放弃；在……之前 =forgo.		
+forego			15214		If you forego something, you choose to give it up. If you forego dessert after dinner, you are skipping dessert.		v.放弃；在……之前 =forgo.		
 miscalculation	[ˌmɪskælkju'leɪʃn]	[ˌmɪskælkju'leɪʃn]	15215				n.算错		
 extramarital	[ˌekstrə'mærɪtl]	[ˌekstrə'mærɪtl]	15216		The word extramarital describes relationships that happen outside of a marriage, between two people who aren't married to each other. An extramarital affair can damage a marriage.		adj.婚外的；私通的		
 blindfold	['blaɪndfəʊld]	['blaɪndfoʊld]	15217		A blindfold is a strip of fabric that's tied across your eyes so you can't see. At a birthday party, you might wear a blindfold and attempt to pin a paper tail on a picture of a donkey.		v.蒙住 ... 的眼睛 n.蒙眼物；盲目 adj.被蒙上眼睛的		
@@ -13193,7 +13193,7 @@ supersonic	[ˌsuːpə'sɒnɪk]	[ˌsuːpər'sɑːnɪk]	15306		It’s faster than 
 inlaid	[ˌɪn'leɪd]	[ˌɪn'leɪd]	15307				adj.嵌入的；镶嵌的；镶饰的 动词inlay的过去式和过去分词形式.		
 generality	[ˌdʒenə'ræləti]	[ˌdʒenə'ræləti]	15308		"If your mom says, ""What have you been up to?"" and you reply, ""Ah, stuff,"" you have used a generality. It's the opposite of being specific, of saying, ""Well, I shop lifted and picked my nose."""		n.一般性；概论；大部分		
 indulgent	[ɪn'dʌldʒənt]	[ɪn'dʌldʒənt]	15309		Someone who is self-indulgent gives themselves a lot of treats. Parents who are indulgent cave to every desire their child expresses. Indulgent means lenient, or overly generous.		adj.纵容的；任性的；宽容的；溺爱的		
-racketeering	Br Am		15310		Someone who's guilty of racketeering has been participating in something illegal, most likely organized crime or criminal business dealings.		n.敲诈勒索；诈骗 动词racketeer的现在分词形式.		
+racketeering			15310		Someone who's guilty of racketeering has been participating in something illegal, most likely organized crime or criminal business dealings.		n.敲诈勒索；诈骗 动词racketeer的现在分词形式.		
 chartered	['tʃɑːtəd]	['tʃɑːrtərd]	15311		Something chartered is rented or leased for a short time. A chartered bus is sometimes used to take a class of kids on a field trip to the zoo.		adj.特许的；包租的 动词charter的过去式和过去分词.		
 chiropractor	['kaɪərəʊpræktə(r)]	['kaɪəroʊpræktər]	15312				n.脊椎指压治疗者；按摩师		
 insensitivity	[ɪnˌsensə'tɪvəti]	[ɪnˌsensə'tɪvəti]	15313				n.钝性；不灵敏性；不敏感；昏迷		
@@ -13336,7 +13336,7 @@ mushy	['mʌʃi]	['mʌʃi]	15443		You might use the adjective mushy to describe a
 preamble	[pri'æmbl]	[pri'æmbl]	15444		"A preamble is a brief introduction to a speech, like the Preamble to the Constitution that starts out ""We the People of the United States, in Order to form a more perfect Union...do ordain and establish this Constitution."""		n.前文；序文；前言		
 sandbag	['sændbæɡ]	['sændbæɡ]	15445				n.沙袋 v.堆沙袋；抵御；猛烈抨击；掩盖真相		
 introspective	[ˌɪntrə'spektɪv]	[ˌɪntrə'spektɪv]	15446		Someone who is introspective spends considerable time examining his own thoughts and feelings. If you take to your diary after an unhappy break-up, you are being introspective.		adj.反省的；内省的		
-Sandinista	Br Am		15447				n.桑地诺		
+Sandinista			15447				n.桑地诺		
 hardcover	['hɑːdkʌvə(r)]	['hɑːrdkʌvər]	15448		A hardcover book has stiff, rigid covers on its pages, rather than flexible ones. You might prefer hardcover books at home, but tend to pack paperback copies when you travel, since they weigh less.		n.硬皮书；精装本 =hardback. adj.精装的；硬皮的		
 wrought	[rɔːt]	[rɔːt]	15449		"Wrought is an adjective that means ""molded,"" ""shaped,"" or ""manufactured."" A wrought-iron fence has been shaped to fit a particular ornamental style."		adj.锤炼的；制成的；精心制作的；装饰的；激动的		
 reinvigorate	[ˌriːɪn'vɪɡəreɪt]	[ˌriːɪn'vɪɡəreɪt]	15450				vt.使再振作；使复生		
@@ -13406,7 +13406,7 @@ festoon	[fe'stuːn]	[fe'stuːn]	15511		A festoon is a decorative string of flowe
 willfully	['wɪlfəlɪ]	['wɪlfəlɪ]	15512				adv.任性固执地；蓄意地 =wilfully.		
 attainable	[ə'teɪnəbl]	[ə'teɪnəbl]	15513		You can do it, no doubt about it. Yes, your goal is attainable: within reach and not too difficult to achieve.		adj.可达到的；可获得的		
 horticultural	[ˌhɔːtɪ'kʌltʃərəl]	[ˌhɔːtɪ'kʌltʃərəl]	15514		Did you know Memorial Day Weekend is the biggest horticultural event of the year? It's the time many people plant their flower and vegetable gardens. The adjective horticultural describes anything related to gardening.		adj.园艺的		
-unfairness	Br Am		15515				n.不公平；不正当		
+unfairness			15515				n.不公平；不正当		
 bus	[bʌs]	[bʌs]	1309		A bus is a long vehicle with many seats. An elementary school student might save a seat on the school bus each morning for her best friend.		n.公共汽车 n.总线；信息通路 vt.用公共汽车运输 vi.乘公共汽车		
 landlady	['lændleɪdi]	['lændleɪdi]	15516				n.女房东		
 vex	[veks]	[veks]	15517		If something vexes you, it brings you trouble or difficulty. In other words, it annoys, worries, distresses, irritates, bothers, or puzzles you.		vt.使恼怒；使恼火；烦扰；使困惑		
@@ -13488,7 +13488,7 @@ conservatively	[kən'sɜːvətɪvli]	[kən'sɜːvətɪvli]	15591				adv.保守�
 antipathy	[æn'tɪpəθi]	[æn'tɪpəθi]	15592		An antipathy is a deep-seated dislike of something or someone. Usually it's a condition that is long-term, innate, and pretty unlikely to change — like your antipathy for the Red Sox.		n.憎恶；反感；不相容		
 notepad	['nəʊtpæd]	['noʊtpæd]	15593				n.记事本；笔记本		
 gratify	['ɡrætɪfaɪ]	['ɡrætɪfaɪ]	15594		To gratify is to give satisfaction. So if you've managed to get straight A's in school, what you did was gratify your parents — and it probably felt pretty gratifying to you too.		v.使满足；使高兴		
-saltwater	Br Am		15595				adj.盐水的；海产的		
+saltwater			15595				adj.盐水的；海产的		
 downed	['daʊnd]	['daʊnd]	15596				adj.击落的；击倒的 动词down的过去式和过去分词.		
 swoon	[swuːn]	[swuːn]	15597		To swoon is to faint, due to lack of blood to the brain. Illness, fear, stress, and even happiness can cause people to swoon.		v.晕倒；动感情 n.昏厥；晕倒		
 scratching	[sk'rætʃɪŋ]	[sk'rætʃɪŋ]	15598				n.刮东西时发出的刺耳声 adj.刮到的 动词scratch的现在分词.		
@@ -13569,7 +13569,7 @@ moor	[mɔː(r)]	[mʊr]	15669		To moor is to tie up a ship, as in to moor the oce
 photosynthesis	[ˌfəʊtəʊ'sɪnθəsɪs]	[ˌfoʊtoʊ'sɪnθəsɪs]	15670		Plants absorb sunlight and turn that energy into food; the process is known as photosynthesis.		n.光合作用		
 bleached	[bliːtʃ]	[bliːtʃ]	15671				n.漂白剂；漂白 v.变白；漂白		
 beehive	['biːhaɪv]	['biːhaɪv]	15672		A beehive is a structure — either made by humans or bees — in which bees live and make honey. You might find a beehive in a hollow tree.		n.蜂箱		
-stereotyped	Br Am		15673				adj.老一套的 动词stereotype的过去式和过去分词形式.		
+stereotyped			15673				adj.老一套的 动词stereotype的过去式和过去分词形式.		
 yellowed	['jeləʊ]	['jeloʊ]	15674				adj.黄色的 n.黄色；蛋黄；黄种人 v.（使）变黄		
 gloat	[ɡləʊt]	[ɡloʊt]	15675		If you gloat, you express great satisfaction at the misfortune of others. If your team scores a big win, it would be better not to gloat. Be happy for your win, but don't laugh at their loss.		v.满足地看；沾沾自喜；幸灾乐祸		
 fizzle	['fɪzl]	['fɪzl]	15676				v.发嘶嘶声；(虎头蛇尾般地)结束；失败 n.嘶嘶声；失败		
@@ -13771,7 +13771,7 @@ snowman	['snəʊmæn]	['snoʊmæn]	15868				n.雪人
 spindle	['spɪndl]	['spɪndl]	15869		A spindle is a narrow wooden rod that's used when spinning wool. If your aunt has a spinning wheel for making yarn from the wool of her sheep, it must have a spindle on it for twisting the fibers.		n.纺锤；轴；[生]纺锤体；细长的人或物		
 underbrush	['ʌndəbrʌʃ]	['ʌndərbrʌʃ]	15870				n.矮树丛		
 cobble	['kɒbl]	['kɑːbl]	15871				n.圆石；鹅卵石；(常用复数)卵石路 v.铺鹅卵石；修补(鞋)；粗制滥造		
-whir	Br Am		15872				v.作呼呼声；发飕飕声的飞或转 n.呼呼声；飕飕声 =whirr.		
+whir			15872				v.作呼呼声；发飕飕声的飞或转 n.呼呼声；飕飕声 =whirr.		
 spindly	['spɪndli]	['spɪndli]	15873				adj.细长的；纤弱的		
 buzzword	['bʌzwɜːd]	['bʌzwɜːrd]	15874				n.流行词；行话；漂亮口号		
 expressionless	[ɪk'spreʃənləs]	[ɪk'spreʃənləs]	15875				adj.没有表情的		
@@ -13820,7 +13820,7 @@ aftershock	['ɑːftəʃɒk]	['æftərʃɑːk]	15917		An aftershock is a small ea
 stricture	['strɪktʃə(r)]	['strɪktʃər]	15918		One meaning of stricture is a nasty criticism, while the other is a sharp contraction of a tube or canal in the body. Either meaning can mean great pain to the person experiencing the stricture.		n.苛评；非难；限制；[医]狭窄		
 triathlon	[traɪ'æθlən]	[traɪ'æθlən]	15919				n.[体]三项全能运动		
 manhunt	['mænhʌnt]	['mænhʌnt]	15920		When police assemble a team to search for a criminal, it's called a manhunt, even if the person they're looking for is a woman.		n.搜捕		
-sleeveless	Br Am		15921				adj.无袖的		
+sleeveless			15921				adj.无袖的		
 humanly	['hjuːmənli]	['hjuːmənli]	15922				adv.以人的方式；在人力所能及的范围；根据人的经验和知识		
 irreplaceable	[ˌɪrɪ'pleɪsəbl]	[ˌɪrɪ'pleɪsəbl]	15923		The adjective irreplaceable describes anything that's one of a kind, particularly if it has deep sentimental value to you, like your grandmother's irreplaceable engagement ring.		adj.不可替代的		
 hiccup	['hɪkʌp]	['hɪkʌp]	15924		"A hiccup is a jerky, repeated contraction in your diaphragm — it's a sort of involuntary tic you can feel in your throat and chest. People who have hiccups usually make a ""hic"" sound."		n.打嗝；暂时性的小问题 vi.打嗝 =hiccough.		
@@ -13878,7 +13878,7 @@ erstwhile	['ɜːstwaɪl]	['ɜːrstwaɪl]	15975		"If your dad used to play in a p
 cooperatively	[kəʊ'ɒpərətɪv]	[koʊ'ɑːpərətɪv]	15976				adj.合作的；协作的 n.合作社		
 vanquished	['væŋkwɪʃ]	['væŋkwɪʃ]	15977				v.征服；克服；击败		
 driftwood	['drɪftwʊd]	['drɪftwʊd]	15978				n.流木；浮木		
-correspondingly	Br Am		15979				adv.相应地		
+correspondingly			15979				adv.相应地		
 medial	['miːdiəl]	['miːdiəl]	15980				adj.中间的；内侧的；平均的；普通的		
 souffle	['suːfleɪ]	[suː'fleɪ]	15981		A souffle is an egg dish that puffs up when you bake it. You might make a fluffy goat cheese souffle to serve your friends at brunch.		n.蛋奶酥；吹气音 adj.蓬松的；膨胀的 =souffleed.		
 tail	[teɪl]	[teɪl]	2635				n.后部；尾巴；尾部；辫子；跟随者 (复）tails: 燕尾服；(硬币的)反面 vt.跟踪；盯 ... 的梢；为 ... 装尾巴 vi.尾随；附于其后；逐渐减少		
@@ -13966,7 +13966,7 @@ hurried	['hʌrid]	['hɜːrid]	16060				adj.仓促的；慌忙的 动词hurry的�
 fishy	['fɪʃi]	['fɪʃi]	16061		Anything fishy smells, tastes, or resembles a fish in some way. Suspicious people and situations are also called fishy. Since this word has two meanings, context is key.		adj.（味道或气味）象鱼的；可疑的		
 lard	[lɑːd]	[lɑːrd]	16062				n.猪油 v.点缀；涂油于；润色		
 abut	[ə'bʌt]	[ə'bʌt]	16063		When something borders something else, it is said to abut it. The term is often used in real estate to refer to a lot line. Wouldn’t it be nice to have your back yard abut a forest preserve or park?		v.邻接；毗连		
-eucharistic	Br Am		16064				adj.圣餐的；圣体的		
+eucharistic			16064				adj.圣餐的；圣体的		
 behead	[bɪ'hed]	[bɪ'hed]	16065				vt. 砍 ... 的头		
 untouchable	[ʌn'tʌtʃəbl]	[ʌn'tʌtʃəbl]	16066				adj.不可接触的；达不到的 n.贱民；不可接触者（指印度种姓制度中最低层的人）		
 plagiarism	['pleɪdʒərɪzəm]	['pleɪdʒərɪzəm]	16067		When you rip off someone else's ideas or work and pretend it's your own, that's plagiarism.		n.剽窃；剽窃物		
@@ -14014,7 +14014,7 @@ pucker	['pʌkə(r)]	['pʌkər]	16106		Pucker is a verb for what happens when som
 furnished	['fɜːnɪʃt]	['fɜːrnɪʃt]	16107		Something that's furnished is supplied with whatever it needs. A fully furnished kitchen has every appliance and ingredient you need to cook meals for yourself.		adj.装配好家具的，带家具的 动词furnish的过去式和过去分词.		
 stringy	['strɪŋi]	['strɪŋi]	16108				adj.线；绳的；纤维的		
 nakedness	['neɪkɪdnəs]	['neɪkɪdnəs]	16109				n.裸；显明；赤裸裸		
-superbly	Br Am		16110				adv.壮丽地；极度地		
+superbly			16110				adv.壮丽地；极度地		
 militancy	['mɪlɪtənsi]	['mɪlɪtənsi]	16111				n.战斗性；交战状态		
 tutelage	['tjuːtəlɪdʒ]	['tuːtəlɪdʒ]	16112		If you babysit and tutor younger children after school, the kids are under your tutelage. You are responsible for their care and education.		n.监护；指导；托管		
 bloodless	['blʌdləs]	['blʌdləs]	16113		When something is bloodless, it's free of violence. During a bloodless revolution, a regime is overthrown without anyone being killed.		adj.无血色的；无伤亡的；无精打彩的；无情的		
@@ -14102,7 +14102,7 @@ dilate	[daɪ'leɪt]	[daɪ'leɪt]	16190		To dilate something is to make it wider.
 portend	[pɔː'tend]	[pɔːr'tend]	16191		Portend means to show a sign that something calamitous is about to happen. The teetering, tottering, pile of fine china piled up after the dinner party portends an imminent crash of broken plates and dishes.		vt. 成为 ... 的前兆； 预知； 预警		
 episodic	[ˌepɪ'sɒdɪk]	[ˌepɪ'sɑːdɪk]	16192		"If you have an episodic interest in professional sports, you pay attention to sports from time to time, but you're not a regular fan. The adjective episodic is often used to mean ""occasional"" or ""every once in a while."""		adj.插曲式的；偶然发生的；短暂的；由一系列片段组成的		
 hypnotize	['hɪpnətaɪz]	['hɪpnətaɪz]	16193		When you hypnotize someone, you draw him into a mental state that is receptive to suggestion. If you are looking to break a bad habit like cigarette smoking, ask someone to hypnotize you.		vt.施催眠术；使恍惚；使着迷		
-wrack	Br Am		16194		Wrack is when something falls into disrepair. When an old house deteriorates, you can describe its wrack, or the process of its crumbling collapse.		n.破坏；残骸；海草 v.破坏；带来极大的痛苦		
+wrack			16194		Wrack is when something falls into disrepair. When an old house deteriorates, you can describe its wrack, or the process of its crumbling collapse.		n.破坏；残骸；海草 v.破坏；带来极大的痛苦		
 creationism	[kri'eɪʃnɪzəm]	[kri'eɪʃnɪzəm]	16195				n.创造宇宙说；特别创造说		
 habitable	['hæbɪtəbl]	['hæbɪtəbl]	16196		Something habitable is appropriate to live in. If you're having the wood floors of your house refinished, it might not be habitable until they've completely dried.		adj.可居住的；适于居住的		
 second	['sekənd]	['sekənd]	349		"A second may be one-sixtieth of a minute or the item after first. If you ask whether you're second in line, the hostess might reply, ""Give me a second and I'll tell you."""		adj.第二的；次等的；再一个的 num.第二 n.片刻；秒 adv.第二；其次 v.支持；赞成；附和；调派		
@@ -14110,7 +14110,7 @@ phalanx	['fælæŋks]	['fælæŋks]	16197		A phalanx is a tightly knit group of 
 inscrutable	[ɪn'skruːtəbl]	[ɪn'skruːtəbl]	16198		Any person or thing that's mysterious, mystifying, hard to read, or impossible to interpret is inscrutable. You ever notice how it's hard to tell what some people are thinking? Those folks are inscrutable.		adj.难以了解的；不能预测的		
 foolproof	['fuːlpruːf]	['fuːlpruːf]	16199		When something is bound to work out, you can call it foolproof. Your foolproof plan for having a great summer might involve spending lots of time at the beach.		adj.不会错的；极简单的；可靠而操作简便的；傻瓜式的		
 chopping	[tʃɒpɪŋ]	['tʃɒpɪŋ]	16200				adj.风向常变的；波浪汹涌的 n.切；中断 动词chop的现在分词形式.		
-stubbornness	Br Am		16201				n.顽固；棘手 形容词stubborn的名词形式.		
+stubbornness			16201				n.顽固；棘手 形容词stubborn的名词形式.		
 liberator	['lɪbəreɪtə(r)]	['lɪbəreɪtə(r)]	16202		A liberator is someone who sets people free from captivity. Abolitionists were liberators who fought to free African-American slaves from bondage in the years before the Civil War.		n.解放者；释放者		
 fluctuating	['flʌktʃʊeɪtɪŋ]	['flʌktʃʊeɪtɪŋ]	16203		Fluctuating describes something that has unpredictable ups and downs. Fluctuating often refers to changing numbers or quantities of something, like fluctuating stock prices that go up and down.		adj.上下浮动的 动词fluctuate的现在分词.		
 shaved	[ʃeɪv]	[ʃeɪv]	16204				v.刮；剃；修剪；掠过；削减 n.剃须；修面；剃刀		
@@ -14152,7 +14152,7 @@ dapper	['dæpə(r)]	['dæpər]	16237		A neatly and stylishly dressed man can be 
 divider	[dɪ'vaɪdə(r)]	[dɪ'vaɪdər]	16238				n.除法器；分配物；分频器 （复数）dividers: 双脚规；分线规.		
 teenaged	['tiːneɪdʒ]	['tiːneɪdʒ]	16239				adj.青少年的（13至19岁的）；十几岁的		
 speechwriter	['spiːtʃˌraɪtə]	['spiːtʃˌraɪtə]	16240				n.演讲稿撰写人		
-drunkenness	Br Am		16241				n.醉态		
+drunkenness			16241				n.醉态		
 gutsy	['ɡʌtsi]	['ɡʌtsi]	16242				adj.勇敢的；强劲的；胆大的；贪婪的		
 chutney	['tʃʌtni]	['tʃʌtni]	16243		Chutney is an Indian condiment that adds a sweet, spicy flavor to your food. When you eat at an Indian restaurant, you can ask for extra chutney on the side.		n.(印度)酸辣酱		
 tracer	['treɪsə(r)]	['treɪsər]	16244				n.追踪者(器)；示踪物；曳光弹；[化]示踪剂		
@@ -14165,7 +14165,7 @@ discontinuity	[ˌdɪsˌkɒntɪ'njuːəti]	[ˌdɪsˌkɑːntə'nuːəti]	16250				
 sagebrush	['seɪdʒbrʌʃ]	['seɪdʒbrʌʃ]	16251				n.山艾(美国西北荒漠产的一种灰绿色灌木)		
 vitally	['vaɪtəli]	['vaɪtəli]	16252				adv.重要地；极其；生命攸关地		
 auburn	['ɔːbən]	['ɔːbərn]	16253		Auburn is a reddish-brown color. If you ask a hairdresser to color your hair auburn, you'll be disappointed to end up with bright red curls.		adj.赤褐色的；赭色的 n.赤褐色；赭色		
-glitzy	Br Am		16254				adj.闪耀的；浮华的		
+glitzy			16254				adj.闪耀的；浮华的		
 bye	[baɪ]	[baɪ]	16255		"If you say, ""Bye!"" you mean ""farewell"" or ""so long."" In other words, bye is a shorter way to say, ""Goodbye."""		int.再见		
 seer	[sɪə(r)]	[sɪr]	16256		A seer is someone who can see the future. Nostradamus is considered a seer because he predicted everything from the Great Fire of London to the French Revolution. Oh, and the end of the world.		n.预言者；先知；占卜者；观看者		
 interconnection	[ˌɪntəkə'nekʃn]	[ˌɪntəkə'nekʃn]	16257				n.互相连络		
@@ -14245,7 +14245,7 @@ suspenders	[sə'spendəz]	[sə'spendəz]	16329				n.裤子背带
 glower	['ɡlaʊə(r)]	['ɡlaʊər]	16330		If you see someone glower at you, you might consider glowering back, but no one likes an angry staring contest. To glower is not only to stare, it's to stare angrily, as if you're going to throttle someone.		v.怒目而视 n.怒视		
 defenseman	[dɪ'fensmən]	[dɪ'fensmən]	16331				n.[体](冰球等中的)防守队员；后卫		
 crafty	['krɑːfti]	['kræfti]	16332		If people call you crafty, they probably mean you are sly and a little deceptive. Then again, they could be saying that you are really good at knitting, beading or turning old t-shirts into funky pillowcases.		adj.狡猾的；熟练的；巧妙的		
-Prussian	Br Am		16333				adj.普鲁士的；普鲁士语的；普鲁士式的 n.普鲁士人；普鲁士语		
+Prussian			16333				adj.普鲁士的；普鲁士语的；普鲁士式的 n.普鲁士人；普鲁士语		
 humbly	['hʌmbli]	['hʌmbli]	16334				adv.恭顺地；谦卑地		
 junkyard	['dʒʌŋkjɑːd]	['dʒʌŋkjɑːrd]	16335		A junkyard is a place where garbage is kept, especially scrap metal, until it's sold. Most of the trash in a junkyard can be reused or recycled.		n.[美]废物堆积场		
 advisable	[əd'vaɪzəbl]	[əd'vaɪzəbl]	16336		Something that's advisable makes a lot of sense — enough so that you'd recommend it to a friend. For example, it might be advisable for you to go visit a college before deciding to go there as a student.		adj.明智的；可取的		
@@ -14300,9 +14300,9 @@ prophesy	['prɒfəsaɪ]	['prɑːfəsaɪ]	16383		The word prophesy can mean to pr
 dilution	[daɪ'ljuːʃn]	[daɪ'ljuːʃn]	16384		Dilution is when something is watered down or weakened. You might object to the dilution of your grandmother's watery iced tea.		n.稀释；冲淡；股票跌价		
 inhospitable	[ˌɪnhɒ'spɪtəbl]	[ˌɪnhɑː'spɪtəbl]	16385		Inhospitable places aren't easy or comfortable to live in, and inhospitable people can be downright unfriendly — even hostile. A hotel is particularly inhospitable if it's got uncomfortable beds and grouchy desk clerks.		adj.不好客的；不适于居住的		
 flowery	['flaʊəri]	['flaʊəri]	16386		"Something flowery either looks, smells, or feels like flowers. You might wear flowery perfume or write a flowery poem starting with ""Roses are red..."" However, flowery is not a compliment when it comes to writing."		adj.多花的；似花的；辞藻华丽的		
-dismantling	Br Am		16387				n.(枪枝)分解；拆卸 动词dismantle的现在分词.		
+dismantling			16387				n.(枪枝)分解；拆卸 动词dismantle的现在分词.		
 scratchy	['skrætʃi]	['skrætʃi]	16388				adj.潦草的；拙劣的；发刮擦声的；发痒的		
-Aussie	Br Am		16389				n.澳洲人		
+Aussie			16389				n.澳洲人		
 breakaway	['breɪkəweɪ]	['breɪkəweɪ]	16390				adj.脱离的；分离的；一碰就破的 n.脱离；分离；脱离的人；改变；一碰就破的东西；起跑前抢步		
 trucking	[trʌkɪŋ]	[trʌkɪŋ]	16391				n.货车运输业		
 alarmingly	[ə'lɑːmɪŋli]	[ə'lɑːmɪŋli]	16392				adv.让人担忧地		
@@ -14312,7 +14312,7 @@ commoner	['kɒmənə(r)]	['kɑːmənər]	16395				n.平民；自费学生；有�
 curd	[kɜːd]	[kɜːrd]	16396				n.凝乳		
 latency	['leɪtənsi]	['leɪtənsi]	16397		"Latency is a noun referring to something inactive, dormant, or lying in wait. It’s the state of not being visibly active yet — like when you're hiding out and waiting to jump up and yell ""Surprise!"""		n.潜伏；潜伏期；延迟		
 diagnostics	[ˌdaɪəg'nɒstɪks]	[ˌdaɪəg'nɒstɪks]	16398				n.诊断学；机器诊断结果		
-extinguisher	Br Am		16399				n.灭火器；熄灭者；消除器		
+extinguisher			16399				n.灭火器；熄灭者；消除器		
 workhorse	['wɜːkhɔːs]	['wɜːrkhɔːrs]	16400				n.驮马；做粗工者；重负荷机器		
 forefather	['fɔːfɑːðə(r)]	['fɔːrfɑːðər]	16401		You can describe your ancestor who traveled to America on the Mayflower as your forefather.		n.祖先；先辈		
 gated	[ɡeɪt]	[ɡeɪt]	16402				n.大门；登机门；出入口；门票收入；道路；方式 v.惩罚(禁止学生离校)；解雇 suf.常表示政治丑闻		
@@ -14357,7 +14357,7 @@ deciding	[dɪ'saɪdɪŋ]	[dɪ'saɪdɪŋ]	16440				adj.决定性的 动词decide�
 Moslem	['mɒzləm]	['mɑːzləm]	16441				n.回教徒；穆罕默德信徒 adj.回教徒的；回教的 =Muslim（英）.		
 oratory	['ɒrətri]	['ɔːrətɔːri]	16442		An oratory is a long, formal speech. Often one that's a bit puffy and overblown, making you think the speaker really likes the sound of his own voice.		n.讲演术；演说；祈祷室；小礼拜堂 Oratory. n.（天主教）奥拉托利会		
 cachet	['kæʃeɪ]	[kæ'ʃeɪ]	16443		Certain high-end brands have a particular cachet, or respectability. People just know they are the finest of their kind.		n.(证明品质的)优良标志；威望；声望		
-folic	Br Am		16444				叶酸		
+folic			16444				叶酸		
 dimensional	[dɪ'menʃənəl]	[dɪ'menʃənəl]	16445				adj.维度的；次元的；空间的；尺寸的		
 mailman	['meɪlmæn]	['meɪlmæn]	16446				n.邮差；邮递员 =postman（英）.		
 powdery	['paʊdəri]	['paʊdəri]	16447				adj.粉的；粉状的；布满粉的；易粉碎的		
@@ -14662,7 +14662,7 @@ cackle	['kækl]	['kækl]	16736		To cackle is to laugh in a loud, harsh way. Your
 whispered	['wɪspəd]	['wɪspəd]	16737				adj.小声的；耳语的 动词whisper的过去式和过去分词.		
 plaintive	['pleɪntɪv]	['pleɪntɪv]	16738		Plaintive is an adjective for describing someone or something with a pleading, sorrowful, desperate tone. If you have ever heard the plaintive howl of a wolf, then you know what we are getting at here.		adj.哀伤的；可怜的		
 framing	['freɪmɪŋ]	['freɪmɪŋ]	16739				n.编制；框架；[计]成帧		
-ugh	Br Am		16740				int.呸；啊(表示厌恶、恐怖等)		
+ugh			16740				int.呸；啊(表示厌恶、恐怖等)		
 impassive	[ɪm'pæsɪv]	[ɪm'pæsɪv]	16741		"Someone who doesn't seem to react — who is always ""taking a pass"" in the conversation of life can be described as impassive."		adj.无感情的；无表情的；冷漠的；平静的		
 pewter	['pjuːtə(r)]	['pjuːtər]	16742				n.铅锡锑合金；铅锡锑合金器皿 adj.铅锡等合金制成的		
 blasphemy	['blæsfəmi]	['blæsfəmi]	16743		Saying offensive things about God or religion is blasphemy. Blasphemy can be used for offensive ideas in other areas too.		n.亵渎神明；亵渎神明的言词		
@@ -14696,7 +14696,7 @@ opus	['əʊpəs]	['oʊpəs]	16769		An opus is a created work, usually musical in
 consultative	[kən'sʌltətɪv]	[kən'sʌltətɪv]	16770		Consultative is an adjective that describes giving advice or assistance. Do people turn to you for advice about love? What about your expertise in helping job-seekers land their dream job? If so, then you are providing consultative services, whether you know it or not.		adj.咨询的；顾问的；协商的		
 psychopath	['saɪkəpæθ]	['saɪkəpæθ]	16771		It would be unfortunate to end up alone in an elevator with a psychopath. A psychopath is a mentally ill person with violent tendencies.		n.精神病患者		
 concourse	['kɒŋkɔːs]	['kɑːŋkɔːrs]	16772		The wide, open area that's either inside or in front of a building is called a concourse. A concourse is often located where many paths or hallways meet.		n.大厅；广场；汇合		
-treatable	Br Am		16773				adj.能处理的(好对付的)		
+treatable			16773				adj.能处理的(好对付的)		
 opiate	['əʊpiət]	['oʊpiət]	16774		An opiate is a drug such as morphine or heroin that is derived from opium. Used figuratively, it means something that calms or soothes.		n.鸦片剂；麻醉剂 adj.安眠的；麻醉的		
 plumb	[plʌm]	[plʌm]	16775		To plumb a body of water, you measure its depth. To plumb a house, you connect all of its pipes. To make carpentry plumb, you get it exactly vertical.		v.（用铅垂）测量；探测 n.铅锤；垂直 adj.垂直的；完全的 adv.恰恰；彻底地		
 abdicate	['æbdɪkeɪt]	['æbdɪkeɪt]	16776		Sometimes someone in power might decide to give up that power and step down from his or her position. When they do that, they abdicate their authority, giving up all duties and perks of the job.		vt.正式放弃；让位 vi.退位；辞职		
@@ -14717,7 +14717,7 @@ covertly	['kʌvətlɪ]	['kʌvətlɪ]	16790				adv.偷偷摸摸地
 numeral	['njuːmərəl]	['nuːmərəl]	16791				adj.数字的；表示数字的 n.数字；数		
 drumbeat	['drʌmbiːt]	['drʌmbiːt]	16792				n.鼓声；大肆吹捧；连珠炮似的抨击		
 paragon	['pærəɡən]	['pærəɡɑːn]	16793		"Paragon applies to someone who is a model of perfection in some quality or trait. We link paragon with other words that follow it, such as ""paragon of virtue"" or ""paragon of patience."""		n.模范；典型 v.与 ... 比较；比得上		
-Shakespearean	Br Am		16794				adj.(英国作家)莎士比亚的；莎士比亚似的；莎士比亚作品[风格]的		
+Shakespearean			16794				adj.(英国作家)莎士比亚的；莎士比亚似的；莎士比亚作品[风格]的		
 preen	[priːn]	[priːn]	16795		When a bird or a cat preens, it smooths its feathers or cleans its fur. When you preen, you primp and pay careful attention to how you're dressed and groomed, as if you're inviting the whole world to watch you.		v.整理羽毛；精心打扮；沾沾自喜		
 enlistment	[ɪn'lɪstmənt]	[ɪn'lɪstmənt]	16796				n.征兵		
 brutalize	['bruːtəlaɪz]	['bruːtəlaɪz]	16797				v.使残酷无情；残酷对待		
@@ -14761,10 +14761,10 @@ scaling	['skeɪlɪŋ]	['skeɪlɪŋ]	16833				动词scale的现在分词
 athleticism	[æθ'letɪsɪzəm]	[æθ'letɪsɪzəm]	16834		Athleticism is the quality of having the kind of strength and energy that makes a great athlete. It takes athleticism to run marathons, play pro football, or sprint down a cobblestone street in high heels without falling.		n.运动竞赛；运动能力；崇尚运动		
 merging	[mɜːdʒɪŋ]	[mɜːdʒɪŋ]	16835				n.熔合；归并；汇合；数据并合 动词merge的现在分词形式.		
 neuroscience	['njʊərəʊsaɪəns]	['nʊroʊsaɪəns]	16836				n.神经科学		
-Newtonian	Br Am		16837				adj.牛顿的；牛顿学说的 n.信仰牛顿学说的人		
+Newtonian			16837				adj.牛顿的；牛顿学说的 n.信仰牛顿学说的人		
 hereafter	[ˌhɪər'ɑːftə(r)]	[ˌhɪr'æftər]	16838		"You can use the adverb hereafter to talk about what happens next, after this moment. For example, you might say, ""I will hereafter get my homework done in time."""		adv.此后；将来；来世 n.将来；来世		
 mangle	['mæŋɡl]	['mæŋɡl]	16839		When you mangle something, you completely destroy it, by ripping, cutting, crushing, or otherwise mauling it into pieces.		v.碾压；损坏；糟蹋；乱切 n.碾压机		
-Sicilian	Br Am		16840				n.西西里岛语；西西里岛人 adj.西西里岛的；西西里岛人的		
+Sicilian			16840				n.西西里岛语；西西里岛人 adj.西西里岛的；西西里岛人的		
 prospectus	[prə'spektəs]	[prə'spektəs]	16841		A prospectus is a written catalog or brochure that offers a plan, as of school courses to take or which stocks to buy. The idea of a prospectus is to offer a variety of options and a plan of action.		n.创立计划书；宣传小册；简章		
 patter	['pætə(r)]	['pætər]	16842		When something patters, it makes a light, rhythmic, tapping sound. On a rainy night, you might love lying in bed listening to the rain patter on the roof.		n.急速拍打声；轻快脚步声；行话；顺口溜 v.喋喋不休；滴嗒地响；发出急速轻拍声		
 rejected	['riːdʒekt]	['riːdʒekt]	16843				vt.拒绝；排斥；驳回；丢弃 n.不合格产品；被拒之人		
@@ -14774,7 +14774,7 @@ unlicensed	[ʌn'laɪsnst]	[ʌn'laɪsnst]	16846		When something is unlicensed, it
 muddled	['mʌdld]	['mʌdld]	16847				adj.混乱的；糊涂的 动词muddle的过去式和过去分词形式.		
 glib	[ɡlɪb]	[ɡlɪb]	16848		A hiring manager might think you're being glib, or slick and insincere, if you say you've led a successful multinational corporation when you were actually in charge of flipping burgers for a fast-food restaurant chain.		adj.能说善道的；圆滑的		
 breather	['briːðə(r)]	['briːðər]	16849				n.呼吸者；短暂休息；通气阀		
-Mojave	Br Am		16850				Mojave Desert. n.莫哈韦沙漠(在美国加利福尼亚西南) =Mohave Desert.		
+Mojave			16850				Mojave Desert. n.莫哈韦沙漠(在美国加利福尼亚西南) =Mohave Desert.		
 retroactive	[ˌretrəʊ'æktɪv]	[ˌretroʊ'æktɪv]	16851		The adjective retroactive refers to something happening now that affects the past. For example, a retroactive tax is one that is passed at one time, but payable back to a time before the tax was passed.		adj.有追溯力的；可追溯的		
 assay	[ə'seɪ]	[ə'seɪ]	16852		An assay is a breakdown of a material, examining the individual parts that make up the whole. When you assay a situation, you look at all the elements that created the problem in order to come up with a solution.		n.化验；分析 v.化验；分析		
 endoscopic	[ˌendəs'kɒpɪk]	[ˌendəs'kɒpɪk]	16853				adj.内窥镜的；内窥镜检查的		
@@ -15903,7 +15903,7 @@ adopt	[ə'dɒpt]	[ə'dɑːpt]	1470		You can adopt an air of nonchalance, a fake 
 minority	[maɪ'nɒrəti]	[maɪ'nɔːrəti]	1471		If you have eight pennies and twelve dimes, the minority of your coins are pennies. The word minority is often used to describe people when their race or religion is shared by less than half of a nation.		n.少数；少数民族；未成年		
 straight	[streɪt]	[streɪt]	1472		Arrows, sides of a rectangle, well-organized lines of people waiting to get into the theater or the ladies' room, and anything else free from curves can be described as straight. The word can also mean honest, uninterrupted, undiluted, or heterosexual.		adj.直的；坦率的；正直的；准的；连续的；异性恋的 adv.笔直地；直接；坦率地；连续不断地 n.直的东西；传统的人；异性恋者		
 connect	[kə'nekt]	[kə'nekt]	1473		Connect means to join together. When a puzzle piece fits into another, they connect. You might fly to Chicago and then connect to a flight to LA. When you meet someone and feel comfortable with them right away, you connect.		v.连接；接通；联系		
-works	Br Am		1474				n.工厂；修建；机器部件；全套物品		
+works			1474				n.工厂；修建；机器部件；全套物品		
 teaching	['tiːtʃɪŋ]	['tiːtʃɪŋ]	1475				n.教学；教义 adj.教学的 动词teach的现在分词.		
 belong	[bɪ'lɒŋ]	[bɪ'lɔːŋ]	1476		Things that belong to you are your property — in other words, you own them. Your prized rock collection belongs to you.		vi.应归入；属于		
 advice	[əd'vaɪs]	[əd'vaɪs]	1478		Advice is a suggestion about what to do. If you just can't decide between the pecan pie and the chocolate torte, ask the waiter for his advice.		n.劝告；忠告；建议		
@@ -16302,7 +16302,7 @@ passion	['pæʃn]	['pæʃn]	2031		Passion is a strong emotion, usually related t
 essentially	[ɪ'senʃəli]	[ɪ'senʃəli]	2034		"Notice the tie between essentially and the word ""essence,"" referring to the very core of something. As an adverb, then, essentially refers to something's nature. In spite of your faults, you're essentially a good person."		adv.本质上；本来		
 gene	[dʒiːn]	[dʒiːn]	2035		Microscopic, yet powerful, a gene is segment of DNA, the molecule that stores the code for building living bodies.		n.基因		
 enforcement	[ɪn'fɔːsmənt]	[ɪn'fɔːsmənt]	2036		Enforcement is when someone in a position of power makes sure you follow the rules, whether it’s a police officer pulling over a speeding car, or your brother catching you cheating at checkers.		n.执行；强制；实施		
-vs	Br Am		2037				abbr.相对；与 ... 相对(=verse；versus)		
+vs			2037				abbr.相对；与 ... 相对(=verse；versus)		
 sauce	[sɔːs]	[sɔːs]	2038				n.酱汁；调味汁；无礼 vt.给 ... 调味；使 ... 增加趣味；对 ... 无礼		
 independence	[ˌɪndɪ'pendəns]	[ˌɪndɪ'pendəns]	2039		Independence is the state of being free of the control of some other person, country or entity. Revolutions are all about obtaining independence, most famously perhaps the Revolutionary War in America, which led to America's freedom from Britain.		n.独立；自立		
 marketing	['mɑːkɪtɪŋ]	['mɑːrkɪtɪŋ]	2040		Marketing is how you go about promoting and selling a product. Any ad campaign is a type of marketing.		n.市场营销；行销		
@@ -16460,7 +16460,7 @@ absence	['æbsəns]	['æbsəns]	2243		Absence is the state of not being someplac
 rapidly	['ræpɪdli]	['ræpɪdli]	2245		When you do something rapidly, you do it very quickly. A rapidly moving train is going at full speed.		adv.迅速地；很快地		
 diversity	[daɪ'vɜːsəti]	[daɪ'vɜːrsəti]	2247		When there's diversity, there's variety. Often, this word is used for diversity of race, class, or gender.		n.多样性；差异		
 honest	['ɒnɪst]	['ɑːnɪst]	2248		The adjective honest is perfect for describing someone who tells the truth. If you're always honest, it means you're truthful and sincere no matter what.		adj.诚实的；正直的；坦率的		
-Palestinian	Br Am		2249				adj.巴勒斯坦的；巴勒斯坦人的 n.巴勒斯坦；巴勒斯坦人		
+Palestinian			2249				adj.巴勒斯坦的；巴勒斯坦人的 n.巴勒斯坦；巴勒斯坦人		
 employment	[ɪm'plɔɪmənt]	[ɪm'plɔɪmənt]	2251		Employment is your occupation or the fact that you have a job. If you are looking for employment, you might start by attending a job fair — if you make a good impression, you might get hired immediately.		n.职业；雇用；使用		
 speaker	['spiːkə(r)]	['spiːkər]	2252		A speaker is someone who delivers a speech or a device that makes sounds louder. The speaker gave a great speech but you couldn't hear it because the speaker was turned off.		n.说话者；发言者；说某种语言者；扬声器		
 impression	[ɪm'preʃn]	[ɪm'preʃn]	2253		An impression is an imprint, either in one’s mind or on an object. To make a good impression on your friend's parents, don't let your muddy boots leave impressions on their perfect white kitchen floor.		n.印象；感觉；模仿 n.印迹；印刷		
@@ -16547,7 +16547,7 @@ lost	[lɒst]	[lɔːst]	2371		The adjective lost describes anything that can't be
 mechanism	['mekənɪzəm]	['mekənɪzəm]	2373		Use the word mechanism to describe a process that has been set up to accomplish a particular goal. If you’ve set up a method for dealing with your sister when she annoys you, then you have a mechanism in place for establishing peace with your sister.		n.机制；原理 n.结构；机构；机械装置		
 disagree	[ˌdɪsə'ɡriː]	[ˌdɪsə'ɡriː]	2374		When two people disagree, they have completely different opinions about something. You might disagree with your sister about whether chocolate or vanilla ice cream is the most delicious.		v.不同意；不一致；有分歧；不适应；不适宜		
 penalty	['penəlti]	['penəlti]	2375		A penalty is a punishment or consequence for doing something wrong, such as having to pay a fee for not bringing your library book back when it was due.		n.处罚；惩罚；不利；罚球		
-ie	Br Am		2376				abbr.工业工程师(=industrial engineer)		
+ie			2376				abbr.工业工程师(=industrial engineer)		
 destruction	[dɪ'strʌkʃn]	[dɪ'strʌkʃn]	2378		Destruction is damage so bad, things must be replaced, not fixed. Tornadoes often leave a trail of destruction, damaging neighborhoods and knocking down houses.		n.破坏；毁灭		
 unlikely	[ʌn'laɪkli]	[ʌn'laɪkli]	2379				adj.不太可能的		
 tissue	['tɪʃuː]	['tɪʃuː]	2380		Tissue is part of the body of a living thing that is made of similar cells, like the cardiac tissue of your heart. A tissue is also a soft, thin piece of paper used for wiping noses and tear drops.		n.纸巾；薄绢；(生物的)组织；织物		
@@ -17512,7 +17512,7 @@ footballing			8515
 foothills			8516						
 footpath			8520						
 forcible			8528						
-ford			8529						
+ford	[fɔːd]		8529		​a shallow place in a river where it is possible to drive or walk across				
 founded			8556						
 Fr			8561						
 fractional			8562						

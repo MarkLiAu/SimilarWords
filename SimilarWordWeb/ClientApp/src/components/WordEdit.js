@@ -81,7 +81,7 @@ const EditWord = ({ name, location }) => {
             <FormGroup>
                 <Col smOffset={2} sm={8}>
                     <button className="primary" onClick={CallUpdateApi}>Update</button>
-                    <button className="primary" onClick={CallDeleteApi}>Delete</button>
+                    {' '} <button className="primary" onClick={CallDeleteApi}>Delete</button>
                 </Col>
             </FormGroup>
         </Form>
