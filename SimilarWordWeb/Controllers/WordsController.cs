@@ -73,15 +73,50 @@ namespace SimilarWordWeb.Controllers
         }
 
         // PUT api/<controller>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        [HttpPut("{name}")]
+        public Word Put(string name, [FromBody]string s)
         {
+            try
+            {
+                Word word = new Word("test");
+                WordDictionary wd = new WordDictionary();
+                if (WordDictionary.WordList.Count() <= 0)
+                    wd.ReadFile(Path.Combine(Directory.GetCurrentDirectory(), @"data\WordSimilarityList.txt"));
+
+                //foreach (var d in WordDictionary.WordList) d.Value.meaningLong = "";
+                //wd.SaveFile(Path.Combine(Directory.GetCurrentDirectory(), @"data\WordSimilarityList.txt"));
+
+                // if (wd.UpdateWord(word)) return word;
+
+                return new Word("ERROR", -1, "failed to update");
+
+            }
+            catch (Exception ex)
+            {
+                return new Word("ERROR", -1, ex.Message + ex.StackTrace);
+            }
+
         }
 
         // DELETE api/<controller>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        [HttpDelete("{name}")]
+        public string Delete(string name)
         {
+            try
+            {
+                WordDictionary wd = new WordDictionary();
+                if (WordDictionary.WordList.Count() <= 0)
+                    wd.ReadFile(Path.Combine(Directory.GetCurrentDirectory(), @"data\WordSimilarityList.txt"));
+
+                if (wd.DeleteWord(name)) return "OK";
+
+                return "ERROR:"+ "failed to update";
+
+            }
+            catch (Exception ex)
+            {
+                return "ERROR:"+ ex.Message + ex.StackTrace;
+            }
         }
     }
 }

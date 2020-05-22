@@ -193,6 +193,16 @@ namespace WordSimilarityLib
             SaveFile(dataFile);
             return true;
         }
+        public bool DeleteWord(string name)
+        {
+            if (string.IsNullOrWhiteSpace(name)) return false;
+            if (string.IsNullOrWhiteSpace(dataFile)) return false;
+            if (WordList.ContainsKey(name.ToLower()))
+                WordList.Remove(name.ToLower());
+                
+            SaveFile(dataFile);
+            return true;
+        }
 
         /*
         Q: <b> abbey <br>ABBEY &nbsp;&nbsp;[<font face="Kingsoft Phonetic Plain">5Abi</font>]</b><br><br>

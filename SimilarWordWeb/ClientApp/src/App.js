@@ -5,7 +5,7 @@ import { Home } from './components/Home';
 import { FetchData } from './components/FetchData';
 import { Counter } from './components/Counter';
 import { WordSearch } from './components/WordSearch';
-import { bootstrapTest1 } from './components/bootstrap1';
+import { BootstrapTest1 } from './components/bootstrap1';
 import { NotFound } from './components/NotFound';
 import WordEdit from './components/WordEdit';
 
@@ -23,7 +23,7 @@ export default class App extends Component {
             <Route path='/wordsearch/:name' component={WordSearch} />
             <Route path='/wordsearch' component={WordSearch} />
             <Route path='/wordedit/:name' component={WordEdit} />
-            <Route path='/bootstrapTest1' component={WordEdit} />
+            <Route path='/bootstraptest1' component={BootstrapTest1} />
             <Route path='/*' component={NotFound} />
         </Switch>
 

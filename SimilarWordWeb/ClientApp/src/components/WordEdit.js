@@ -6,12 +6,16 @@ const EditWord = ({ name, location }) => {
     // Declare a new state variable, which we'll call "count"
     const [word, setWord] = useState(location.state.word);
 
-    const CallUpdateApi = () => {
-        fetch('api/Words/' + word, {
+    const CallUpdateApi = (e) => {
+        alert("in CallUpdateApi");
+        console.log("CallUpdateApi");
+        console.log(word);
+        console.log(JSON.stringify(word));
+        fetch('api/Words/'+word.name, {
             method: 'PUT',
-            body: JSON.stringify(word),
+            body: word,
             headers: {
-                'Content-type': 'application/json, charset = UTF-8'
+                'Content-Type': 'application/json'
             }
             })
             .then(response => response.json())
@@ -29,8 +33,8 @@ const EditWord = ({ name, location }) => {
     console.log(name);
     console.log(location.state.word);
     return (
-
-        <Form horizontal>
+        <Fragment>
+        <Form horizontal onSubmit={this.CallUpdateApi} >
             <h3 >Edit Word: {word.name}</h3>
             <FormField type='text' label="Word Name" val={word.name} ></FormField>
 
@@ -42,10 +46,12 @@ const EditWord = ({ name, location }) => {
 
             <FormGroup>
                 <Col smOffset={2} sm={8}>
-                    <Button type="submit">Update</Button>
+                    <button type="submit">Update</button>
                 </Col>
             </FormGroup>
         </Form>
+            <button onClick={CallUpdateApi}>Test</button>
+        </Fragment>
     );
     }
 
