@@ -9,7 +9,8 @@ namespace ConsoleCore
         {
             Console.WriteLine("Hello World!");
 
-            testWordSimilarity();
+            WordSimilarityLib.SuperMemory2.test();
+            //testWordSimilarity();
         }
 
 

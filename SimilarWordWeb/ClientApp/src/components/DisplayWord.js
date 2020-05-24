@@ -4,11 +4,28 @@ import { Link } from 'react-router-dom';
 
 const DisplayWord = ({ word, idx, SearchWord }) => {
     // Declare a new state variable, which we'll call "count"
-    const [count, setCount] = useState(0);
+    const [result, setResult] = useState('');
             //<p>You clicked {count} times</p>
             //<button onClick={() => setCount(count + 1)}>
             //    Click me
             //</button>
+
+
+    const CallUpdateApi = (e) => {
+        //alert("in CallUpdateApi");
+        console.log("CallUpdateApi");
+        e.preventDefault();
+        fetch('api/Memory/' + word.name, {
+            method: 'PUT',
+            body: "-1",     // add new item
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+            .then(response => { console.log(response); alert('update finished:'+response); })
+    }
+
+
 
     return (
 
@@ -30,7 +47,7 @@ const DisplayWord = ({ word, idx, SearchWord }) => {
                     </Link>
 
                     <p className='bj_center'><ShowDictLink name={word.name}></ShowDictLink></p>
-                    
+                    <button onClick={CallUpdateApi}>Add for Memory</button>
                 </Panel.Body>
                 </Panel.Collapse>
         </Panel>
