@@ -18,10 +18,10 @@ namespace SimilarWordWeb.Controllers
 
         // GET: api/<controller>
         [HttpGet]
-        public IEnumerable<MemoryLogFibonacci> Get()
+        public IEnumerable<Word> Get()
         {
             MemoryFibonacci memoryFib = new MemoryFibonacci(@"data\menory_" + memoryMethod + userId + ".txt");
-            List<MemoryLogFibonacci> result = memoryFib.getViewList(10);
+            List<Word> result = memoryFib.getViewList(10);
             return result;
         }
 
@@ -76,26 +76,17 @@ namespace SimilarWordWeb.Controllers
         }
         
 
-        // PUT api/<controller>/5
-        [HttpPut]
-        public string PutAAA([FromBody]Word w)
-        {
-                Word word = new Word("test");
-            return "done";
-
-        }
-
-        [HttpPut("{id}")]
-        public string Put(string id, [FromBody]string intervalStr)
+        [HttpPut("{name}")]
+        public string Put(string name, [FromBody]Word word)
         {
             try
             {
-                int interval = -1;
-                if (!string.IsNullOrWhiteSpace(intervalStr)) interval = Convert.ToInt32(intervalStr);
+                int interval = word.viewInterval;
                 MemoryFibonacci memoryList = new MemoryFibonacci(@"data\menory_"+memoryMethod+userId+".txt");
-                MemoryLogFibonacci log = new MemoryLogFibonacci(id, interval);
-                int rt = memoryList.SaveNextInterval(log);
-                if (rt < 0) return "ERROR:" + id + " has already record";
+                int rt;
+                if (interval <= -1) rt = memoryList.StartNewItem(name);
+                else rt = memoryList.UpdateMemoryItem(word);
+                if (rt < 0) return "ERROR:" + name + " has already record";
                 return "OK";
             }
             catch (Exception ex)

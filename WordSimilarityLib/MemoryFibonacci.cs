@@ -7,60 +7,27 @@ namespace WordSimilarityLib
 {
     public class MemoryLogFibonacci
     {
-        public string itemId { get; set; }
+        public string name { get; set; }
         public DateTime viewTime { get; set; }
-        public int easiness { get; set; }    // user choose the easiness: -2, -1:hard, 0:normal, 1:easy ,2
-        public int viewInterval { get; set; }  // viewTime + viewInterval = next view time
-
-        // calculated fields:
-        public DateTime startTime { get; set; }
-        public int viewCount { get; set; }
-        public int lastInterval { get; set; }
-
-        // from word list
-        public string meaning { get; set; }     // multiple lines
+        public int viewInterval { get; set; }
+        public int easiness { get; set; }
 
         public MemoryLogFibonacci()
         {
-            itemId = "";
-            viewTime = DateTime.Now;
-            viewInterval = -1;
-            easiness = 0;
-
-            // calculated 
-            startTime = default(DateTime);
-            viewCount = 0;
-            lastInterval = -1;
-        }
-
-        public MemoryLogFibonacci(string id, int interval, int easi, DateTime date = default(DateTime) )
-        {
-            itemId = id;
-            viewTime = date == default(DateTime) ? DateTime.Now : date;
-            easiness = easi;
-            viewInterval = interval;
-        }
-
-        public bool isNewItem()
-        {
-            return viewInterval < 0; 
-        }
-
-        public bool isDue()
-        {
-            if (viewInterval < 0) return false;     // look like a new item
-            return viewTime.AddDays(viewInterval)>DateTime.Now;
+            name = "";
         }
     }
 
     public class MemoryFibonacci
     {
         public string fileName { get; set; }
+        public List<Word> memoryList { get; set; }
         public List<MemoryLogFibonacci> logList { get; set; }
 
         public MemoryFibonacci()
         {
-            fileName = "";
+            fileName = "memory_default.txt";
+            memoryList = new List<Word>();
             logList = new List<MemoryLogFibonacci>();
         }
 
@@ -69,7 +36,66 @@ namespace WordSimilarityLib
             fileName = file;
         }
 
-        public int loadFile(string file="")
+
+        public bool isNewItem(Word word)
+        {
+            return word.viewInterval ==-1;
+        }
+
+        public bool isDue(Word word)
+        {
+            if (word.viewInterval <-1) return false;     // look like not a new item
+            if (word.viewInterval==0 && word.totalViewed == 1 && word.viewTime.AddMinutes(5) > DateTime.Now) return true;     // first time, due after 5 minutes
+            return word.viewTime.AddDays(word.viewInterval) <= DateTime.Now;
+        }
+
+        public int StartNewItem(string name)
+        {
+            WordDictionary wd = new WordDictionary();
+            if (!WordDictionary.WordList.ContainsKey(name.ToLower())) return -1;
+            Word w = WordDictionary.WordList[name.ToLower()];
+            if (w.viewInterval!=int.MinValue) return -2;        // already started
+
+            w.viewTime = DateTime.Now;
+            w.viewInterval = -1;
+
+            wd.UpdateWord(w);
+            AddMemoryLog(w);
+
+            return w.viewInterval;
+        }
+
+        public int UpdateMemoryItem(Word wordNew)
+        {
+            if (wordNew.viewInterval == -1) return StartNewItem(wordNew.name);
+            if (wordNew.viewInterval<0) return -2;        // something wrong, this one not started yet
+
+            WordDictionary wd = new WordDictionary();
+            if (!WordDictionary.WordList.ContainsKey(wordNew.name.ToLower())) return -1;
+            Word w = WordDictionary.WordList[wordNew.name.ToLower()];
+
+            w.viewTime = DateTime.Now;
+            w.viewInterval = wordNew.viewInterval;
+            w.easiness = wordNew.easiness;
+
+            if (w.startTime == DateTime.MinValue) w.startTime = w.viewTime;
+            w.totalViewed++;
+
+            wd.UpdateWord(w);
+            AddMemoryLog(w);
+
+            return w.viewInterval;
+        }
+
+        public int AddMemoryLog(Word word, string delimeter = "\t")
+        {
+            string log = word.name + delimeter + word.viewTime + delimeter + word.viewInterval + delimeter + word.easiness;
+
+            File.AppendAllLines(fileName, new string[] { log });
+            return 1;
+        }
+
+        public int ReadMemoryLog(string file = "")
         {
             logList.Clear();
 
@@ -78,60 +104,83 @@ namespace WordSimilarityLib
             string[] lines = File.ReadAllLines(file);
             if (lines.Length <= 0) return 0;
 
-            for(int i=0; i<lines.Length;i++)
+            for (int i = 0; i < lines.Length; i++)
             {
                 string[] ss = lines[i].Split(new char[] { ',', ';', '\t' });
                 if (ss.Length < 3) continue;
 
                 MemoryLogFibonacci log = new MemoryLogFibonacci();
-                log.itemId = ss[0].Trim();
+                log.name = ss[0].Trim();
                 log.viewTime = Convert.ToDateTime(ss[1]);
                 log.viewInterval = Convert.ToInt32(ss[2]);
+                log.easiness = Convert.ToInt32(ss[3]);
                 logList.Add(log);
             }
             return logList.Count;
         }
 
-
-        public int AddNewItem(string id)
+        public List<Word> getViewList(int maxNewItem=10)
         {
-            foreach (var d in logList)
-                if (d.itemId == id) return -1;
+            ReadMemoryLog();
+            WordDictionary wd = new WordDictionary();
+            if (WordDictionary.WordList.Count <= 0)
+                wd.ReadFile(Path.Combine(Directory.GetCurrentDirectory(), @"data\WordSimilarityList.txt"));
 
-            MemoryLogFibonacci memoryLog = new MemoryLogFibonacci(id, -1, 0);
-            return SaveNextInterval(memoryLog);
-        }
-
-        public int SaveNextInterval(MemoryLogFibonacci memoryLog, string delimeter="\t")
-        {
-            string log = memoryLog.itemId + delimeter + memoryLog.viewTime + delimeter + memoryLog.viewInterval;
-
-            File.AppendAllLines(fileName, new string[] { log });
-            return 1;
-        }
-
-        public List<MemoryLogFibonacci> getViewList(int maxNewItem=10)
-        {
-            loadFile();
-
-            List<MemoryLogFibonacci> result = new List<MemoryLogFibonacci>();
+            List<Word> result = new List<Word>();
+            Dictionary<string, int> namelist = new Dictionary<string, int>();
 
             int newItemCount = 0;
-            foreach (var d in logList)
+
+            foreach (var w in WordDictionary.WordList)
             {
-                if (d.isNewItem())
+                Word word = w.Value;
+                if (isNewItem(word))
                 {
                     if (newItemCount >= maxNewItem) continue;
-                    result.Add(d);
+                    result.Add(word);
                     newItemCount++;
                 }
-                else if(d.isDue())
+                else if(isDue(word))
                 {
-                    result.Add(d);
+                    result.Add(word);
                 }
             }
 
+            // result = new List<Word>(result.ToArray());  // build new objects;
+            // calculate next interval
+            //foreach (var w in result)
+            //{
+            //    w.viewInterval = CalculateNextInterval(w);
+            //}
             return result;
+        }
+
+        public int CalculateNextInterval(Word word)
+        {
+            int newVal = word.viewInterval;
+            if (word.viewInterval < 0)
+            {
+                newVal = 0;
+            }
+            else if(word.viewInterval==0)
+            {
+                if (word.totalViewed <= 0) newVal = 0;  // first time viewed
+                else newVal = 1;
+            }
+            else if(word.easiness<=-2)
+            {
+                newVal = word.viewInterval;     // it's too hard, use last interval
+            }
+            else
+            {
+                double v = word.viewInterval * 1.618;
+                if (word.easiness >= 2) v *= 1.618;     // too easy
+                else if (word.easiness == 1) v = word.viewInterval * 2;
+                else if (word.easiness == -1) v = word.viewInterval * 1.3;
+                newVal = Convert.ToInt32(v + 0.5);
+                if (newVal < 1) newVal = 1;
+            }
+            return newVal;
         }
 
         //////////////////////////////////////////////////////////////////////

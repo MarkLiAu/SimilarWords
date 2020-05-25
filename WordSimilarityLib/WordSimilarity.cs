@@ -22,6 +22,15 @@ namespace WordSimilarityLib
         public string soundUrl { get; set; }
         public string exampleSoundUrl { get; set; }
 
+        // fields for viewing
+        public DateTime viewTime { get; set; }
+        public int easiness { get; set; }    // user choose the easiness:: not started yet,  -2, -1:hard, 0:normal, 1:easy ,2 
+        public int viewInterval { get; set; }  // viewTime + viewInterval = next view time
+
+        // calculated fields:
+        public DateTime startTime { get; set; }
+        public int totalViewed { get; set; }
+
         public Word()
         {
             name = "";
@@ -34,6 +43,14 @@ namespace WordSimilarityLib
             meaningOther = "";
             soundUrl = "";
             exampleSoundUrl = "";
+
+            viewTime = DateTime.MinValue;
+            easiness = int.MinValue;
+            viewInterval = int.MinValue;      // not started yet
+
+            startTime = DateTime.MinValue;
+            totalViewed = 0;
+
         }
 
         public Word(string s) : this()
@@ -71,7 +88,7 @@ namespace WordSimilarityLib
         {
             using (StreamWriter sw = new StreamWriter(file))
             {
-                sw.WriteLine(string.Format("name{0}pronounciation{0}pronounciationAm{0}frequency{0}similarWords{0}meaningShort{0}meaningLong{0}meaningOther{0}soundUrl{0}exampleSoundUrl", delimeter));
+                sw.WriteLine(string.Format("name{0}pronounciation{0}pronounciationAm{0}frequency{0}similarWords{0}meaningShort{0}meaningLong{0}meaningOther{0}soundUrl{0}exampleSoundUrl{0}viewTime{0}viewInterval{0}easiness", delimeter));
                 foreach (var v in WordList)
                 {
                     sw.Write(v.Value.name); sw.Write(delimeter);
@@ -84,6 +101,10 @@ namespace WordSimilarityLib
                     sw.Write(v.Value.meaningOther); sw.Write(delimeter);
                     sw.Write(v.Value.soundUrl); sw.Write(delimeter);
                     sw.Write(v.Value.exampleSoundUrl);
+
+                    sw.Write(delimeter); sw.Write(v.Value.viewTime);
+                    sw.Write(delimeter); sw.Write(v.Value.viewInterval);
+                    sw.Write(delimeter); sw.Write(v.Value.easiness);
                     sw.WriteLine();
                 }
             }
@@ -105,6 +126,7 @@ namespace WordSimilarityLib
                     string[] ss = line.Split(delimiter);
                     if (ss.Length < 2) continue;
                     Word w = new Word(ss[0]);
+                    if (ss[0] == "cool") { string tmp=ss[0]; }
                     for(int i=1;i<columns.Length&&i<ss.Length;i++)
                     {
                         if (ss[i].Trim() == "") continue;
@@ -117,9 +139,11 @@ namespace WordSimilarityLib
                         else if (columns[i].ToLower() == "meaningother") w.meaningOther = ss[i];
                         else if (columns[i].ToLower() == "soundurl") w.soundUrl = ss[i];
                         else if (columns[i].ToLower() == "examplesoundurl") w.exampleSoundUrl = ss[i];
+                        else if (columns[i].ToLower() == "viewtime") w.viewTime = Convert.ToDateTime(ss[i]);
+                        else if (columns[i].ToLower() == "viewinterval") w.viewInterval = Convert.ToInt32(ss[i]);
+                        else if (columns[i].ToLower() == "easiness") w.easiness = Convert.ToInt32(ss[i]);
                     }
-                    if (w.pronounciation.Contains("Br"))
-                        w.pronounciation = "";
+                    if (w.pronounciation.Contains("Br")) w.pronounciation = "";     // fix the incorrect data
                     WordList[w.name.ToLower()] = w;     // use lowcase for search
                 }
             }
@@ -191,6 +215,18 @@ namespace WordSimilarityLib
 
             foreach (var m in matchList) result.Add(WordList[m.Value]);
             return result;
+        }
+
+        public void FindAllSimilarWords()
+        {
+            foreach (var w in WordList)
+            {
+                List<Word> list = FindSimilarWords(w.Key);
+                if (list.Count <= 1) continue;
+                w.Value.similarWords = "";
+                for (int i = 1; i < list.Count; i++) w.Value.similarWords += " " + list[i].name;
+            }
+            SaveFile(dataFile);
         }
 
         public bool UpdateWord(Word word)

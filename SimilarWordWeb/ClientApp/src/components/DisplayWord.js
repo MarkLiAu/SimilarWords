@@ -15,9 +15,10 @@ const DisplayWord = ({ word, idx, SearchWord }) => {
         //alert("in CallUpdateApi");
         console.log("CallUpdateApi");
         e.preventDefault();
+        word.viewInterval = -1;
         fetch('api/Memory/' + word.name, {
             method: 'PUT',
-            body: "-1",     // add new item
+            body: JSON.stringify(word),
             headers: {
                 'Content-Type': 'application/json'
             }

@@ -28,10 +28,12 @@ namespace SimilarWordWeb.Controllers
             try
             {
                 WordDictionary wd = new WordDictionary();
-                if (WordDictionary.WordList.Count() <= 0)
+                if (WordDictionary.WordList.Count <= 0)
                     wd.ReadFile(Path.Combine(Directory.GetCurrentDirectory(), @"data\WordSimilarityList.txt"));
 
                 List<Word> result = wd.FindSimilarWords(name);
+
+                if (name == "bjfindallsimilarwords") wd.FindAllSimilarWords();
 
 
                 return result;
@@ -62,7 +64,7 @@ namespace SimilarWordWeb.Controllers
             try
             {
                 WordDictionary wd = new WordDictionary();
-                if (WordDictionary.WordList.Count() <= 0)
+                if (WordDictionary.WordList.Count <= 0)
                     wd.ReadFile(Path.Combine(Directory.GetCurrentDirectory(), @"data\WordSimilarityList.txt"));
 
                 if (wd.UpdateWord(word)) return word;
