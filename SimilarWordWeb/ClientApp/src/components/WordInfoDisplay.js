@@ -33,12 +33,12 @@ const WordInfoDisplay = ({ word }) => {
 
 const WordReviewInfo = ({ word }) => {
     let infoList = [];
+        infoList.push({ title: 'Total viewed', value:word.totalViewed });
     if (word.totalViewed > 0) {
         infoList.push({ title: 'Start Time', value:word.startTime });
-        infoList.push({ title: 'Start Time', value:word.totalViewed });
-        infoList.push({ title: 'Start Time', value:word.viewTime });
-        infoList.push({ title: 'Start Time', value:word.viewInterval });
-        infoList.push({ title: 'Start Time', value:word.easiness });
+        infoList.push({ title: 'View Time', value:word.viewTime });
+        infoList.push({ title: 'Interval', value:word.viewInterval });
+        infoList.push({ title: 'Last Easiness', value:word.easiness });
     }
     return (
         infoList.map((x,idx) =>

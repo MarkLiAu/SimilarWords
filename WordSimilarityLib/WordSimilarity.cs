@@ -76,6 +76,14 @@ namespace WordSimilarityLib
             meaningOther = word.meaningOther;
             soundUrl = word.soundUrl;
             exampleSoundUrl = word.exampleSoundUrl;
+
+            viewTime = word.viewTime;
+            easiness = word.easiness;
+            viewInterval = word.viewInterval;      // not started yet
+
+            startTime = word.startTime;
+            totalViewed = word.totalViewed;
+
         }
 
     }
@@ -102,7 +110,7 @@ namespace WordSimilarityLib
                     sw.Write(v.Value.soundUrl); sw.Write(delimeter);
                     sw.Write(v.Value.exampleSoundUrl);
 
-                    sw.Write(delimeter); sw.Write(v.Value.viewTime);
+                    sw.Write(delimeter); sw.Write(v.Value.viewTime.ToBinary());
                     sw.Write(delimeter); sw.Write(v.Value.viewInterval);
                     sw.Write(delimeter); sw.Write(v.Value.easiness);
                     sw.WriteLine();
@@ -139,11 +147,11 @@ namespace WordSimilarityLib
                         else if (columns[i].ToLower() == "meaningother") w.meaningOther = ss[i];
                         else if (columns[i].ToLower() == "soundurl") w.soundUrl = ss[i];
                         else if (columns[i].ToLower() == "examplesoundurl") w.exampleSoundUrl = ss[i];
-                        else if (columns[i].ToLower() == "viewtime") w.viewTime = Convert.ToDateTime(ss[i]);
+//                        else if (columns[i].ToLower() == "viewtime") w.viewTime = DateTime.FromBinary(Convert.ToInt64(ss[i]));
                         else if (columns[i].ToLower() == "viewinterval") w.viewInterval = Convert.ToInt32(ss[i]);
                         else if (columns[i].ToLower() == "easiness") w.easiness = Convert.ToInt32(ss[i]);
                     }
-                    if (w.pronounciation.Contains("Br")) w.pronounciation = "";     // fix the incorrect data
+  //                  if (w.pronounciation.Contains("Br")) w.pronounciation = "";     // fix the incorrect data
                     WordList[w.name.ToLower()] = w;     // use lowcase for search
                 }
             }

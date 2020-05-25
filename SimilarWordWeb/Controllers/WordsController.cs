@@ -34,6 +34,7 @@ namespace SimilarWordWeb.Controllers
                 List<Word> result = wd.FindSimilarWords(name);
 
                 if (name == "bjfindallsimilarwords") wd.FindAllSimilarWords();
+                if (name == "bjloadfile")   wd.ReadFile(Path.Combine(Directory.GetCurrentDirectory(), @"data\WordSimilarityList.txt"));
 
 
                 return result;
