@@ -10,6 +10,7 @@ const WordMemory = () => {
     const [firstFlag, setFirstFlag] = useState(0);
     const [memoryIdx, setMemoryIdx] = useState(0);
     const [showDetail, setShowDetail] = useState(false);
+    const [curWord, setCurWord] = useState({easiness:0,viewInterval:0});
 
     const CallApi = () => {
         fetch('api/memory/')
@@ -17,49 +18,79 @@ const WordMemory = () => {
             .then(data => {
                 console.log('fetch back');
                 setMemoryList(data);
+                ResetCurWord();
             });
     }
     const CallUpdateApi = (e) => {
         //alert("in CallUpdateApi");
         console.log("CallUpdateApi");
         e.preventDefault();
+        memoryList[memoryIdx].easiness = curWord.easiness;
+        memoryList[memoryIdx].viewInterval = curWord.viewInterval;
+        setMemoryList(memoryList);
         fetch('api/memory/' +memoryList[memoryIdx].name, {
             method: 'PUT',
             body: JSON.stringify(memoryList[memoryIdx]),
             headers: {
                 'Content-Type': 'application/json'
             }
+        }).then(response => {
+            console.log(response);
+            memoryList[memoryIdx].easiness = 999;
+            setMemoryIdx(memoryIdx + 1)
+            ResetCurWord();
+            setShowDetail(false);
         })
-            .then(response => { console.log(response); setShowDetail(false); setMemoryIdx(memoryIdx + 1) })
+    }
+
+    const ResetCurWord = () => {
+        if (memoryList.length > 0) {
+            curWord.easiness = memoryList[memoryIdx].easiness;
+            if (curWord.easiness < -2 || curWord.easiness > 2) curWord.easiness = 0;
+            curWord.viewInterval = memoryList[memoryIdx].viewInterval;
+            if (curWord.viewInterval < 0) curWord.viewInterval = 0;
+            setCurWord(curWord);
+        }
     }
 
     const ChangeEasiness = (e, increase) => {
         //let increase = e.srcElement.id == 'btn_hard' ? 1 : -1;
         console.log('in changeeasiness');
-        console.log(memoryList[memoryIdx].viewInterval);
         console.log(increase);
-        if (memoryList[memoryIdx].easiness > -1 && memoryList[memoryIdx].easiness<1)
-            memoryList[memoryIdx].easiness += increase;
-        let v = Math.round(memoryList[memoryIdx].viewInterval * 0.1,0);
+        console.log(curWord);
+        let v = Math.round(curWord.viewInterval * 0.1,0);
         if (v < 1) v = 1;
-        memoryList[memoryIdx].viewInterval += v*increase;
-        if (memoryList[memoryIdx].viewInterval <= 0) memoryList[memoryIdx].viewInterval = 0;
+        curWord.viewInterval += v*increase;
+        if (curWord.viewInterval <= 0) curWord.viewInterval = 0;
+        if (increase > 0 && curWord.viewInterval <= 0) curWord.viewInterval = 1;
 
-        setMemoryList(memoryList);
+        if (curWord.viewInterval > memoryList[memoryIdx].viewInterval) curWord.easiness = 1;
+        else if (curWord.viewInterval < memoryList[memoryIdx].viewInterval) curWord.easiness = -1;
+        else curWord.easiness = 0;
+
+        setCurWord(curWord);
         setFirstFlag(firstFlag + 1);
-        console.log(memoryList[memoryIdx].viewInterval);
+        console.log(curWord);
     }
 
     const showDetailClicked = () => { setShowDetail(!showDetail)}
 
     const backClicked = () => {
-        if (memoryIdx > 0) { setShowDetail(false); setMemoryIdx(memoryIdx - 1) }
+        if (memoryIdx > 0) {
+            setShowDetail(false);
+            setMemoryIdx(memoryIdx - 1);
+            ResetCurWord();
+        }
     }
     const nextClicked = () => {
-        if (memoryIdx < memoryList.length - 1) { setShowDetail(false); setMemoryIdx(memoryIdx + 1) }
+        if (memoryIdx < memoryList.length - 1) {
+            setShowDetail(false);
+            setMemoryIdx(memoryIdx + 1);
+            ResetCurWord();
+         }
     }
 
-    const reviewDays = d => d <= 0 ? 'Review Today' : 'Review in ' + d + ' day' + (d < 1 ? 's' : ''); 
+    function reviewDays(d) { return ( d <= 0 ? 'Review Today' : 'Review in ' + d + ' day' + (d < 1 ? 's' : '')) ; } 
 
     if (firstFlag == 0) {
         CallApi();
@@ -81,9 +112,9 @@ const WordMemory = () => {
                     </Panel.Heading>
                     <Panel.Body>
 
-                    <button id='btn_hard' onClick={(e)=>ChangeEasiness(e,-1)}>Hard</button>{' '}
-                    <button onClick={CallUpdateApi}>{reviewDays(memoryList[memoryIdx].viewInterval)}</button>{' '}
-                    <button id='btn_easy' onClick={(e) => ChangeEasiness(e, 1)}>Easy</button>
+                    <button id='btn_hard' disabled={memoryList[memoryIdx].easiness > 10} onClick={(e)=>ChangeEasiness(e,-1)}>Hard</button>{' '}
+                    <button id='btn_submit' disabled={memoryList[memoryIdx].easiness > 10} onClick={CallUpdateApi}>{reviewDays(curWord.viewInterval)}</button>{' '}
+                    <button id='btn_easy' disabled={memoryList[memoryIdx].easiness > 10} onClick={(e) => ChangeEasiness(e, 1)}>Easy</button>
                     {' '} 
                     <button id='btn_back' onClick={backClicked}>{'<'}</button>
                     {' '} 

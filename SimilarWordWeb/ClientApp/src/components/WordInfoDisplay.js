@@ -1,5 +1,6 @@
 ﻿import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
+import { Badge } from 'react-bootstrap';
 
 const WordInfoDisplay = ({ word }) => {
     console.log(word);
@@ -8,7 +9,7 @@ const WordInfoDisplay = ({ word }) => {
         <table className='table table-striped table-bordered'>
             <tbody>
             <tr>
-                    <td>Name:</td><td> <ShowWordName name={word.name}></ShowWordName>  </td>
+                    <td>Name:</td><td> <ShowWordName name={word.name}></ShowWordName>    <Badge>{word.frequency}</Badge> </td>
             </tr>
             <tr>
                 <td>pronounciation:</td><td>{word.pronounciation}</td>
@@ -21,7 +22,7 @@ const WordInfoDisplay = ({ word }) => {
             </tr>
                 <WordReviewInfo word={word}></WordReviewInfo>
                 <tr>
-                    <td>Onine dictionary</td><td><ShowDictLink word={word.name}></ShowDictLink></td>
+                    <td>Onine dictionary</td><td><ShowDictLink name={word.name}></ShowDictLink></td>
                 </tr>
 
                 
@@ -33,7 +34,7 @@ const WordInfoDisplay = ({ word }) => {
 
 const WordReviewInfo = ({ word }) => {
     let infoList = [];
-        infoList.push({ title: 'Total viewed', value:word.totalViewed });
+    infoList.push({ title: 'Total viewed', value: word.totalViewed + (word.totalViewed<=0 && word.viewInterval>=-1? ' (in memory list)':'') });
     if (word.totalViewed > 0) {
         infoList.push({ title: 'Start Time', value:word.startTime });
         infoList.push({ title: 'View Time', value:word.viewTime });
@@ -61,7 +62,7 @@ const ShowWordName = ({ name }) => {
 
 
 
-const ShowDictLink = ({ name }) => {
+const ShowDictLink = ({ name } ) => {
     return (
         <Fragment>
             <a title="Collins" href={'https://www.collinsdictionary.com/dictionary/english/' + name} target="_blank">Coll</a>

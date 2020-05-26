@@ -122,8 +122,6 @@ export class WordSearch extends Component {
                 <input value={this.state.wordInput} placeholder={this.state.word2search} onChange={this.WordChanged} onKeyPress={this.KeyPressed} ></input>
                 <span>{' '}</span>
                 <button type="submit" onClick={this.SubmitSearch}>Search</button>
-                <span>{' '}</span>
-                <Checkbox inline onChange={this.ShowAllChanged} > Show All </Checkbox>
                 </Panel>
                 <PanelGroup accordion id="accordion-example" defaultActiveKey='0'>
 

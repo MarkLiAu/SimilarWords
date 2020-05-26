@@ -184,7 +184,7 @@ namespace WordSimilarityLib
                         else if (columns[i].ToLower() == "meaningother") w.meaningOther = ss[i];
                         else if (columns[i].ToLower() == "soundurl") w.soundUrl = ss[i];
                         else if (columns[i].ToLower() == "examplesoundurl") w.exampleSoundUrl = ss[i];
-//                        else if (columns[i].ToLower() == "viewtime") w.viewTime = DateTime.FromBinary(Convert.ToInt64(ss[i]));
+                        else if (columns[i].ToLower() == "viewtime") w.viewTime = DateTime.FromBinary(Convert.ToInt64(ss[i]));
                         else if (columns[i].ToLower() == "viewinterval") w.viewInterval = Convert.ToInt32(ss[i]);
                         else if (columns[i].ToLower() == "easiness") w.easiness = Convert.ToInt32(ss[i]);
                     }
