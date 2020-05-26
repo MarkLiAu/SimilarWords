@@ -92,17 +92,20 @@ namespace WordSimilarityLib
         static public Dictionary<string, Word> WordList = new Dictionary<string, Word>();
         static public string dataFile = "";
 
-        public void SaveFile(string file, string delimeter = "\t")
+        public void SaveFile_cutdown(string file, string delimeter = "\t")
         {
             SortedList<int, Word> list = new SortedList<int, Word>();
             int n = 0;
             foreach(var d in WordList)
             {
+                d.Value.meaningOther=d.Value.pronounciationAm = "";
                 if (d.Value.frequency > 10000) continue;
-                list.Add(d.Value.frequency, d.Value);
+                list.Add(d.Value.frequency*10000+(n++), d.Value);
             }
+            n = 0;
             using (StreamWriter sw = new StreamWriter(file))
             {
+
                 sw.WriteLine(string.Format("name{0}pronounciation{0}pronounciationAm{0}frequency{0}similarWords{0}meaningShort{0}meaningLong{0}meaningOther{0}soundUrl{0}exampleSoundUrl{0}viewTime{0}viewInterval{0}easiness", delimeter));
                 foreach (var v in list)
                 {
@@ -121,10 +124,12 @@ namespace WordSimilarityLib
                     sw.Write(delimeter); sw.Write(v.Value.viewInterval);
                     sw.Write(delimeter); sw.Write(v.Value.easiness);
                     sw.WriteLine();
+                    if (++n >= 10000) break;
                 }
+                sw.Close();
             }
         }
-        public void SaveFile_original(string file, string delimeter = "\t")
+        public void SaveFile(string file, string delimeter = "\t")
         {
             using (StreamWriter sw = new StreamWriter(file))
             {
@@ -272,7 +277,7 @@ namespace WordSimilarityLib
             }
             sw.Stop();
             long t = sw.ElapsedMilliseconds;
-            SaveFile(dataFile);
+            SaveFile_cutdown(dataFile);
         }
 
         public List<Word> test11(string name)

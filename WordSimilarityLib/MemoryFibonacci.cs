@@ -119,12 +119,27 @@ namespace WordSimilarityLib
             return logList.Count;
         }
 
+        public void ClearViewHistory()
+        {
+            if (!string.IsNullOrWhiteSpace(fileName) && File.Exists(fileName)) File.Delete(fileName);
+            WordDictionary wd = new WordDictionary();
+            foreach (var d in WordDictionary.WordList)
+            {
+                d.Value.viewTime = default(DateTime);
+                d.Value.totalViewed = 0;
+                d.Value.viewInterval = int.MinValue;
+            }
+            wd.SaveFile(WordDictionary.dataFile);
+        }
+
         public List<Word> getViewList(int maxNewItem=10)
         {
             ReadMemoryLog();
             WordDictionary wd = new WordDictionary();
             if (WordDictionary.WordList.Count <= 0)
                 wd.ReadFile(Path.Combine(Directory.GetCurrentDirectory(), @"data\WordSimilarityList.txt"));
+
+            //ClearViewHistory();
 
             List<Word> result = new List<Word>();
             Dictionary<string, int> namelist = new Dictionary<string, int>();
