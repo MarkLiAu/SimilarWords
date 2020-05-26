@@ -9,8 +9,8 @@ namespace ConsoleCore
         {
             Console.WriteLine("Hello World!");
 
-            WordSimilarityLib.SuperMemory2.test();
-            //testWordSimilarity();
+            //WordSimilarityLib.SuperMemory2.test();
+            testWordSimilarity();
         }
 
 
@@ -18,7 +18,7 @@ namespace ConsoleCore
         {
             WordSimilarityLib.WordDictionary wordDictionary = new WordSimilarityLib.WordDictionary();
 
-            wordDictionary.test1(Directory.GetCurrentDirectory()+@"\data");
+            wordDictionary.test1(@"..\..\..\data");
 
         }
 

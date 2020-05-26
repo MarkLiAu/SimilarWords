@@ -8,7 +8,7 @@ import { WordSearch } from './components/WordSearch';
 import { BootstrapTest1 } from './components/bootstrap1';
 import { NotFound } from './components/NotFound';
 import WordEdit from './components/WordEdit';
-import DashBoard from './components/DashBoard';
+import WordMemory from './components/WordMemory';
 
 export default class App extends Component {
   displayName = App.name
@@ -17,11 +17,11 @@ export default class App extends Component {
     return (
         <Layout>
         <Switch>    
-            <Route exact path='/' component={DashBoard} />
+            <Route exact path='/' component={Home} />
             <Route path='/Home' component={Home} />
             <Route path='/counter' component={Counter} />
             <Route path='/fetchdata' component={FetchData} />
-            <Route path='/dashboard' component={DashBoard} />
+            <Route path='/wordmemory' component={WordMemory} />
             <Route path='/wordsearch/:name' component={WordSearch} />
             <Route path='/wordsearch' component={WordSearch} />
             <Route path='/wordedit/:name' component={WordEdit} />

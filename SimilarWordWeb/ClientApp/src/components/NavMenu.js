@@ -39,6 +39,13 @@ export class NavMenu extends Component {
               </NavItem>
             </LinkContainer>
 
+            <LinkContainer to={'/wordmemory'}>
+                <NavItem>
+                    <Glyphicon glyph='th-list' /> Word Memory
+                </NavItem>
+            </LinkContainer>
+
+
            <LinkContainer to={'/bootstrapTest1'}>
               <NavItem>
                    <Glyphicon glyph='th-list' /> Test 1

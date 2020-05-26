@@ -94,6 +94,38 @@ namespace WordSimilarityLib
 
         public void SaveFile(string file, string delimeter = "\t")
         {
+            SortedList<int, Word> list = new SortedList<int, Word>();
+            int n = 0;
+            foreach(var d in WordList)
+            {
+                if (d.Value.frequency > 10000) continue;
+                list.Add(d.Value.frequency, d.Value);
+            }
+            using (StreamWriter sw = new StreamWriter(file))
+            {
+                sw.WriteLine(string.Format("name{0}pronounciation{0}pronounciationAm{0}frequency{0}similarWords{0}meaningShort{0}meaningLong{0}meaningOther{0}soundUrl{0}exampleSoundUrl{0}viewTime{0}viewInterval{0}easiness", delimeter));
+                foreach (var v in list)
+                {
+                    sw.Write(v.Value.name); sw.Write(delimeter);
+                    sw.Write(v.Value.pronounciation); sw.Write(delimeter);
+                    sw.Write(v.Value.pronounciationAm); sw.Write(delimeter);
+                    sw.Write(v.Value.frequency); sw.Write(delimeter);
+                    sw.Write(v.Value.similarWords); sw.Write(delimeter);
+                    sw.Write(v.Value.meaningShort); sw.Write(delimeter);
+                    sw.Write(v.Value.meaningLong); sw.Write(delimeter);
+                    sw.Write(v.Value.meaningOther); sw.Write(delimeter);
+                    sw.Write(v.Value.soundUrl); sw.Write(delimeter);
+                    sw.Write(v.Value.exampleSoundUrl);
+
+                    sw.Write(delimeter); sw.Write(v.Value.viewTime.ToBinary().ToString());
+                    sw.Write(delimeter); sw.Write(v.Value.viewInterval);
+                    sw.Write(delimeter); sw.Write(v.Value.easiness);
+                    sw.WriteLine();
+                }
+            }
+        }
+        public void SaveFile_original(string file, string delimeter = "\t")
+        {
             using (StreamWriter sw = new StreamWriter(file))
             {
                 sw.WriteLine(string.Format("name{0}pronounciation{0}pronounciationAm{0}frequency{0}similarWords{0}meaningShort{0}meaningLong{0}meaningOther{0}soundUrl{0}exampleSoundUrl{0}viewTime{0}viewInterval{0}easiness", delimeter));
@@ -110,7 +142,7 @@ namespace WordSimilarityLib
                     sw.Write(v.Value.soundUrl); sw.Write(delimeter);
                     sw.Write(v.Value.exampleSoundUrl);
 
-                    sw.Write(delimeter); sw.Write(v.Value.viewTime.ToBinary());
+                    sw.Write(delimeter); sw.Write(v.Value.viewTime.ToBinary().ToString());
                     sw.Write(delimeter); sw.Write(v.Value.viewInterval);
                     sw.Write(delimeter); sw.Write(v.Value.easiness);
                     sw.WriteLine();
@@ -227,14 +259,25 @@ namespace WordSimilarityLib
 
         public void FindAllSimilarWords()
         {
+            System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
+            sw.Start();
+            int n = 0;
             foreach (var w in WordList)
             {
+                n++;
                 List<Word> list = FindSimilarWords(w.Key);
                 if (list.Count <= 1) continue;
                 w.Value.similarWords = "";
                 for (int i = 1; i < list.Count; i++) w.Value.similarWords += " " + list[i].name;
             }
+            sw.Stop();
+            long t = sw.ElapsedMilliseconds;
             SaveFile(dataFile);
+        }
+
+        public List<Word> test11(string name)
+        {
+            return null;
         }
 
         public bool UpdateWord(Word word)
@@ -489,10 +532,286 @@ namespace WordSimilarityLib
             }
             SaveFile(Path.Combine(dataPath, "WordSimilarityList.txt"));
         }
+
+
+        // test performance : dictionary vs list vs array
+        public void testLoop(string dataPath)
+        {
+            System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
+            sw.Start();
+
+            // prepare data
+            ReadFile(Path.Combine(dataPath, "WordSimilarityList.txt"));
+            Dictionary<string, Word> dict = new Dictionary<string, Word>();
+            List<Word> list = new List<Word>();
+            Word[] array = new Word[WordList.Count];
+            int count = WordList.Count;
+            int nLoop = 0;
+
+            Console.WriteLine("total items: " + WordList.Count);
+
+            // Run test multiple times
+            for (int n = 1; n <= 3; n++)
+            {
+                // insert to dict
+                sw.Restart();
+                foreach (var d in WordList)
+                {
+                    Word w = new Word(d.Value);
+                    dict[w.name] = w;
+                }
+                sw.Stop();
+                Console.WriteLine("insert into dictionary: " + sw.ElapsedMilliseconds);
+
+                // insert to list
+                list.Clear();
+                sw.Restart();
+                foreach (var d in WordList)
+                {
+                    Word w = new Word(d.Value);
+                    list.Add(w);
+                }
+                sw.Stop();
+                Console.WriteLine("insert into list: " + sw.ElapsedMilliseconds);
+
+                // insert to array
+                sw.Restart();
+                int idx = 0;
+                foreach (var d in WordList)
+                {
+                    Word w = new Word(d.Value);
+                    array[idx++]=w;
+                }
+                sw.Stop();
+                Console.WriteLine("insert into array: " + sw.ElapsedMilliseconds);
+            }
+
+
+
+            // loop through 1
+            Console.WriteLine("double loop simple");
+            for (int n = 1; n <= 3; n++)
+            {
+                // insert to dict
+                nLoop = 0;
+                sw.Restart();
+                for(int n2=1;n2<= count; n2++)
+                {
+                    foreach (var dd in dict)
+                    {
+                        nLoop++;
+                        string ss = dd.Value.name;
+                    }
+                }
+                sw.Stop();
+                Console.WriteLine("nloop=" + nLoop);
+                Console.WriteLine("foreach dictionary: " + sw.ElapsedMilliseconds);
+
+                // insert to list
+                nLoop = 0;
+                sw.Restart();
+                for (int n2 = 1; n2 <= count; n2++)
+                {
+                    foreach(var d2 in list)
+                    {
+                        nLoop++;
+                        string ss = d2.name;
+                    }
+                }
+                sw.Stop();
+                Console.WriteLine("nloop=" + nLoop);
+                Console.WriteLine(" list foreach: " + sw.ElapsedMilliseconds);
+
+                // insert to list
+                nLoop = 0;
+                sw.Restart();
+                for (int n2 = 1; n2 <= count; n2++)
+                {
+                    for (int ii = 0; ii < count; ii++)
+                    {
+                        nLoop++;
+                        string ss = list[ii].name;
+                    }
+                }
+                sw.Stop();
+                Console.WriteLine("nloop=" + nLoop);
+                Console.WriteLine(" list for: " + sw.ElapsedMilliseconds);
+
+                // insert to array
+                nLoop = 0;
+                sw.Restart();
+                for (int n2 = 1; n2 <= count; n2++)
+                {
+                    for (int ii = 0; ii < count; ii++)
+                    {
+                        nLoop++;
+                        string ss = array[ii].name;
+                    }
+                }
+                sw.Stop();
+                Console.WriteLine("nloop=" + nLoop);
+                Console.WriteLine(" array: " + sw.ElapsedMilliseconds);
+            }
+
+            Console.WriteLine("double loop on another dictionary");
+            // loop through
+            for (int n = 1; n <= 3; n++)
+            {
+                // insert to dict
+                nLoop = 0;
+                sw.Restart();
+                foreach (var d in WordList)
+                {
+                    string s = d.Value.name;
+                    foreach (var dd in dict)
+                    {
+                        nLoop++;
+                        string ss = dd.Value.name;
+                    }
+                }
+                sw.Stop();
+                Console.WriteLine("nloop=" + nLoop);
+                Console.WriteLine("dictionary: " + sw.ElapsedMilliseconds);
+
+                // insert to list
+                nLoop = 0;
+                sw.Restart();
+                foreach (var d in WordList)
+                {
+                    string s = d.Value.name;
+                    foreach (var d2 in list)
+                    {
+                        nLoop++;
+                        string ss = d2.name;
+                    }
+                }
+                sw.Stop();
+                Console.WriteLine("nloop=" + nLoop);
+                Console.WriteLine(" list foreach: " + sw.ElapsedMilliseconds);
+
+                // insert to list
+                nLoop = 0;
+                sw.Restart();
+                foreach (var d in WordList)
+                {
+                    string s = d.Value.name;
+                    for (int ii = 0; ii < count; ii++)
+                    {
+                        nLoop++;
+                        string ss = list[ii].name;
+                    }
+                }
+                sw.Stop();
+                Console.WriteLine("nloop=" + nLoop);
+                Console.WriteLine(" list for: " + sw.ElapsedMilliseconds);
+
+                // insert to array
+                nLoop = 0;
+                sw.Restart();
+                foreach (var d in WordList)
+                {
+                    string s = d.Value.name;
+                    for (int ii = 0; ii < count; ii++)
+                    {
+                        nLoop++;
+                        string ss = array[ii].name;
+                    }
+                }
+                sw.Stop();
+                Console.WriteLine("nloop=" + nLoop);
+                Console.WriteLine(" array: " + sw.ElapsedMilliseconds);
+            }
+
+            Console.WriteLine("double loop not on itself");
+            // loop through
+            for (int n = 1; n <= 3; n++)
+            {
+                // insert to dict
+                nLoop = 0;
+                sw.Restart();
+                foreach (var d in dict)
+                {
+                    string s = d.Value.name;
+                    foreach (var dd in dict)
+                    {
+                        nLoop++;
+                        string ss = dd.Value.name;
+                    }
+                }
+                sw.Stop();
+                Console.WriteLine("nloop=" + nLoop);
+                Console.WriteLine("dictionary: " + sw.ElapsedMilliseconds);
+
+                // insert to list
+                nLoop = 0;
+                sw.Restart();
+                foreach (var d in list)
+                {
+                    string s = d.name;
+                    foreach (var d2 in list)
+                    {
+                        nLoop++;
+                        string ss = d2.name;
+                    }
+                }
+                sw.Stop();
+                Console.WriteLine("nloop=" + nLoop);
+                Console.WriteLine(" list foreach: " + sw.ElapsedMilliseconds);
+
+                // insert to list
+                nLoop = 0;
+                sw.Restart();
+                for (int i = 0; i < count; i++)
+                {
+                    string s = list[i].name;
+                    for (int ii = 0; ii < count; ii++)
+                    {
+                        nLoop++;
+                        string ss = list[ii].name;
+                    }
+                }
+                sw.Stop();
+                Console.WriteLine("nloop=" + nLoop);
+                Console.WriteLine(" list for: " + sw.ElapsedMilliseconds);
+
+                // insert to array
+                nLoop = 0;
+                sw.Restart();
+                for (int i = 0; i < count; i++)
+                {
+                    string s = array[i].name;
+                    for (int ii = 0; ii < count; ii++)
+                    {
+                        nLoop++;
+                        string ss = array[ii].name;
+                    }
+                }
+                sw.Stop();
+                Console.WriteLine("nloop=" + nLoop);
+                Console.WriteLine(" array: " + sw.ElapsedMilliseconds);
+            }
+
+
+
+
+        }
+
+        public void fillSimilarWords(string dataPath)
+        {
+            WordDictionary wd = new WordDictionary();
+            if (WordDictionary.WordList.Count <= 0)
+                wd.ReadFile(Path.Combine(dataPath, @"WordSimilarityList.txt"));
+
+
+            wd.FindAllSimilarWords();
+
+        }
         public void test1(string dataPath)
         {
             // splitPronounciation(dataPath);
-            CombineOxford5000(dataPath);
+            // CombineOxford5000(dataPath);
+            // testLoop(dataPath);
+            fillSimilarWords(dataPath);
             return;
 
             ReadCollins(dataPath + @"\CollinsL5E.txt",1);
