@@ -123,11 +123,14 @@ namespace WordSimilarityLib
         {
             if (!string.IsNullOrWhiteSpace(fileName) && File.Exists(fileName)) File.Delete(fileName);
             WordDictionary wd = new WordDictionary();
+            Word defaultWord = new Word();
             foreach (var d in WordDictionary.WordList)
             {
-                d.Value.viewTime = default(DateTime);
-                d.Value.totalViewed = 0;
-                d.Value.viewInterval = int.MinValue;
+                d.Value.viewTime = defaultWord.viewTime;
+                d.Value.totalViewed = defaultWord.totalViewed;
+                d.Value.viewInterval = defaultWord.viewInterval;
+                d.Value.easiness = defaultWord.easiness;
+                d.Value.startTime = defaultWord.startTime;
             }
             wd.SaveFile(WordDictionary.dataFile);
         }

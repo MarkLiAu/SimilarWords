@@ -1,6 +1,6 @@
 ﻿import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Glyphicon, Nav, Navbar, NavItem } from 'react-bootstrap';
+import { Glyphicon, Nav, Navbar, NavItem , NavDropdown, MenuItem} from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 // import './NavMenu.css';
 
@@ -12,7 +12,7 @@ export class NavMenu extends Component {
       <Navbar inverse fluid collapseOnSelect>
         <Navbar.Header>
           <Navbar.Brand>
-            <Link to={'/'}>SimilarWordWeb</Link>
+            <Link to={'/'}>SimilarWord</Link>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
@@ -23,41 +23,39 @@ export class NavMenu extends Component {
                 <Glyphicon glyph='home' /> Home
               </NavItem>
             </LinkContainer>
-            <LinkContainer to={'/counter'}>
-              <NavItem>
-                <Glyphicon glyph='education' /> Counter
-              </NavItem>
-            </LinkContainer>
-            <LinkContainer to={'/fetchdata'}>
-              <NavItem>
-                <Glyphicon glyph='th-list' /> Fetch data
-              </NavItem>
-            </LinkContainer>
             <LinkContainer to={'/wordsearch'}>
               <NavItem>
-                  <Glyphicon glyph='th-list' /> Word Search
+                  <Glyphicon glyph='th-list' /> Search
               </NavItem>
             </LinkContainer>
 
             <LinkContainer to={'/wordmemory'}>
                 <NavItem>
-                    <Glyphicon glyph='th-list' /> Word Memory
+                    <Glyphicon glyph='th-list' />Memory
                 </NavItem>
             </LinkContainer>
 
+            <NavDropdown eventKey={3} title="Admin" id="basic-nav-dropdown">
+                <LinkContainer to={'/admin/reload'}>
+                    <MenuItem eventKey={3.1}>reload wordlist</MenuItem>
+                </LinkContainer>
 
-           <LinkContainer to={'/bootstrapTest1'}>
-              <NavItem>
-                   <Glyphicon glyph='th-list' /> Test 1
-              </NavItem>
-           </LinkContainer>
+                <LinkContainer to={'/admin/resetmemory'}>
+                    <MenuItem eventKey={3.2}>Reset Memory</MenuItem>
+                </LinkContainer>
 
-           <LinkContainer to={'/testform'}>
-              <NavItem>
-                   <Glyphicon glyph='th-list' /> Test Form
-              </NavItem>
-           </LinkContainer>
+                <LinkContainer to={'/Counter'}>
+                    <MenuItem eventKey={3.3}>Counter</MenuItem>
+                </LinkContainer>
 
+                <LinkContainer to={'/FetchData'}>
+                    <MenuItem eventKey={3.4}>Fetch Data</MenuItem>
+                </LinkContainer>
+
+                <LinkContainer to={'/bootstrapTest1'}>
+                    <MenuItem eventKey={3.5}>bootstrapTest1</MenuItem>
+                </LinkContainer>
+            </NavDropdown>
 
          </Nav>
         </Navbar.Collapse>

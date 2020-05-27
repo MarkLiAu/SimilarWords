@@ -23,7 +23,7 @@ at	[ət]		21							0	-2147483648	-2147483648
 but	[bət]		22	 tub butt bout bust	"But is the word that turns a corner in a sentence. If a sentence starts out in one direction, but can change that direction. For example: ""I like you, but I never want to see you again."""					0	-2147483648	-2147483648
 we	[wi]		23							0	-2147483648	-2147483648
 his	[hɪz]		24	 this hiss						0	-2147483648	-2147483648
-from	[frəm]		25	 form frog prom						-8586111319639917403	1	-2147483648
+from	[frəm]		25	 form frog prom						-8586110279124063583	0	0
 not	[nɒt]		26	 knot ton note	The adverb not is used for negation. Do you like drinking cod liver oil? No, I do not like drinking cod liver oil.					0	-2147483648	-2147483648
 by	[baɪ]		27	 buy	By means near, beside, or past. When your friend rides by on her bike, she passes close to you.					0	-2147483648	-2147483648
 she	[ʃi:]		28	 shoe shed						0	-2147483648	-2147483648
@@ -82,7 +82,7 @@ more	[mɔː(r)]		77	 move core mode mere bore gore sore mole	"When you want more
 these	[ðiːz]		78	 sheet there those theme thee						0	-2147483648	-2147483648
 want	[wɒnt]		79	 wait pant ant wan wane	In all its forms, want has to do with the lack of having and the desire to have. You can want or desire something you’d like, or you can be in want of something you need.					0	-2147483648	-2147483648
 way	[weɪ]		80	 weigh away sway wary	"The means by which you go about doing something is the way you do it. Although you ""cleaned"" your room, the way you did it — shoving everything into your closet — didn't exactly solve the problem."					0	-2147483648	-2147483648
-look	[lʊk]		81	 book cook lock hook loop loom	When you look, you focus your vision on someone or something. If you get to the movie late, you'll have to look for your friends in the darkened theater.					-8586110460483695468	0	0
+look	[lʊk]		81	 book cook lock hook loop loom	When you look, you focus your vision on someone or something. If you get to the movie late, you'll have to look for your friends in the darkened theater.					-8586110279197717867	0	0
 first	[fɜːst]		82	 fist firstly	First is number one, prior to, or before. First comes first, then comes everything else. It's always good to be first in line or in first class. Who wants to be second? Or worse — last?					0	-2147483648	-2147483648
 also	['ɔːlsəʊ]		83		"Also is a word that means about the same thing as ""in addition"" or ""too."""					0	-2147483648	-2147483648
 new	[njuː]		84	 news anew	If something's new, it has never been seen or discovered or invented before. Anything can be new: a country, an idea, a product. If you spend half an hour watching TV, you'll see an incredible selection of new items being advertised.					0	-2147483648	-2147483648
@@ -225,7 +225,7 @@ different	['dɪfrənt]		217	 differently indifferent difference diffident differ
 lot	[lɒt]		218	 lots lost plot slot loft	A lot is a plot of land. When you buy a house, you also buy the lot on which it sits.					0	-2147483648	-2147483648
 study	['stʌdi]		219	 dusty sturdy stud	It might seem as if you've gone catatonic, staring at a crack in the sidewalk for so long, but really you're observing it as closely as possible for your study of ant movement.					0	-2147483648	-2147483648
 got			219	 goat						0	-2147483648	-2147483648
-book	[bʊk]		220	 look cook boot boom hook	"For a lot of kids, ""Harry Potter and the Sorcerer's Stone"" was their first experience of really falling in love with a book, or a collection of printed words or illustrations bound together."					-8586111184878507903	1	1
+book	[bʊk]		220	 look cook boot boom hook	"For a lot of kids, ""Harry Potter and the Sorcerer's Stone"" was their first experience of really falling in love with a book, or a collection of printed words or illustrations bound together."					-8586110279184886370	0	0
 eye	[aɪ]		221	 I aye	An eye is the part of your body that makes it possible for you to see. When your eyes are closed, you can no longer see — until you open them again.					0	-2147483648	-2147483648
 job	[dʒɒb]		222		"Whether you enjoy it or not, few can survive without a job, or performing work for pay. There are also non-paying jobs, also called ""chores"" or ""tasks,"" that are necessary but do not put food in your mouth."					0	-2147483648	-2147483648
 word	[wɜːd]		223	 world sword work wood cord worm ward lord ford worn	A word is a unit of language that native speakers can agree upon as a separate and distinct unit of meaning. Languages are made up of words. You must like words since you are here, on this word site.					0	-2147483648	-2147483648
@@ -489,7 +489,7 @@ player	['pleɪə(r)]		469	 prayer layer planner platter plaster						0	-21474836
 agree	[ə'ɡriː]		470	 eager	When you agree with someone, you share the same opinion, feeling, or purpose, like when you agree on the movie you will go see on Saturday afternoon.					0	-2147483648	-2147483648
 especially	[ɪ'speʃəli]		471	 specially special	Especially describes something that can be singled out as better or more than. An especially tall building is extremely tall.					0	-2147483648	-2147483648
 record	['rekɔːd]		472	 recorder recorded	"Record started off meaning ""to register,"" with a record being something written down. With the invention of the phonograph, record came to mean to capture sound––and a record was something that stored that sound."					0	-2147483648	-2147483648
-pick	[pɪk]		473	 sick kick pack pink lick tick						0	-2147483648	-2147483648
+pick	[pɪk]		473	 sick kick pack pink lick tick						-8586110279310524936	1	1
 wear	[weə(r)]		474	 where swear weary year hear war near fear ear bear tear weak gear dear rear pear	To wear means to clothe, or be covered by. You wear suits to interviews and sweats to the gym.					0	-2147483648	-2147483648
 paper	['peɪpə(r)]		475							0	-2147483648	-2147483648
 special	['speʃl]		476	 specialty specially social species specify spatial especially specialist specialize	"Special means ""better than ordinary."" Like the self-portrait you lovingly painted as a surprise for your sweetie's birthday, something special is distinct, and surpasses the norm."					0	-2147483648	-2147483648
@@ -1323,7 +1323,7 @@ blow	[bləʊ]		1277	 bowl below low slow flow bow glow brow plow bloc	To blow is
 construction	[kən'strʌkʃn]		1278	 reconstruction instruction constructive construct destruction constitution constipation obstruction	The creation or building of something is construction. Depending on your budget, if you are building a new house, you will get the construction of a castle, a house, a cottage, or a shack.					0	-2147483648	-2147483648
 intelligence	[ɪn'telɪdʒəns]		1279	 intelligent	Intelligence is your ability to comprehend something, like calculus or why plants grow towards the sun.					0	-2147483648	-2147483648
 destroy	[dɪ'strɔɪ]		1280	 destiny	When your little brother breaks your carefully constructed Lego village into its tiny parts, he destroys it. To destroy is to completely demolish.					0	-2147483648	-2147483648
-cook	[kʊk]		1281	 crook look book cool hook cock						-8586111151390012236	1	1
+cook	[kʊk]		1281	 crook look book cool hook cock						-8586110279050316563	1	0
 connection	[kə'nekʃn]		1282	 collection conviction correction conjunction contraction condition connect convention conception contention congestion connected	The word connection is good for talking about the way things relate to each other. Your special connection to your cousin might have something to do with your mutual love for science fiction and barbecue.					0	-2147483648	-2147483648
 burn	[bɜːn]		1283	 turn born bury barn bun	When things burn, they're on fire. People who live in the country sometimes burn leaves and brush, setting big piles alight until they're reduced to ash.					0	-2147483648	-2147483648
 shoe	[ʃuː]		1284	 hose shore shove she show shot shop						0	-2147483648	-2147483648
