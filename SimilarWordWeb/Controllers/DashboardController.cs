@@ -68,6 +68,7 @@ namespace SimilarWordWeb.Controllers
             result.Add(new WordInfo("memory", "New words to view", (counts[1]).ToString()));
             result.Add(new WordInfo("memory", "old words due", (counts[2]).ToString()));
             result.Add(new WordInfo("memory", "other viewed words", (counts[3]).ToString()));
+            result.Add(new WordInfo("word", "total words", (WordDictionary.WordList.Count).ToString()));
 
             return result;
         }

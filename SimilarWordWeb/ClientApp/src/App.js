@@ -10,6 +10,7 @@ import { NotFound } from './components/NotFound';
 import WordEdit from './components/WordEdit';
 import WordMemory from './components/WordMemory';
 import Admin from './components/Admin';
+import { MemoryLog } from './components/MemoryLog';
 
 export default class App extends Component {
   displayName = App.name
@@ -27,6 +28,7 @@ export default class App extends Component {
             <Route path='/wordsearch' component={WordSearch} />
             <Route path='/wordedit/:name' component={WordEdit} />
             <Route path='/admin/:cmd' component={Admin} />
+            <Route path='/MemoryLog' component={MemoryLog} />
             <Route path='/bootstraptest1' component={BootstrapTest1} />
             <Route path='/*' component={NotFound} />
         </Switch>

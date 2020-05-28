@@ -5,7 +5,7 @@ import { Badge } from 'react-bootstrap';
 const ShowDashBoard = ({ list }) => {
     console.log("ShowDashBoard start");
     console.log(list);
-    const colors = ['red', 'blue', 'orange', 'black'];
+    const colors = ['red', 'orange', 'purple','blue' ];
     return (
         list.map((d, idx) => {
             return (<Badge key={idx} style={{ backgroundColor: colors[idx] }} title={d.name} >{d.value}  </Badge> )

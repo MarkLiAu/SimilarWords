@@ -32,8 +32,8 @@ namespace SimilarWordWeb.Controllers
 
 
         // GET api/<controller>/5
-        [HttpGet("{name}")]
-        public List<Word> Get(string name)
+        [HttpGet("{count}")]
+        public List<MemoryLogFibonacci> Get(string count)
         {
             try
             {
@@ -41,14 +41,21 @@ namespace SimilarWordWeb.Controllers
                 if (WordDictionary.WordList.Count() <= 0)
                     wd.ReadFile(Path.Combine(Directory.GetCurrentDirectory(), @"data\WordSimilarityList.txt"));
 
-                List<Word> result = wd.FindSimilarWords(name);
+                MemoryFibonacci memoryFib = new MemoryFibonacci(@"data\menory_" + memoryMethod + userId + ".txt");
+                memoryFib.ReadMemoryLog();
 
+                List<MemoryLogFibonacci> result = new List<MemoryLogFibonacci>();
+                int maxCount = Convert.ToInt32(count);
+                for (int i = 0; i < maxCount && i < memoryFib.logList.Count; i++)
+                    result.Add(memoryFib.logList[memoryFib.logList.Count - 1 - i]);
 
                 return result;
             }
             catch (Exception ex)
             {
-                return new List<Word>() { new Word(name,-1,ex.Message+ex.StackTrace) };
+                MemoryLogFibonacci err = new MemoryLogFibonacci();
+                err.name = "ERROR:" + ex.Message + ex.StackTrace;
+                return new List<MemoryLogFibonacci>() { err };
             }
         }
 
@@ -59,27 +66,6 @@ namespace SimilarWordWeb.Controllers
         {
             return "Got ";
         }
-
-        public Word PostAA([FromBody]Word word)
-        {
-            try
-            {
-                WordDictionary wd = new WordDictionary();
-                if (WordDictionary.WordList.Count() <= 0)
-                    wd.ReadFile(Path.Combine(Directory.GetCurrentDirectory(), @"data\WordSimilarityList.txt"));
-
-                if (wd.UpdateWord(word)) return word;
-
-                return new Word("ERROR", -1, "failed to update");
-
-            }
-            catch (Exception ex)
-            {
-                return new Word("ERROR", -1, ex.Message + ex.StackTrace);
-            }
-
-        }
-        
 
         [HttpPut("{name}")]
         public string Put(string name, [FromBody]Word word)
