@@ -70,7 +70,7 @@ export const Home = () => {
             <ShowDashBoard list={datalist}></ShowDashBoard></h3>
 
             <input  placeholder='search here' onChange={WordChanged} onKeyPress={KeyPressed} ></input>
-            <Link to={'/wordsearch/' + wordInput} > <button>Search</button> </Link>
+            <Link to={'//wordsearch/' + wordInput} > <button>Search</button> </Link>
       </div>
     );
 
