@@ -26,8 +26,8 @@ const ShowDashBoardInTable = ({ list }) => {
     )
 }
 
-export const Home = () => {
-    const [firstFlag, setFirstFlag] = useState(0);
+export const Home = ({history}) => {
+    const [firstFlag, setFirstFlag] = useState(-1);
     const [wordInput, setWordInput] = useState('');
     const [datalist, setDatalist] = useState([]);
 
@@ -59,6 +59,11 @@ export const Home = () => {
             });
     }
 
+    if (firstFlag === -1) {
+        setFirstFlag(0);
+        history.push('/');      // make sure the home address url has "/" at the end
+    }
+
     if (firstFlag === 0) {
         console.log("Home will load data");
         LoadData();
@@ -70,7 +75,7 @@ export const Home = () => {
             <ShowDashBoard list={datalist}></ShowDashBoard></h3>
 
             <input  placeholder='search here' onChange={WordChanged} onKeyPress={KeyPressed} ></input>
-            <Link to={'//wordsearch/' + wordInput} > <button>Search</button> </Link>
+            <Link to={{ pathname: '/wordsearch/' + wordInput }} > <button>Search</button> </Link>
       </div>
     );
 

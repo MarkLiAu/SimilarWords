@@ -36,17 +36,6 @@ export class NavMenu extends Component {
                     <MenuItem eventKey={3.6}>Memory Log</MenuItem>
                 </LinkContainer>
 
-                <LinkContainer to={'/Counter'}>
-                    <MenuItem eventKey={3.3}>Counter</MenuItem>
-                </LinkContainer>
-
-                <LinkContainer to={'/FetchData'}>
-                    <MenuItem eventKey={3.4}>Fetch Data</MenuItem>
-                </LinkContainer>
-
-                <LinkContainer to={'/bootstrapTest1'}>
-                    <MenuItem eventKey={3.5}>bootstrapTest1</MenuItem>
-                </LinkContainer>
             </NavDropdown>
 
          </Nav>
