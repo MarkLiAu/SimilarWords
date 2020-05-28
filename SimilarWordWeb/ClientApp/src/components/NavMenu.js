@@ -9,10 +9,10 @@ export class NavMenu extends Component {
 
   render() {
     return (
-      <Navbar inverse fluid collapseOnSelect>
+      <Navbar className='navbar-custom' inverse fluid collapseOnSelect>
         <Navbar.Header>
           <Navbar.Brand>
-            <Link to={'/'}>SimilarWord</Link>
+            <Link title="V20.5.28" to={'/'}>SimilarWord</Link>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>

@@ -1,5 +1,5 @@
 ﻿.navbar li .glyphicon {
-    margin-right: 10px;
+    margin-right: 3px;
 }
 
 /* Highlighting rules for nav menu items */
@@ -10,3 +10,8 @@
     background-color: #4189C7;
     color: white;
 }
+
+.navbar-custom {
+    background-color:#285232;
+    background-image:none;
+  }

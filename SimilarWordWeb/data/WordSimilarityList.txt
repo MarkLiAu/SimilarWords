@@ -627,7 +627,7 @@ certainly	['sɜːtnli]		605	 certainty certain	Use the adverb certainly when you
 west	[west]		606	 stew best rest wet nest vest pest lest zest						0	-2147483648	-2147483648
 sport	[spɔːt]		607	 short sort spot port snort support	"Sport has many definitions, the most familiar of which is a game involving physical exertion — think tennis or hockey. Randomly, sport can also mean to wear, as in, ""he looked sharp sporting a yellow sport coat."""					0	-2147483648	-2147483648
 board	[bɔːd]		608	 bored broad aboard beard bard	A board is a plank or surface, sometimes having buttons or controls. You can cut vegetables on a cutting board, post a flyer on a bulletin board, or cause a power outage on a circuit board.					0	-2147483648	-2147483648
-seek	[siːk]		609	 sleek see seem week seed peek seep	If you seek an accordion player for your new polka band, it means you are looking for a band mate.					0	-2147483648	-2147483648
+seek	[siːk]		609	 sleek see seem week seed peek seep	If you seek an accordion player for your new polka band, it means you are looking for a band mate.					-8586109625120879622	-1	-2147483648
 per	[pə(r)]		610	 rep peer pear pier perk						0	-2147483648	-2147483648
 subject	['sʌbdʒɪkt]		611	 object suspect subjective	"Subject can mean ""topic,"" as in ""Let's change the subject."" It can also mean ""to make someone do something,"" as in ""Don't let your dad subject you to an hour-long lecture on fishing."" It can also mean everyone in a country who is not the ruler, as in ""The king greeted his subjects when he returned from abroad."""					0	-2147483648	-2147483648
 officer	['ɒfɪsə(r)]		612	 office offer						0	-2147483648	-2147483648
@@ -1766,7 +1766,7 @@ cloud	[klaʊd]		1711	 could cloudy loud aloud clout	A cloud is a clump of water 
 stretch	[stretʃ]		1712	 sketch stitch	To stretch is to extend or lengthen something beyond the normal length. You stretched both your vacation and the truth when you called out of work on Monday saying your flight home from Ibiza was canceled.					0	-2147483648	-2147483648
 winner	['wɪnə(r)]		1713	 dinner winter inner winger						0	-2147483648	-2147483648
 volume	['vɒljuːm]		1714		Volume can mean how much space something takes up. You could measure a bean's volume by placing it in water and measuring the water's rise.					0	-2147483648	-2147483648
-seed	[siːd]		1715	 speed see need seem send seek feed shed weed deed seep heed reed						0	-2147483648	-2147483648
+seed	[siːd]		1715	 speed see need seem send seek feed shed weed deed seep heed reed						-8586109625054786058	-1	-2147483648
 surprised	[sə'praɪzd]		1716	 surprise surprising	If you are taken unawares by something unexpected, you can describe that feeling with the adjective surprised. Look surprised when your friends plan a party without telling you, even if you see the cars in the driveway and know what's going on.					0	-2147483648	-2147483648
 fashion	['fæʃn]		1717	 faction cushion	The word fashion has to do with customs and trends. Popular clothes are in fashion. And someone who keeps up with the latest styles is a follower of fashion.					0	-2147483648	-2147483648
 pepper	['pepə(r)]		1718							0	-2147483648	-2147483648
