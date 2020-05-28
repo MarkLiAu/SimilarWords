@@ -89,7 +89,7 @@ namespace WordSimilarityLib
 
         public int AddMemoryLog(Word word, string delimeter = "\t")
         {
-            string log = word.name + delimeter + word.viewTime + delimeter + word.viewInterval + delimeter + word.easiness;
+            string log = word.name + delimeter + word.viewTime.ToBinary() + delimeter + word.viewInterval + delimeter + word.easiness;
 
             File.AppendAllLines(fileName, new string[] { log });
             return 1;
@@ -111,7 +111,7 @@ namespace WordSimilarityLib
 
                 MemoryLogFibonacci log = new MemoryLogFibonacci();
                 log.name = ss[0].Trim();
-                log.viewTime = Convert.ToDateTime(ss[1]);
+                log.viewTime = DateTime.FromBinary(Convert.ToInt64( ss[1]));
                 log.viewInterval = Convert.ToInt32(ss[2]);
                 log.easiness = Convert.ToInt32(ss[3]);
                 logList.Add(log);
@@ -137,7 +137,6 @@ namespace WordSimilarityLib
 
         public List<Word> getViewList(int maxNewItem=10)
         {
-            ReadMemoryLog();
             WordDictionary wd = new WordDictionary();
             if (WordDictionary.WordList.Count <= 0)
                 wd.ReadFile(Path.Combine(Directory.GetCurrentDirectory(), @"data\WordSimilarityList.txt"));

@@ -23,7 +23,7 @@ at	[ət]		21							0	-2147483648	-2147483648
 but	[bət]		22	 tub butt bout bust	"But is the word that turns a corner in a sentence. If a sentence starts out in one direction, but can change that direction. For example: ""I like you, but I never want to see you again."""					0	-2147483648	-2147483648
 we	[wi]		23							0	-2147483648	-2147483648
 his	[hɪz]		24	 this hiss						0	-2147483648	-2147483648
-from	[frəm]		25	 form frog prom						-8586110279124063583	0	0
+from	[frəm]		25	 form frog prom						0	-2147483648	-2147483648
 not	[nɒt]		26	 knot ton note	The adverb not is used for negation. Do you like drinking cod liver oil? No, I do not like drinking cod liver oil.					0	-2147483648	-2147483648
 by	[baɪ]		27	 buy	By means near, beside, or past. When your friend rides by on her bike, she passes close to you.					0	-2147483648	-2147483648
 she	[ʃi:]		28	 shoe shed						0	-2147483648	-2147483648
@@ -64,7 +64,7 @@ take	[teɪk]		59	 stake make tape wake lake tale cake bake sake fake rake	Take m
 out	[aʊt]		60	 bout tout oust						0	-2147483648	-2147483648
 into	['ɪntə]		61	 onto unto						0	-2147483648	-2147483648
 just	[dʒʌst]		62	 must dust bust lust oust gust rust	"Just means ""fair."" When something is morally and ethically sound, it's just. If you are a just teacher, you won't give your student an F just because his mother is rude to you."					0	-2147483648	-2147483648
-see	[siː]		63	 sea seem seek seed seep	See is what your eyes do. However, this word has loads of meanings: you can see a shrink, which means you're consulting a psychiatrist; or you can be seeing your high school sweetheart, which means you're dating him.					0	-2147483648	-2147483648
+see	[siː]		63	 sea seem seek seed seep	See is what your eyes do. However, this word has loads of meanings: you can see a shrink, which means you're consulting a psychiatrist; or you can be seeing your high school sweetheart, which means you're dating him.					-8586109686663820110	0	0
 him	[hɪm]		64	 hymn whim						0	-2147483648	-2147483648
 your	[jɔː(r)]		65	 yours you our four hour tour pour sour						0	-2147483648	-2147483648
 come	[kʌm]		66	 comet comer some home code core cope dome cone comb coma	You can come to the end of the road, come to a conclusion, or invite friends to come to your party. Come generally means to move along purposefully toward something.					0	-2147483648	-2147483648
@@ -82,7 +82,7 @@ more	[mɔː(r)]		77	 move core mode mere bore gore sore mole	"When you want more
 these	[ðiːz]		78	 sheet there those theme thee						0	-2147483648	-2147483648
 want	[wɒnt]		79	 wait pant ant wan wane	In all its forms, want has to do with the lack of having and the desire to have. You can want or desire something you’d like, or you can be in want of something you need.					0	-2147483648	-2147483648
 way	[weɪ]		80	 weigh away sway wary	"The means by which you go about doing something is the way you do it. Although you ""cleaned"" your room, the way you did it — shoving everything into your closet — didn't exactly solve the problem."					0	-2147483648	-2147483648
-look	[lʊk]		81	 book cook lock hook loop loom	When you look, you focus your vision on someone or something. If you get to the movie late, you'll have to look for your friends in the darkened theater.					-8586110279197717867	0	0
+look	[lʊk]		81	 book cook lock hook loop loom	When you look, you focus your vision on someone or something. If you get to the movie late, you'll have to look for your friends in the darkened theater.					0	-2147483648	-2147483648
 first	[fɜːst]		82	 fist firstly	First is number one, prior to, or before. First comes first, then comes everything else. It's always good to be first in line or in first class. Who wants to be second? Or worse — last?					0	-2147483648	-2147483648
 also	['ɔːlsəʊ]		83		"Also is a word that means about the same thing as ""in addition"" or ""too."""					0	-2147483648	-2147483648
 new	[njuː]		84	 news anew	If something's new, it has never been seen or discovered or invented before. Anything can be new: a country, an idea, a product. If you spend half an hour watching TV, you'll see an incredible selection of new items being advertised.					0	-2147483648	-2147483648
@@ -155,7 +155,7 @@ same	[seɪm]		148	 seam shame some game name save safe sale sake fame sage sane 
 big	[bɪɡ]		149		Something big is just plain large or important. A big class has a lot of kids. A big room is larger than average. A big newspaper story is one that makes the front page.					0	-2147483648	-2147483648
 group	[ɡruːp]		150		A group is an organization of people or things, like a reading group at a public library that holds book discussions every month.					0	-2147483648	-2147483648
 begin	[bɪ'ɡɪn]		151	 being	To begin is to start. When it begins to snow, every flake looks pretty, drifting gently down from the dark sky.					0	-2147483648	-2147483648
-seem	[siːm]		152	 seam see seek seed stem deem seep	"Seem means ""to give a certain impression,"" usually by physical appearance like your messy hair and wrinkled clothing that made it seem like you just rolled out of bed."					0	-2147483648	-2147483648
+seem	[siːm]		152	 seam see seek seed stem deem seep	"Seem means ""to give a certain impression,"" usually by physical appearance like your messy hair and wrinkled clothing that made it seem like you just rolled out of bed."					-8586109686582352072	1	1
 country	['kʌntri]		153	 county counter Count	A country is a nation, a body of land with one government. Also, rural areas outside cities and towns are called the country.					0	-2147483648	-2147483648
 help	[help]		154	 hell heap helm	The verb help means to give aid or assistance to. You can help your friend organize a car wash at school by making posters and putting them up all over town.					0	-2147483648	-2147483648
 talk	[tɔːk]		155	 torque stalk walk task tall tank tale tack balk	When you open your mouth and say something, you talk. You tell someone something, or have a conversation, or exchange information. A speech can also be called a talk.					0	-2147483648	-2147483648
@@ -225,7 +225,7 @@ different	['dɪfrənt]		217	 differently indifferent difference diffident differ
 lot	[lɒt]		218	 lots lost plot slot loft	A lot is a plot of land. When you buy a house, you also buy the lot on which it sits.					0	-2147483648	-2147483648
 study	['stʌdi]		219	 dusty sturdy stud	It might seem as if you've gone catatonic, staring at a crack in the sidewalk for so long, but really you're observing it as closely as possible for your study of ant movement.					0	-2147483648	-2147483648
 got			219	 goat						0	-2147483648	-2147483648
-book	[bʊk]		220	 look cook boot boom hook	"For a lot of kids, ""Harry Potter and the Sorcerer's Stone"" was their first experience of really falling in love with a book, or a collection of printed words or illustrations bound together."					-8586110279184886370	0	0
+book	[bʊk]		220	 look cook boot boom hook	"For a lot of kids, ""Harry Potter and the Sorcerer's Stone"" was their first experience of really falling in love with a book, or a collection of printed words or illustrations bound together."					0	-2147483648	-2147483648
 eye	[aɪ]		221	 I aye	An eye is the part of your body that makes it possible for you to see. When your eyes are closed, you can no longer see — until you open them again.					0	-2147483648	-2147483648
 job	[dʒɒb]		222		"Whether you enjoy it or not, few can survive without a job, or performing work for pay. There are also non-paying jobs, also called ""chores"" or ""tasks,"" that are necessary but do not put food in your mouth."					0	-2147483648	-2147483648
 word	[wɜːd]		223	 world sword work wood cord worm ward lord ford worn	A word is a unit of language that native speakers can agree upon as a separate and distinct unit of meaning. Languages are made up of words. You must like words since you are here, on this word site.					0	-2147483648	-2147483648
@@ -489,7 +489,7 @@ player	['pleɪə(r)]		469	 prayer layer planner platter plaster						0	-21474836
 agree	[ə'ɡriː]		470	 eager	When you agree with someone, you share the same opinion, feeling, or purpose, like when you agree on the movie you will go see on Saturday afternoon.					0	-2147483648	-2147483648
 especially	[ɪ'speʃəli]		471	 specially special	Especially describes something that can be singled out as better or more than. An especially tall building is extremely tall.					0	-2147483648	-2147483648
 record	['rekɔːd]		472	 recorder recorded	"Record started off meaning ""to register,"" with a record being something written down. With the invention of the phonograph, record came to mean to capture sound––and a record was something that stored that sound."					0	-2147483648	-2147483648
-pick	[pɪk]		473	 sick kick pack pink lick tick						-8586110279310524936	1	1
+pick	[pɪk]		473	 sick kick pack pink lick tick						0	-2147483648	-2147483648
 wear	[weə(r)]		474	 where swear weary year hear war near fear ear bear tear weak gear dear rear pear	To wear means to clothe, or be covered by. You wear suits to interviews and sweats to the gym.					0	-2147483648	-2147483648
 paper	['peɪpə(r)]		475							0	-2147483648	-2147483648
 special	['speʃl]		476	 specialty specially social species specify spatial especially specialist specialize	"Special means ""better than ordinary."" Like the self-portrait you lovingly painted as a surprise for your sweetie's birthday, something special is distinct, and surpasses the norm."					0	-2147483648	-2147483648
@@ -1323,7 +1323,7 @@ blow	[bləʊ]		1277	 bowl below low slow flow bow glow brow plow bloc	To blow is
 construction	[kən'strʌkʃn]		1278	 reconstruction instruction constructive construct destruction constitution constipation obstruction	The creation or building of something is construction. Depending on your budget, if you are building a new house, you will get the construction of a castle, a house, a cottage, or a shack.					0	-2147483648	-2147483648
 intelligence	[ɪn'telɪdʒəns]		1279	 intelligent	Intelligence is your ability to comprehend something, like calculus or why plants grow towards the sun.					0	-2147483648	-2147483648
 destroy	[dɪ'strɔɪ]		1280	 destiny	When your little brother breaks your carefully constructed Lego village into its tiny parts, he destroys it. To destroy is to completely demolish.					0	-2147483648	-2147483648
-cook	[kʊk]		1281	 crook look book cool hook cock						-8586110279050316563	1	0
+cook	[kʊk]		1281	 crook look book cool hook cock						0	-2147483648	-2147483648
 connection	[kə'nekʃn]		1282	 collection conviction correction conjunction contraction condition connect convention conception contention congestion connected	The word connection is good for talking about the way things relate to each other. Your special connection to your cousin might have something to do with your mutual love for science fiction and barbecue.					0	-2147483648	-2147483648
 burn	[bɜːn]		1283	 turn born bury barn bun	When things burn, they're on fire. People who live in the country sometimes burn leaves and brush, setting big piles alight until they're reduced to ash.					0	-2147483648	-2147483648
 shoe	[ʃuː]		1284	 hose shore shove she show shot shop						0	-2147483648	-2147483648
@@ -3451,11 +3451,11 @@ forehead	['fɔːhed]		3332	 figurehead	Your forehead is the top part of your fac
 rebuild	[ˌriː'bɪld]		3333	 builder build rebuilding						0	-2147483648	-2147483648
 bounce	[baʊns]		3334	 ounce bouncy	Bounce is a word for an up and down movement or recovery — like a ball's bounce on the pavement or the stock market's rise after a crash.					0	-2147483648	-2147483648
 electrical	[ɪ'lektrɪkl]		3335	 electric electricity electoral						0	-2147483648	-2147483648
-hook	[hʊk]		3336	 look book cook hood hoop hoof	A hook is a curved piece of metal or other hard material that's used or pulling or holding something. A tow truck is equipped with a large hook to pull cars, and the fictional Captain Hook came equipped with an iron hook to pull off dastardly deeds.					-8586110460445969818	1	1
+hook	[hʊk]		3336	 look book cook hood hoop hoof	A hook is a curved piece of metal or other hard material that's used or pulling or holding something. A tow truck is equipped with a large hook to pull cars, and the fictional Captain Hook came equipped with an iron hook to pull off dastardly deeds.					0	-2147483648	-2147483648
 batsman			3336	 barman baseman						0	-2147483648	-2147483648
 detective	[dɪ'tektɪv]		3337	 detection directive protective	Whether it's a police detective who investigates crimes or a private detective hired by a husband to uncover his wife's affair, a detective is someone whose job is to find out hard-to-get information.					0	-2147483648	-2147483648
 traveler	['trævlə]		3338	 traveller travel trailer						0	-2147483648	-2147483648
-click	[klɪk]		3339	 clock lick flick chick slick	A click is a sound like a sharp tap. Your dog might start barking excitedly every evening when he hears the click of your key turning in the lock. And you might click your computer mouse when you are excited about getting to another page on the web.					0	-2147483648	-2147483648
+click	[klɪk]		3339	 clock lick flick chick slick	A click is a sound like a sharp tap. Your dog might start barking excitedly every evening when he hears the click of your key turning in the lock. And you might click your computer mouse when you are excited about getting to another page on the web.					-8586109685918546604	-1	-2147483648
 compensation	[ˌkɒmpen'seɪʃn]		3340	 competition complication compensate	"Compensation means ""making up for a something."" When a restaurant offers you a free dessert as compensation for messing up your dinner order, the hope is you will leave happy and come back again."					0	-2147483648	-2147483648
 exit	['eksɪt]		3341	 exist edit emit	To exit is to go out of or leave a place. When an actor exits, he moves off the stage and out of sight of the audience.					0	-2147483648	-2147483648
 attraction	[ə'trækʃn]		3342	 abstraction attractive traction extraction distraction attribution contraction attention attract fraction	The charm or special quality of something that draws you to it is its attraction. The attraction of a college might be its sports program, for example, or the attraction of a job might be its high pay.					0	-2147483648	-2147483648
@@ -6224,7 +6224,7 @@ commuter	[kə'mjuːtə(r)]		5978	 computer commute	A commuter is someone who has
 suspected	[səs'pektɪd]		5979	 suspect respected suspended						0	-2147483648	-2147483648
 steroids	['stɪərɔɪdz]		5980							0	-2147483648	-2147483648
 VAT			5980	 vast						0	-2147483648	-2147483648
-flick	[flɪk]		5981	 click lick flock slick flicker	"A flick is a quick, short movement, usually coming from the wrist or hand. There used to be a ""Flick a Bic"" cigarette ad: cigarettes are awful, but starting a lighter is a classic flick."					0	-2147483648	-2147483648
+flick	[flɪk]		5981	 click lick flock slick flicker	"A flick is a quick, short movement, usually coming from the wrist or hand. There used to be a ""Flick a Bic"" cigarette ad: cigarettes are awful, but starting a lighter is a classic flick."					-8586109685834432042	-1	-2147483648
 Vatican			5981							0	-2147483648	-2147483648
 answering	['ɑːnsərɪŋ]		5982							0	-2147483648	-2147483648
 prairie	['preəri]		5983	 praise	A prairie is a plain of grassy land without many trees. If you're raising cattle, find some prairie land to let them roam around on.					0	-2147483648	-2147483648

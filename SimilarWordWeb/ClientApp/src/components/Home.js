@@ -1,18 +1,29 @@
 import React, { useState } from 'react';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import { Badge } from 'react-bootstrap';
 
 const ShowDashBoard = ({ list }) => {
+    console.log("ShowDashBoard start");
+    console.log(list);
+    const colors = ['red', 'blue', 'orange', 'black'];
+    return (
+        list.map((d, idx) => {
+            return (<Badge key={idx} style={{ backgroundColor: colors[idx] }} title={d.name} >{d.value}  </Badge> )
+        })
+    )
+}
+const ShowDashBoardInTable = ({ list }) => {
     console.log("ShowDashBoard start");
     console.log(list);
     return (list.map((d, idx) => {
         return (
             <tr key={idx}>
-            <td> {d.name}</td>
-            <td> {d.value}</td>
+                <td> {d.name}</td>
+                <td> {d.value}</td>
             </tr >
         )
     })
-        )
+    )
 }
 
 export const Home = () => {
@@ -55,13 +66,8 @@ export const Home = () => {
 
     return (
       <div>
-            <h3>Welcome!</h3>
-            <table className="table table-stripped table-bordered">
-                <tbody>
-                    <ShowDashBoard list={datalist}></ShowDashBoard>
-                </tbody>
-
-            </table>
+            <h3>Welcome!
+            <ShowDashBoard list={datalist}></ShowDashBoard></h3>
 
             <input  placeholder='search here' onChange={WordChanged} onKeyPress={KeyPressed} ></input>
             <Link to={'/wordsearch/' + wordInput} > <button>Search</button> </Link>

@@ -20,7 +20,12 @@ namespace SimilarWordWeb.Controllers
         [HttpGet]
         public IEnumerable<Word> Get()
         {
+            WordDictionary wd = new WordDictionary();
+            if (WordDictionary.WordList.Count() <= 0)
+                wd.ReadFile(Path.Combine(Directory.GetCurrentDirectory(), @"data\WordSimilarityList.txt"));
             MemoryFibonacci memoryFib = new MemoryFibonacci(@"data\menory_" + memoryMethod + userId + ".txt");
+            memoryFib.ReadMemoryLog();
+
             List<Word> result = memoryFib.getViewList(10);
             return result;
         }
