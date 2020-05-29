@@ -37,8 +37,8 @@ const WordReviewInfo = ({ word }) => {
     let infoList = [];
     infoList.push({ title: 'Total viewed', value: word.totalViewed + (word.totalViewed<=0 && word.viewInterval>=-1? ' (in memory list)':'') });
     if (word.totalViewed > 0) {
-        infoList.push({ title: 'Start Time', value:word.startTime });
-        infoList.push({ title: 'View Time', value:word.viewTime });
+        infoList.push({ title: 'Start Time', value: new Date(word.startTime).toLocaleString() });
+        infoList.push({ title: 'View Time', value: new Date(word.viewTime).toLocaleString()  });
         infoList.push({ title: 'Interval', value:word.viewInterval });
         infoList.push({ title: 'Last Easiness', value:word.easiness });
     }

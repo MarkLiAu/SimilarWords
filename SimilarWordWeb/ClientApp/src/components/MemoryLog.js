@@ -30,7 +30,7 @@ export const MemoryLog = ()=> {
     const ShowLog = ({ log }) => {
         return (
             log.map((d, idx) => <tr key={idx}>
-                <td>{d.viewTime}</td>
+                <td>{new Date(d.viewTime).toLocaleString()}</td>
                 <td>{d.name}</td>
                 <td>{d.easiness}</td>
                 <td>{d.viewInterval}</td>

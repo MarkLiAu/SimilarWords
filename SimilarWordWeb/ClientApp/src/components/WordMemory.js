@@ -37,7 +37,7 @@ const WordMemory = () => {
         }).then(response => {
             console.log(response);
             memoryList[memoryIdx].easiness = 999;
-            setMemoryIdx(memoryIdx + 1)
+            if (memoryIdx < memoryList.length - 1) setMemoryIdx(memoryIdx + 1);
             ResetCurWord();
             setShowDetail(false);
         })
@@ -99,7 +99,8 @@ const WordMemory = () => {
 
     if (memoryList.length <= 0) return 'no items to review!';
 
-    if (memoryIdx >= memoryList.length) return 'Congraduation, you finished: ' + memoryList.length;
+    let nwaiting = 0; memoryList.map(x =>nwaiting+=(x.easiness < 999? 1:0));
+    if (nwaiting===0) return 'Congraduation, you finished: ' + memoryList.length;
 
     console.log('memoryList.Length=' + memoryList.length.toString()+',idx='+memoryIdx);
     console.log(memoryList[memoryIdx]);
@@ -108,19 +109,20 @@ const WordMemory = () => {
                     <Panel.Heading>
                     <Panel.Title componentClass="h3">
                         {memoryList[memoryIdx].name}{' (' + (memoryIdx+1).toString() + '/' + memoryList.length.toString()+')'}
+                        {'   '}<button className='btn btn-info' id='btn_submit' disabled={memoryList[memoryIdx].easiness >= 999} onClick={CallUpdateApi}>{reviewDays(curWord.viewInterval)}</button>
                     </Panel.Title>
                     </Panel.Heading>
                     <Panel.Body>
 
-                    <button id='btn_hard' disabled={memoryList[memoryIdx].easiness > 10} onClick={(e)=>ChangeEasiness(e,-1)}>Hard</button>{' '}
-                    <button id='btn_submit' disabled={memoryList[memoryIdx].easiness > 10} onClick={CallUpdateApi}>{reviewDays(curWord.viewInterval)}</button>{' '}
-                    <button id='btn_easy' disabled={memoryList[memoryIdx].easiness > 10} onClick={(e) => ChangeEasiness(e, 1)}>Easy</button>
+                   <button className='btn btn-danger' id='btn_hard' disabled={memoryList[memoryIdx].easiness >=999} onClick={(e)=>ChangeEasiness(e,-1)}>Hard</button>{' '}
+                    <button className='btn btn-success' id='btn_easy' disabled={memoryList[memoryIdx].easiness >=999} onClick={(e) => ChangeEasiness(e, 1)}>Easy</button>
+                    {'      '} 
+                    <button className='btn' id='btn_back' onClick={backClicked}>{'<Back'}</button>
                     {' '} 
-                    <button id='btn_back' onClick={backClicked}>{'<'}</button>
-                    {' '} 
-                    <button id='btn_next' onClick={nextClicked}>{'>'}</button>
+                    <button className='btn'  id='btn_next' onClick={nextClicked}>{'Next>'}</button>
                     {' '}
-                    <button id='btn_detail' onClick={showDetailClicked}>{'...'}</button>
+                        <button className='btn' id='btn_detail' onClick={showDetailClicked}>{'Detail...'}</button>
+                    
                     </Panel.Body>
                     <WordInfoDisplay word={showDetail?memoryList[memoryIdx]:null}></WordInfoDisplay>
                 </Panel>

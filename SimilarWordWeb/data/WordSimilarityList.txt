@@ -64,7 +64,7 @@ take	[teɪk]		59	 stake make tape wake lake tale cake bake sake fake rake	Take m
 out	[aʊt]		60	 bout tout oust						0	-2147483648	-2147483648
 into	['ɪntə]		61	 onto unto						0	-2147483648	-2147483648
 just	[dʒʌst]		62	 must dust bust lust oust gust rust	"Just means ""fair."" When something is morally and ethically sound, it's just. If you are a just teacher, you won't give your student an F just because his mother is rude to you."					0	-2147483648	-2147483648
-see	[siː]		63	 sea seem seek seed seep	See is what your eyes do. However, this word has loads of meanings: you can see a shrink, which means you're consulting a psychiatrist; or you can be seeing your high school sweetheart, which means you're dating him.					-8586109686663820110	0	0
+see	[siː]		63	 sea seem seek seed seep	See is what your eyes do. However, this word has loads of meanings: you can see a shrink, which means you're consulting a psychiatrist; or you can be seeing your high school sweetheart, which means you're dating him.					-8586108779578048008	0	0
 him	[hɪm]		64	 hymn whim						0	-2147483648	-2147483648
 your	[jɔː(r)]		65	 yours you our four hour tour pour sour						0	-2147483648	-2147483648
 come	[kʌm]		66	 comet comer some home code core cope dome cone comb coma	You can come to the end of the road, come to a conclusion, or invite friends to come to your party. Come generally means to move along purposefully toward something.					0	-2147483648	-2147483648
@@ -155,7 +155,7 @@ same	[seɪm]		148	 seam shame some game name save safe sale sake fame sage sane 
 big	[bɪɡ]		149		Something big is just plain large or important. A big class has a lot of kids. A big room is larger than average. A big newspaper story is one that makes the front page.					0	-2147483648	-2147483648
 group	[ɡruːp]		150		A group is an organization of people or things, like a reading group at a public library that holds book discussions every month.					0	-2147483648	-2147483648
 begin	[bɪ'ɡɪn]		151	 being	To begin is to start. When it begins to snow, every flake looks pretty, drifting gently down from the dark sky.					0	-2147483648	-2147483648
-seem	[siːm]		152	 seam see seek seed stem deem seep	"Seem means ""to give a certain impression,"" usually by physical appearance like your messy hair and wrinkled clothing that made it seem like you just rolled out of bed."					-8586109686582352072	1	1
+seem	[siːm]		152	 seam see seek seed stem deem seep	"Seem means ""to give a certain impression,"" usually by physical appearance like your messy hair and wrinkled clothing that made it seem like you just rolled out of bed."					-8586108779557468692	0	0
 country	['kʌntri]		153	 county counter Count	A country is a nation, a body of land with one government. Also, rural areas outside cities and towns are called the country.					0	-2147483648	-2147483648
 help	[help]		154	 hell heap helm	The verb help means to give aid or assistance to. You can help your friend organize a car wash at school by making posters and putting them up all over town.					0	-2147483648	-2147483648
 talk	[tɔːk]		155	 torque stalk walk task tall tank tale tack balk	When you open your mouth and say something, you talk. You tell someone something, or have a conversation, or exchange information. A speech can also be called a talk.					0	-2147483648	-2147483648
@@ -627,7 +627,7 @@ certainly	['sɜːtnli]		605	 certainty certain	Use the adverb certainly when you
 west	[west]		606	 stew best rest wet nest vest pest lest zest						0	-2147483648	-2147483648
 sport	[spɔːt]		607	 short sort spot port snort support	"Sport has many definitions, the most familiar of which is a game involving physical exertion — think tennis or hockey. Randomly, sport can also mean to wear, as in, ""he looked sharp sporting a yellow sport coat."""					0	-2147483648	-2147483648
 board	[bɔːd]		608	 bored broad aboard beard bard	A board is a plank or surface, sometimes having buttons or controls. You can cut vegetables on a cutting board, post a flyer on a bulletin board, or cause a power outage on a circuit board.					0	-2147483648	-2147483648
-seek	[siːk]		609	 sleek see seem week seed peek seep	If you seek an accordion player for your new polka band, it means you are looking for a band mate.					-8586109625120879622	-1	-2147483648
+seek	[siːk]		609	 sleek see seem week seed peek seep	If you seek an accordion player for your new polka band, it means you are looking for a band mate.					-8586108777680405720	0	0
 per	[pə(r)]		610	 rep peer pear pier perk						0	-2147483648	-2147483648
 subject	['sʌbdʒɪkt]		611	 object suspect subjective	"Subject can mean ""topic,"" as in ""Let's change the subject."" It can also mean ""to make someone do something,"" as in ""Don't let your dad subject you to an hour-long lecture on fishing."" It can also mean everyone in a country who is not the ruler, as in ""The king greeted his subjects when he returned from abroad."""					0	-2147483648	-2147483648
 officer	['ɒfɪsə(r)]		612	 office offer						0	-2147483648	-2147483648
@@ -1765,7 +1765,7 @@ cloud	[klaʊd]		1711	 could cloudy loud aloud clout	A cloud is a clump of water 
 stretch	[stretʃ]		1712	 sketch stitch	To stretch is to extend or lengthen something beyond the normal length. You stretched both your vacation and the truth when you called out of work on Monday saying your flight home from Ibiza was canceled.					0	-2147483648	-2147483648
 winner	['wɪnə(r)]		1713	 dinner winter inner winger						0	-2147483648	-2147483648
 volume	['vɒljuːm]		1714		Volume can mean how much space something takes up. You could measure a bean's volume by placing it in water and measuring the water's rise.					0	-2147483648	-2147483648
-seed	[siːd]		1715	 speed see need seem send seek feed shed weed deed seep heed reed						-8586109625054786058	-1	-2147483648
+seed	[siːd]		1715	 speed see need seem send seek feed shed weed deed seep heed reed						-8586108778856107152	0	0
 surprised	[sə'praɪzd]		1716	 surprise surprising	If you are taken unawares by something unexpected, you can describe that feeling with the adjective surprised. Look surprised when your friends plan a party without telling you, even if you see the cars in the driveway and know what's going on.					0	-2147483648	-2147483648
 fashion	['fæʃn]		1717	 faction cushion	The word fashion has to do with customs and trends. Popular clothes are in fashion. And someone who keeps up with the latest styles is a follower of fashion.					0	-2147483648	-2147483648
 pepper	['pepə(r)]		1718							0	-2147483648	-2147483648
@@ -3454,7 +3454,7 @@ hook	[hʊk]		3336	 look book cook hood hoop hoof	A hook is a curved piece of met
 batsman			3336	 barman baseman						0	-2147483648	-2147483648
 detective	[dɪ'tektɪv]		3337	 detection directive protective	Whether it's a police detective who investigates crimes or a private detective hired by a husband to uncover his wife's affair, a detective is someone whose job is to find out hard-to-get information.					0	-2147483648	-2147483648
 traveler	['trævlə]		3338	 traveller travel trailer						0	-2147483648	-2147483648
-click	[klɪk]		3339	 clock lick flick chick slick	A click is a sound like a sharp tap. Your dog might start barking excitedly every evening when he hears the click of your key turning in the lock. And you might click your computer mouse when you are excited about getting to another page on the web.					-8586109685918546604	-1	-2147483648
+click	[klɪk]		3339	 clock lick flick chick slick	A click is a sound like a sharp tap. Your dog might start barking excitedly every evening when he hears the click of your key turning in the lock. And you might click your computer mouse when you are excited about getting to another page on the web.					-8586108778949077933	0	0
 compensation	[ˌkɒmpen'seɪʃn]		3340	 competition complication compensate	"Compensation means ""making up for a something."" When a restaurant offers you a free dessert as compensation for messing up your dinner order, the hope is you will leave happy and come back again."					0	-2147483648	-2147483648
 exit	['eksɪt]		3341	 exist edit emit	To exit is to go out of or leave a place. When an actor exits, he moves off the stage and out of sight of the audience.					0	-2147483648	-2147483648
 attraction	[ə'trækʃn]		3342	 abstraction attractive traction extraction distraction attribution contraction attention attract fraction	The charm or special quality of something that draws you to it is its attraction. The attraction of a college might be its sports program, for example, or the attraction of a job might be its high pay.					0	-2147483648	-2147483648
@@ -6223,7 +6223,7 @@ commuter	[kə'mjuːtə(r)]		5978	 computer commute	A commuter is someone who has
 suspected	[səs'pektɪd]		5979	 suspect respected suspended						0	-2147483648	-2147483648
 steroids	['stɪərɔɪdz]		5980							0	-2147483648	-2147483648
 VAT			5980	 vast						0	-2147483648	-2147483648
-flick	[flɪk]		5981	 click lick flock slick flicker	"A flick is a quick, short movement, usually coming from the wrist or hand. There used to be a ""Flick a Bic"" cigarette ad: cigarettes are awful, but starting a lighter is a classic flick."					-8586109685834432042	-1	-2147483648
+flick	[flɪk]		5981	 click lick flock slick flicker	"A flick is a quick, short movement, usually coming from the wrist or hand. There used to be a ""Flick a Bic"" cigarette ad: cigarettes are awful, but starting a lighter is a classic flick."					-8586108779482604469	0	0
 Vatican			5981							0	-2147483648	-2147483648
 answering	['ɑːnsərɪŋ]		5982							0	-2147483648	-2147483648
 prairie	['preəri]		5983	 praise	A prairie is a plain of grassy land without many trees. If you're raising cattle, find some prairie land to let them roam around on.					0	-2147483648	-2147483648
