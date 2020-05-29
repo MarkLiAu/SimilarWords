@@ -75,9 +75,9 @@ const EditWord = ({ name, location }) => {
                 <FormField type='text' label="Pronounciation" name="pronounciation" onChangeHandle={handleChange}  val={word.pronounciation} ></FormField>
                 <FormField type='text' label="Frequency" name="frequency" onChangeHandle={handleChange} val={word.frequency} ></FormField>
                 <FormField type='text' label="Similar Words" name="similarwords" onChangeHandle={handleChange} val={word.similarWords} ></FormField>
-                <FormField type='textarea' label="Meaning Short" name="meaningShort" onChangeHandle={handleChange}  val={word.meaningShort} ></FormField>
-                <FormField type='textarea' label="Meaning Long" name="meaningLong" onChangeHandle={handleChange} val={word.meaningLong} ></FormField>
-                <FormField type='text' label="Meaning Other" name="meaningOther" onChangeHandle={handleChange}  val={word.meaningOther} ></FormField>
+                <FormField type='textarea' label="Meaning" name="meaningShort" onChangeHandle={handleChange}  val={word.meaningShort} ></FormField>
+                {/* <FormField type='textarea' label="Meaning Long" name="meaningLong" onChangeHandle={handleChange} val={word.meaningLong} ></FormField> */}
+                {/* <FormField type='text' label="Meaning Other" name="meaningOther" onChangeHandle={handleChange} val={word.meaningOther} ></FormField>  */}
             <ShowDictLink name={word.name} > </ShowDictLink><br/>
                 <label>{result}</label>
             <FormGroup>
