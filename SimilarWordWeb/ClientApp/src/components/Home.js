@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
 import { Badge } from 'react-bootstrap';
+import { WordSearch } from './WordSearch';
 
 const ShowDashBoard = ({ list }) => {
     console.log("ShowDashBoard start");
@@ -61,7 +62,7 @@ export const Home = ({history}) => {
 
     if (firstFlag === -1) {
         setFirstFlag(0);
-        history.push('/');      // make sure the home address url has "/" at the end
+        history.push('/WordSearch/');      // make sure the home address url has "/" at the end
     }
 
     if (firstFlag === 0) {
@@ -69,15 +70,15 @@ export const Home = ({history}) => {
         LoadData();
     }
 
-    return (
-      <div>
-            <h3>Welcome!
+    // redirect to component "wordsearch"
+        return (
+            <div>
+                <h3>Welcome!
             <ShowDashBoard list={datalist}></ShowDashBoard></h3>
 
-            <input  placeholder='search here' onChange={WordChanged} onKeyPress={KeyPressed} ></input>
-            <Link to={{ pathname: '/wordsearch/' + wordInput }} > <button>Search</button> </Link>
-      </div>
-    );
-
+                <input placeholder='search here' onChange={WordChanged} onKeyPress={KeyPressed} ></input>
+                <Link to={{ pathname: '/wordsearch/' + wordInput }} > <button>Search</button> </Link>
+            </div>
+        );
 
 }

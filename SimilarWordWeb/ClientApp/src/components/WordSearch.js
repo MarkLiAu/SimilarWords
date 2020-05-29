@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { Col, Grid, Row,Checkbox, Panel, PanelGroup } from 'react-bootstrap';
 import DisplayWord from './DisplayWord';
+import { DashBoard } from './DashBoard';
 
 export class WordSearch extends Component {
     displayName = WordSearch.name;
@@ -77,6 +78,8 @@ export class WordSearch extends Component {
 
         return (
             <div className='bj_center'>
+                <Link to={'/Wordmemory'} > Start Memory </Link>
+                <DashBoard></DashBoard><br />
                 <Panel>
                 <input value={this.state.wordInput} placeholder={this.state.word2search} onChange={this.WordChanged} onKeyPress={this.KeyPressed} ></input>
                 <span>{' '}</span>
