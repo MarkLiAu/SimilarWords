@@ -10,25 +10,29 @@ export class WordSearch extends Component {
     constructor(props) {
         super(props);
         console.log("constructor");
-        this.state = { word2search: '', wordInput: '', frequency: 10000,activeKey:'0' };
-        this.handleSelect = this.handleSelect.bind(this);
+        this.state = { word2search: '', wordInput: '', frequency: 10000 };
+        let w = typeof (this.props.match === null || this.props.match.params.name) === 'undefined' ? '' : this.props.match.params.name;
+        console.log(w);
+        this.state = { word2search: w, wordInput: w, frequency: 10000, activeKey: '0' };
+        this.fetchData();
+        //this.handleSelect = this.handleSelect.bind(this);
     }
 
     componentDidMount() {
-        this.fetchData();
+        console.log("WordSearch componentDidMount start");
+        //this.fetchData();
     }
 
     componentDidUpdate(prevProps) {
+        console.log("WordSearch componentDidUpdate start");
         if (prevProps.match.params.name !== this.props.match.params.name) {
             this.fetchData();
         }
     }
 
     fetchData() {
-        let w = typeof (this.props.match === null || this.props.match.params.name) === 'undefined' ? '' : this.props.match.params.name;
-        console.log(w);
-        this.state = { word2search: w, wordInput: w, frequency: 10000 };
-        this.SearchWord(w);
+        console.log("WordSearch fetchData start");
+        this.SearchWord(this.state.word2search);
         if (this.state.word2search.length > 0) document.title = this.state.word2search + '-Similar Word';
     }
 
@@ -46,11 +50,12 @@ export class WordSearch extends Component {
         if (word.length <= 0) return;
         //if (word === this.state.word2search) return;
         //return;
+        console.log('WordSearch Start fetch:');
         fetch('api/Words/' + word)
             .then(response => response.json())
             .then(data => {
                 console.log('fetch back');
-                this.props.history.push('/Wordsearch/' + word);
+                // this.props.history.push('/Wordsearch/' + word);
                 this.setState({ words: data, word2search: word, wordInput: '', activeKey: '0'  });
             });
     }
@@ -67,6 +72,7 @@ export class WordSearch extends Component {
     }
 
     handleSelect(activeKey) {
+        console.log('in handleSelect: activeKey=' + activeKey);
         this.setState({ activeKey });
     }
 
@@ -79,13 +85,13 @@ export class WordSearch extends Component {
         return (
             <div className='bj_center'>
                 <Link to={'/Wordmemory'} > Start Memory </Link>
-                <DashBoard></DashBoard><br />
+                <DashBoard></DashBoard>
                 <Panel>
                 <input value={this.state.wordInput} placeholder={this.state.word2search} onChange={this.WordChanged} onKeyPress={this.KeyPressed} ></input>
                 <span>{' '}</span>
                 <button type="submit" onClick={this.SubmitSearch}>Search</button>
                 </Panel>
-                <PanelGroup accordion id="accordion-example" defaultActiveKey='0' activeKey={this.state.activeKey}  onSelect={this.handleSelect}  >
+                <PanelGroup accordion id="accordion-example" defaultActiveKey='0' activeKey={this.state.activeKey} onSelect={(x) => this.handleSelect(x)}  >
 
                     <ShowListComp maxFeq={this.state.frequency} list={this.state.words}></ShowListComp>
                 </PanelGroup>
@@ -96,7 +102,7 @@ export class WordSearch extends Component {
         
         
 const ShowListComp = ({maxFeq, list }) => {
-    console.log('ShowList');
+    console.log('ShowList in WordSearch');
     if (typeof (list) === "undefined") return (<div></div>);
     console.log(maxFeq);
     return (

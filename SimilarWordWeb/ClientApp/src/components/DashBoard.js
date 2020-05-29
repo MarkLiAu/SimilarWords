@@ -8,7 +8,7 @@ export const DashBoard = ({ history }) => {
 
 
     const LoadData = () => {
-        console.log("LoadData:");
+        console.log("LoadData in Dashboard:");
         fetch('api/Dashboard/')
             .then(response => response.json())
             .then(data => {
@@ -20,7 +20,7 @@ export const DashBoard = ({ history }) => {
     }
 
     if (firstFlag === 0) {
-        console.log("will load data");
+        console.log("will load Dashboard data");
         LoadData();
     }
 
