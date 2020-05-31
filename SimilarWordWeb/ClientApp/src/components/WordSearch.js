@@ -24,8 +24,13 @@ export class WordSearch extends Component {
     }
 
     componentDidUpdate(prevProps) {
-        console.log("WordSearch componentDidUpdate start");
         if (prevProps.match.params.name !== this.props.match.params.name) {
+            console.log("wordsearch componentDidUpdate");
+            console.log(prevProps.match.params.name);
+            console.log(this.props.match.params.name);
+            let w = typeof (this.props.match === null || this.props.match.params.name) === 'undefined' ? '' : this.props.match.params.name;
+            console.log(w);
+            this.state = { word2search: w, wordInput: w, frequency: 10000, activeKey: '0' };
             this.fetchData();
         }
     }
@@ -55,7 +60,7 @@ export class WordSearch extends Component {
             .then(response => response.json())
             .then(data => {
                 console.log('fetch back');
-                // this.props.history.push('/Wordsearch/' + word);
+                this.props.history.push('/Wordsearch/' + word);
                 this.setState({ words: data, word2search: word, wordInput: '', activeKey: '0'  });
             });
     }

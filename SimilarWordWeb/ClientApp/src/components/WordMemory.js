@@ -108,7 +108,7 @@ const WordMemory = () => {
                 <Panel bsStyle="primary">
                     <Panel.Heading>
                     <Panel.Title componentClass="h3">
-                        {memoryList[memoryIdx].name}{' (' + (memoryIdx+1).toString() + '/' + memoryList.length.toString()+')'}
+                        {memoryList[memoryIdx].name}{' (' + (memoryList[memoryIdx].totalViewed===0?'*':'') + (memoryIdx+1).toString() + '/' + memoryList.length.toString()+')'}
                         {'   '}<button className='btn btn-info' id='btn_submit' disabled={memoryList[memoryIdx].easiness >= 999} onClick={CallUpdateApi}>{reviewDays(curWord.viewInterval)}</button>
                     </Panel.Title>
                     </Panel.Heading>

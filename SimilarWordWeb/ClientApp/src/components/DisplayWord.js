@@ -42,10 +42,6 @@ const DisplayWord = ({ word, idx, SearchWord }) => {
 
             <Panel.Body>
                     <WordInfoDisplay word={word}></WordInfoDisplay>
-                    <Link to={{ pathname: '/wordedit/' + word.name, state: { word: word } } } >   
-                        <button type="button" > Edit </button>
-                    </Link>
-                    {'  '}
                     <button hidden={word.viewInterval>=-1} onClick={CallUpdateApi}>Start Memory</button>
                 </Panel.Body>
                 </Panel.Collapse>

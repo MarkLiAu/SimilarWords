@@ -26,10 +26,8 @@ namespace WordSimilarityLib
         public DateTime viewTime { get; set; }
         public int easiness { get; set; }    // user choose the easiness:: not started yet,  -2, -1:hard, 0:normal, 1:easy ,2 
         public int viewInterval { get; set; }  // viewTime + viewInterval = next view time
-
-        // calculated fields:
-        public DateTime startTime { get; set; }
         public int totalViewed { get; set; }
+        public DateTime startTime { get; set; }
 
         public Word()
         {
@@ -49,7 +47,7 @@ namespace WordSimilarityLib
             viewInterval = int.MinValue;      // not started yet
 
             startTime = DateTime.MinValue;
-            totalViewed = 0;
+            totalViewed = int.MinValue;
 
         }
 
@@ -92,48 +90,11 @@ namespace WordSimilarityLib
         static public Dictionary<string, Word> WordList = new Dictionary<string, Word>();
         static public string dataFile = "";
 
-        public void SaveFile_cutdown(string file, string delimeter = "\t")
-        {
-            SortedList<int, Word> list = new SortedList<int, Word>();
-            int n = 0;
-            foreach(var d in WordList)
-            {
-                d.Value.meaningOther=d.Value.pronounciationAm = "";
-                if (d.Value.frequency > 10000) continue;
-                list.Add(d.Value.frequency*10000+(n++), d.Value);
-            }
-            n = 0;
-            using (StreamWriter sw = new StreamWriter(file))
-            {
-
-                sw.WriteLine(string.Format("name{0}pronounciation{0}pronounciationAm{0}frequency{0}similarWords{0}meaningShort{0}meaningLong{0}meaningOther{0}soundUrl{0}exampleSoundUrl{0}viewTime{0}viewInterval{0}easiness", delimeter));
-                foreach (var v in list)
-                {
-                    sw.Write(v.Value.name); sw.Write(delimeter);
-                    sw.Write(v.Value.pronounciation); sw.Write(delimeter);
-                    sw.Write(v.Value.pronounciationAm); sw.Write(delimeter);
-                    sw.Write(v.Value.frequency); sw.Write(delimeter);
-                    sw.Write(v.Value.similarWords); sw.Write(delimeter);
-                    sw.Write(v.Value.meaningShort); sw.Write(delimeter);
-                    sw.Write(v.Value.meaningLong); sw.Write(delimeter);
-                    sw.Write(v.Value.meaningOther); sw.Write(delimeter);
-                    sw.Write(v.Value.soundUrl); sw.Write(delimeter);
-                    sw.Write(v.Value.exampleSoundUrl);
-
-                    sw.Write(delimeter); sw.Write(v.Value.viewTime.ToBinary().ToString());
-                    sw.Write(delimeter); sw.Write(v.Value.viewInterval);
-                    sw.Write(delimeter); sw.Write(v.Value.easiness);
-                    sw.WriteLine();
-                    if (++n >= 10000) break;
-                }
-                sw.Close();
-            }
-        }
         public void SaveFile(string file, string delimeter = "\t")
         {
             using (StreamWriter sw = new StreamWriter(file))
             {
-                sw.WriteLine(string.Format("name{0}pronounciation{0}pronounciationAm{0}frequency{0}similarWords{0}meaningShort{0}meaningLong{0}meaningOther{0}soundUrl{0}exampleSoundUrl{0}viewTime{0}viewInterval{0}easiness", delimeter));
+                sw.WriteLine(string.Format("name{0}pronounciation{0}pronounciationAm{0}frequency{0}similarWords{0}meaningShort{0}meaningLong{0}meaningOther{0}soundUrl{0}exampleSoundUrl{0}viewTime{0}viewInterval{0}easiness{0}TotalViewed{0}StartTime", delimeter));
                 foreach (var v in WordList)
                 {
                     sw.Write(v.Value.name); sw.Write(delimeter);
@@ -141,7 +102,7 @@ namespace WordSimilarityLib
                     sw.Write(v.Value.pronounciationAm); sw.Write(delimeter);
                     sw.Write(v.Value.frequency); sw.Write(delimeter);
                     sw.Write(v.Value.similarWords); sw.Write(delimeter);
-                    sw.Write(v.Value.meaningShort); sw.Write(delimeter);
+                    sw.Write(v.Value.meaningShort.Replace("\n","<~>")); sw.Write(delimeter);
                     sw.Write(v.Value.meaningLong); sw.Write(delimeter);
                     sw.Write(v.Value.meaningOther); sw.Write(delimeter);
                     sw.Write(v.Value.soundUrl); sw.Write(delimeter);
@@ -150,6 +111,8 @@ namespace WordSimilarityLib
                     sw.Write(delimeter); sw.Write(v.Value.viewTime.ToBinary().ToString());
                     sw.Write(delimeter); sw.Write(v.Value.viewInterval);
                     sw.Write(delimeter); sw.Write(v.Value.easiness);
+                    sw.Write(delimeter); sw.Write(v.Value.totalViewed);
+                    sw.Write(delimeter); sw.Write(v.Value.startTime.ToBinary().ToString());
                     sw.WriteLine();
                 }
             }
@@ -175,6 +138,7 @@ namespace WordSimilarityLib
                     for(int i=1;i<columns.Length&&i<ss.Length;i++)
                     {
                         if (ss[i].Trim() == "") continue;
+                        ss[i]=ss[i].Replace("<~>","\n");
                         if (columns[i].ToLower() == "pronounciation") w.pronounciation = ss[i];
                         else if (columns[i].ToLower() == "pronounciationam") w.pronounciationAm = ss[i];
                         else if (columns[i].ToLower() == "frequency") w.frequency = Convert.ToInt32(ss[i]);
@@ -187,8 +151,10 @@ namespace WordSimilarityLib
                         else if (columns[i].ToLower() == "viewtime") w.viewTime = DateTime.FromBinary(Convert.ToInt64(ss[i]));
                         else if (columns[i].ToLower() == "viewinterval") w.viewInterval = Convert.ToInt32(ss[i]);
                         else if (columns[i].ToLower() == "easiness") w.easiness = Convert.ToInt32(ss[i]);
+                        else if (columns[i].ToLower() == "totalviewed") w.totalViewed = Convert.ToInt32(ss[i]);
+                        else if (columns[i].ToLower() == "starttime") w.startTime = DateTime.FromBinary(Convert.ToInt64(ss[i]));
                     }
-  //                  if (w.pronounciation.Contains("Br")) w.pronounciation = "";     // fix the incorrect data
+                    //  if (w.pronounciation.Contains("Br")) w.pronounciation = "";     // fix the incorrect data
                     WordList[w.name.ToLower()] = w;     // use lowcase for search
                 }
             }
@@ -277,7 +243,16 @@ namespace WordSimilarityLib
             }
             sw.Stop();
             long t = sw.ElapsedMilliseconds;
-            SaveFile_cutdown(dataFile);
+            SaveFile(dataFile);
+        }
+
+        public string FindSimilarWord(string name)
+        {
+            List<Word> list = FindSimilarWords(name);
+            if (list.Count <= 1) return "";
+            string result= "";
+            for (int i = 1; i < list.Count; i++) result += list[i].name+" ";
+            return result;
         }
 
         public List<Word> test11(string name)

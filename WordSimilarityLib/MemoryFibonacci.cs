@@ -39,14 +39,21 @@ namespace WordSimilarityLib
 
         public bool isNewItem(Word word)
         {
-            return word.viewInterval ==-1;
+            return word.viewInterval == -1;
         }
 
         public bool isDue(Word word)
         {
-            if (word.viewInterval <-1) return false;     // look like not a new item
-            if (word.viewInterval==0 && word.totalViewed == 1 && word.viewTime.AddMinutes(5) > DateTime.Now) return true;     // first time, due after 5 minutes
+            if (word.viewInterval<=-1) return false;     // not start yet, also exclude new word (==-1)
+            //if (word.viewInterval==0 && word.totalViewed == 1 && word.viewTime.AddMinutes(5) > DateTime.Now) return true;     // first time, due after 5 minutes
             return word.viewTime.AddDays(word.viewInterval) <= DateTime.Now;
+        }
+
+        // check is the word is 1st time viewed today
+        public bool is1stViewedToday(Word word)
+        {
+            if (word.viewInterval <= -1) return false;     // not start yet, also exclude new word (==-1)
+            return word.startTime >= DateTime.Today;
         }
 
         public int StartNewItem(string name)
@@ -58,6 +65,8 @@ namespace WordSimilarityLib
 
             w.viewTime = DateTime.Now;
             w.viewInterval = -1;
+            w.totalViewed = 0;
+            w.startTime = DateTime.Now;
 
             wd.UpdateWord(w);
             AddMemoryLog(w);
@@ -67,19 +76,21 @@ namespace WordSimilarityLib
 
         public int UpdateMemoryItem(Word wordNew)
         {
-            if (wordNew.viewInterval == -1) return StartNewItem(wordNew.name);
+            //if (wordNew.viewInterval == -1) return StartNewItem(wordNew.name);
             if (wordNew.viewInterval<0) return -2;        // something wrong, this one not started yet
 
             WordDictionary wd = new WordDictionary();
             if (!WordDictionary.WordList.ContainsKey(wordNew.name.ToLower())) return -1;
             Word w = WordDictionary.WordList[wordNew.name.ToLower()];
 
+            if(w.viewInterval<0)  w.startTime = DateTime.Now;   // this is 1st time view
+
             w.viewTime = DateTime.Now;
             w.viewInterval = wordNew.viewInterval;
             w.easiness = wordNew.easiness;
-
-            if (w.startTime == DateTime.MinValue) w.startTime = w.viewTime;
             w.totalViewed++;
+
+//            if (w.startTime == DateTime.MinValue) w.startTime = w.viewTime;     // something wrong
 
             wd.UpdateWord(w);
             AddMemoryLog(w);
@@ -147,6 +158,8 @@ namespace WordSimilarityLib
             Dictionary<string, int> namelist = new Dictionary<string, int>();
 
             int newItemCount = 0;
+            foreach (var w in WordDictionary.WordList)
+                if (is1stViewedToday(w.Value)) newItemCount++;
 
             foreach (var w in WordDictionary.WordList)
             {
@@ -172,33 +185,33 @@ namespace WordSimilarityLib
             return result;
         }
 
-        public int CalculateNextInterval(Word word)
-        {
-            int newVal = word.viewInterval;
-            if (word.viewInterval < 0)
-            {
-                newVal = 0;
-            }
-            else if(word.viewInterval==0)
-            {
-                if (word.totalViewed <= 0) newVal = 0;  // first time viewed
-                else newVal = 1;
-            }
-            else if(word.easiness<=-2)
-            {
-                newVal = word.viewInterval;     // it's too hard, use last interval
-            }
-            else
-            {
-                double v = word.viewInterval * 1.618;
-                if (word.easiness >= 2) v *= 1.618;     // too easy
-                else if (word.easiness == 1) v = word.viewInterval * 2;
-                else if (word.easiness == -1) v = word.viewInterval * 1.3;
-                newVal = Convert.ToInt32(v + 0.5);
-                if (newVal < 1) newVal = 1;
-            }
-            return newVal;
-        }
+        //public int CalculateNextInterval(Word word)
+        //{
+        //    int newVal = word.viewInterval;
+        //    if (word.viewInterval < 0)
+        //    {
+        //        newVal = 0;
+        //    }
+        //    else if(word.viewInterval==0)
+        //    {
+        //        if (word.totalViewed <= 0) newVal = 0;  // first time viewed
+        //        else newVal = 1;
+        //    }
+        //    else if(word.easiness<=-2)
+        //    {
+        //        newVal = word.viewInterval;     // it's too hard, use last interval
+        //    }
+        //    else
+        //    {
+        //        double v = word.viewInterval * 1.618;
+        //        if (word.easiness >= 2) v *= 1.618;     // too easy
+        //        else if (word.easiness == 1) v = word.viewInterval * 2;
+        //        else if (word.easiness == -1) v = word.viewInterval * 1.3;
+        //        newVal = Convert.ToInt32(v + 0.5);
+        //        if (newVal < 1) newVal = 1;
+        //    }
+        //    return newVal;
+        //}
 
         //////////////////////////////////////////////////////////////////////
     }

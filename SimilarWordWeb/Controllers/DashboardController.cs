@@ -10,6 +10,7 @@ using WordSimilarityLib;
 
 namespace SimilarWordWeb.Controllers
 {
+
     public class WordInfo
     {
         public string group { get; set; }
@@ -48,31 +49,38 @@ namespace SimilarWordWeb.Controllers
 
             int[] counts = new int[10];
 
+            DateTime start_date = DateTime.Now;
             foreach (var w in WordDictionary.WordList)
             {
                 Word word = w.Value;
+                if (word.viewInterval < -1) continue;   // not started yet
+
+
                 if (memoryFib.isNewItem(word))
                 {
-                    counts[1]++;
+                    counts[1]++;    // new added items, ready for memorying
+                    continue;
                 }
-                else if (memoryFib.isDue(word))
-                {
-                    counts[2]++;
-                }
-                else if(word.viewInterval>=0)
-                {
-                    counts[3]++;
-                }
+
+                counts[3]++;    // all other viewed items
+
+                if (word.viewTime < start_date) start_date = word.viewTime;
+
+                if (memoryFib.isDue(word)) counts[2]++;    // already started items, and due to be viewed
+                if (memoryFib.is1stViewedToday(word)) counts[4]++;  // 1st viewed today
+                if (word.viewTime >= DateTime.Today) counts[5]++;   // all words viewed today
             }
 
             result.Add(new WordInfo("memory", "New words to view", (counts[1]).ToString()));
             result.Add(new WordInfo("memory", "old words due", (counts[2]).ToString()));
             result.Add(new WordInfo("memory", "other viewed words", (counts[3]).ToString()));
+            result.Add(new WordInfo("memory", "new words today", (counts[4]).ToString()));
+            result.Add(new WordInfo("memory", "reviewed today", (counts[5]).ToString()));
             result.Add(new WordInfo("word", "total words", (WordDictionary.WordList.Count).ToString()));
+            result.Add(new WordInfo("memory", "total days", (DateTime.Now-start_date).Days.ToString()));
 
             return result;
         }
-
 
         // GET api/<controller>/5
         [HttpGet("{name}")]

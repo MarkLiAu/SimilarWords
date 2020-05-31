@@ -10,7 +10,15 @@ const WordInfoDisplay = ({ word }) => {
         <table className='table table-striped table-bordered'>
             <tbody>
             <tr>
-                    <td>Name:</td><td> <ShowWordName name={word.name}></ShowWordName>    <Badge>{word.frequency}</Badge> </td>
+                    <td>Name:</td>
+                    <td>
+                        <ShowWordName name={word.name}></ShowWordName>    <Badge>{word.frequency}</Badge>
+                        {' '}
+                        <Link to={{ pathname: '/wordedit/' + word.name, state: { word: word } }} >
+                            <button type="button" > Edit </button>
+                        </Link>
+
+                    </td>
             </tr>
             <tr>
                 <td>pronounciation:</td><td>{word.pronounciation}</td>
@@ -36,7 +44,8 @@ const WordInfoDisplay = ({ word }) => {
 const WordReviewInfo = ({ word }) => {
     let infoList = [];
     infoList.push({ title: 'Total viewed', value: word.totalViewed + (word.totalViewed<=0 && word.viewInterval>=-1? ' (in memory list)':'') });
-    if (word.totalViewed > 0) {
+    //if (word.totalViewed > 0)
+    {
         infoList.push({ title: 'Start Time', value: new Date(word.startTime).toLocaleString() });
         infoList.push({ title: 'View Time', value: new Date(word.viewTime).toLocaleString()  });
         infoList.push({ title: 'Interval', value:word.viewInterval });

@@ -97,7 +97,7 @@ namespace SimilarWordWeb.Controllers
 
                 //foreach (var d in WordDictionary.WordList) d.Value.meaningLong = "";
                 //wd.SaveFile(Path.Combine(Directory.GetCurrentDirectory(), @"data\WordSimilarityList.txt"));
-
+                if (word.similarWords == "") word.similarWords = wd.FindSimilarWord(word.name) + " ";   // put a space at the end, so no need to search next time
                 if (wd.UpdateWord(word)) return word;
 
                 return new Word("ERROR", -1, "failed to update");

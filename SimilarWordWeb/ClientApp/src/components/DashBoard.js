@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+﻿import React, { useState, Fragment } from 'react';
 import { Badge } from 'react-bootstrap';
 
 
@@ -26,11 +26,15 @@ export const DashBoard = ({ history }) => {
 
         console.log("ShowDashBoard start");
         console.log(datalist);
-        const colors = ['red', 'orange', 'purple', 'blue'];
-        return (
-            datalist.map((d, idx) => {
-                return (<Badge key={idx} style={{ backgroundColor: colors[idx] }} title={d.name} >{d.value}  </Badge>)
-            })
+    const colors = ['red', 'orange', 'purple', 'LimeGreen', 'LightGreen', 'blue'];
+    let len = datalist.length;
+    return (
+        <Fragment>
+            {len > 1 ? <Badge style={{ backgroundColor: 'red' }} title={'due today'} >{datalist[1].value}  </Badge> : ''}
+            {' '}{len > 3 ? <Badge style={{ backgroundColor: 'orange' }} title={'New viewed today/new waiting'} >{datalist[3].value + ' / ' + datalist[0].value}  </Badge> : ''}
+            {' '}{len > 4 ? <Badge style={{ backgroundColor: 'LimeGreen' }} title={'Viewed today/total viewed'} >{datalist[4].value + ' / ' + datalist[2].value+' / '+datalist[6].value+'d'}  </Badge> : ''}
+            {' '}{len > 5 ? <Badge style={{ backgroundColor: 'blue' }} title={datalist[5].name} >{datalist[5].value}  </Badge> : ''}
+           </Fragment>
         )
 
 }

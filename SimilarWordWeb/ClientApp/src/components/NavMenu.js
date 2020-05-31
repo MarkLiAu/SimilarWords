@@ -12,7 +12,7 @@ export class NavMenu extends Component {
       <Navbar className='navbar-custom' inverse fluid collapseOnSelect>
         <Navbar.Header>
           <Navbar.Brand>
-            <Link title="V20.5.28" to={'/'}>SimilarWord</Link>
+            <Link title="V20.5.31" to={'/'}>SimilarWord</Link>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
