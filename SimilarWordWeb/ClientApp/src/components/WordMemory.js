@@ -97,7 +97,7 @@ const WordMemory = () => {
         setFirstFlag(1);
     }
 
-    if (memoryList.length <= 0) return 'no items to review!';
+    if (memoryList.length <= 0) return firstFlag<=0 ? 'Loading' : 'no items to review!';
 
     let nwaiting = 0; memoryList.map(x =>nwaiting+=(x.easiness < 999? 1:0));
     if (nwaiting===0) return 'Congraduation, you finished: ' + memoryList.length;
