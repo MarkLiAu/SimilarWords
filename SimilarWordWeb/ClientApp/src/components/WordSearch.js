@@ -62,7 +62,8 @@ export class WordSearch extends Component {
                 console.log('fetch back');
                 this.props.history.push('/Wordsearch/' + word);
                 this.setState({ words: data, word2search: word, wordInput: '', activeKey: '0'  });
-            });
+            })
+            .catch(err => console.log(`Error with message: ${err}`));
     }
 
     SubmitSearch = () => {
