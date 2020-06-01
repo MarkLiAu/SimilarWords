@@ -1,6 +1,6 @@
 ﻿import React, { useState, Fragment } from 'react';
 import { Badge } from 'react-bootstrap';
-
+import { GetTokenHeader } from './CommTools';
 
 export const DashBoard = ({ history }) => {
     const [firstFlag, setFirstFlag] = useState(0);
@@ -9,14 +9,23 @@ export const DashBoard = ({ history }) => {
 
     const LoadData = () => {
         console.log("LoadData in Dashboard:");
-        fetch('api/Dashboard/')
+        fetch('api/Dashboard', {
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': GetTokenHeader()
+            }
+        })
             .then(response => response.json())
             .then(data => {
-                console.log('fetch back');
+                console.log('Dashboard fetch back');
                 console.log(data);
                 setFirstFlag(1);
                 setDatalist(data);
-            });
+            })
+            .catch(err => console.log(`Error with message: ${err}`));
+                //console.log('dashboard response.ok='+response.ok);
+                //if (!response.ok) throw (new Error(`Failed:(${response.status}) ${response.statusText}`));
+
     }
 
     if (firstFlag === 0) {
@@ -27,6 +36,7 @@ export const DashBoard = ({ history }) => {
         console.log("ShowDashBoard start");
         console.log(datalist);
     const colors = ['red', 'orange', 'purple', 'LimeGreen', 'LightGreen', 'blue'];
+    if ( typeof datalist === 'undefined' ) return '';
     let len = datalist.length;
     return (
         <Fragment>
