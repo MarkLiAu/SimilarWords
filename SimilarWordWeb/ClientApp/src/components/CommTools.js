@@ -22,3 +22,12 @@ export const ShowDictLink = ({ name }) => {
     )
 }
 
+export const GetTokenHeader = ()=> {
+    let userString = localStorage.getItem('SimilarWordUser');
+    console.log(typeof (userString));
+    console.log("commtools userString:" + userString);
+    if (typeof( userString) === 'undefined'||userString===null||userString.length<=0) return '';
+    let user = JSON.parse(userString);
+    return `Bearer ${user.token}`;
+
+}

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using WordSimilarityLib;
 using System.IO;
 
@@ -10,6 +11,7 @@ using System.IO;
 
 namespace SimilarWordWeb.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     public class MemoryController : Controller
     {

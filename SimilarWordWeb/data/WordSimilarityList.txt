@@ -894,7 +894,7 @@ discover	[dɪ'skʌvə(r)]		864	 discovery rediscover	If you discover something, 
 candidate	['kændɪdət]		865	 candidacy	A candidate is someone running for political office — or anyone being considered for a position or opportunity of some sort.					0	-2147483648	-2147483648	-2147483648	0
 production	[prə'dʌkʃn]		866	 reproduction protection productive projection introduction product reduction proportion prediction promotion deduction probation	Production is the process of goods being made or manufactured. If people like the cupcakes you sell about school events, you might have to increase production by baking in both your kitchen and your neighbor's.					0	-2147483648	-2147483648	-2147483648	0
 treat	[triːt]		867	 threat treaty great tread retreat	If you've been working hard and living thriftily for months on end, give yourself a treat: take the night off and go out to dinner and a movie.					0	-2147483648	-2147483648	-2147483648	0
-trip	[trɪp]		868	 strip tip trap rip grip trim drip trio	1.  a visit to a place<~>2. to hit something with your foot by accident<~>3. to release a switch, etc.					0	-1	-2147483648	0	0
+trip	[trɪp]		868	 strip tip trap rip grip trim drip trio	1.  a visit to a place<~>2. to hit something with your foot by accident<~>3. to release a switch, etc.					-8586107185519522318	3	1	1	-8586107185519522337
 3. The circuit breaker trips when too much electricity flows through it 			0		-8586108518835945135	-1	-2147483648			0	-2147483648	-2147483648	-2147483648	0
 evening	['iːvnɪŋ]		869	 opening	The evening is the last part of the day before night falls, just when the sun is starting to go down. Most people eat dinner in the evening.					0	-2147483648	-2147483648	-2147483648	0
 affect	[ə'fekt]		870	 effect affected afflict	Affect is most often used as a verb meaning “to have an impact on,” as in “The tornado barreling towards us will affect our picnic plans.”					0	-2147483648	-2147483648	-2147483648	0
@@ -1394,7 +1394,7 @@ fully	['fʊli]		1347	 full bully folly awfully						0	-2147483648	-2147483648	-2
 actor	['æktə(r)]		1348	 factor factory reactor tractor	If you act in a play, whether it's written by Shakespeare or your little brother, you can call yourself an actor. Some actors make films, and others are on TV.					0	-2147483648	-2147483648	-2147483648	0
 birth	[bɜːθ]		1349	 berth						0	-2147483648	-2147483648	-2147483648	0
 search	[sɜːtʃ]		1350	 research	To search is to look for something. A search party is a group of people looking for something together. Their search may take a long time. If they're in the army, they might be on a mission to search and destroy.					0	-2147483648	-2147483648	-2147483648	0
-tie	[taɪ]		1351	 Thai time tire tide tile tier	to fasten					0	-1	1	1	-8586109073858441091
+tie	[taɪ]		1351	 Thai time tire tide tile tier	to fasten					-8586107185247319998	3	1	2	-8586107185247320019
  The two teams are tied with two games a piece.			0		-8586109073858441091	1	1			0	-2147483648	-2147483648	-2147483648	0
 democracy	[dɪ'mɒkrəsi]		1352	 democrat democratic	Whether you're talking about your glee club or a powerful nation, the word democracy describes government based on participation of the people, either directly or through elected representatives.					0	-2147483648	-2147483648	-2147483648	0
 eastern	['iːstən]		1353	 Easter nearest earnest western stern						0	-2147483648	-2147483648	-2147483648	0
@@ -1803,7 +1803,7 @@ criminal	['krɪmɪnl]		1744		A criminal is someone who breaks the law. If you're
 careful	['keəfl]		1745	 carefully	If you consider all consequences and do a task thoughtfully, take your time and watch what you are doing, you are being careful. Can you ever be too careful? If you're a stunt man, yes. If you're an accountant, no.					0	-2147483648	-2147483648	-2147483648	0
 core	[kɔː(r)]		1746	 corps score chore come more care code corn cope cord cure bore gore cone sore	If you're looking for the most essential part or the very center of something, you're looking for its core. Like the inedible middle of an apple or your inner circle of core friends.					0	-2147483648	-2147483648	-2147483648	0
 upper	['ʌpə(r)]		1747	 supper						0	-2147483648	-2147483648	-2147483648	0
-rush	[rʌʃ]		1748	 brush crush push bush lush rash rust						0	-2147483648	-2147483648	-2147483648	0
+rush	[rʌʃ]		1748	 brush crush rash 	to move very quickly					-8586107177477081313	3	1	1	-8586107177477081331
 necessarily	[ˌnesə'serəli]		1749	 necessary	Use the adverb necessarily to mean inevitably. The best man won't necessarily have to speak at the wedding reception, but he should probably have a speech ready just in case.					0	-2147483648	-2147483648	-2147483648	0
 specifically	[spə'sɪfɪkli]		1750	 specially	Specifically means particularly, or regarding one option out of several. You specifically requested that your birthday cake is chocolate with lemon icing and green lettering, and so were quite disappointed at the vanilla cake you were served instead.					0	-2147483648	-2147483648	-2147483648	0
 tired	['taɪəd]		1751	 tire hired retired	If you're tired, you should get some rest. If you're tired of being tired, you might need to eat better and exercise more. If you're tired of being told what to do, you should stop asking for advice.					0	-2147483648	-2147483648	-2147483648	0
@@ -2224,7 +2224,7 @@ prisoner	['prɪznə(r)]		2153	 prison						0	-2147483648	-2147483648	-2147483648
 fellow	['feləʊ]		2154	 follow yellow	Fellow is an old fashioned word for “guy.” If you’re wearing a top hat, you may address someone as “my good fellow.” It’s also a non-stuffy word to describe people in the same situation, such as you and your fellow Vocabulary.com fans.					0	-2147483648	-2147483648	-2147483648	0
 smooth	[smuːð]		2155	 smoothly	Something smooth is free of roughness, stubble, or other imperfections that you can feel with your hands. If your wooden table is giving you splinters, use a sander to smooth it down and make it smooth. As you can see, smooth works as both a verb and an adjective.					0	-2147483648	-2147483648	-2147483648	0
 nearby	[ˌnɪə'baɪ]		2156	 nearly						0	-2147483648	-2147483648	-2147483648	0
-peer	[pɪə(r)]		2157	 pier per beer deer peel pear peek veer	A peer is someone at your own level. If you are a 10th grader, other high school students are your peers.					-8586108199359542423	1	0	2	-8586109073745912366
+peer	[pɪə(r)]		2157	 pier per beer deer peel pear peek veer	A peer is someone at your own level. If you are a 10th grader, other high school students are your peers.					-8586107185124023976	3	0	3	-8586109073745912366
 designer	[dɪ'zaɪnə(r)]		2158	 design	A designer is a person who plans how something will look. An architect is a designer of buildings, drawing detailed blueprints indicating what the structures should look like and how they should be built.					0	-2147483648	-2147483648	-2147483648	0
 personnel	[ˌpɜːsə'nel]		2159	 personal	Personnel is a noun describing a group of people who follow orders, usually at a company. If you have a job, you’re probably considered personnel to be managed.					0	-2147483648	-2147483648	-2147483648	0
 educator	['edʒukeɪtə(r)]		2160	 educate educated						0	-2147483648	-2147483648	-2147483648	0
@@ -2523,7 +2523,7 @@ scenario	[sə'nɑːriəʊ]		2437		A scenario is a specific possibility. To plan 
 telescope	['telɪskəʊp]		2438		A telescope is an instrument that is used to view distant objects. If you want to look at the planets, you can use a telescope. The higher the magnification on the telescope, the better your view will be.					0	-2147483648	-2147483648	-2147483648	0
 reflection	[rɪ'flekʃn]		2439	 rejection reflective recollection election reflect collection reaction selection reduction	Your reflection is what you see in the mirror. Other things that bounce back at you are also reflections — light waves, sound waves, even your thoughts.					0	-2147483648	-2147483648	-2147483648	0
 revolution	[ˌrevə'luːʃn]		2440	 resolution evolution devolution revolutionary solution revelation	When a new development in an industry changes everything drastically, call it a revolution. The Internet has certainly caused a revolution in the way people lead their lives.					0	-2147483648	-2147483648	-2147483648	0
-strip	[strɪp]		2441	 stripe trip strap striped	1. a long narrow piece of paper, metal, cloth, etc					0	-1	-2147483648	0	0
+strip	[strɪp]		2441	 stripe trip strap striped	1. a long narrow piece of paper, metal, cloth, etc					-8586107186546788951	1	0	1	-8586107186546788973
 3. to remove everything that covers it			0		0	-1	-2147483648			0	-2147483648	-2147483648	-2147483648	0
 interpret	[ɪn'tɜːprɪt]		2442	 interpreter Internet interpretive	When you interpret something, you make sense of it. You could interpret a graph, a foreign language, or even Mona Lisa's odd smile.					0	-2147483648	-2147483648	-2147483648	0
 friendly	['frendli]		2443	 friend	Friendly, describes people who are kind, caring, and make you feel comfortable. You might be new to town, but the people are so friendly that you'll soon feel right at home.					0	-2147483648	-2147483648	-2147483648	0
@@ -2591,9 +2591,9 @@ DNA	[ˌdiːen'eɪ]		2502	 and	Your DNA is what makes you uniquely you. It's that
 potentially	[pə'tenʃəli]		2503	 potential essentially	Use the adverb potentially to describe something that could happen or might be true. Your backyard leaf burning project, for example, is potentially dangerous.					0	-2147483648	-2147483648	-2147483648	0
 thirty	['θɜːti]		2504	 thirsty						0	-2147483648	-2147483648	-2147483648	0
 justify	['dʒʌstɪfaɪ]		2505	 justice testify	To justify is to make excuses for one's actions, like the dieter who has to justify the few tiny pieces of chocolate she's sneaked in between salads.					0	-2147483648	-2147483648	-2147483648	0
-protest	['prəʊtest]		2506	 protect protester 	A protest is a formal declaration of objection. When there are big meetings of powerful countries and corporations, there are often protests staged in front of the meeting building, by people who think that what's happening inside is wrong.					-8586107084025905469	2	1	1	-8586107084025905545
+protest	['prəʊtest]		2506	 protect protester 	A protest is a formal declaration of objection. When there are big meetings of powerful countries and corporations, there are often protests staged in front of the meeting building, by people who think that what's happening inside is wrong.					-8586107184856376149	3	0	1	-8586107184856376171
 neighbour			2506	 neighbor neighbouring						0	-2147483648	-2147483648	-2147483648	0
-crash	[kræʃ]		2507	 cash crush trash clash rash	Boom! Bam! Pow! A crash is when two things collide, or smash, into each other. Crash and smash have similar meanings and sounds.					-8586107936578776467	-1	-2147483648	0	-8586107936578776467
+crash	[kræʃ]		2507	crush rash trash clash rush	Boom! Bam! Pow! A crash is when two things collide, or smash, into each other. Crash and smash have similar meanings and sounds.					-8586107177089585205	1	1	1	-8586107177089585224
 craft	[krɑːft]		2508	 draft raft	If someone practices a craft, it means that she knows how to make something with her hands, like wooden furniture or hand-knit socks.					0	-2147483648	-2147483648	-2147483648	0
 treaty	['triːti]		2509	 treat	When a war ends, often two countries will sign a treaty, which is a contract where both sides agree to behave a certain way. Treaties are used for many reasons, like creating alliances or preventing nuclear weapons from being built.					0	-2147483648	-2147483648	-2147483648	0
 terrorist	['terərɪst]		2510	 terrorism	Someone who uses violence, mayhem, and destruction — or the threat of those things — to coerce people or countries into taking a certain action is a terrorist. A terrorist may be motivated by religious fervor, politics, or just plain old-fashioned greed.					0	-2147483648	-2147483648	-2147483648	0
@@ -2604,7 +2604,7 @@ tap	[tæp]		2514	 pat apt tape trap						0	-2147483648	-2147483648	-2147483648	0
 extensive	[ɪk'stensɪv]		2515	 expensive extensively extension intensive expansive	When something is far-reaching or expansive it is extensive. When your friend knows every single place and time that his favorite band has played any given song, he has extensive knowledge of that band.					0	-2147483648	-2147483648	-2147483648	0
 episode	['epɪsəʊd]		2516		Think of your favorite TV show. It runs all year long, in weekly installments. Each of those individual programs is an episode, one part of a long series.					0	-2147483648	-2147483648	-2147483648	0
 swim	[swɪm]		2517	 slim skim						0	-2147483648	-2147483648	-2147483648	0
-tire	['taɪə(r)]		2518	 rite tier tired time fire hire tie wire tide tile tyre dire						-8586108199014204228	1	0	2	-8586109073703816212
+tire	['taɪə(r)]		2518	 rite tier tired time fire hire tie wire tide tile tyre dire						-8586107177045292448	2	1	3	-8586109073703816212
 fault	[fɔːlt]		2519	 faulty vault default	A fault is an error caused by ignorance, bad judgment or inattention. If you're a passenger, it might be your fault that your friend missed the exit, if you were supposed to be watching for it, not sleeping.					0	-2147483648	-2147483648	-2147483648	0
 loose	[luːs]		2520	 loosen lose goose moose loosely	If something is loose, it's not attached very securely to anything. Be sure the horse trailer attached to your truck isn't loose, or it might just roll away on its own while you're on the highway.					0	-2147483648	-2147483648	-2147483648	0
 shortly	['ʃɔːtli]		2521	 short shorts shorten						0	-2147483648	-2147483648	-2147483648	0
@@ -2651,7 +2651,7 @@ presentation	[ˌprezn'teɪʃn]		2560	 representation preservation	The noun prese
 regardless	[rɪ'ɡɑːdləs]		2561		"If something is done without consideration, it's done regardless, usually followed by the word ""of."" Today you can sit wherever you'd like on a bus, regardless of your race, but this wasn't always the case."					0	-2147483648	-2147483648	-2147483648	0
 load	[ləʊd]		2562	 lead road loan loud lord loaf lad	A load is a bundle of stuff that has to be carried. You might spend your days hauling loads of hay into a barn and your evenings dragging loads of dirty clothes into the laundry room.					0	-2147483648	-2147483648	-2147483648	0
 Pacific			2562							0	-2147483648	-2147483648	-2147483648	0
-stable	['steɪbl]		2563	 table staple stale suitable unstable stumble notable startle sizable	When something is stable, it's fixed and steady. If you needed advice, you'd probably go to your most stable friend, the one least likely to act crazy or be easily upset.					-8586107948450201969	-1	-2147483648	0	-8586107948450201969
+stable	['steɪbl]		2563	 table staple stale suitable unstable stumble notable startle sizable	When something is stable, it's fixed and steady. If you needed advice, you'd probably go to your most stable friend, the one least likely to act crazy or be easily upset.					-8586107177010387151	2	0	1	-8586107177010387168
 introduction	[ˌɪntrə'dʌkʃn]		2564	 production reproduction introductory	An introduction refers to a beginning — maybe presenting someone new to a group, or inserting a new idea into a project. In a piece of writing, the introduction makes clear to the reader the text's purpose.					0	-2147483648	-2147483648	-2147483648	0
 pretend	[prɪ'tend]		2565		To pretend is to act as if you're someone else. If you pretend to be your mother for a phone conference with your math teacher, try putting on her high heels to help you get into character.					0	-2147483648	-2147483648	-2147483648	0
 elderly	['eldəli]		2566	 elder eagerly orderly	Someone who's elderly is very old. Your elderly neighbor might need help shoveling snow from her sidewalk and going grocery shopping each week.					0	-2147483648	-2147483648	-2147483648	0
@@ -2772,7 +2772,7 @@ hunter	['hʌntə(r)]		2677	 hunger counter	A hunter is someone who seeks, pursue
 educate	['edʒukeɪt]		2678	 educated educator	To educate is to teach, train, or inform someone. Teachers educate students.					0	-2147483648	-2147483648	-2147483648	0
 painful	['peɪnfl]		2679	 painfully						0	-2147483648	-2147483648	-2147483648	0
 friendship	['frendʃɪp]		2680		Friendship is the state of being friends with someone. A good job, good health, and romantic love are important, but without real friendship, your life might not feel full.					0	-2147483648	-2147483648	-2147483648	0
-aide	[eɪd]		2681	 aid idea aside abide side wide hide ride AIDS tide	A person who helps or acts as an assistant, such as a nurse's aide or a presidential aide.					-8586109073650515483	2	1	1	-8586109073650515483
+aide	[eɪd]		2681	 aid idea aside abide side wide hide ride AIDS tide	A person who helps or acts as an assistant, such as a nurse's aide or a presidential aide.					-8586107176921365608	2	0	2	-8586109073650515483
 infant	['ɪnfənt]		2682	 infantry instant	An infant is a baby. When you were an infant, you weren't able to walk, talk, or feed yourself (but you had a pretty mean burp).					0	-2147483648	-2147483648	-2147483648	0
 calculate	['kælkjuleɪt]		2683	 circulate calculation calculating	Calculate derives from the Latin word for count––it means either to figure out an equation, i.e., to count it up, or to count on something happening.					0	-2147483648	-2147483648	-2147483648	0
 fifty	['fɪfti]		2684	 fifth						0	-2147483648	-2147483648	-2147483648	0
@@ -3225,7 +3225,7 @@ Yemeni			3119							0	-2147483648	-2147483648	-2147483648	0
 motivate	['məʊtɪveɪt]		3120	 motivated motive activate motivation	To give someone the incentive to act in a certain way is to motivate that person. If you give your dad a food-processor for his birthday, you might motivate him to help out with the cooking.					0	-2147483648	-2147483648	-2147483648	0
 render	['rendə(r)]		3121	 reader gender tender lender reminder slender blender	"Render is a synonym of make––technically it means ""cause to become."" An illness might render you unable to walk, or a shocking site might render you speechless."					0	-2147483648	-2147483648	-2147483648	0
 longtime	['lɒŋtaɪm]		3122							0	-2147483648	-2147483648	-2147483648	0
-trap	[træp]		3123	 part strap trip wrap tap tray rap crap	a piece of equipment for catching animals					-8586108198970374970	1	0	1	-8586108198970374970
+trap	[træp]		3123	 part strap trip wrap tap tray rap crap	a piece of equipment for catching animals					-8586107176899548143	2	0	2	-8586108198970374970
 restrict	[rɪ'strɪkt]		3124	 restricted district strict restriction restrictive	To restrict is to limit. If you want to eat more healthily, you might restrict, or limit, yourself to eating only foods containing fruits and vegetables –- like carrot cake and apple pie.					0	-2147483648	-2147483648	-2147483648	0
 cloth	[klɒθ]		3125	 clothes clothed	Cloth is fabric, a woven material. When you sew your own clothes, you start with a piece of cloth.					0	-2147483648	-2147483648	-2147483648	0
 Yugoslavian			3125							0	-2147483648	-2147483648	-2147483648	0
@@ -3257,7 +3257,7 @@ monster	['mɒnstə(r)]		3148	 master muster	Monsters are imaginary scary creatur
 unexpected	[ˌʌnɪk'spektɪd]		3149	 unexpectedly expected	Use the adjective unexpected to describe something that takes you by surprise. An unexpected knock on your front door might make you jump.					0	-2147483648	-2147483648	-2147483648	0
 obstacle	['ɒbstəkl]		3150		When the road is blocked ahead of you, that blockage is an obstacle that keeps you from getting where you want to go.					0	-2147483648	-2147483648	-2147483648	0
 facilitate	[fə'sɪlɪteɪt]		3151	 facility debilitate	To facilitate means to make something easier. If your best friend is very shy, you could facilitate her efforts to meet new people.					0	-2147483648	-2147483648	-2147483648	0
-rip	[rɪp]		3152	 trip grip drip ripe	When you rip something, you tear it quickly or forcefully. It's almost always better to rip off a Band-Aid than to peel it off slowly.					-8586108198141680436	1	0	1	-8586108198141680436
+rip	[rɪp]		3152	 trip grip drip ripe	When you rip something, you tear it quickly or forcefully. It's almost always better to rip off a Band-Aid than to peel it off slowly.					-8586107176369672922	1	0	2	-8586108198141680436
 herb	[hɜːb]		3153	 her here hero hers herd verb	What do food, medicine, and perfume have in common? Well, they all can be created from herbs. An herb is a plant that has a soft rather than a woody stem, and it tends to have a unique taste or smell.					0	-2147483648	-2147483648	-2147483648	0
 overwhelming	[ˌəʊvə'welmɪŋ]		3154	 overwhelmingly overwhelm	Something overwhelming is very intense and hard to deal with: overwhelming events make people worried and stressed out.					0	-2147483648	-2147483648	-2147483648	0
 integration	[ˌɪntɪ'ɡreɪʃn]		3155	 interaction immigration intention integrate inspiration integrated	Integration occurs when separate people or things are brought together, like the integration of students from all of the district's elementary schools at the new middle school, or the integration of snowboarding on all ski slopes.					0	-2147483648	-2147483648	-2147483648	0
@@ -3296,7 +3296,7 @@ privilege	['prɪvəlɪdʒ]		3185	 privileged	A privilege is a special advantage 
 temple	['templ]		3186	 template	A temple is a religious building that's meant for worshipping or praying. Hindu temples are typically devoted to one specific god.					0	-2147483648	-2147483648	-2147483648	0
 outdoor	['aʊtdɔː(r)]		3187	 outdoors						0	-2147483648	-2147483648	-2147483648	0
 ageing			3187	 aging						0	-2147483648	-2147483648	-2147483648	0
-suck	[sʌk]		3188	 stuck such sick luck buck duck tuck sock sack fuck	To suck is to draw something by force. Vacuum cleaners suck dirt from the floor and milkshake drinkers suck this liquid, tasty liquid through a straw.					-8586109375349091849	3	1	1	-8586109375349091849
+suck	[sʌk]		3188	 stuck such sick luck buck duck tuck sock sack fuck	To suck is to draw something by force. Vacuum cleaners suck dirt from the floor and milkshake drinkers suck this liquid, tasty liquid through a straw.					-8586106501549086613	2	-1	2	-8586109375349091849
 broadcast	['brɔːdkɑːst]		3189	 broadcaster broadcasting	To broadcast is to air a program, especially on TV or radio. It also means to tell people about something. If you paint your one true love’s name on your car, you broadcast your feelings to the whole world!					0	-2147483648	-2147483648	-2147483648	0
 re	[reɪ]		3190	 ray er						0	-2147483648	-2147483648	-2147483648	0
 leap	[liːp]		3191	 pale plea lead lean leaf lap leak heap reap	"The word leap is another word for ""jump,"" but it gives a slightly different image — one of lightness and quickness, perhaps a movement with a little more spring in it than a regular jump."					0	-2147483648	-2147483648	-2147483648	0
@@ -3365,7 +3365,7 @@ alarm	[ə'lɑːm]		3250		On a clock, the alarm can be set to go off at a certain
 Aries			3250	 raise arise						0	-2147483648	-2147483648	-2147483648	0
 festival	['festɪvl]		3251	 festive	A festival might be an all-day series of music performances or a weekend of short plays or films. Any program made up of many different acts, especially lasting an entire day or several days, can be called a festival.					0	-2147483648	-2147483648	-2147483648	0
 armour			3251	 armoury armor armoured						0	-2147483648	-2147483648	-2147483648	0
-grip	[ɡrɪp]		3252	 trip rip grin grim grid drip grit	To grip something is to hold it firmly. You might grip the TV remote to keep your roommate from trying to change the channel.					-8586108197980283806	1	0	1	-8586108197980283806
+grip	[ɡrɪp]		3252	 trip rip grin grim grid drip grit	To grip something is to hold it firmly. You might grip the TV remote to keep your roommate from trying to change the channel.					-8586107176326327136	2	1	2	-8586108197980283806
 armoured			3252	 armored armour armoury						0	-2147483648	-2147483648	-2147483648	0
 weird	[wɪəd]		3253		Call something weird when it’s strange, bizarre, or strikes you as odd. Putting peanut butter on pizza is weird. So is most abstract, conceptual performance art.					0	-2147483648	-2147483648	-2147483648	0
 undermine	[ˌʌndə'maɪn]		3254	 underline	To undermine literally means to dig a hole underneath something, making it likely to collapse. But we more often use the word to describe sabotage or the act of weakening someone else's efforts.					0	-2147483648	-2147483648	-2147483648	0
@@ -3617,7 +3617,7 @@ equation	[ɪ'kweɪʒn]		3489	 evaluation evacuation	In an equation, the quantiti
 angel	['eɪndʒl]		3490	 angle anger	An angel is a messenger of God, characterized as having human form with wings and a halo. The word suggests goodness, and is often used to refer to someone who offers comfort and aid to others in times of trouble. As a child, you looked like an innocent angel; appearances can be deceiving.					0	-2147483648	-2147483648	-2147483648	0
 Capricorn			3490							0	-2147483648	-2147483648	-2147483648	0
 offering	['ɒfərɪŋ]		3491	 suffering offspring differing	An offering is a type of offer or bid, like the kind made in a business meeting.					0	-2147483648	-2147483648	-2147483648	0
-rage	[reɪdʒ]		3492	 gear range age rate page race rare wage rape cage rag sage rake	Rage is a really intense anger. Some frustrated drivers let their emotions boil over into road rage when another car cuts them off, for example.					-8586107941309798247	-1	-2147483648	0	-8586107941309798247
+rage	[reɪdʒ]		3492	 gear range age rate page race rare wage rape cage rag sage rake	Rage is a really intense anger. Some frustrated drivers let their emotions boil over into road rage when another car cuts them off, for example.					-8586107175173307950	2	0	1	-8586107175173307967
 photography	[fə'tɒɡrəfi]		3493	 photograph photographer photographic pornography						0	-2147483648	-2147483648	-2147483648	0
 toilet	['tɔɪlət]		3494							0	-2147483648	-2147483648	-2147483648	0
 disappointed	[ˌdɪsə'pɔɪntɪd]		3495	 disappoint disappointing disappointment	Disappointed means discouraged or sad because what you hoped for didn't happen. If you write a fan letter to your favorite actress hoping for a personal reply, you're likely to be disappointed.					0	-2147483648	-2147483648	-2147483648	0
@@ -3636,7 +3636,7 @@ dawn	[dɔːn]		3507	 drawn down lawn damn	The noun dawn refers to the first ligh
 abstract	['æbstrækt]		3508	 attract distract abstraction	Use the adjective abstract for something that is not a material object or is general and not based on specific examples.					0	-2147483648	-2147483648	-2147483648	0
 descend	[dɪ'send]		3509	 descent descended depend defend ascend descendant	In its simplest sense, descend means to go or move downward, but there are a couple of subtle variations on this theme. Yes, a bird can descend from the sky, but also, humans are descended from prehistoric ancestors.					0	-2147483648	-2147483648	-2147483648	0
 silly	['sɪli]		3510	 sally	Silly describes something that can't be taken seriously. You might not mind telling silly jokes, but you don't want to be told a project you've worked hard at is silly.					0	-2147483648	-2147483648	-2147483648	0
-tide	[taɪd]		3511	 diet edit time side wide hide ride tie tire aide tile tidy	The tide is the daily rise and fall of the sea level. You can count on the regular changing patterns of the tide, unless of course a tsunami is headed your way.					-8586107083869108441	2	1	3	-8586109073519519228
+tide	[taɪd]		3511	 diet edit time side wide hide ride tie tire aide tile tidy	The tide is the daily rise and fall of the sea level. You can count on the regular changing patterns of the tide, unless of course a tsunami is headed your way.					-8586107175068898268	2	0	3	-8586109073519519228
 shared	[ʃeəd]		3512	 share scared shred	Shared describes something you have in common with another person. You can describe the people both you and your sister know well as your shared friends.					0	-2147483648	-2147483648	-2147483648	0
 hopefully	['həʊpfəli]		3513	 hopeful						0	-2147483648	-2147483648	-2147483648	0
 readily	['redɪli]		3514	 steadily really ready reading	Anything happening readily is happening without difficulty. A great party has cupcakes that are readily available. A great host will readily admit when it’s time to put more on the table.					0	-2147483648	-2147483648	-2147483648	0
@@ -4011,7 +4011,7 @@ workout	['wɜːkaʊt]		3861							0	-2147483648	-2147483648	-2147483648	0
 preliminary	[prɪ'lɪmɪnəri]		3862		"Preliminary means something that comes before something else. If you want to run in the race, you have to place in the top third of the preliminary round. It can also mean ""early""––the preliminary results are in, and you've won!"					0	-2147483648	-2147483648	-2147483648	0
 patent	['pætnt]		3863	 patient parent potent payment	A patent is a government document that proves that an invention is yours and yours alone. In the US, as of 2009, over 7,000,000 patents were issued by the Patent and Trademark Office.					0	-2147483648	-2147483648	-2147483648	0
 shy	[ʃaɪ]		3864		Parties are not much fun for a shy person. Shy means being nervous around other people, especially in a social situation.					0	-2147483648	-2147483648	-2147483648	0
-trash	[træʃ]		3865	 crash rash	Trash is rubbish or garbage — it's the stuff that gets thrown away. Your town might organize a clean-up day each year when people pick up trash in parks and neighborhoods.					0	-2147483648	-2147483648	-2147483648	0
+trash	[træʃ]		3865	 crash rash	Trash is rubbish or garbage — it's the stuff that gets thrown away. 					-8586107061645708889	1	1	2	-8586107174774939166
 disabled	[dɪs'eɪbld]		3866							0	-2147483648	-2147483648	-2147483648	0
 gross	[ɡrəʊs]		3867	 cross grass	"Get ready, because gross has a few different meanings. When something is gross, it's disgusting. The noun, a gross, is the complete amount (before expenses), and the verb ""to gross"" is to bring in money."					0	-2147483648	-2147483648	-2147483648	0
 damn	[dæm]		3868	 dam dawn damp	"Damn is a common, somewhat naughty exclamation. In one sense it means to condemn or send someone to hell, as in ""God damn it!"" Other times it means ""a little amount,"" as in ""I don't give a damn about baseball."""					0	-2147483648	-2147483648	-2147483648	0
@@ -4038,7 +4038,7 @@ innovative	['ɪnəveɪtɪv]		3887	 innovation initiative indicative	Something in
 shark	[ʃɑːk]		3888	 share sharp spark stark shack hark						0	-2147483648	-2147483648	-2147483648	0
 mill	[mɪl]		3889	 will kill fill bill mile hill milk ill mall pill mild till	A mill is a factory or plant, especially one that's equipped for grinding grain into flour. The facility is a mill, and the machine that does the actual grinding is also called a mill.					0	-2147483648	-2147483648	-2147483648	0
 installation	[ˌɪnstə'leɪʃn]		3890	 insulation						0	-2147483648	-2147483648	-2147483648	0
-stimulate	['stɪmjuleɪt]		3891	 simulate stimulation stimulating	If the economy is starting to stall, the president can't just sit there. He has to stimulate—turn it on, bring it to life, perk it up. You can stimulate practically anything: a person, a conversation, a mind, or even the growth of a plant.					-8586107969655702357	-1	-2147483648	0	-8586107969655702357
+stimulate	['stɪmjuleɪt]		3891	 simulate stimulation stimulating	If the economy is starting to stall, the president can't just sit there. He has to stimulate—turn it on, bring it to life, perk it up. You can stimulate practically anything: a person, a conversation, a mind, or even the growth of a plant.					-8586107174605831072	1	1	1	-8586107174605831094
 tag	[tæɡ]		3892							0	-2147483648	-2147483648	-2147483648	0
 vertical	['vɜːtɪkl]		3893		Vertical describes something that rises straight up from a horizontal line or plane. A telephone pole or a tree can usually be described as vertical in relation to the ground.					0	-2147483648	-2147483648	-2147483648	0
 swimming	['swɪmɪŋ]		3894							0	-2147483648	-2147483648	-2147483648	0
@@ -4406,7 +4406,7 @@ consecutive	[kən'sekjətɪv]		4240	 conservative	If things are consecutive, the
 coordinate	[kəʊ'ɔːdɪneɪt]		4241	 coordinated decoration coordinator coordination subordinate	The word coordinate is all about getting things in order. Are your ducks in a row? Well, then you know what it means to coordinate something. And if you know exactly where to drop the bomb, then you know what the coordinates are.					0	-2147483648	-2147483648	-2147483648	0
 spy	[spaɪ]		4242							0	-2147483648	-2147483648	-2147483648	0
 slot	[slɒt]		4243	 lots lost lot shot spot slow plot						0	-2147483648	-2147483648	-2147483648	0
-riot	['raɪət]		4244	 trio root rot rift	A riot is a violent outburst by a crowd. When the principal didn't declare a snow day, even with five inches on the ground already, students rioted, gathering outside and throwing snowballs.					0	-2147483648	-2147483648	-2147483648	0
+riot	['raɪət]		4244	 trio root rot rift	a large crowd of people are behaving in a violent and uncontrolled way, especially when they are protesting about something					-8586107120900461624	-1	-2147483648	0	-8586107120900461601
 nutrient	['njuːtriənt]		4245		A nutrient is anything that nourishes a living being. We humans get our nutrients from what we eat, plants get theirs from the soil. While the best nutrients are natural, we can also get them from vitamins in a bottle.					0	-2147483648	-2147483648	-2147483648	0
 citizenship	['sɪtɪzənʃɪp]		4246		Citizenship is the status of being a citizen. If you have citizenship in a country, you have the right to live there, work, vote, and pay taxes!					0	-2147483648	-2147483648	-2147483648	0
 severely	[sə'vɪrlɪ]		4247	 severe severity						0	-2147483648	-2147483648	-2147483648	0
@@ -5062,7 +5062,7 @@ electron	[ɪ'lektrɒn]		4857	 election electronic electric electronics	If you ta
 physicist	['fɪzɪsɪst]		4858	 physician	A physicist is a scientist who studies and is trained in physics, which is the study of nature, especially how matter and energy behave.					0	-2147483648	-2147483648	-2147483648	0
 distinguished	[dɪ'stɪŋɡwɪʃt]		4859	 distinguish	Being distinguished is a good thing: it implies good behavior, sharp dress, and an excellent reputation. Distinguished people are respected.					0	-2147483648	-2147483648	-2147483648	0
 vocabulary	[və'kæbjələri]		4860		Vocabulary is all about words — the words in a language or a special set of words you are trying to learn. Vocabulary is so important, we even created a web site to help expand yours.					0	-2147483648	-2147483648	-2147483648	0
-maple	['meɪpl]		4861	 ample male	a tall tree with leaves that have five points and turn bright red or yellow in the autumn					-8586107083810448683	0	0	2	-8586108712588613451
+maple	['meɪpl]		4861	 ample male	a tall tree with leaves that have five points and turn bright red or yellow in the autumn					-8586107174551932614	1	0	2	-8586108712588613451
 wool	[wʊl]		4862	 wood tool cool pool fool woo						0	-2147483648	-2147483648	-2147483648	0
 salesman	['seɪlzmən]		4863							0	-2147483648	-2147483648	-2147483648	0
 memoir	['memwɑː(r)]		4864		The beginning of a short memoir of your life might read like this: I was born on a dark and stormy night. My days remained blustery — school was difficult for me, and my parents argued all of the time. My luck changed when...					0	-2147483648	-2147483648	-2147483648	0
@@ -5200,7 +5200,7 @@ delegation	[ˌdelɪ'ɡeɪʃn]		4985	 allegation delegate decoration deviation de
 haven	['heɪvn]		4986	 heaven have	Need to find shelter, from the weather or from other troubles? Then you need a haven.					0	-2147483648	-2147483648	-2147483648	0
 dangle	['dæŋɡl]		4987	 angle tangle	Dangle means to hang or swing loosely. If you dangle string above a kitten you will both be entertained.					0	-2147483648	-2147483648	-2147483648	0
 ounce			4987	 bounce once						0	-2147483648	-2147483648	-2147483648	0
-jerk	[dʒɜːk]		4988	 perk	A jerk is a sharp, sudden movement. (informal) a stupid person who often says or does the wrong thing					-8586107083808723936	0	0	3	-8586109073482112160
+jerk	[dʒɜːk]		4988	 perk	A jerk is a sharp, sudden movement. (informal) a stupid person who often says or does the wrong thing					-8586107174337138124	1	0	3	-8586109073482112160
 mobility	[məʊ'bɪləti]		4989	 ability morality mobilize	Mobility is the ability to move freely. If your basketball injury causes you to lose mobility in your knee, that means you can’t move it very well.					0	-2147483648	-2147483648	-2147483648	0
 assurance	[ə'ʃʊərəns]		4990	 insurance assistance	An assurance is a vote of confidence. If you give your friend an assurance that you'll be there, you better show up.					0	-2147483648	-2147483648	-2147483648	0
 competing	[kəm'piːtɪŋ]		4991	 computing compelling competitor comforting						0	-2147483648	-2147483648	-2147483648	0
@@ -5390,7 +5390,7 @@ practise			5162	 practice praise						0	-2147483648	-2147483648	-2147483648	0
 analogy	[ə'nælədʒi]		5163	 analog analogue apology	"When you draw an analogy between two things, you compare them for the purpose of explanation. The movie character Forest Gump made a silly analogy famous: ""Life is like a box of chocolates."""					0	-2147483648	-2147483648	-2147483648	0
 conductor	[kən'dʌktə(r)]		5164	 conduct contractor	"A train conductor is the person who takes tickets, shouts ""All aboard!"" and might control the engine, while a musical conductor is the one who leads an orchestra. Same job title — not the same person."					0	-2147483648	-2147483648	-2147483648	0
 inhabitant	[ɪn'hæbɪtənt]		5165	 inhabit	Someone who usually lives in a specific place — whether it's a mansion, a cave, or a beach house — is its inhabitant.					0	-2147483648	-2147483648	-2147483648	0
-strap	[stræp]		5166	 strip trap straw scrap stray	a watch with a leather strap					-8586108196974519120	1	0	1	-8586108196974519120
+strap	[stræp]		5166	 strip trap straw scrap stray	a watch with a leather strap					-8586107174162158471	1	0	2	-8586108196974519120
 determined	[dɪ'tɜːmɪnd]		5167	 determine	Olympic athletes are some of the most determined people you're going to meet. At that level, they've got to be driven to succeed. Otherwise, their opponents will surely beat them.					0	-2147483648	-2147483648	-2147483648	0
 logo	['ləʊɡəʊ]		5168	 log	A logo is a simple design that represents a company, organization, or product. Your college might have a logo composed of a picture of your mascot in your school colors.					0	-2147483648	-2147483648	-2147483648	0
 intensify	[ɪn'tensɪfaɪ]		5169	 intensity intensive intensely	To intensify is to increase the intensity, force, or power of something. If you snap a selfie and the colors aren't intense enough, you may be able to intensify them with a photo editor.					0	-2147483648	-2147483648	-2147483648	0
@@ -5736,7 +5736,7 @@ zoo	[zuː]		5496	 zoom						0	-2147483648	-2147483648	-2147483648	0
 theorist	['θɪərɪst]		5497		Someone who considers given facts and comes up with a possible explanation is called a theorist. Theorists observe various phenomena and use reasoning to come up with practical ideas that must be proven.					0	-2147483648	-2147483648	-2147483648	0
 disadvantage	[ˌdɪsəd'vɑːntɪdʒ]		5498	 disadvantaged advantage	A piece of bad luck or a less favorable position is a disadvantage. If you are trying to run a fifty-yard dash in flip flops when everyone else has on running shoes, you'll be at a disadvantage.					0	-2147483648	-2147483648	-2147483648	0
 efficacy	['efɪkəsi]		5499	 efficiency	The degree to which a method or medicine brings about a specific result is its efficacy. You might not like to eat it, but you can't question the efficacy of broccoli as a health benefit.					0	-2147483648	-2147483648	-2147483648	0
-stripe	[straɪp]		5500	 striped priest strike strip strive stride	a line of colour, especially one of several lines of colour all close together					-8586108196904335325	1	0	1	-8586108196904335325
+stripe	[straɪp]		5500	 striped priest strike strip strive stride	a line of colour, especially one of several lines of colour all close together					-8586107174055076468	1	0	2	-8586108196904335325
 foremost	['fɔːməʊst]		5501	 forest forecast	Foremost is an adjective that means holding the highest position or rank. When naming advisors, presidents usually search for the foremost experts on various subjects.					0	-2147483648	-2147483648	-2147483648	0
 potent	['pəʊtnt]		5502	 patent	Potent means really strong, but not like a body builder. Use potent instead to describe things like intense smells, powerful magic potions, and very influential people.					0	-2147483648	-2147483648	-2147483648	0
 exclaim	[ɪk'skleɪm]		5503	 claim reclaim	"The verb exclaim is from the Latin word exclamare, which means ""to cry out."" The English meaning is similar, to cry out, but with the added element of a strong emotion such as fear, joy, surprise."					0	-2147483648	-2147483648	-2147483648	0
@@ -5968,7 +5968,7 @@ madness	['mædnəs]		5725	 sadness	Madness is foolish, impulsive behavior. It wo
 cleaner	['kliːnə(r)]		5726	 clear clean clever cleanup cleanse						0	-2147483648	-2147483648	-2147483648	0
 hub	[hʌb]		5727		A hub is the center of a wheel or the center of some kind of activity. If all of an airline's flights go through Atlanta, you'd say the southern city is their hub.					0	-2147483648	-2147483648	-2147483648	0
 compartment	[kəm'pɑːtmənt]		5728	 department apartment commitment complement compliment	A compartment is a space within another space, like the glove compartment in a car.					0	-2147483648	-2147483648	-2147483648	0
-fury	['fjʊəri]		5729	 jury bury fur fry	 extreme, often uncontrolled anger SYN rage					-8586107940520628200	1	1	1	-8586107940520628200
+fury	['fjʊəri]		5729	 jury bury fur fry	 extreme, often uncontrolled anger SYN rage					-8586107061461278763	1	0	2	-8586107940520628200
 insult	[ɪn'sʌlt]		5730	 consult insulin	If you insult someone, you have offended that person — either intentionally or unintentionally — through your actions or words. You might insult your host if you refuse to try the dessert he made from pasta, nuts, and chocolate sauce.					0	-2147483648	-2147483648	-2147483648	0
 respected	[rɪ'spektɪd]		5731	 respect suspected respective respectful restricted						0	-2147483648	-2147483648	-2147483648	0
 spontaneous	[spɒn'teɪniəs]		5732		Something spontaneous happens when you're least expecting it. Spontaneous things are natural or instinctive, and they happen without warning.					0	-2147483648	-2147483648	-2147483648	0
@@ -6139,7 +6139,7 @@ circular	['sɜːkjələ(r)]		5891	 circulate						0	-2147483648	-2147483648	-214
 siren	['saɪrən]		5892	 rinse	You know that loud wailing sound coming up the highway behind you? That's the siren on the police car racing along, lights flashing, chasing a speeder (not you, of course).					0	-2147483648	-2147483648	-2147483648	0
 weary	['wɪəri]		5893	 wear wary	"Weary as an adjective means ""very tired or worn out,"" like weary students who finished a long week of studying and taking tests."					0	-2147483648	-2147483648	-2147483648	0
 vacant	['veɪkənt]		5894	 variant vacancy	You can use the adjective vacant to describe something that is empty — an apartment with no tenant or furniture, a job with no worker, or a person with no brainpower.					0	-2147483648	-2147483648	-2147483648	0
-complement	['kɒmplɪment]		5895	 compliment implement complementary compartment comment commitment component complaint supplement competent	A complement is something that makes up a satisfying whole with something else. Those shiny red shoes you just bought complement your shiny red purse.					0	-2147483648	-2147483648	-2147483648	0
+complement	['kɒmplɪment]		5895	 compliment implement complementary compartment comment commitment component complaint supplement competent	Completes or pairs nicely<~>Contribute extra features to (someone or something) in such a way as to improve or emphasize their qualities.					-8586107137796887415	-1	-2147483648	0	-8586107137796887394
 deaf	[def]		5896	 fade deal dead leaf dear dean	If you're deaf, you can't hear or have extremely limited hearing abilities. Many people who are deaf communicate using sign language.					0	-2147483648	-2147483648	-2147483648	0
 incoming	['ɪnkʌmɪŋ]		5897	 coming upcoming						0	-2147483648	-2147483648	-2147483648	0
 fastest	['fɑːstɪst]		5898	 faster fasten						0	-2147483648	-2147483648	-2147483648	0
@@ -6152,7 +6152,7 @@ hillside	['hɪlsaɪd]		5903							0	-2147483648	-2147483648	-2147483648	0
 paradox	['pærədɒks]		5904	 parade	"Here's a mind-bender: ""This statement is false."" If you think it's true, then it must be false, but if you think it's false, it must be true. Now, that's a paradox!"					0	-2147483648	-2147483648	-2147483648	0
 lush	[lʌʃ]		5905	 flush blush push rush bush lust lash	Lush describes something growing in abundance, like the lush green grass that covers the lawn in the spring.					0	-2147483648	-2147483648	-2147483648	0
 charitable	['tʃærətəbl]		5906	 creditable	Something that's charitable has to do with helping people who need assistance. A charitable act might include volunteering at a soup kitchen or homeless shelter.					0	-2147483648	-2147483648	-2147483648	0
-tyre			5906	 type tire						-8586109073341538769	2	1	1	-8586109073341538769
+tyre			5906	 type tire						-8586107173992913917	3	1	2	-8586109073341538769
 mourn	[mɔːn]		5907		To mourn is to grieve for someone who has died, especially a loved one. One of the hardest experiences of childhood is when you mourn the loss of a beloved pet.					0	-2147483648	-2147483648	-2147483648	0
 arguably	['ɑːɡjuəbli]		5908		Use the adverb arguably to describe something that can be asserted or shown to be a certain way. For example, you might say that your favorite teacher is arguably the best teacher in your school.					0	-2147483648	-2147483648	-2147483648	0
 scarce	[skeəs]		5909	 scare scarcely	If something is scarce, there isn't much of it around. Crops are scarce after a long drought, or you might find babysitters scarce if your kids are a nightmare to watch.					0	-2147483648	-2147483648	-2147483648	0
@@ -6906,7 +6906,7 @@ bard			6588	 board beard bad hard card bar yard bird band bare barn ward bark ba
 crunch	[krʌntʃ]		6589		When you crunch something, you grind it into tiny pieces, often with your teeth. You can also crunch whole spices into smaller bits with a mortar and pestle.					0	-2147483648	-2147483648	-2147483648	0
 escalate	['eskəleɪt]		6590		If an argument between you and your brother progresses from mean looks to a fist fight, you could say that the tension between the two of you escalated. To escalate is intensify or increase quickly.					0	-2147483648	-2147483648	-2147483648	0
 stubborn	['stʌbən]		6591		Use the adjective stubborn to describe someone who is not open to new ideas or ways of doing things, like your uncle who refuses to listen to any music made after 1990. Stubborn is the opposite of flexible.					0	-2147483648	-2147483648	-2147483648	0
-mock	[mɒk]		6592	 rock lock sock dock monk cock	make fun of					-8586108196033196500	1	0	2	-8586109374742739240
+mock	[mɒk]		6592	 rock lock sock dock monk cock	make fun of					-8586107173581551112	2	1	3	-8586109374742739240
 barman			6592	 batsman baseman						0	-2147483648	-2147483648	-2147483648	0
 scrub	[skrʌb]		6593	 shrub	When you scrub something, you wash it forcefully. You might scrub your dirty bathtub with a brush and some bleach, for example.					0	-2147483648	-2147483648	-2147483648	0
 rubble	['rʌbl]		6594	 bubble rumble	The pile of crumbled debris that's left over after something breaks or collapses is rubble. Famous scenes of rubble include the fallen Twin Towers on September 11 and the remains of the Haitian capital after the 2010 earthquake.					0	-2147483648	-2147483648	-2147483648	0
@@ -6933,7 +6933,7 @@ blueprint	['bluːprɪnt]		6613		A blueprint is a guide for making something — 
 tenth	[tenθ]		6614	 tent						0	-2147483648	-2147483648	-2147483648	0
 BC			6614							0	-2147483648	-2147483648	-2147483648	0
 catastrophic	[ˌkætə'strɒfɪk]		6615	 catastrophe	Something catastrophic is very harmful. When the stock market crashes it’s a catastrophic event for investors.					0	-2147483648	-2147483648	-2147483648	0
-compliment	['kɒmplɪmənt]		6616	 complement compartment comment commitment component complaint competent	"A compliment is an expression of respect or admiration, like, ""You're such a good writer,"" or ""You know so many words!"" Keep them coming."					-8586107164124216800	-1	-2147483648	0	-8586107164124216739
+compliment	['kɒmplɪmənt]		6616	 complement compartment comment commitment component complaint competent	admire and praise someone for something					-8586107138398281596	-1	-2147483648	0	-8586107138398281571
 crave	[kreɪv]		6617	 carve grave cave brave crate crane	To crave something is to have a great desire for it, as one might crave love, fame, or French fries.					0	-2147483648	-2147483648	-2147483648	0
 pedestrian	[pə'destriən]		6618		A pedestrian is someone traveling by foot. If you're walking, you might get angry at the drivers who don't stop so you can cross the street. But if you're driving, you might fight the urge to run those annoying pedestrians over!					0	-2147483648	-2147483648	-2147483648	0
 nude	[njuːd]		6619	 dune nudge rude node dude						0	-2147483648	-2147483648	-2147483648	0
@@ -6959,7 +6959,7 @@ playwright	['pleɪraɪt]		6636		A playwright is someone who writes plays. Playwr
 behavioural			6636	 behavioral						0	-2147483648	-2147483648	-2147483648	0
 directive	[də'rektɪv]		6637	 direction detective	A directive is an order or official notice that comes from an authority. The directive from your boss instructing all employees to wear silly hats on Fridays might be hard to take seriously.					0	-2147483648	-2147483648	-2147483648	0
 bypass	['baɪpɑːs]		6638							0	-2147483648	-2147483648	-2147483648	0
-reap	[riːp]		6639	 rape pear real read leap rear rap heap rep	When you reap something, you enjoy the rewards of your efforts. When your great audition gets you cast in your dream role, you reap the benefits of all that rehearsing you did.					-8586108195750231316	1	0	2	-8586109374901717195
+reap	[riːp]		6639	 rape pear real read leap rear rap heap rep	When you reap something, you enjoy the rewards of your efforts. When your great audition gets you cast in your dream role, you reap the benefits of all that rehearsing you did.					-8586107173509812575	2	0	3	-8586109374901717195
 facade	[fə'sɑːd]		6640		A facade is the front of a building, or a kind of front people put up emotionally. If you're mad but acting happy, you're putting up a facade.					0	-2147483648	-2147483648	-2147483648	0
 underlie	[ˌʌndə'laɪ]		6641	 underline	While it’s true that when something underlies something else, it is beneath it, this does not necessarily mean subservience — it can also indicate a strong foundation or bedrock that underlies, or supports, an idea or decision.					0	-2147483648	-2147483648	-2147483648	0
 arrogant	['ærəɡənt]		6642	 arrogance	Arrogant is an adjective for describing people who are too proud and look down on others, like supermodels who think their good looks give them a right to do whatever they want.					0	-2147483648	-2147483648	-2147483648	0
@@ -7200,7 +7200,7 @@ aspirin	['æsprɪn]		6853	 aspire	Aspirin is a medicine you might take when you 
 onstage	[ˌɒn'steɪdʒ]		6854	 stage hostage						0	-2147483648	-2147483648	-2147483648	0
 tracking	['trækɪŋ]		6855	 training trading backing packing trafficking						0	-2147483648	-2147483648	-2147483648	0
 hog	[hɒɡ]		6856		A hog is a pig that's kept on a farm. You can also use the word as a verb, like when you act like a greedy hog. Try not to hog the pie, and stick to your allotted portion.					0	-2147483648	-2147483648	-2147483648	0
-pier	[pɪə(r)]		6857	 peer ripe per pie tier	A pier is a platform reaching out to sea that can be used as a landing place for ships. If you enjoy sea fishing and don't have a boat, try casting your line from the end of the pier.					-8586108195659914739	1	0	2	-8586109072746902361
+pier	[pɪə(r)]		6857	 peer ripe per pie tier	A pier is a platform reaching out to sea that can be used as a landing place for ships. If you enjoy sea fishing and don't have a boat, try casting your line from the end of the pier.					-8586107061406195015	1	0	4	-8586109072746902361
 nickel	['nɪkl]		6858							0	-2147483648	-2147483648	-2147483648	0
 breach	[briːtʃ]		6859	 reach breath beach preach breadth	A breach is a violation of a law, duty, or promise. If you'd contracted to mow your neighbor's lawn and don't do it, he can sue you for breach of contract. Or he can mow the lawn himself.					0	-2147483648	-2147483648	-2147483648	0
 ideally	[aɪ'diːəli]		6860	 really ideal						0	-2147483648	-2147483648	-2147483648	0
@@ -8042,7 +8042,7 @@ eruption	[ɪ'rʌpʃn]		7575	 corruption disruption	"An eruption is an explosion 
 stomp	[stɒmp]		7576	 stop stamp stump stoop	When you stomp, you thud your feet down heavily as you walk. An angry teenager might stomp down the hall and slam the door to his room.					0	-2147483648	-2147483648	-2147483648	0
 crook	[krʊk]		7577	 cook crooked	A crook is long staff that’s bent at one end, like something you might see a shepherd carrying. A crook can also be a criminal — a person who’s dishonest, or bent, just like the staff.					0	-2147483648	-2147483648	-2147483648	0
 ranger	['reɪndʒə(r)]		7578	 range danger anger stranger rancher	A ranger is a person who takes care of a park or a piece of land. A park ranger makes sure the rules are followed and provides information to visitors.					0	-2147483648	-2147483648	-2147483648	0
-scalp	[skælp]		7579	 clasp scale	the skin on the top of your head					-8586108195580874502	1	0	2	-8586108711724651952
+scalp	[skælp]		7579	 clasp scale	the skin on the top of your head					-8586107173215089861	1	0	3	-8586108711724651952
 cherish	['tʃerɪʃ]		7580	 perish	To cherish something is to care for it deeply, to treasure it, like the way you cherish the time you spend with a favorite person you don't see often.					0	-2147483648	-2147483648	-2147483648	0
 relish	['relɪʃ]		7581		Relish isn't just a hotdog topping. The verb relish means to enjoy something immensely. You may relish eating the relish on your hotdog, or you may relish taking an afternoon nap.					0	-2147483648	-2147483648	-2147483648	0
 thou	[ðaʊ]		7582		"The word thou, used in place of ""you,"" is not used much in modern language. In fact, with its Biblical feeling, it’s most often used in religious contexts. Otherwise, it might be used as slang for thousand."					0	-2147483648	-2147483648	-2147483648	0
@@ -8112,7 +8112,7 @@ refreshing	[rɪ'freʃɪŋ]		7633							0	-2147483648	-2147483648	-2147483648	0
 nuisance	['njuːsns]		7634	 nuance	Whether it’s a mosquito or your little brother pestering you about the laundry, you can use the word nuisance to describe something that causes small annoyances.					0	-2147483648	-2147483648	-2147483648	0
 ailment	['eɪlmənt]		7635	 augment	If you've got a rash or a persistent cough, you can call that an ailment. Some other common ailments are allergies or chronic headaches. They can be a real pain. Literally.					0	-2147483648	-2147483648	-2147483648	0
 debilitate			7635	 facilitate						0	-2147483648	-2147483648	-2147483648	0
-tier	[tɪə(r)]		7636	 tire rite tiger tie pier	A tier is a level or a layer. If you sit in the top tier of seats at a concert, you can see the whole stage and most of the audience — but you probably have to climb lots of stairs.					-8586108711521630784	1	1	1	-8586108711521630784
+tier	[tɪə(r)]		7636	 tire rite tiger tie pier	A tier is a level or a layer. If you sit in the top tier of seats at a concert, you can see the whole stage and most of the audience — but you probably have to climb lots of stairs.					-8586107173095472668	2	1	2	-8586108711521630784
 debit			7636	 debt debut						0	-2147483648	-2147483648	-2147483648	0
 heater	['hiːtə(r)]		7637	 theater heather heated healer header sweater greater						0	-2147483648	-2147483648	-2147483648	0
 reunite	[ˌriːjuː'naɪt]		7638	 unite reunion recite rewrite						0	-2147483648	-2147483648	-2147483648	0
@@ -8329,7 +8329,7 @@ frail	[freɪl]		7825	 fail trail rail Grail	Something that is delicate and fragi
 trumpet	['trʌmpɪt]		7826							0	-2147483648	-2147483648	-2147483648	0
 entree	['ɒntreɪ]		7827		Go to a fancy restaurant and take a look at the menu. If you decide to order the chicken, you've just selected your entree.					0	-2147483648	-2147483648	-2147483648	0
 orchestrate	['ɔːkɪstreɪt]		7828	 orchestra	To orchestrate is to design or organize something, like a plan or a project. You could orchestrate an orchestra or you could just orchestrate a yard sale.					0	-2147483648	-2147483648	-2147483648	0
-rash	[ræʃ]		7829	 crash trash cash rush wash ash dash lash bash	A rash is something that spreads like wild fire — red itchy skin or a series of unfortunate events. It can also describe an impulsive, wild decision.					0	-2147483648	-2147483648	-2147483648	0
+rash	[ræʃ]		7829	 crash trash rush wash ash dash lash bash	1. too quickly<~>2.a lot of red spots on skin					0	-1	-2147483648	-2147483648	0
 disgusting	[dɪs'ɡʌstɪŋ]		7830	 disgust disgusted	Something disgusting is awful in a way that makes you want to throw up — it's really, really yucky. Nobody likes disgusting things.					0	-2147483648	-2147483648	-2147483648	0
 universally	[ˌjuːnɪ'vɜːsəli]		7831	 universal university	Use the adverb universally to emphasize that something is done — or felt, or believed — in every single case.					0	-2147483648	-2147483648	-2147483648	0
 participating	[pɑː'tɪsɪpeɪtɪŋ]		7832	 participation participate						0	-2147483648	-2147483648	-2147483648	0
@@ -9028,7 +9028,7 @@ bash	[bæʃ]		8427	 base cash wash bath bush ash bass dash lash rash	To bash is 
 loophole	['luːphəʊl]		8428		A loophole is an accidental technicality or unclear section of a written document that allows someone to avoid following a rule or fulfilling an obligation. If you've discovered a way to get out of paying taxes on money you made last year, you've found a loophole.					0	-2147483648	-2147483648	-2147483648	0
 jug	[dʒʌɡ]		8429		Many people buy their milk in a jug, a large container with a handle and a small opening at the top.					0	-2147483648	-2147483648	-2147483648	0
 acquaint	[ə'kweɪnt]		8430	 quaint	When you acquaint yourself with something, you familiarize yourself with it. When you visit a new city, you should acquaint yourself with the layout of the streets so you don’t get lost.					0	-2147483648	-2147483648	-2147483648	0
-perk	[pɜːk]		8431	 per park peak pork jerk peek						-8586108710456371915	1	0	1	-8586108710456371915
+perk	[pɜːk]		8431	 per park peak pork jerk peek						-8586107172874034690	1	0	2	-8586108710456371915
 statistic	[stə'tɪstɪk]		8432	 statistics statistical	A statistic is a numerical piece of information. If you are trying to prove a point, and you want your argument to have a sense of authority, you might want to use a statistic to back up your claim.					0	-2147483648	-2147483648	-2147483648	0
 skater	['skeɪtə(r)]		8433	 streak skate sweater						0	-2147483648	-2147483648	-2147483648	0
 afflict	[ə'flɪkt]		8434	 affect inflict	To afflict is to cause suffering, pain, or misery. It’s often associated with medical conditions. Carpal Tunnel Syndrome is most likely to afflict someone who spends many hours every day typing on our computers.					0	-2147483648	-2147483648	-2147483648	0
@@ -9273,7 +9273,7 @@ umpire	['ʌmpaɪə(r)]		8635	 empire vampire						0	-2147483648	-2147483648	-214
 Gaelic			8635	 garlic Gallic						0	-2147483648	-2147483648	-2147483648	0
 managerial	[ˌmænə'dʒɪəriəl]		8636	 material manager						0	-2147483648	-2147483648	-2147483648	0
 imprisonment	[ɪm'prɪznmənt]		8637							0	-2147483648	-2147483648	-2147483648	0
-tidy	['taɪdi]		8639	 tiny tide	Use the adjective tidy for something that is neat and clean. If your desk were more tidy, you would be able to find your computer.					-8586108711250949716	1	1	1	-8586108711250949716
+tidy	['taɪdi]		8639	 tiny tide	Use the adjective tidy for something that is neat and clean. If your desk were more tidy, you would be able to find your computer.					-8586107172752941357	5	1	2	-8586108711250949716
 revel	['revl]		8640	 lever reveal level rebel reel	Revel means to take great pleasure. If you revel in something, you're not just pleased or even excited; you're overwhelmed by joy.					0	-2147483648	-2147483648	-2147483648	0
 humorous	['hjuːmərəs]		8641		If something is humorous it's funny. Humorous is a fine tone for toasting at your friend’s wedding, but not so much for the reading of someone's last will and testament.					0	-2147483648	-2147483648	-2147483648	0
 blackness	['blæknəs]		8642							0	-2147483648	-2147483648	-2147483648	0
@@ -10003,9 +10003,10 @@ captivity	[kæp'tɪvəti]		9271	 creativity	Captivity is the condition of being 
 defeated	[dɪ'fiːt]		9272	 defeat						0	-2147483648	-2147483648	-2147483648	0
 filo	 /ˌfiː.ləʊ ˈpeɪ.stri/		5000		also filo pastry;   US phyllo pastry					0	-1	-2147483648	0	0
 a type of very thin pastry which is used by placing many layers together			0		-8586108989146491326	-1	-2147483648			0	-2147483648	-2147483648	-2147483648	0
-scallop	[ˈskɒləp]		8888		a small sea creature that you can eat, with a flat round shell made of two parts that fit together					-8586108711025382976	1	1	1	-8586108711025382976
-mozzarella	[ˌmɒtsəˈrelə]		8888		a white Italian cheese that is often used on pizza					-8586108710913154972	1	0	1	-8586108710913154972
+scallop	[ˈskɒləp]		8888		a small sea creature that you can eat, with a flat round shell made of two parts that fit together					-8586107172602462902	2	1	2	-8586108711025382976
+mozzarella	[ˌmɒtsəˈrelə]		8888		a white Italian cheese that is often used on pizza					-8586107172503805657	2	0	2	-8586108710913154972
 damper	[ˈdæmpə(r)]		8888		1.Damper :  a traditional Australian soda bread;					0	-2147483648	-2147483648	-2147483648	0
 3.A damper : in a piano or similar, makes the sound less loud,  by restricting the movement of the strings.			0		0	-1	-2147483648			0	-2147483648	-2147483648	-2147483648	0
-dill			8888		a herb whose seeds and thin feathery leaves are used in cooking; 茴香					-8586108710815765425	1	0	1	-8586108710815765425
-condiment	[ˈkɒndɪmənt]		8888	compliment  	a substance, such as salt, pepper or a sauce, that is added to food to give it extra taste					-8586108710688190683	1	0	1	-8586108710688190683
+dill			8888		a herb whose seeds and thin feathery leaves are used in cooking; 茴香					-8586107172426383871	2	0	2	-8586108710815765425
+condiment	[ˈkɒndɪmənt]		8888		a substance, such as salt, pepper or a sauce, that is added to food to give it extra taste					-8586107171537482650	1	0	2	-8586108710688190683
+complimentary	[ˌkɒmpləˈmentəri ]		8888		given free to people;  saying that you admire someone or something					-8586107137758011144	-1	-2147483648	0	-8586107137758011125

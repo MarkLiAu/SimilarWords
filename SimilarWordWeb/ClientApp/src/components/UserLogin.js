@@ -9,16 +9,18 @@ const UserLogin = ({ name, location }) => {
     const CallUpdateApi = (e) => {
         //alert("in CallUpdateApi");
         console.log("UserLogin CallUpdateApi");
+        console.log(word);
         e.preventDefault();
-        fetch('/users/authenticate', {
-            method: 'PUT',
+        fetch('api/users/authenticate', {
+            method: 'POST',
             body: JSON.stringify(word),
             headers: {
                 'Content-Type': 'application/json'
             }
         })
             .then(response => response.json())
-            .then(resp => { console.log(resp); )
+            .then(user => {
+                console.log(user); localStorage.setItem('SimilarWordUser', JSON.stringify(user));} )
     }
 
 
@@ -48,19 +50,13 @@ const UserLogin = ({ name, location }) => {
     }
 
     console.log(name);
-    console.log(location.state.word);
     return (
         <Fragment>
             <Form horizontal onSubmit={this.CallUpdateApi} >
-                <h3 >Edit Word: {word.name}</h3>
-                <FormField type='text' label="Word Name" name="name" onChangeHandle={handleChange} val={word.name} ></FormField>
-                <FormField type='text' label="Pronounciation" name="pronounciation" onChangeHandle={handleChange} val={word.pronounciation} ></FormField>
-                <FormField type='text' label="Frequency" name="frequency" onChangeHandle={handleChange} val={word.frequency} ></FormField>
-                <FormField type='text' label="Similar Words" name="similarwords" onChangeHandle={handleChange} val={word.similarWords} ></FormField>
-                <FormField type='textarea' label="Meaning" name="meaningShort" onChangeHandle={handleChange} val={word.meaningShort} ></FormField>
-                {/* <FormField type='textarea' label="Meaning Long" name="meaningLong" onChangeHandle={handleChange} val={word.meaningLong} ></FormField> */}
-                {/* <FormField type='text' label="Meaning Other" name="meaningOther" onChangeHandle={handleChange} val={word.meaningOther} ></FormField>  */}
-                <ShowDictLink name={word.name} > </ShowDictLink><br />
+                <h3 >Login</h3>
+                <FormField type='text' label="User Name" name="Username" onChangeHandle={handleChange} val={word.Username} ></FormField>
+                <FormField type='text' label="Password" name="Password" onChangeHandle={handleChange} val={word.Password} ></FormField>
+
                 <label>{result}</label>
                 <FormGroup>
                     <Col smOffset={2} sm={8}>

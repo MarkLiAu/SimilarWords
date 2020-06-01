@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using System.IO;
 using WordSimilarityLib;
 
@@ -57,6 +58,7 @@ namespace SimilarWordWeb.Controllers
 
 
 
+        [Authorize]
         [HttpPut("{cmd}")]
         public string Put(string cmd, [FromBody]string note)
         {
@@ -95,7 +97,7 @@ namespace SimilarWordWeb.Controllers
                     //    }
                     //    wd.SaveFile(WordDictionary.dataFile);
                     //}
-                    return "OK";
+                    return "OK:" + DateTime.Now.ToString() ;
                 }
                 else if (cmd.ToLower() == "resetmemory")
                 {
