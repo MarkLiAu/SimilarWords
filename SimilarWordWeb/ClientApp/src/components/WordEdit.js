@@ -1,6 +1,6 @@
 ﻿import React, { Fragment, useState } from 'react';
 import { Form, FormControl, FormGroup, ControlLabel, Col, Button, Label } from 'react-bootstrap';
-import { ShowDictLink } from './CommTools';
+import { ShowDictLink, GetTokenHeader } from './CommTools';
 
 const EditWord = ({ name, location }) => {
     // Declare a new state variable, which we'll call "count"
@@ -17,7 +17,8 @@ const EditWord = ({ name, location }) => {
             method: 'PUT',
             body: JSON.stringify(word),
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': GetTokenHeader()
             }
         })
             .then(response => response.json())

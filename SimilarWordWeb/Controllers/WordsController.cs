@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using WordSimilarityLib;
 using System.IO;
 
@@ -56,36 +57,7 @@ namespace SimilarWordWeb.Controllers
             return "Got ";
         }
 
-        public Word PostAA([FromBody]Word word)
-        {
-            try
-            {
-                WordDictionary wd = new WordDictionary();
-                if (WordDictionary.WordList.Count <= 0)
-                    wd.ReadFile(Path.Combine(Directory.GetCurrentDirectory(), @"data\WordSimilarityList.txt"));
-
-                if (wd.UpdateWord(word)) return word;
-
-                return new Word("ERROR", -1, "failed to update");
-
-            }
-            catch (Exception ex)
-            {
-                return new Word("ERROR", -1, ex.Message + ex.StackTrace);
-            }
-
-        }
-        
-
-        // PUT api/<controller>/5
-        [HttpPut]
-        public string PutAAA([FromBody]Word w)
-        {
-                Word word = new Word("test");
-            return "done";
-
-        }
-
+        [Authorize]
         [HttpPut("{name}")]
         public Word Put(string name, [FromBody]Word word)
         {
@@ -111,6 +83,7 @@ namespace SimilarWordWeb.Controllers
         }
 
         // DELETE api/<controller>/5
+        [Authorize]
         [HttpDelete("{name}")]
         public string Delete(string name)
         {

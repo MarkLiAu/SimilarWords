@@ -1,5 +1,6 @@
 ﻿import React, { Fragment, useState } from 'react';
 import { Form, FormControl, FormGroup, ControlLabel, Col, Button, Label } from 'react-bootstrap';
+import { GetTokenHeader } from './CommTools';
 
 const Admin = ({ cmd,location}) => {
     // Declare a new state variable, which we'll call "count"
@@ -12,11 +13,20 @@ const Admin = ({ cmd,location}) => {
             method: 'PUT',
             body: "",
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': GetTokenHeader()
             }
         })
-            .then(response => response.text() )
-            .then(data => { console.log(data); setResult(data); })
+            .then(response => {
+                console.log(response);
+                if (!response.ok) throw new Error("Failed to load:(" + response.status.toString() + ") " + response.statusText);
+                response.text()
+            })
+            .then(data => { console.log(data); setResult("Ok"); localStorage.setItem('SimilarWordUser', JSON.stringify(data) ) })
+            .catch((error) => {
+                console.error('Error:', error);
+                setResult(error.message); 
+            });
     }
     console.log(cmd);
     console.log(location.state.cmd);

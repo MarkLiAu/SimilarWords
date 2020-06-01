@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using System.IO;
 using WordSimilarityLib;
 
@@ -29,6 +30,7 @@ namespace SimilarWordWeb.Controllers
         }
     }
 
+    [Authorize]
     [Route("api/[controller]")]
     public class DashboardController : Controller
     {

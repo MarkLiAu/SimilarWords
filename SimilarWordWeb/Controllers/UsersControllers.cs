@@ -11,8 +11,8 @@ namespace SimilarWordWeb.Controllers
 {
     [Authorize]
     [ApiController]
-    [Route("[controller]")]
-    public class UsersController : ControllerBase
+    [Route("api/[controller]")]
+    public class UsersController : Controller
     {
         private IUserService _userService;
 

@@ -23,7 +23,14 @@ export class NavMenu extends Component {
                     <Glyphicon glyph='th-list' />Memory
                 </NavItem>
             </LinkContainer>
-            <NavDropdown eventKey={3} title="Admin" id="basic-nav-dropdown">
+
+            <LinkContainer to={'/login'}>
+                <NavItem>
+                    <Glyphicon glyph='th-list' />Login
+                </NavItem>
+            </LinkContainer>
+
+                    <NavDropdown eventKey={3} title="Admin" id="basic-nav-dropdown">
                 <LinkContainer to={{ pathname: '/admin/reload', state: { cmd: 'reload' } }} >
                     <MenuItem eventKey={3.1}>reload wordlist</MenuItem>
                 </LinkContainer>

@@ -2,6 +2,7 @@ import React, { Component, Fragment, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Col, Grid, Row,Checkbox, Panel, PanelGroup, Carousel } from 'react-bootstrap';
 import WordInfoDisplay from './WordInfoDisplay';
+import { GetTokenHeader } from './CommTools';
 
 
 const WordMemory = () => {
@@ -13,7 +14,12 @@ const WordMemory = () => {
     const [curWord, setCurWord] = useState({easiness:0,viewInterval:0});
 
     const CallApi = () => {
-        fetch('api/memory/')
+        fetch('api/memory/', {
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': GetTokenHeader()
+            }
+            })
             .then(response => response.json())
             .then(data => {
                 console.log('fetch back');
@@ -32,7 +38,8 @@ const WordMemory = () => {
             method: 'PUT',
             body: JSON.stringify(memoryList[memoryIdx]),
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': GetTokenHeader()
             }
         }).then(response => {
             console.log(response);

@@ -46,6 +46,7 @@ namespace WordSimilarityLib
         {
             if (word.viewInterval<=-1) return false;     // not start yet, also exclude new word (==-1)
             //if (word.viewInterval==0 && word.totalViewed == 1 && word.viewTime.AddMinutes(5) > DateTime.Now) return true;     // first time, due after 5 minutes
+            if (DateTime.Now.Hour >= 6 && word.viewTime.AddDays(word.viewInterval) <= DateTime.Today.AddHours(23)) return true; // in the morning, 
             return word.viewTime.AddDays(word.viewInterval) <= DateTime.Now;
         }
 
