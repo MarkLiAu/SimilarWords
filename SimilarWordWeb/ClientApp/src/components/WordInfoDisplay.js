@@ -4,18 +4,15 @@ import { Badge } from 'react-bootstrap';
 import { ShowDictLink } from './CommTools';
 
 const WordInfoDisplay = ({ word }) => {
-    console.log('WordInfoDisplay:'+word);
+    console.log(word);
     if (word == null || word == undefined) return '';
-
     return (
         <table className='table table-striped table-bordered'>
             <tbody>
             <tr>
                     <td>Name:</td>
                     <td>
-                        <a > {word.name} </a>
-          
-                        <Badge>{word.frequency}</Badge>
+                        <ShowWordName name={word.name}></ShowWordName>    <Badge>{word.frequency}</Badge>
                         {' '}
                         <Link to={{ pathname: '/wordedit/' + word.name, state: { word: word } }} >
                             <button type="button" > Edit </button>

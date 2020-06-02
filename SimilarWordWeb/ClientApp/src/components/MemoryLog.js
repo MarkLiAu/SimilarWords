@@ -1,7 +1,6 @@
 ﻿import React, { Component, Fragment, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Col, Grid, Row, Checkbox, Panel, PanelGroup, Table } from 'react-bootstrap';
-import { GetTokenHeader } from './CommTools';
 
 
 export const MemoryLog = ()=> {
@@ -13,14 +12,8 @@ export const MemoryLog = ()=> {
     }
 
     const SearchLog = () => {
-        console.log('memorylog:' + userInput);
         if (userInput.length <= 0) return;
-        fetch('api/Memory/' + userInput, {
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': GetTokenHeader()
-            }
-        })
+        fetch('api/Memory/' + userInput)
             .then(response => response.json())
             .then(data => {
                 console.log('fetch back');

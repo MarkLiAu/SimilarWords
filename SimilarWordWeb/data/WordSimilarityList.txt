@@ -5200,7 +5200,7 @@ delegation	[ˌdelɪ'ɡeɪʃn]		4985	 allegation delegate decoration deviation de
 haven	['heɪvn]		4986	 heaven have	Need to find shelter, from the weather or from other troubles? Then you need a haven.					0	-2147483648	-2147483648	-2147483648	0
 dangle	['dæŋɡl]		4987	 angle tangle	Dangle means to hang or swing loosely. If you dangle string above a kitten you will both be entertained.					0	-2147483648	-2147483648	-2147483648	0
 ounce			4987	 bounce once						0	-2147483648	-2147483648	-2147483648	0
-jerk	[dʒɜːk]		4988	 perk	A jerk is a sharp, sudden movement. (informal) a stupid person who often says or does the wrong thing					-8586105274900128433	3	1	4	-8586109073482112160
+jerk	[dʒɜːk]		4988	 perk	A jerk is a sharp, sudden movement. (informal) a stupid person who often says or does the wrong thing					-8586107174337138124	1	0	3	-8586109073482112160
 mobility	[məʊ'bɪləti]		4989	 ability morality mobilize	Mobility is the ability to move freely. If your basketball injury causes you to lose mobility in your knee, that means you can’t move it very well.					0	-2147483648	-2147483648	-2147483648	0
 assurance	[ə'ʃʊərəns]		4990	 insurance assistance	An assurance is a vote of confidence. If you give your friend an assurance that you'll be there, you better show up.					0	-2147483648	-2147483648	-2147483648	0
 competing	[kəm'piːtɪŋ]		4991	 computing compelling competitor comforting						0	-2147483648	-2147483648	-2147483648	0
@@ -5390,7 +5390,7 @@ practise			5162	 practice praise						0	-2147483648	-2147483648	-2147483648	0
 analogy	[ə'nælədʒi]		5163	 analog analogue apology	"When you draw an analogy between two things, you compare them for the purpose of explanation. The movie character Forest Gump made a silly analogy famous: ""Life is like a box of chocolates."""					0	-2147483648	-2147483648	-2147483648	0
 conductor	[kən'dʌktə(r)]		5164	 conduct contractor	"A train conductor is the person who takes tickets, shouts ""All aboard!"" and might control the engine, while a musical conductor is the one who leads an orchestra. Same job title — not the same person."					0	-2147483648	-2147483648	-2147483648	0
 inhabitant	[ɪn'hæbɪtənt]		5165	 inhabit	Someone who usually lives in a specific place — whether it's a mansion, a cave, or a beach house — is its inhabitant.					0	-2147483648	-2147483648	-2147483648	0
-strap	[stræp]		5166	 strip trap straw scrap stray	a watch with a leather strap					-8586105274886132944	2	0	3	-8586108196974519120
+strap	[stræp]		5166	 strip trap straw scrap stray	a watch with a leather strap					-8586107174162158471	1	0	2	-8586108196974519120
 determined	[dɪ'tɜːmɪnd]		5167	 determine	Olympic athletes are some of the most determined people you're going to meet. At that level, they've got to be driven to succeed. Otherwise, their opponents will surely beat them.					0	-2147483648	-2147483648	-2147483648	0
 logo	['ləʊɡəʊ]		5168	 log	A logo is a simple design that represents a company, organization, or product. Your college might have a logo composed of a picture of your mascot in your school colors.					0	-2147483648	-2147483648	-2147483648	0
 intensify	[ɪn'tensɪfaɪ]		5169	 intensity intensive intensely	To intensify is to increase the intensity, force, or power of something. If you snap a selfie and the colors aren't intense enough, you may be able to intensify them with a photo editor.					0	-2147483648	-2147483648	-2147483648	0
@@ -5423,7 +5423,7 @@ vulnerability	[ˌvʌlnərə'bɪləti]		5195		"Vulnerability means ""easily hurt 
 additionally	[ə'dɪʃənəli]		5196	 additional traditionally						0	-2147483648	-2147483648	-2147483648	0
 finely	['faɪnli]		5197	 finally						0	-2147483648	-2147483648	-2147483648	0
 owl	[aʊl]		5198	 low bowl howl						0	-2147483648	-2147483648	-2147483648	0
-slash	[slæʃ]		5199	 splash flash smash clash lash	to cut or try to cut something violently with a knife, sword etc					-8586105274853274169	1	1	1	-8586105274853274202
+slash	[slæʃ]		5199	 splash flash smash clash lash	to cut or try to cut something violently with a knife, sword etc					0	-1	-2147483648	0	0
 petition	[pə'tɪʃn]		5200	 repetition partition position competition	If you're angry about the new rule that you have to wear bright pink shoes to work every day, why not write up a petition, get all your co-workers to sign it, and submit it to your boss.					0	-2147483648	-2147483648	-2147483648	0
 diner	['daɪnə(r)]		5201	 dinner miner dine liner diver	A diner is a person who's eating a meal, and it's also a word for a casual restaurant. If you pass by a diner in a diner, check out what's on his plate. It could be anything from eggs over easy to salisbury steak.					0	-2147483648	-2147483648	-2147483648	0
 advertisement	[əd'vɜːtɪsmənt]		5202		A public notice promoting the sale of a certain item is called an advertisement. The word is often shortened to ad. They're on TV, on the radio, online, in the paper — you can't even escape advertisements at the movies.					0	-2147483648	-2147483648	-2147483648	0
