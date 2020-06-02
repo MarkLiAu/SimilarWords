@@ -4,6 +4,20 @@ import { Col, Grid, Row,Checkbox, Panel, PanelGroup } from 'react-bootstrap';
 import DisplayWord from './DisplayWord';
 import { DashBoard } from './DashBoard';
 
+const ShowListComp = ({ maxFeq, list, handleWordClicked }) => {
+    console.log('ShowList in WordSearch');
+    if (typeof (list) === "undefined") return (<div></div>);
+    console.log(maxFeq);
+    return (
+        list.map((w, idx) => {
+            return (
+                <DisplayWord key={w.name} word={w} idx={idx} handleWordClicked={handleWordClicked}></DisplayWord>
+            )
+        })
+
+    );
+}
+
 export class WordSearch extends Component {
     displayName = WordSearch.name;
 
@@ -91,6 +105,7 @@ export class WordSearch extends Component {
         this.setState({ activeKey });
     }
 
+
     render() {
         console.log('render');
         console.log("start in WordSearch");
@@ -108,7 +123,7 @@ export class WordSearch extends Component {
                 </Panel>
                 <PanelGroup accordion id="accordion-example" defaultActiveKey='0' activeKey={this.state.activeKey} onSelect={(x) => this.handleSelect(x)}  >
 
-                    <ShowListComp maxFeq={this.state.frequency} list={this.state.words} ></ShowListComp>
+                    <ShowListComp maxFeq={this.state.frequency} list={this.state.words} handleWordClicked={this.SearchWord}></ShowListComp>
                 </PanelGroup>
             </div>
         );
@@ -116,16 +131,3 @@ export class WordSearch extends Component {
 }
         
         
-const ShowListComp = ({maxFeq, list }) => {
-    console.log('ShowList in WordSearch');
-    if (typeof (list) === "undefined") return (<div></div>);
-    console.log(maxFeq);
-    return (
-            list.map( (w,idx) => {
-                return (
-                    <DisplayWord key={w.name} word={w} idx={idx} ></DisplayWord>
-                )
-            })
-
-    );
-}

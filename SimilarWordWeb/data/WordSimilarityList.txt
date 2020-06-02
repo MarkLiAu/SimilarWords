@@ -3454,7 +3454,7 @@ forehead	['fɔːhed]		3332	 figurehead	Your forehead is the top part of your fac
 rebuild	[ˌriː'bɪld]		3333	 builder build rebuilding						0	-2147483648	-2147483648	-2147483648	0
 bounce	[baʊns]		3334	 ounce bouncy	Bounce is a word for an up and down movement or recovery — like a ball's bounce on the pavement or the stock market's rise after a crash.					0	-2147483648	-2147483648	-2147483648	0
 electrical	[ɪ'lektrɪkl]		3335	 electric electricity electoral						0	-2147483648	-2147483648	-2147483648	0
-hook	[hʊk]		3336	 look book cook hood hoop hoof	A hook is a curved piece of metal or other hard material that's used or pulling or holding something. A tow truck is equipped with a large hook to pull cars, and the fictional Captain Hook came equipped with an iron hook to pull off dastardly deeds.					0	-2147483648	-2147483648	-2147483648	0
+hook	[hʊk]		3336	 look book cook hood hoop hoof	A hook is a curved piece of metal or other hard material that's used or pulling or holding something. A tow truck is equipped with a large hook to pull cars, and the fictional Captain Hook came equipped with an iron hook to pull off dastardly deeds.					-8586105184562546620	-1	-2147483648	0	-8586105184562546554
 batsman			3336	 barman baseman						0	-2147483648	-2147483648	-2147483648	0
 detective	[dɪ'tektɪv]		3337	 detection directive protective	Whether it's a police detective who investigates crimes or a private detective hired by a husband to uncover his wife's affair, a detective is someone whose job is to find out hard-to-get information.					0	-2147483648	-2147483648	-2147483648	0
 traveler	['trævlə]		3338	 traveller travel trailer						0	-2147483648	-2147483648	-2147483648	0

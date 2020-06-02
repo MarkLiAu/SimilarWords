@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Badge } from 'react-bootstrap';
 import { ShowDictLink } from './CommTools';
 
-const WordInfoDisplay = ({ word }) => {
+const WordInfoDisplay = ({ word,handleWordClicked }) => {
     console.log('WordInfoDisplay:'+word);
     if (word == null || word == undefined) return '';
 
@@ -13,7 +13,7 @@ const WordInfoDisplay = ({ word }) => {
             <tr>
                     <td>Name:</td>
                     <td>
-                        <a > {word.name} </a>
+                        <a onClick={() => { console.log('WordInfoDisplay clicked'); handleWordClicked(word.name) }} > {word.name} </a>
           
                         <Badge>{word.frequency}</Badge>
                         {' '}
