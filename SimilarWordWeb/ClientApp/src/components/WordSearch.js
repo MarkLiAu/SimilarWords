@@ -9,9 +9,11 @@ export class WordSearch extends Component {
 
     constructor(props) {
         super(props);
-        console.log("constructor");
-        this.state = { word2search: '', wordInput: '', frequency: 10000 };
-        let w = typeof (this.props.match === null || this.props.match.params.name) === 'undefined' ? '' : this.props.match.params.name;
+        console.log("WordSearch constructor");
+        //this.state = { word2search: '', wordInput: '', frequency: 10000 };
+        console.log(this.match);
+        let w = (this.props.match === undefined || this.props.match.params == undefined || this.props.match.params.name) === 'undefined' ? '' : this.props.match.params.name;
+        if (typeof (w) === 'undefined') w = '';
         console.log(w);
         this.state = { word2search: w, wordInput: w, frequency: 10000, activeKey: '0' };
         this.fetchData();
@@ -24,8 +26,15 @@ export class WordSearch extends Component {
     }
 
     componentDidUpdate(prevProps) {
+        return;
+        console.log("wordsearch componentDidUpdate");
+        console.log(this.props.params);
+        console.log(prevProps.params);
+        console.log(typeof this.props.params);
+        console.log(typeof prevProps.params);
+        if (typeof (this.props.params) === 'undefined') return;
+        if (typeof (prevProps.params) === 'undefined') return;
         if (prevProps.match.params.name !== this.props.match.params.name) {
-            console.log("wordsearch componentDidUpdate");
             console.log(prevProps.match.params.name);
             console.log(this.props.match.params.name);
             let w = typeof (this.props.match === null || this.props.match.params.name) === 'undefined' ? '' : this.props.match.params.name;
@@ -95,11 +104,11 @@ export class WordSearch extends Component {
                 <Panel>
                 <input value={this.state.wordInput} placeholder={this.state.word2search.length<=0? 'search here': this.state.word2search} onChange={this.WordChanged} onKeyPress={this.KeyPressed} ></input>
                 <span>{' '}</span>
-                    <button type="submit" className='btn btn-primary' onClick={this.SubmitSearch}><span class="glyphicon glyphicon-search"></span> </button>
+                    <button type="submit" className='btn btn-primary' onClick={this.SubmitSearch}><span className="glyphicon glyphicon-search"></span> </button>
                 </Panel>
                 <PanelGroup accordion id="accordion-example" defaultActiveKey='0' activeKey={this.state.activeKey} onSelect={(x) => this.handleSelect(x)}  >
 
-                    <ShowListComp maxFeq={this.state.frequency} list={this.state.words}></ShowListComp>
+                    <ShowListComp maxFeq={this.state.frequency} list={this.state.words} ></ShowListComp>
                 </PanelGroup>
             </div>
         );
@@ -114,7 +123,7 @@ const ShowListComp = ({maxFeq, list }) => {
     return (
             list.map( (w,idx) => {
                 return (
-                    <DisplayWord key={w.name} word={w} idx={idx} SearchWord={this.SearchWord}></DisplayWord>
+                    <DisplayWord key={w.name} word={w} idx={idx} ></DisplayWord>
                 )
             })
 

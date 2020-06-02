@@ -40,3 +40,22 @@ export const GetTokenHeader = ()=> {
     }
 
 }
+
+export const GetLoginUser = () => {
+    let userString = localStorage.getItem('SimilarWordUser');
+    console.log(typeof (userString));
+    console.log("commtools userString:" + userString);
+    if (typeof (userString) === 'undefined' || userString === null || userString === 'undefined' || userString.length <= 0) {
+        console.log("commtool: undefined");
+        return null;
+    }
+    else {
+        console.log("commtool: will parse userString");
+        let user = JSON.parse(userString);
+        return user;
+    }
+
+}
+
+export var loginUser = GetLoginUser();
+
