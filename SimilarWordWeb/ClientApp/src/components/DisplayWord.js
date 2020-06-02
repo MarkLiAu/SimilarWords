@@ -2,6 +2,7 @@
 import { Button, Panel, Label, Badge } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import WordInfoDisplay from './WordInfoDisplay';
+import { GetTokenHeader } from './CommTools';
 
 const DisplayWord = ({ word, idx, SearchWord }) => {
     // Declare a new state variable, which we'll call "count"
@@ -21,7 +22,8 @@ const DisplayWord = ({ word, idx, SearchWord }) => {
             method: 'PUT',
             body: JSON.stringify(word),
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': GetTokenHeader()
             }
         })
             .then(response => { console.log(response); })

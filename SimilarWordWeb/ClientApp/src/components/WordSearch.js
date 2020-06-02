@@ -90,12 +90,12 @@ export class WordSearch extends Component {
 
         return (
             <div className='bj_center'>
-                <Link to={'/Wordmemory'} > Start Memory </Link>
+                <Link to={'/Wordmemory'} ><button className='btn btn-info btn-sm'> Start Memory </button></Link>
                 <DashBoard></DashBoard>
                 <Panel>
-                <input value={this.state.wordInput} placeholder={this.state.word2search} onChange={this.WordChanged} onKeyPress={this.KeyPressed} ></input>
+                <input value={this.state.wordInput} placeholder={this.state.word2search.length<=0? 'search here': this.state.word2search} onChange={this.WordChanged} onKeyPress={this.KeyPressed} ></input>
                 <span>{' '}</span>
-                <button type="submit" onClick={this.SubmitSearch}>Search</button>
+                    <button type="submit" className='btn btn-primary' onClick={this.SubmitSearch}><span class="glyphicon glyphicon-search"></span> </button>
                 </Panel>
                 <PanelGroup accordion id="accordion-example" defaultActiveKey='0' activeKey={this.state.activeKey} onSelect={(x) => this.handleSelect(x)}  >
 
