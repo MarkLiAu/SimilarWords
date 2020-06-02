@@ -168,51 +168,43 @@ namespace WordSimilarityLib
                 if (isNewItem(word))
                 {
                     if (newItemCount >= maxNewItem) continue;
-                    result.Add(word);
+                    result.Add(new Word(word));
                     newItemCount++;
                 }
                 else if(isDue(word))
                 {
-                    result.Add(word);
+                    result.Add(new Word(word));
                 }
             }
 
-            // result = new List<Word>(result.ToArray());  // build new objects;
             // calculate next interval
-            //foreach (var w in result)
-            //{
-            //    w.viewInterval = CalculateNextInterval(w);
-            //}
+            foreach (var w in result)
+            {
+                w.viewInterval = CalculateNextInterval(w);
+            }
             return result;
         }
 
-        //public int CalculateNextInterval(Word word)
-        //{
-        //    int newVal = word.viewInterval;
-        //    if (word.viewInterval < 0)
-        //    {
-        //        newVal = 0;
-        //    }
-        //    else if(word.viewInterval==0)
-        //    {
-        //        if (word.totalViewed <= 0) newVal = 0;  // first time viewed
-        //        else newVal = 1;
-        //    }
-        //    else if(word.easiness<=-2)
-        //    {
-        //        newVal = word.viewInterval;     // it's too hard, use last interval
-        //    }
-        //    else
-        //    {
-        //        double v = word.viewInterval * 1.618;
-        //        if (word.easiness >= 2) v *= 1.618;     // too easy
-        //        else if (word.easiness == 1) v = word.viewInterval * 2;
-        //        else if (word.easiness == -1) v = word.viewInterval * 1.3;
-        //        newVal = Convert.ToInt32(v + 0.5);
-        //        if (newVal < 1) newVal = 1;
-        //    }
-        //    return newVal;
-        //}
+        public int CalculateNextInterval(Word word)
+        {
+            int newVal = word.viewInterval;
+            if (word.viewInterval < 0)
+            {
+                newVal = 0;
+            }
+            else if (word.viewInterval == 0)
+            {
+                if (word.totalViewed <= 0) newVal = 0;  // first time viewed
+                else newVal = 1;
+            }
+            else
+            {
+                double v = word.viewInterval * 1.618;
+                newVal = Convert.ToInt32(v);
+                if (newVal < 1) newVal = 1;
+            }
+            return newVal;
+        }
 
         //////////////////////////////////////////////////////////////////////
     }
