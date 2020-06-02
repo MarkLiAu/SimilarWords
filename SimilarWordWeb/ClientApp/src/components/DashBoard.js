@@ -33,7 +33,7 @@ export const DashBoard = ({ history }) => {
         LoadData();
     }
 
-        console.log("ShowDashBoard start");
+        console.log("ShowDashBoard start:"+firstFlag);
         console.log(datalist);
     const colors = ['red', 'orange', 'purple', 'LimeGreen', 'LightGreen', 'blue'];
     if ( typeof datalist === 'undefined' ) return '';

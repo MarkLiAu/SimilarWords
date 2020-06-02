@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import WordInfoDisplay from './WordInfoDisplay';
 import { GetTokenHeader } from './CommTools';
 
-const DisplayWord = ({ word, idx, SearchWord }) => {
+const DisplayWord = ({ word, idx}) => {
     // Declare a new state variable, which we'll call "count"
     const [result, setResult] = useState('');
             //<p>You clicked {count} times</p>
@@ -43,7 +43,7 @@ const DisplayWord = ({ word, idx, SearchWord }) => {
             <Panel.Collapse>
 
             <Panel.Body>
-                    <WordInfoDisplay word={word}></WordInfoDisplay>
+                    <WordInfoDisplay word={word} ></WordInfoDisplay>
                     <button hidden={word.viewInterval>=-1} onClick={CallUpdateApi}>Start Memory</button>
                 </Panel.Body>
                 </Panel.Collapse>
