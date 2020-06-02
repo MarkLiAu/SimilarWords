@@ -26,7 +26,9 @@ export class WordSearch extends Component {
         console.log("WordSearch constructor");
         //this.state = { word2search: '', wordInput: '', frequency: 10000 };
         console.log(this.match);
-        let w = (this.props.match === undefined || this.props.match.params == undefined || this.props.match.params.name) === 'undefined' ? '' : this.props.match.params.name;
+        let w = '';
+        if (this.match && this.match.params && this.props.match.props.name)  w = this.props.match.params.name;
+//        let w = (this.props.match === undefined || this.props.match.params == undefined || this.props.match.params.name) === 'undefined' ? '' : this.props.match.params.name;
         if (typeof (w) === 'undefined') w = '';
         console.log(w);
         this.state = { word2search: w, wordInput: w, frequency: 10000, activeKey: '0' };
@@ -83,8 +85,8 @@ export class WordSearch extends Component {
             .then(response => response.json())
             .then(data => {
                 console.log('fetch back');
-                this.props.history.push('/Wordsearch/' + word);
                 this.setState({ words: data, word2search: word, wordInput: '', activeKey: '0'  });
+                this.props.history.push('/Wordsearch/' + word);
             })
             .catch(err => console.log(`Error with message: ${err}`));
     }

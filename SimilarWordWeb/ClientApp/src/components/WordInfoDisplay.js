@@ -13,7 +13,7 @@ const WordInfoDisplay = ({ word,handleWordClicked }) => {
             <tr>
                     <td>Name:</td>
                     <td>
-                        <a onClick={() => { console.log('WordInfoDisplay clicked'); handleWordClicked(word.name) }} > {word.name} </a>
+                        <a className='a_pointer' onClick={() => { console.log('WordInfoDisplay clicked'); handleWordClicked(word.name); return false; }} > {word.name} </a>
           
                         <Badge>{word.frequency}</Badge>
                         {' '}
