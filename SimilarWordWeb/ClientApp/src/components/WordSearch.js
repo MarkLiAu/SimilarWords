@@ -25,48 +25,39 @@ export class WordSearch extends Component {
         super(props);
         console.log("WordSearch constructor");
         //this.state = { word2search: '', wordInput: '', frequency: 10000 };
-        console.log(this.match);
+        console.log(this.props);
         let w = '';
-        if (this.match && this.match.params && this.props.match.props.name)  w = this.props.match.params.name;
+        if (this.props.match && this.props.match.params && this.props.match.params.name)  w = this.props.match.params.name;
 //        let w = (this.props.match === undefined || this.props.match.params == undefined || this.props.match.params.name) === 'undefined' ? '' : this.props.match.params.name;
         if (typeof (w) === 'undefined') w = '';
-        console.log(w);
+        console.log("w="+w);
         this.state = { word2search: w, wordInput: w, frequency: 10000, activeKey: '0' };
-        this.fetchData();
+        this.SearchWord(this.state.word2search,false);
         //this.handleSelect = this.handleSelect.bind(this);
     }
 
     componentDidMount() {
         console.log("WordSearch componentDidMount start");
-        //this.fetchData();
+        // this.SearchWord(this.state.word2search);
     }
 
     componentDidUpdate(prevProps) {
-        return;
         console.log("wordsearch componentDidUpdate");
-        console.log(this.props.params);
-        console.log(prevProps.params);
-        console.log(typeof this.props.params);
-        console.log(typeof prevProps.params);
-        if (typeof (this.props.params) === 'undefined') return;
-        if (typeof (prevProps.params) === 'undefined') return;
-        if (prevProps.match.params.name !== this.props.match.params.name) {
-            console.log(prevProps.match.params.name);
-            console.log(this.props.match.params.name);
-            let w = typeof (this.props.match === null || this.props.match.params.name) === 'undefined' ? '' : this.props.match.params.name;
-            console.log(w);
-            this.state = { word2search: w, wordInput: w, frequency: 10000, activeKey: '0' };
-            this.fetchData();
+        console.log(this.props);
+        console.log(prevProps);
+        let w = '';
+        if (this.props.match && this.props.match.params && this.props.match.params.name)
+            w = this.props.match.params.name;
+        let prevW = '';
+        if (prevProps && prevProps.match && prevProps.match.params && prevProps.match.params.name)
+            prevW = prevProps.match.params.name;
+
+        console.log('wordsearch didupdate, w=' + w + ', prev=' + prevW);
+        if(w.trim()!=='' && w!==prevW) {
+            //this.state = { word2search: w, wordInput: w, frequency: 10000, activeKey: '0' };
+            this.SearchWord(w,false);
         }
     }
-
-    fetchData() {
-        console.log("WordSearch fetchData start");
-        this.SearchWord(this.state.word2search);
-        if (this.state.word2search.length > 0) document.title = this.state.word2search + '-Similar Word';
-    }
-
-
 
     WordChanged = (e) => {
         this.setState({
@@ -74,9 +65,9 @@ export class WordSearch extends Component {
         });
     }
 
-    SearchWord = (word) => {
+    SearchWord = (word,bPushHistory=true) => {
         console.log("SearchWord:" + word);
-        console.log(this.state);
+        //console.log(this.state);
         if (word.length <= 0) return;
         //if (word === this.state.word2search) return;
         //return;
@@ -86,7 +77,7 @@ export class WordSearch extends Component {
             .then(data => {
                 console.log('fetch back');
                 this.setState({ words: data, word2search: word, wordInput: '', activeKey: '0'  });
-                this.props.history.push('/Wordsearch/' + word);
+                if (bPushHistory) this.props.history.push('/Wordsearch/' + word);
             })
             .catch(err => console.log(`Error with message: ${err}`));
     }
@@ -109,8 +100,7 @@ export class WordSearch extends Component {
 
 
     render() {
-        console.log('render');
-        console.log("start in WordSearch");
+        console.log("render start in WordSearch");
         console.log(this.props);
 
 

@@ -1,11 +1,36 @@
 ﻿import React, { Fragment } from 'react';
-import { Link } from 'react-router-dom';
+import { Link  } from 'react-router-dom';
 import { Badge } from 'react-bootstrap';
 import { ShowDictLink } from './CommTools';
 
-const WordInfoDisplay = ({ word,handleWordClicked }) => {
-    console.log('WordInfoDisplay:'+word);
-    if (word == null || word == undefined) return '';
+const ShowWordName = ({ name, handleClick }) => {
+    if (!name || name.trim() === "") return '';
+    return (
+        handleClick === null ?
+            <Link to={{ pathname: '/Wordsearch/' + name }} >   {name}   </Link>
+            :
+            <a className='a_pointer' onClick={() => { console.log('WordInfoDisplay clicked'); handleClick(name); return false; }} > {name} </a>
+    )
+}
+
+const ShowSimilarWords = ({ nameString, handleClick }) => {
+    //console.log("SHowSimilarWords:" + nameString);
+    if (nameString.trim() === "") return '';
+    let nameList = nameString.split(' ');
+    //console.log(nameList);
+    return (
+        nameList.map(name => {
+            return <ShowWordName key={name} name={name} handleClick={handleClick}></ShowWordName>
+        })
+    )
+
+}
+
+
+const WordInfoDisplay = ({ word,handleWordClicked=null}) => {
+    //console.log('WordInfoDisplay:');
+    //console.log(word);
+    if (!word) return '';
 
     return (
         <table className='table table-striped table-bordered'>
@@ -13,8 +38,7 @@ const WordInfoDisplay = ({ word,handleWordClicked }) => {
             <tr>
                     <td>Name:</td>
                     <td>
-                        <a className='a_pointer' onClick={() => { console.log('WordInfoDisplay clicked'); handleWordClicked(word.name); return false; }} > {word.name} </a>
-          
+                        <ShowWordName name={word.name} handleClick={handleWordClicked}> </ShowWordName>
                         <Badge>{word.frequency}</Badge>
                         {' '}
                         <Link to={{ pathname: '/wordedit/' + word.name, state: { word: word } }} >
@@ -27,7 +51,10 @@ const WordInfoDisplay = ({ word,handleWordClicked }) => {
                 <td>pronounciation:</td><td>{word.pronounciation}</td>
             </tr>
                 <tr>
-                    <td>Similar words:</td><td>{word.similarWords}</td>
+                    <td>Similar words:</td>
+                    <td>
+                        <ShowSimilarWords nameString={word.similarWords} handleClick={handleWordClicked}>  </ShowSimilarWords>
+                    </td>
                 </tr>
             <tr>
                 <td>meaningShort:</td><td>{word.meaningShort}</td>
@@ -64,13 +91,5 @@ const WordReviewInfo = ({ word }) => {
     );
 }
 
-const ShowWordName = ({ name }) => {
-    //if (name == this.state.word2search) {
-    //    return <b className='text-primary'>{name}</b>
-    //}
-    //else {
-    return <Link to={'/WordSearch/' + name} >{name} </Link>
-    //}
-}
 
 export default WordInfoDisplay;
