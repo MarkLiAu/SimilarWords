@@ -1,6 +1,5 @@
-﻿import React, { Fragment, useState } from 'react';
-import { Form, FormControl, FormGroup, ControlLabel, Col, Button, Label } from 'react-bootstrap';
-import { GetTokenHeader } from './CommTools';
+﻿import React, { useState } from 'react';
+import { GetTokenHeader, UserLogOut } from './CommTools';
 
 const Admin = ({ cmd,location}) => {
     // Declare a new state variable, which we'll call "count"
@@ -31,7 +30,14 @@ const Admin = ({ cmd,location}) => {
     console.log(cmd);
     console.log(location.state.cmd);
     console.log(result);
-    if (result === 'Processing') CallUpdateApi();
+
+    if (cmd === 'logout') {
+        UserLogOut();
+        setResult('You have logged out!');
+    }
+    else if (result === 'Processing') {
+        if(window.confirm('Are you sure?')) CallUpdateApi();
+    }
 
     return (
         <div>

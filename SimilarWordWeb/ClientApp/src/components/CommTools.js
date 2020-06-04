@@ -57,5 +57,9 @@ export const GetLoginUser = () => {
 
 }
 
-export var loginUser = GetLoginUser();
+export const UserLogOut = () => {
+    window.localStorage.removeItem('SimilarWordUser');
+    return;
+}
+
 

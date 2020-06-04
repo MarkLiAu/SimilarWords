@@ -2,12 +2,14 @@
 import { Link } from 'react-router-dom';
 import { Glyphicon, Nav, Navbar, NavItem , NavDropdown, MenuItem} from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
+import { GetLoginUser } from './CommTools';
 import './NavMenu.css';
 
 export class NavMenu extends Component {
   displayName = NavMenu.name
 
-  render() {
+    render() {
+        console.log("in NaMenu, loginuser:", loginUser);
     return (
       <Navbar className='navbar-custom' inverse fluid collapseOnSelect>
         <Navbar.Header>
@@ -24,7 +26,7 @@ export class NavMenu extends Component {
                 </NavItem>
             </LinkContainer>
 
-            <LinkContainer to={'/login'}>
+            <LinkContainer hidden={loginUser} to={'/login'}>
                 <NavItem>
                     <Glyphicon glyph='th-list' />Login
                 </NavItem>
@@ -41,6 +43,10 @@ export class NavMenu extends Component {
 
                 <LinkContainer to={'/MemoryLog'}>
                     <MenuItem eventKey={3.6}>Memory Log</MenuItem>
+                </LinkContainer>
+
+               <LinkContainer to={{ pathname: '/admin/logout', state: { cmd: 'logout' } }} >
+                    <MenuItem eventKey={3.7}>Logout</MenuItem>
                 </LinkContainer>
 
             </NavDropdown>
