@@ -66,7 +66,7 @@ namespace SimilarWordWeb.Controllers
 
                 counts[3]++;    // all other viewed items
 
-                if (word.viewTime < start_date) start_date = word.viewTime;
+                if (word.viewTime.Year>2000 && word.viewTime < start_date) start_date = word.viewTime;
 
                 if (memoryFib.isDue(word)) counts[2]++;    // already started items, and due to be viewed
                 if (memoryFib.is1stViewedToday(word)) counts[4]++;  // 1st viewed today
