@@ -32,6 +32,10 @@ namespace SimilarWordWeb.Controllers
                 if (WordDictionary.WordList.Count <= 0)
                     wd.ReadFile(Path.Combine(Directory.GetCurrentDirectory(), @"data\WordSimilarityList.txt"));
 
+                if (WordDictionary.WordList.Count <= 0)
+                    return new List<Word>() { new Word("error", -1, "no words in dictionary list") };
+
+                if (name == "randomword") name = getRandomWord();
                 List<Word> result = wd.FindSimilarWords(name);
 
                 return result;
@@ -40,6 +44,18 @@ namespace SimilarWordWeb.Controllers
             {
                 return new List<Word>() { new Word(name,-1,ex.Message+ex.StackTrace) };
             }
+        }
+
+        public string getRandomWord()
+        {
+            if (WordDictionary.WordList.Count <= 0) return "";
+            List<string> list = WordDictionary.WordList.Where(x => x.Value.frequency > 2000 && x.Value.frequency < 5000).Select(x=>x.Value.name).ToList();
+            if (list.Count <= 0) return "";
+            Random rnd = new Random();
+            int n = rnd.Next(0, list.Count - 1);
+
+            return list[n];
+
         }
 
 
@@ -67,9 +83,12 @@ namespace SimilarWordWeb.Controllers
                 if (WordDictionary.WordList.Count() <= 0)
                     wd.ReadFile(Path.Combine(Directory.GetCurrentDirectory(), @"data\WordSimilarityList.txt"));
 
-                //foreach (var d in WordDictionary.WordList) d.Value.meaningLong = "";
-                //wd.SaveFile(Path.Combine(Directory.GetCurrentDirectory(), @"data\WordSimilarityList.txt"));
                 if (word.similarWords == "") word.similarWords = wd.FindSimilarWord(word.name) + " ";   // put a space at the end, so no need to search next time
+                Word originWord = WordDictionary.WordList[word.name.ToString().Trim()];
+                if(originWord!=null)
+                {
+                    word.viewInterval = originWord.viewInterval;        // because when editing during memory, interval is changed to next interval
+                }
                 if (wd.UpdateWord(word)) return word;
 
                 return new Word("ERROR", -1, "failed to update");

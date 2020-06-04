@@ -1,6 +1,6 @@
 ﻿import React, { useState } from 'react';
 
-const WordSearchInput = ({ initValue, handleSubmit }) => {
+const WordSearchInput = ({ initValue='', handleSubmit }) => {
     let [inputData, setInputData] = useState(initValue);
     let [placeHolder, setPlaceHolder] = useState(initValue);
 
@@ -22,7 +22,7 @@ const WordSearchInput = ({ initValue, handleSubmit }) => {
 
     return (
             <div className='bj_center'>
-                    <input defaultValue={inputData} placeholder='search here' onChange={WordChanged} onKeyPress={KeyPressed} ></input>
+                    <input defaultValue={inputData} placeholder='type here or random' onChange={WordChanged} onKeyPress={KeyPressed} ></input>
                     <span>{' '}</span>
                     <button type="submit" className='btn btn-primary' onClick={SubmitSearch}><span className="glyphicon glyphicon-search"></span> </button>
             </div>

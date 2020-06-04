@@ -68,7 +68,7 @@ export class WordSearch extends Component {
     SearchWord = (word,bPushHistory=true) => {
         console.log("SearchWord:" + word);
         //console.log(this.state);
-        if (word.length <= 0) return;
+        if (word.length <= 0) word="randomword";
         //if (word === this.state.word2search) return;
         //return;
         console.log('WordSearch Start fetch:');
@@ -76,8 +76,10 @@ export class WordSearch extends Component {
             .then(response => response.json())
             .then(data => {
                 console.log('fetch back');
-                this.setState({ words: data, word2search: word, wordInput: '', activeKey: '0'  });
-                if (bPushHistory) this.props.history.push('/Wordsearch/' + word);
+                let lastWord = word;
+                if (data.length > 0 && data[0].name) lastWord = data[0].name;
+                this.setState({ words: data, word2search: lastWord, wordInput: '', activeKey: '0'  });
+                if (bPushHistory||lastWord!=word) this.props.history.push('/Wordsearch/' + lastWord);
             })
             .catch(err => console.log(`Error with message: ${err}`));
     }

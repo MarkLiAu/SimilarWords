@@ -138,7 +138,7 @@ const WordMemory = () => {
                 <Panel bsStyle="primary">
                     <Panel.Heading>
                     <Panel.Title componentClass="h3">
-                        {state.memoryList[state.memoryIdx].name}{' (' + (state.memoryList[state.memoryIdx].totalViewed === 0 ? '*' : '') + (state.memoryIdx + 1).toString() + '/' + state.memoryList.length.toString()+')'}
+                        {state.memoryList[state.memoryIdx].name}{' (' + (state.memoryList[state.memoryIdx].totalViewed <= 0 ? '*' : '') + (state.memoryIdx + 1).toString() + '/' + state.memoryList.length.toString()+')'}
                         {'   '}<button className='btn btn-info' id='btn_submit' disabled={state.memoryList[state.memoryIdx].easiness >= 999} onClick={CallUpdateApi}>  {reviewDays(state.curWord.viewInterval)}  </button>
                     </Panel.Title>
                     </Panel.Heading>
