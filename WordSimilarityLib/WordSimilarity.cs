@@ -268,6 +268,38 @@ namespace WordSimilarityLib
             SaveFile(dataFile);
             return true;
         }
+
+        public bool UpdateWordPart(Word word, string part="memory")
+        {
+            if (word == null || string.IsNullOrWhiteSpace(word.name)) return false;
+            if (string.IsNullOrWhiteSpace(dataFile)) return false;
+            Word originWord = WordList[word.name.ToLower()];
+            if (originWord == null) return UpdateWord(word);
+
+            if(part=="memory")
+            {
+                originWord.easiness = word.easiness;
+                originWord.startTime = word.startTime;
+                originWord.totalViewed = word.totalViewed;
+                originWord.viewInterval = word.viewInterval;
+                originWord.viewTime = word.viewTime;
+            }
+            else
+            {
+                originWord.name = word.name;
+                originWord.pronounciation = word.pronounciation;
+                originWord.frequency = word.frequency;
+                originWord.similarWords = word.similarWords;
+                originWord.meaningShort = word.meaningShort;
+                originWord.meaningLong = word.meaningLong;
+                originWord.meaningOther = word.meaningOther;
+                originWord.soundUrl = word.soundUrl;
+                originWord.exampleSoundUrl = word.exampleSoundUrl;
+            }
+            SaveFile(dataFile);
+            return true;
+        }
+
         public bool DeleteWord(string name)
         {
             if (string.IsNullOrWhiteSpace(name)) return false;

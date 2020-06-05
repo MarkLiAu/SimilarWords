@@ -1,7 +1,7 @@
 ﻿import React, { useState } from 'react';
 import { GetTokenHeader, UserLogOut } from './CommTools';
 
-const Admin = ({ cmd,location}) => {
+const Admin = ({ cmd,location,history}) => {
     // Declare a new state variable, which we'll call "count"
     const [result, setResult] = useState('Processing');
 
@@ -31,9 +31,11 @@ const Admin = ({ cmd,location}) => {
     console.log(location.state.cmd);
     console.log(result);
 
-    if (cmd === 'logout') {
+    if (location.state.cmd === 'logout') {
+        console.log('start logout');
         UserLogOut();
-        setResult('You have logged out!');
+        // setResult('You have logged out!');
+        history.push('/');
     }
     else if (result === 'Processing') {
         if(window.confirm('Are you sure?')) CallUpdateApi();

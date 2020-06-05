@@ -72,38 +72,37 @@ namespace SimilarWordWeb.Controllers
                 if (cmd.ToLower() == "reload")
                 {
                     wd.ReadFile(Path.Combine(Directory.GetCurrentDirectory(), @"data\WordSimilarityList.txt"));
-                    //if(true)
-                    //{
-                    //    memoryFib.ReadMemoryLog();
-                    //    foreach(var log in memoryFib.logList)
-                    //    {
-                    //        if (!WordDictionary.WordList.ContainsKey(log.name)) continue;
-                    //        Word w = WordDictionary.WordList[log.name];
-                    //        if (w.totalViewed < 0) w.totalViewed = 0;
-                    //        if (log.viewInterval >= 0) w.totalViewed++;
-                    //        if (w.startTime.Year < 2020&& log.viewInterval >= 0) w.startTime = log.viewTime;
-                    //        if (w.easiness < -10&&log.easiness>-10) w.easiness = log.easiness;
-                    //        if (w.viewInterval < -10 && log.viewInterval > -10)
-                    //            w.viewInterval = log.viewInterval;
-                    //    }
-                    //    wd.SaveFile(WordDictionary.dataFile);
-                    //}
-                    //if (true)
-                    //{
-                    //    foreach (var w in WordDictionary.WordList)
-                    //    {
-                    //        if (w.Value.viewInterval == -1 && w.Value.startTime.Year < 2020)
-                    //            w.Value.startTime = w.Value.viewTime;
-                    //    }
-                    //    wd.SaveFile(WordDictionary.dataFile);
-                    //}
-                    return "OK:" + DateTime.Now.ToString() ;
+
+                    return "OK:" + DateTime.Now.ToString();
                 }
                 else if (cmd.ToLower() == "resetmemory")
                 {
                     memoryFib.ClearViewHistory();
+                    return "OK:" + DateTime.Now.ToString();
                 }
-                return "OK";
+                else if (cmd.ToLower() == "fixmemory")
+                {
+                    foreach (var d in WordDictionary.WordList) d.Value.totalViewed = int.MinValue;
+                    memoryFib.ReadMemoryLog();
+                    foreach (var log in memoryFib.logList)
+                    {
+                        if (!WordDictionary.WordList.ContainsKey(log.name)) continue;
+                        Word w = WordDictionary.WordList[log.name];
+                        if (w.totalViewed < 0) w.totalViewed = 0;
+                        if (log.viewInterval >= 0) w.totalViewed++;
+                        if (w.startTime.Year < 2020 && log.viewInterval >= 0) w.startTime = log.viewTime;
+                        if (w.viewTime.Year < 2020 && log.viewInterval >= 0) w.viewTime = log.viewTime;
+                        if (w.easiness < -99 && log.easiness > 99) w.easiness = log.easiness;
+                        if (w.viewInterval < -99 && log.viewInterval > 99)
+                            w.viewInterval = log.viewInterval;
+                    }
+                    wd.SaveFile(WordDictionary.dataFile);
+                    return "OK";
+                }
+                else
+                {
+                    return "OK: not supported command:" + cmd;
+                }
             }
             catch (Exception ex)
             {

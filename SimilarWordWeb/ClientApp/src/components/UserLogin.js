@@ -1,7 +1,7 @@
 ﻿import React, { Fragment, useState } from 'react';
 import { Form, FormControl, FormGroup, ControlLabel, Col, Button, Label } from 'react-bootstrap';
 
-const UserLogin = ({ name, location }) => {
+const UserLogin = ({ name, location,history }) => {
     // Declare a new state variable, which we'll call "count"
     const [word, setWord] = useState({ Username: '', Password: '' });
     const [result, setResult] = useState('');
@@ -20,7 +20,10 @@ const UserLogin = ({ name, location }) => {
         })
             .then(response => response.json())
             .then(user => {
-                console.log(user); localStorage.setItem('SimilarWordUser', JSON.stringify(user));} )
+                console.log(user);
+                localStorage.setItem('SimilarWordUser', JSON.stringify(user));
+                history.push('/');
+            })
     }
 
 

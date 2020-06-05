@@ -40,9 +40,10 @@ const WordMemory = () => {
             .then(response => response.json())
             .then(data => {
                 console.log('fetch back');
+                state.memoryList = data;        // can't wait for setMemoryList
                 setMemoryList(data);
-                setMemoryIdx(0);
                 ResetCurWord(0);
+                setMemoryIdx(0);
             });
     }
     const CallUpdateApi = (e) => {
@@ -73,14 +74,14 @@ const WordMemory = () => {
     }
 
     const ResetCurWord = (idx) => {
-        console.log("resetcurWord, idx=" + idx);
+        console.log("resetcurWord, idx=" + idx + ",len=" + state.memoryList.length);
         if (state.memoryList.length > 0) {
             state.curWord.easiness = state.memoryList[idx].easiness;
             state.curWord.viewInterval = state.memoryList[idx].viewInterval;
             if (state.curWord.easiness < -2 || state.curWord.easiness > 2) state.curWord.easiness = 0;
             if (state.curWord.viewInterval < 0) state.curWord.viewInterval = 0;
-            setCurWord(state.curWord);
         }
+        setCurWord(state.curWord);
     }
 
     const ChangeEasiness = (e, increase) => {
@@ -120,7 +121,12 @@ const WordMemory = () => {
          }
     }
 
-    function reviewDays(d) { return ( d <= 0 ? 'Review Today' : 'Review in ' + d + ' day' + (d < 1 ? 's' : '')) ; } 
+    const reviewDays = (x) => {
+        console.log('cal reviewdays:' + x + "," + state.curWord.viewInterval);
+        let d = state.curWord.viewInterval;
+        return (d <= 0 ? 'Review Today' : 'Review in ' + d + ' day' + (d < 1 ? 's' : '')
+        );
+    } 
 
     if (state.firstFlag == 0) {
         CallApi();

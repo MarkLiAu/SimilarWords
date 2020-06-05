@@ -27,7 +27,7 @@ const ShowSimilarWords = ({ nameString, handleClick }) => {
 }
 
 
-const WordInfoDisplay = ({ word,handleWordClicked=null}) => {
+const WordInfoDisplay = ({ word,hideEditButton, handleWordClicked=null}) => {
     //console.log('WordInfoDisplay:');
     //console.log(word);
     if (!word) return '';
@@ -42,7 +42,7 @@ const WordInfoDisplay = ({ word,handleWordClicked=null}) => {
                         <Badge>{word.frequency}</Badge>
                         {' '}
                         <Link to={{ pathname: '/wordedit/' + word.name, state: { word: word } }} >
-                            <button type="button" > Edit </button>
+                            <button hidden={hideEditButton} type="button" > Edit </button>
                         </Link>
 
                     </td>

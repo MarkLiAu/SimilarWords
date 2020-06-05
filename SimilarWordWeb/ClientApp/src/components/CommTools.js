@@ -28,7 +28,6 @@ export const GetTokenHeader = ()=> {
     console.log("commtools userString:" + userString);
     console.log(typeof (userString) === 'undefined');
     console.log(userString === null);
-    console.log(userString.length);
     if (typeof (userString) === 'undefined' || userString === null || userString==='undefined'|| userString.length <= 0) {
         console.log("commtool: undefined");
         return '';

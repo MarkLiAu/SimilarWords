@@ -1,5 +1,6 @@
 ﻿import React, { useState, Fragment } from 'react';
 import { Badge } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { GetTokenHeader } from './CommTools';
 
 export const DashBoard = ({ history }) => {
@@ -27,6 +28,7 @@ export const DashBoard = ({ history }) => {
                 //if (!response.ok) throw (new Error(`Failed:(${response.status}) ${response.statusText}`));
 
     }
+    if (GetTokenHeader() === '') return '';
 
     if (firstFlag === 0) {
         console.log("will load Dashboard data");
@@ -38,8 +40,10 @@ export const DashBoard = ({ history }) => {
     const colors = ['red', 'orange', 'purple', 'LimeGreen', 'LightGreen', 'blue'];
     if ( typeof datalist === 'undefined' ) return '';
     let len = datalist.length;
+
     return (
         <Fragment>
+            <Link to={'/Wordmemory'} ><button className='btn btn-info btn-sm'> Start Memory </button></Link>
             {len > 1 ? <Badge style={{ backgroundColor: 'red' }} title={'due today'} >{datalist[1].value}  </Badge> : ''}
             {' '}{len > 3 ? <Badge style={{ backgroundColor: 'orange' }} title={'New viewed today/new waiting'} >{datalist[3].value + ' / ' + datalist[0].value}  </Badge> : ''}
             {' '}{len > 4 ? <Badge style={{ backgroundColor: 'LimeGreen' }} title={'Viewed today/total viewed'} >{datalist[4].value + ' / ' + datalist[2].value+' / '+datalist[6].value+'d'}  </Badge> : ''}

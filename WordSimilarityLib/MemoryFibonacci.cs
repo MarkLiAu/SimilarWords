@@ -69,7 +69,7 @@ namespace WordSimilarityLib
             w.totalViewed = 0;
             w.startTime = DateTime.Now;
 
-            wd.UpdateWord(w);
+            wd.UpdateWordPart(w);
             AddMemoryLog(w);
 
             return w.viewInterval;
@@ -93,7 +93,7 @@ namespace WordSimilarityLib
 
 //            if (w.startTime == DateTime.MinValue) w.startTime = w.viewTime;     // something wrong
 
-            wd.UpdateWord(w);
+            wd.UpdateWordPart(w);
             AddMemoryLog(w);
 
             return w.viewInterval;

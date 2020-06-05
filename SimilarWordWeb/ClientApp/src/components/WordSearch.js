@@ -3,15 +3,17 @@ import { Link } from 'react-router-dom';
 import { Col, Grid, Row,Checkbox, Panel, PanelGroup } from 'react-bootstrap';
 import DisplayWord from './DisplayWord';
 import { DashBoard } from './DashBoard';
+import { GetLoginUser } from './CommTools';
 
 const ShowListComp = ({ maxFeq, list, handleWordClicked }) => {
     console.log('ShowList in WordSearch');
     if (typeof (list) === "undefined") return (<div></div>);
-    console.log(maxFeq);
+    let hideMemoryButton = GetLoginUser() === null;
+    let hideEditButton = hideMemoryButton;
     return (
         list.map((w, idx) => {
             return (
-                <DisplayWord key={w.name} word={w} idx={idx} handleWordClicked={handleWordClicked}></DisplayWord>
+                <DisplayWord key={w.name} word={w} idx={idx} handleWordClicked={handleWordClicked} hideMemoryButton={hideMemoryButton} hideEditButton={hideEditButton} ></DisplayWord>
             )
         })
 
@@ -108,7 +110,6 @@ export class WordSearch extends Component {
 
         return (
             <div className='bj_center'>
-                <Link to={'/Wordmemory'} ><button className='btn btn-info btn-sm'> Start Memory </button></Link>
                 <DashBoard></DashBoard>
                 <Panel>
                 <input value={this.state.wordInput} placeholder={this.state.word2search.length<=0? 'search here': this.state.word2search} onChange={this.WordChanged} onKeyPress={this.KeyPressed} ></input>

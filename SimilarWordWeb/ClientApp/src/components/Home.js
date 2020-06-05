@@ -4,6 +4,10 @@ import { GetLoginUser } from './CommTools';
 import { DashBoard } from './DashBoard';
 import WordSearchInput  from './WordSearchInput';
 
+const UserFeatures = () => {
+
+}
+
 export const Home = ({ history }) => {
 
     const handleWordInout = (word) => {
@@ -12,10 +16,13 @@ export const Home = ({ history }) => {
     }
     console.log("Home start");
     let user = GetLoginUser();
-        return (
+
+    if (user === null)
+        return <WordSearchInput handleSubmit={handleWordInout} ></WordSearchInput>
+  
+    return (
             <div>
-                <h3>Welcome {user === null ? 'Guest' : user.firstName }!          </h3>
-                <Link to={'/Wordmemory'} ><button className='btn btn-info btn-sm'> Start Memory </button></Link>
+                <h3>Welcome {user.firstName }!   </h3>
                 <DashBoard></DashBoard>
                 <WordSearchInput handleSubmit={handleWordInout} ></WordSearchInput>
             </div>

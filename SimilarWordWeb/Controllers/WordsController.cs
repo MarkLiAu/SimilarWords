@@ -89,7 +89,7 @@ namespace SimilarWordWeb.Controllers
                 {
                     word.viewInterval = originWord.viewInterval;        // because when editing during memory, interval is changed to next interval
                 }
-                if (wd.UpdateWord(word)) return word;
+                if (wd.UpdateWordPart(word,"meaning")) return word;
 
                 return new Word("ERROR", -1, "failed to update");
 
