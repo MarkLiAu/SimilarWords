@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using WordSimilarityLib;
 using System.IO;
+using System.Text;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -110,7 +111,30 @@ namespace SimilarWordWeb.Controllers
             }
         }
 
+        [HttpPost("csv")]
+        public IActionResult MemoryLogCsv(string cmd)
+        {
+            StringBuilder sb = new StringBuilder();
 
+            WordDictionary wd = new WordDictionary();
+            if (WordDictionary.WordList.Count() <= 0)
+                wd.ReadFile(Path.Combine(Directory.GetCurrentDirectory(), @"data\WordSimilarityList.txt"));
+
+            MemoryFibonacci memoryFib = new MemoryFibonacci(@"data\menory_" + memoryMethod + userId + ".txt");
+            memoryFib.ReadMemoryLog();
+
+            sb.AppendLine("name,time,interval,easiness");
+            foreach( var log in memoryFib.logList)
+            {
+                sb.AppendLine(log.name+",");
+                sb.AppendLine(log.viewTime.ToLocalTime() + ",");
+                sb.AppendLine(log.viewInterval.ToString() + ",");
+                sb.AppendLine(log.easiness.ToString() + ",");
+            }
+
+            //sb.AppendLine("1;2;3;");
+            return File(System.Text.Encoding.ASCII.GetBytes(sb.ToString()), "text/csv", "WordMemoryLog.csv");
+        }
 
         ////////////////////////////////////////////////////////////// end
     }

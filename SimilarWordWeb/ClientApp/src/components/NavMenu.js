@@ -44,7 +44,11 @@ const UserMenu = () => {
 
             <LinkContainer to={{ pathname: '/admin/logout', state: { cmd: 'logout' } }} >
                 <MenuItem eventKey={3.7}>Logout</MenuItem>
-            </LinkContainer>
+                </LinkContainer>
+
+                <LinkContainer to={'/BootstrapTest1'}>
+                    <MenuItem eventKey={3.9}> Test </MenuItem>
+                </LinkContainer>
 
         </NavDropdown>
         </Fragment>

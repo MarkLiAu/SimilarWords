@@ -1,6 +1,37 @@
 ﻿import React, {Component } from 'react';
 // import './App.scss';
 import { Nav, Navbar, NavDropdown, Form, FormControl, Button, Panel, PanelGroup } from 'react-bootstrap';
+import Table  from "./StandardTable";
+
+const data = [
+    { firstName: "jane", lastName: "doe", age: 20 },
+    { firstName: "john", lastName: "smith", age: 21 }
+];
+
+const columns = [
+    {
+        Header: "Name",
+        columns: [
+            {
+                Header: "First Name",
+                accessor: "firstName"
+            },
+            {
+                Header: "Last Name",
+                accessor: "lastName"
+            }
+        ]
+    },
+    {
+        Header: "Other Info",
+        columns: [
+            {
+                Header: "Age",
+                accessor: "age"
+            }
+        ]
+    }
+];
 
 export function BootstrapTest1() {
 
@@ -25,6 +56,9 @@ export function BootstrapTest1() {
             <input type="button" value="Red" onClick={changeBackgroundColor} />
             <input type="button" value="Green" onClick={changeBackgroundColor} />
             <input type="button" value="Blue" onClick={changeBackgroundColor} />
+
+            <Table data={data} columns={columns} ></Table>
+
         </div>
     );
 };
