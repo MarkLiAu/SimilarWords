@@ -26,11 +26,27 @@ const ShowSimilarWords = ({ nameString, handleClick }) => {
 
 }
 
+const DisplaySoundLink = ({ name }) => {
+    //return <span> {`https://lex-audio.useremarkable.com/mp3/${name}_us_1.mp3`} </span>
+    return <audio src={`https://lex-audio.useremarkable.com/mp3/${name}_us_1.mp3`} controls />
+ 
+}
+
 
 const WordInfoDisplay = ({ word,hideEditButton, handleWordClicked=null}) => {
     //console.log('WordInfoDisplay:');
     //console.log(word);
     if (!word) return '';
+
+    const playMusic = () => {
+        let name = word.name;
+        let link1 = `https://lex-audio.useremarkable.com/mp3/${name}_us_1.mp3`;
+        let link2 = `https://ssl.gstatic.com/dictionary/static/sounds/oxford/${name}--_us_1.mp3`;
+        let mySound = new Audio(link2);
+        console.log(mySound.readyState);
+
+        mySound.play().catch(e=>console.log('failed to play sound'));
+    }
 
     return (
         <table className='table table-striped table-bordered'>
@@ -39,12 +55,14 @@ const WordInfoDisplay = ({ word,hideEditButton, handleWordClicked=null}) => {
                     <td>Name:</td>
                     <td>
                         <ShowWordName name={word.name} handleClick={handleWordClicked}> </ShowWordName>
+                        {' '}
                         <Badge>{word.frequency}</Badge>
+                        {' '}
+                        <button onClick={playMusic}><span className="glyphicon glyphicon-play  text-success"></span> </button>
                         {' '}
                         <Link to={{ pathname: '/wordedit/' + word.name, state: { word: word } }} >
                             <button hidden={hideEditButton} type="button" > Edit </button>
                         </Link>
-
                     </td>
             </tr>
             <tr>
