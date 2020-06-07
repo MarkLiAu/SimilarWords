@@ -79,7 +79,8 @@ namespace SimilarWordWeb.Controllers
             result.Add(new WordInfo("memory", "new words today", (counts[4]).ToString()));
             result.Add(new WordInfo("memory", "reviewed today", (counts[5]).ToString()));
             result.Add(new WordInfo("word", "total words", (WordDictionary.WordList.Count).ToString()));
-            result.Add(new WordInfo("memory", "total days", (DateTime.Now-start_date).Days.ToString()));
+            start_date = new DateTime(start_date.Year, start_date.Month, start_date.Day);
+            result.Add(new WordInfo("memory", "total days", ((DateTime.Now-start_date).Days+1).ToString()));
 
             return result;
         }

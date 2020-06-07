@@ -818,12 +818,22 @@ namespace WordSimilarityLib
             wd.FindAllSimilarWords();
 
         }
+
+        public void testSqlite(string dataPath)
+        {
+            DbSqlite db = new DbSqlite("Data Source=" + dataPath + @"\SimilarWord.db;");
+            string cmdString = "CREATE TABLE IF NOT EXISTS WordList ( name TEXT PRIMARY KEY,  frequency INTERGER ,   pronounciation TEXT ,   meaning TEXT, similarwords TEXT, startTime TEXT, viewTime TEXT, interval INT, easiness INT ) WITHOUT ROWID;";
+
+            int ret = db.ExecuteNonQuery(cmdString);
+        }
+
         public void test1(string dataPath)
         {
             // splitPronounciation(dataPath);
             // CombineOxford5000(dataPath);
             // testLoop(dataPath);
-            fillSimilarWords(dataPath);
+            // fillSimilarWords(dataPath);
+            testSqlite(dataPath);
             return;
 
             ReadCollins(dataPath + @"\CollinsL5E.txt",1);
