@@ -821,10 +821,18 @@ namespace WordSimilarityLib
 
         public void testSqlite(string dataPath)
         {
-            DbSqlite db = new DbSqlite("Data Source=" + dataPath + @"\SimilarWord.db;");
-            string cmdString = "CREATE TABLE IF NOT EXISTS WordList ( name TEXT PRIMARY KEY,  frequency INTERGER ,   pronounciation TEXT ,   meaning TEXT, similarwords TEXT, startTime TEXT, viewTime TEXT, interval INT, easiness INT ) WITHOUT ROWID;";
-
-            int ret = db.ExecuteNonQuery(cmdString);
+            WordStudyModel study = new WordStudyModel("Data Source = " + dataPath + @"\SimilarWord.db; ");
+            study.CreateDb();
+            UserProfile user = new UserProfile();
+            //user.Email = "markli188@outlook.com";
+            //user.FirstName = "Mark";
+            //user.LastName = "Li";
+            //user.MaxNewWord = 10;
+            //user.Password = "test";
+            //user.Username = "markli";
+            //user.Id = 1;
+            //study.CreateUser(user);
+            user = study.GetUserProfile("markli188@outlook.com");
         }
 
         public void test1(string dataPath)
