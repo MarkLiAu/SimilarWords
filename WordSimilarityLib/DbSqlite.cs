@@ -247,6 +247,8 @@ namespace WordSimilarityLib
 
             string[] columns = new string[] { "userid", "deckid", "name", "frequency", "pronounciation", "similar_words", "meaning", "start_time", "study_time", "interval", "easiness" };
 
+            System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
+            sw.Start();
             using (SqliteConnection con = new SqliteConnection(_connString))
             {
                 using (var transaction = con.BeginTransaction())
@@ -288,6 +290,7 @@ namespace WordSimilarityLib
                     transaction.Commit();
                 }
             }
+            sw.Stop();
             return true;
         }
 
