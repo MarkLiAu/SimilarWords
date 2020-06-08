@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 using Microsoft.Data.Sqlite;
 using System.Data;
 using System.IO;
@@ -53,6 +54,34 @@ namespace WordSimilarityLib
             return result;
         }
 
+        public object ExecuteScalar(string cmdString)
+        {
+            //SqliteConnectionStringBuilder cb = new SqliteConnectionStringBuilder();
+            //cb.DataSource = @"aaa_sqlite.db";
+            //cb.Mode = SqliteOpenMode.ReadWriteCreate;
+            //_connString = cb.ConnectionString;
+            object result;
+
+            using (SqliteConnection con = new SqliteConnection(_connString))
+            {
+                //if (!File.Exists(con.DataSource)) File.Create(con.DataSource);
+                con.Open();
+
+                SqliteCommand cmd = new SqliteCommand(cmdString, con);
+                cmd.ExecuteScalar();
+                result = cmd.ExecuteNonQuery();
+
+                con.Close();
+            }
+            return result;
+        }
+
+        public int GetLastRowId()
+        {
+            // The row ID is a 64-bit value - cast the Command result to an Int64.
+            object obj = ExecuteScalar("select last_insert_rowid()");
+            return Convert.ToInt32(obj);
+        }
 
         public int GetData(string cmdString, MapData map)
         {
@@ -79,6 +108,40 @@ namespace WordSimilarityLib
             }
             return n;
         }
+
+        public List<List<object>> GetData(string cmdString)
+        {
+            List<List<object>> result = new List<List<object>>();
+
+            int n = 0;
+            using (SqliteConnection con = new SqliteConnection(_connString))
+            {
+                con.Open();
+
+                using (SqliteCommand cmd = new SqliteCommand(cmdString, con))
+                {
+                    using (SqliteDataReader dr = cmd.ExecuteReader())
+                    {
+                        while (dr.Read())
+                        {
+                            int count = dr.FieldCount;
+                            List<object> data = new List<object>();
+                            for (int i=0;i<count;i++)
+                            {
+                                data.Add(dr[i]);
+                            }
+                            result.Add(data);
+                            n++;
+                        }
+                    }
+                }
+
+                con.Close();
+            }
+            return result;
+        }
+
+
 
         public void MapUser(SqliteDataReader dr)
         {
@@ -166,14 +229,76 @@ namespace WordSimilarityLib
             return true;
         }
 
+        public int CreateDeck(UserProfile user, int shared)
+        {
+            string cmdString = "INSERT INTO decks ( name,  ownerid ,   userid,  max_new_word, shared ) "
+                            + $" VALUES ( 0, '{user.DeckName}', '{user.Id}', '{user.Id}','{user.MaxNewWord}', '{shared}' ) ";
+            ExecuteNonQuery(cmdString);
+            user.DeckId = GetLastRowId();
+            return user.DeckId;
+        }
+
+        public bool CreateDeck(UserProfile user, List<Word> wordList, int shared)
+        {
+            if(user.DeckId<0)
+            {
+                user.DeckId = CreateDeck(user, shared);
+            }
+
+            string[] columns = new string[] { "userid", "deckid", "name", "frequency", "pronounciation", "similar_words", "meaning", "start_time", "study_time", "interval", "easiness" };
+
+            using (SqliteConnection con = new SqliteConnection(_connString))
+            {
+                using (var transaction = con.BeginTransaction())
+                {
+                    var command = con.CreateCommand();
+                    command.CommandText = @" INSERT INTO  words (" + string.Join(',', columns) + " )  VALUES ( ";
+                    var paras = from c in columns select '$' + c;
+                    command.CommandText += string.Join(',', paras);
+                    foreach (var c in columns)
+                    {
+                        var parameter = command.CreateParameter();
+                        parameter.ParameterName = "$"+c;
+                        if (c == "userid") parameter.Value = user.Id;
+                        else if (c == "deckid") parameter.Value = user.DeckId;
+                        command.Parameters.Add(parameter);
+                    }
+
+                    // Insert a lot of data
+                    for (int i = 0; i < wordList.Count; i++)
+                    {
+                        for (int c = 0; c < command.Parameters.Count; c++)
+                        {
+                            var p = command.Parameters[c];
+                            if (p.ParameterName == "$name") command.Parameters[c].Value = wordList[i].name;
+                            else if (p.ParameterName == "$frequency") command.Parameters[c].Value = wordList[i].frequency;
+                            else if (p.ParameterName == "$pronounciation") command.Parameters[c].Value = wordList[i].pronounciation;
+                            else if (p.ParameterName == "$similar_words") command.Parameters[c].Value = wordList[i].similarWords;
+                            else if (p.ParameterName == "$meaning") command.Parameters[c].Value = wordList[i].meaningShort;
+                            else if (p.ParameterName == "$start_time") command.Parameters[c].Value = wordList[i].startTime;
+                            else if (p.ParameterName == "$study_time") command.Parameters[c].Value = wordList[i].viewTime;
+                            else if (p.ParameterName == "$interval") command.Parameters[c].Value = wordList[i].viewInterval;
+                            else if (p.ParameterName == "$easiness") command.Parameters[c].Value = wordList[i].easiness;
+                            else command.Parameters[c].Value = "";
+
+                        }
+                        command.ExecuteNonQuery();
+                    }
+
+                    transaction.Commit();
+                }
+            }
+            return true;
+        }
+
         public bool CreateDb()
         {
             // create User tabl
             string cmdString = "CREATE TABLE IF NOT EXISTS users ( Id INTERGER PRIMARY KEY,  email TEXT, username TEXT, password TEXT, firstname TEXT, lastname TEXT, deckid INT, create_time TEXT, last_login_time TEXT ) ";
             ExecuteNonQuery(cmdString);
-            cmdString = "CREATE TABLE IF NOT EXISTS decks ( name TEXT PRIMARY KEY,  ownerid INTERGER ,   userid INT, max_new_word INT ) ";
+            cmdString = "CREATE TABLE IF NOT EXISTS decks ( name TEXT ,  ownerid INTERGER , userid INT, max_new_word INT, shared INT ) ";
             ExecuteNonQuery(cmdString);
-            cmdString = "CREATE TABLE IF NOT EXISTS words (userid INT, deckid INT, TEXT, name TEXT PRIMARY KEY,  frequency INTERGER ,   pronounciation TEXT , similar_words TEXT,  meaning TEXT, start_time TEXT, study_time TEXT, interval INT, easiness INT ) ";
+            cmdString = "CREATE TABLE IF NOT EXISTS words (userid INT, deckid INT, name TEXT PRIMARY KEY,  frequency INTERGER ,   pronounciation TEXT , similar_words TEXT,  meaning TEXT, start_time TEXT, study_time TEXT, interval INT, easiness INT ) ";
             ExecuteNonQuery(cmdString);
             cmdString = "CREATE TABLE IF NOT EXISTS logs ( deck TEXT, name TEXT PRIMARY KEY,  study_time TEXT, interval INT, easiness INT ) WITHOUT ROWID;";
             ExecuteNonQuery(cmdString);
