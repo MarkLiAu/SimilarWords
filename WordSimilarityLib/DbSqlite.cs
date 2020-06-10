@@ -291,6 +291,7 @@ namespace WordSimilarityLib
                 }
             }
             sw.Stop();
+            CommTools.Logger.Log(2, $" load into sqlite, count={wordList.Count}, time(s):{sw.ElapsedMilliseconds / 1000}");
             return true;
         }
 

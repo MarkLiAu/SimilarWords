@@ -27,28 +27,6 @@ namespace SimilarWordWeb.Controllers
         }
 
 
-        // GET api/<controller>/5
-        [HttpGet("{name}")]
-        public List<Word> Get(string name)
-        {
-            try
-            {
-                WordDictionary wd = new WordDictionary();
-                if (WordDictionary.WordList.Count() <= 0)
-                    wd.ReadFile(Path.Combine(Directory.GetCurrentDirectory(), @"data\WordSimilarityList.txt"));
-
-                List<Word> result = wd.FindSimilarWords(name);
-
-
-                return result;
-            }
-            catch (Exception ex)
-            {
-                return new List<Word>() { new Word(name, -1, ex.Message + ex.StackTrace) };
-            }
-        }
-
-
         // POST api/<controller>
         [HttpPost]
         public string Post([FromBody] Word w)
@@ -57,13 +35,17 @@ namespace SimilarWordWeb.Controllers
         }
 
 
-
         [Authorize]
         [HttpPut("{cmd}")]
         public string Put(string cmd, [FromBody]string note)
         {
             try
             {
+                var user = User.ToString();
+
+                WordStudyModel wsModel = new WordStudyModel();
+
+
                 WordDictionary wd = new WordDictionary();
                 string userId = "markli";
                 string memoryMethod = "fib";

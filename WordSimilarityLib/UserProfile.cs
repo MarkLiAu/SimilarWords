@@ -13,6 +13,8 @@ namespace WordSimilarityLib
         public string Password { get; set; }
         // public string Token { get; set; }
 
+        public string dbType { get; set; }         // FILE:filename or Sqlite:connString or SQL:connstring or MySqlInAPP:connectstring, etc. 
+
         public string Email { get; set; }
         public int DeckId { get; set; }         // current deck ID
 

@@ -14,7 +14,11 @@ namespace SimilarWordWeb
     {
         public static void Main(string[] args)
         {
+            CommTools.Logger.Init(Path.Combine(Directory.GetCurrentDirectory(), @"data\AppLog.txt"), 0);  // level 0 : every thing, level 2: for production
+            CommTools.Logger.Log(2, "SimilarWordWeb Main Start  ");
+
             CreateWebHostBuilder(args).Build().Run();
+
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
