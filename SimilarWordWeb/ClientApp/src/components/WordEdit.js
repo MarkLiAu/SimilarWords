@@ -33,7 +33,7 @@ const EditWord = (props) => {
             }
         })
             .then(response => response.json())
-            .then(json => { console.log(json); setResult('update finished'); })
+            .then(json => { console.log(json); setResult(`update result:${json.name}:${json.meaningShort}`); })
     }
 
     const CallDeleteApi = (e) => {

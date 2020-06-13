@@ -10014,3 +10014,4 @@ furry	/ˈfɜːri/		8888	flurry hurry ferry fury curry  	covered with fur					0	-
 synchronous	 /ˈsɪŋkrənəs/		8888	asynchronous	happen at the same time or work at the same speed					-8586102008139125300	-1	0	0	-8586102008139125280
 duality	 /djuˈæləti /		8888	quality dual	 noun for dual ( double)  uncountable]					-8586102008139125260	-1	0	0	-8586102008139125240
 sequential	 /sɪˈkwenʃəl/ 		8888		relating to or happening in a sequence					-8586102008139125217	-1	0	0	-8586102008139125197
+coke			8888	choke come code core joke cake cope poke cone  	drink					0	-2147483648	-2147483648	-2147483648	0

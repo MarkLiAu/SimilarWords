@@ -273,8 +273,8 @@ namespace WordSimilarityLib
         {
             if (word == null || string.IsNullOrWhiteSpace(word.name)) return false;
             if (string.IsNullOrWhiteSpace(dataFile)) return false;
+            if (!WordList.ContainsKey(word.name.ToLower())) return UpdateWord(word);
             Word originWord = WordList[word.name.ToLower()];
-            if (originWord == null) return UpdateWord(word);
 
             if(part=="memory")
             {

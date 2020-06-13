@@ -84,11 +84,11 @@ namespace SimilarWordWeb.Controllers
                     wd.ReadFile(Path.Combine(Directory.GetCurrentDirectory(), @"data\WordSimilarityList.txt"));
 
                 if (word.similarWords == "") word.similarWords = wd.FindSimilarWord(word.name) + " ";   // put a space at the end, so no need to search next time
-                Word originWord = WordDictionary.WordList[word.name.ToString().Trim()];
-                if(originWord!=null)
-                {
-                    word.viewInterval = originWord.viewInterval;        // because when editing during memory, interval is changed to next interval
-                }
+                //Word originWord = WordDictionary.WordList[word.name.ToString().Trim()];
+                //if(originWord!=null)
+                //{
+                //    word.viewInterval = originWord.viewInterval;        // because when editing during memory, interval is changed to next interval
+                //}
                 if (wd.UpdateWordPart(word,"meaning")) return word;
 
                 return new Word("ERROR", -1, "failed to update");
