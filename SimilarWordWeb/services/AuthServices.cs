@@ -61,7 +61,11 @@ namespace SimilarWordWeb.auth
             {
                 Subject = new ClaimsIdentity(new Claim[]
                 {
-                    new Claim(ClaimTypes.Name, user.Id.ToString())
+                    new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                    new Claim(ClaimTypes.GivenName,user.FirstName),
+                    new Claim(ClaimTypes.Surname, user.LastName),
+                    new Claim(ClaimTypes.Email,user.Username),
+                    
                 }),
                 Expires = DateTime.UtcNow.AddDays(7),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
@@ -75,6 +79,26 @@ namespace SimilarWordWeb.auth
             return user;
         }
 
+        ////Authentication successful, Issue Token with user credentials 
+        ////Provide the security key which is given in 
+        ////Startup.cs ConfigureServices() method 
+        //var key = Encoding.ASCII.GetBytes
+        //("YourKey-2374-OFFKDI940NG7:56753253-tyuw-5769-0921-kfirox29zoxv");
+        ////Generate Token for user 
+        //var JWToken = new JwtSecurityToken(
+        //    issuer: "http://localhost:45092/",
+        //    audience: "http://localhost:45092/",
+        //    claims: GetUserClaims(user),
+        //    notBefore: new DateTimeOffset(DateTime.Now).DateTime,
+        //    expires: new DateTimeOffset(DateTime.Now.AddDays(1)).DateTime,
+        //    //Using HS256 Algorithm to encrypt Token  
+        //    signingCredentials: new SigningCredentials
+        //    (new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+        //);
+        //var token = new JwtSecurityTokenHandler().WriteToken(JWToken);
+        //        return token;
+
+
         public IEnumerable<User> GetAll()
         {
             // return users without passwords
@@ -83,5 +107,6 @@ namespace SimilarWordWeb.auth
                 return x;
             });
         }
+
     }
 }

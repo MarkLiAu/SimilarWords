@@ -31,5 +31,10 @@ namespace WordSimilarityLib
         {
             return _db.CreateDb();
         }
+
+        public string ProcessAdmin(string cmd)
+        {
+            return $"OK: now={DateTime.Now}, UTCNow={DateTime.UtcNow}";
+        }
     }
 }
