@@ -16,6 +16,7 @@ namespace ConsoleCore
 
         static void testWordSimilarity()
         {
+            WordSimilarityLib.WordStudyModel model = new WordSimilarityLib.WordStudyModel();
             WordSimilarityLib.WordDictionary wordDictionary = new WordSimilarityLib.WordDictionary();
 
             wordDictionary.test1(@"..\..\..\data");

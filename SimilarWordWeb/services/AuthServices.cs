@@ -7,6 +7,7 @@ using System.Text;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
+using WordSimilarityLib;
 
 namespace SimilarWordWeb.auth
 {
@@ -15,7 +16,7 @@ namespace SimilarWordWeb.auth
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string Username { get; set; }
+        public string Email { get; set; }
         public string Password { get; set; }
         public string Token { get; set; }
     }
@@ -27,7 +28,7 @@ namespace SimilarWordWeb.auth
 
     public interface IUserService
     {
-        User Authenticate(string username, string password);
+        User Authenticate(string Email, string password);
         IEnumerable<User> GetAll();
     }
 
@@ -36,7 +37,7 @@ namespace SimilarWordWeb.auth
         // users hardcoded for simplicity, store in a db with hashed passwords in production applications
         private List<User> _users = new List<User>
         {
-            new User { Id = 1, FirstName = "Mark", LastName = "Li", Username = "markli", Password = "test" }
+            new User { Id = 1, FirstName = "Mark", LastName = "Li", Email = "markli", Password = "test" }
         };
 
         private readonly AppSettings _appSettings;
@@ -46,13 +47,16 @@ namespace SimilarWordWeb.auth
             _appSettings = appSettings.Value;
         }
 
-        public User Authenticate(string username, string password)
+        public User Authenticate(string Email, string password)
         {
-            var user = _users.SingleOrDefault(x => x.Username == username && x.Password == password);
-
-            // return null if user not found
-            if (user == null)
-                return null;
+            WordStudyModel model = new WordStudyModel();
+            UserProfile userProfile = model.GetUserProfile(Email);
+            if (userProfile == null || userProfile.Password != password) return null;
+            User user = new User();
+            user.Id = userProfile.Id;
+            user.FirstName = userProfile.FirstName;
+            user.LastName = userProfile.LastName;
+            user.Email = userProfile.Email;
 
             // authentication successful so generate jwt token
             var tokenHandler = new JwtSecurityTokenHandler();
@@ -64,7 +68,7 @@ namespace SimilarWordWeb.auth
                     new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
                     new Claim(ClaimTypes.GivenName,user.FirstName),
                     new Claim(ClaimTypes.Surname, user.LastName),
-                    new Claim(ClaimTypes.Email,user.Username),
+                    new Claim(ClaimTypes.Email,user.Email),
                     
                 }),
                 Expires = DateTime.UtcNow.AddDays(7),

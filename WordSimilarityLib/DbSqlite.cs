@@ -160,7 +160,7 @@ namespace WordSimilarityLib
 
         public UserProfile GetUserProfile(string userKey)
         {
-            string cmdString = $"SELECT * FROM users WHERE email='{userKey}'";
+            string cmdString = $"SELECT * FROM users WHERE email=\"{userKey}\"";
             userList.Clear();
             int n = GetData(cmdString, MapUser);
             if (n<=0) return null;
@@ -238,7 +238,7 @@ namespace WordSimilarityLib
             return user.DeckId;
         }
 
-        public bool CreateDeck(UserProfile user, List<Word> wordList, int shared)
+        public bool CreateDeck(UserProfile user, Dictionary<string, Word> wordList, int shared)
         {
             if(user.DeckId<0)
             {
@@ -267,20 +267,20 @@ namespace WordSimilarityLib
                     }
 
                     // Insert a lot of data
-                    for (int i = 0; i < wordList.Count; i++)
+                    foreach(var d in wordList)
                     {
                         for (int c = 0; c < command.Parameters.Count; c++)
                         {
                             var p = command.Parameters[c];
-                            if (p.ParameterName == "$name") command.Parameters[c].Value = wordList[i].name;
-                            else if (p.ParameterName == "$frequency") command.Parameters[c].Value = wordList[i].frequency;
-                            else if (p.ParameterName == "$pronounciation") command.Parameters[c].Value = wordList[i].pronounciation;
-                            else if (p.ParameterName == "$similar_words") command.Parameters[c].Value = wordList[i].similarWords;
-                            else if (p.ParameterName == "$meaning") command.Parameters[c].Value = wordList[i].meaningShort;
-                            else if (p.ParameterName == "$start_time") command.Parameters[c].Value = wordList[i].startTime;
-                            else if (p.ParameterName == "$study_time") command.Parameters[c].Value = wordList[i].viewTime;
-                            else if (p.ParameterName == "$interval") command.Parameters[c].Value = wordList[i].viewInterval;
-                            else if (p.ParameterName == "$easiness") command.Parameters[c].Value = wordList[i].easiness;
+                            if (p.ParameterName == "$name") command.Parameters[c].Value = d.Value.name;
+                            else if (p.ParameterName == "$frequency") command.Parameters[c].Value = d.Value.frequency;
+                            else if (p.ParameterName == "$pronounciation") command.Parameters[c].Value = d.Value.pronounciation;
+                            else if (p.ParameterName == "$similar_words") command.Parameters[c].Value = d.Value.similarWords;
+                            else if (p.ParameterName == "$meaning") command.Parameters[c].Value = d.Value.meaningShort;
+                            else if (p.ParameterName == "$start_time") command.Parameters[c].Value = d.Value.startTime;
+                            else if (p.ParameterName == "$study_time") command.Parameters[c].Value = d.Value.viewTime;
+                            else if (p.ParameterName == "$interval") command.Parameters[c].Value = d.Value.viewInterval;
+                            else if (p.ParameterName == "$easiness") command.Parameters[c].Value = d.Value.easiness;
                             else command.Parameters[c].Value = "";
 
                         }
@@ -298,7 +298,7 @@ namespace WordSimilarityLib
         public bool CreateDb()
         {
             // create User tabl
-            string cmdString = "CREATE TABLE IF NOT EXISTS users ( Id INTERGER PRIMARY KEY,  email TEXT, username TEXT, password TEXT, firstname TEXT, lastname TEXT, deckid INT, create_time TEXT, last_login_time TEXT ) ";
+            string cmdString = "CREATE TABLE IF NOT EXISTS users ( Id INTERGER PRIMARY KEY,  email TEXT, username TEXT, password TEXT, firstname TEXT, lastname TEXT,max_new_word INT, deckid INT, create_time TEXT, last_login_time TEXT ) ";
             ExecuteNonQuery(cmdString);
             cmdString = "CREATE TABLE IF NOT EXISTS decks ( name TEXT ,  ownerid INTERGER , userid INT, max_new_word INT, shared INT ) ";
             ExecuteNonQuery(cmdString);

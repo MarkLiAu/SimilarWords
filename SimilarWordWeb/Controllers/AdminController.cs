@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using System.IO;
 using WordSimilarityLib;
+using System.Security.Claims;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -34,17 +35,16 @@ namespace SimilarWordWeb.Controllers
             return "Got ";
         }
 
-
         [Authorize]
         [HttpPut("{cmd}")]
         public string Put(string cmd, [FromBody]string note)
         {
             try
             {
-                var user = User.ToString();
+                //var user = User.ToString();
 
                 WordStudyModel wsModel = new WordStudyModel();
-
+                wsModel.GetAuthorizedUser((ClaimsIdentity)User.Identity);
 
                 WordDictionary wd = new WordDictionary();
                 string userId = "markli";
@@ -63,6 +63,12 @@ namespace SimilarWordWeb.Controllers
                     return "OK:" + DateTime.Now.ToString();
                 }
                 else if (cmd.ToLower() == "fixmemory")
+                {
+                    wsModel._user.DeckId = -1;
+                    wsModel.CreateDeck(WordDictionary.WordList);
+                    return "OK:" + DateTime.Now.ToString();
+                }
+                else if (cmd.ToLower() == "fixmemory_OLD")
                 {
                     foreach (var d in WordDictionary.WordList) d.Value.totalViewed = int.MinValue;
                     memoryFib.ReadMemoryLog();

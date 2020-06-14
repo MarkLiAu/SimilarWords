@@ -12,6 +12,7 @@ import WordMemory from './components/WordMemory';
 import Admin from './components/Admin';
 import { MemoryLog } from './components/MemoryLog';
 import Userlogin from './components/UserLogin';
+import UserRegister from './components/UserRegister';
 
 export default class App extends Component {
   displayName = App.name
@@ -31,6 +32,7 @@ export default class App extends Component {
             <Route path='/admin/:cmd' component={Admin} />
             <Route path='/MemoryLog' component={MemoryLog} />
             <Route path='/login' component={Userlogin} />
+            <Route path='/Register' component={UserRegister} />
             <Route path='/bootstraptest1' component={BootstrapTest1} />
             <Route path='/*' component={NotFound} />
         </Switch>

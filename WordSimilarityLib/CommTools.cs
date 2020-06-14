@@ -6,6 +6,7 @@ using System.Runtime.CompilerServices;
 
 namespace CommTools
 {
+
     public class Logger
     {
         public static string _filename { get; set; }
@@ -44,8 +45,49 @@ namespace CommTools
 
             }
         }
-        
+
+        // c# in dept
+        //public sealed class Singleton
+        //{
+        //    private static readonly Lazy<Singleton>
+        //        lazy =
+        //        new Lazy<Singleton>
+        //            (() => new Singleton());
+
+        //    public static Singleton Instance { get { return lazy.Value; } }
+
+        //    private Singleton()
+        //    {
+        //    }
+        //}
+
+
     }
 
+    public abstract class BaseSingleton<T> where T : BaseSingleton<T>
+    {
+        private static readonly Lazy<T> Lazy =
+            new Lazy<T>(() => Activator.CreateInstance(typeof(T), true) as T);
+
+        public static T Instance => Lazy.Value;
+    }
+
+    //Child Class
+
+    //public sealed class MyChildSingleton : BaseSingleton<MyChildSingleton>
+    //{
+    //    private MyChildSingleton() { }
+    //}
+
+    public class Singleton<T> where T : class, new()
+    {
+        private Singleton() { }
+
+        private static readonly Lazy<T> instance = new Lazy<T>(() => Activator.CreateInstance(typeof(T), true) as T);
+
+        public static T Instance { get { return instance.Value; } }
+    }
+    //Usage pattern:
+    //var journalSingleton = Singleton<JournalClass>.Instance;
 
 }

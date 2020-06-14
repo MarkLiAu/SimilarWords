@@ -1,34 +1,29 @@
 ﻿import React, { Fragment, useState } from 'react';
 import { Form, FormControl, FormGroup, ControlLabel, Col, Button, Label } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { resetWarningCache } from 'prop-types';
 
-const UserLogin = ({ name, location,history }) => {
+const UserRegister = ({ name, location, history }) => {
     // Declare a new state variable, which we'll call "count"
-    const [word, setWord] = useState({ Email: '', Password: '' });
+    const [inputFields, SetInputFields] = useState({ Email: '', Password: '',FirstName:'',LastName:'' });
     const [result, setResult] = useState('');
 
     const CallUpdateApi = (e) => {
         //alert("in CallUpdateApi");
         console.log("UserLogin CallUpdateApi");
-        console.log(word);
+        console.log(inputFields);
         e.preventDefault();
-        fetch('api/users/authenticate', {
+        fetch('api/users/register', {
             method: 'POST',
-            body: JSON.stringify(word),
+            body: JSON.stringify(inputFields),
             headers: {
                 'Content-Type': 'application/json'
             }
         })
-            .then(response => response.json())
-            .then(user => {
-                console.log(user);
-                if (user.id >= 0) {
-                    localStorage.setItem('SimilarWordUser', JSON.stringify(user));
-                    history.push('/');
-                }
-                else {
-                    setResult("Log in failed, please try again.");
-                }
+            .then(response => response.text())
+            .then(resp => {
+                console.log(resp);
+                setResult(resp);
+                //localStorage.setItem('SimilarWordUser', JSON.stringify(user));
             })
     }
 
@@ -53,8 +48,8 @@ const UserLogin = ({ name, location,history }) => {
         console.log(e.target);
         console.log(e.target.name);
         console.log(e.target.value);
-        word[e.target.name] = e.target.value;
-        setWord(word);
+        inputFields[e.target.name] = e.target.value;
+        SetInputFields(inputFields);
         setResult('');
     }
 
@@ -63,16 +58,17 @@ const UserLogin = ({ name, location,history }) => {
         <Fragment>
             <Form horizontal onSubmit={this.CallUpdateApi} >
                 <h3 >Login</h3>
-                <FormField type='text' label="User Name" name="Email" onChangeHandle={handleChange} val={word.Email} ></FormField>
-                <FormField type='text' label="Password" name="Password" onChangeHandle={handleChange} val={word.Password} ></FormField>
+                <FormField type='text' label="First Name" name="firstName" onChangeHandle={handleChange} val={inputFields.FirstName} ></FormField>
+                <FormField type='text' label="Last Name" name="lastName" onChangeHandle={handleChange} val={inputFields.LastName} ></FormField>
+                <FormField type='text' label="Email" name="Email" onChangeHandle={handleChange} val={inputFields.Email} ></FormField>
+                <FormField type='text' label="Password" name="Password" onChangeHandle={handleChange} val={inputFields.Password} ></FormField>
 
                 <label>{result}</label>
                 <FormGroup>
                     <Col smOffset={2} sm={8}>
-                        <button className="primary" onClick={CallUpdateApi}>Login</button>
+                        <button className="primary" onClick={CallUpdateApi}>Creat</button>
                     </Col>
                 </FormGroup>
-                <Link to="/Register">Register</Link>
             </Form>
 
 
@@ -83,4 +79,4 @@ const UserLogin = ({ name, location,history }) => {
 }
 
 
-export default UserLogin;
+export default UserRegister;

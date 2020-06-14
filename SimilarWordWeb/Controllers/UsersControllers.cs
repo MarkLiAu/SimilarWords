@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using System.IO;
 using SimilarWordWeb.auth;
+using WordSimilarityLib;
 
 namespace SimilarWordWeb.Controllers
 {
@@ -25,12 +26,27 @@ namespace SimilarWordWeb.Controllers
         [HttpPost("authenticate")]
         public IActionResult Authenticate([FromBody]User userParam)
         {
-            var user = _userService.Authenticate(userParam.Username, userParam.Password);
+            var user = _userService.Authenticate(userParam.Email, userParam.Password);
 
             if (user == null)
                 return BadRequest(new { message = "Username or password is incorrect" });
 
             return Ok(user);
+        }
+
+        [AllowAnonymous]
+        [HttpPost("register")]
+        public IActionResult Register([FromBody]UserProfile userParam)
+        {
+            WordStudyModel study = new WordStudyModel();
+            if(study.CreateUser(userParam))
+            {
+                return Ok("OK: User created, please login");
+            }
+            else
+            {
+                return Ok("Error: failed to create user");
+            }
         }
 
         [HttpGet]
