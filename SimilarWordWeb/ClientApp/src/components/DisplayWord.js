@@ -44,7 +44,7 @@ const DisplayWord = ({ word, idx, handleWordClicked,hideMemoryButton, hideEditBu
 
             <Panel.Body>
                     <WordInfoDisplay word={word} hideEditButton={hideEditButton} handleWordClicked={handleWordClicked} ></WordInfoDisplay>
-                    <button hidden={word.viewInterval >= -1 || hideMemoryButton } onClick={CallUpdateApi}>Start Memory</button>
+                    <button hidden={word.viewInterval >= -1 || hideMemoryButton } onClick={CallUpdateApi}>Start Study</button>
                 </Panel.Body>
                 </Panel.Collapse>
         </Panel>

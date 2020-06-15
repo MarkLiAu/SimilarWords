@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Col, Grid, Row,Checkbox, Panel, PanelGroup } from 'react-bootstrap';
 import DisplayWord from './DisplayWord';
 import { DashBoard } from './DashBoard';
-import { GetLoginUser } from './CommTools';
+import { GetLoginUser, GetTokenHeader } from './CommTools';
 
 const ShowListComp = ({ maxFeq, list, handleWordClicked }) => {
     console.log('ShowList in WordSearch');
@@ -55,8 +55,9 @@ export class WordSearch extends Component {
             prevW = prevProps.match.params.name;
 
         console.log('wordsearch didupdate, w=' + w + ', prev=' + prevW);
-        if(w.trim()!=='' && w!==prevW) {
-            //this.state = { word2search: w, wordInput: w, frequency: 10000, activeKey: '0' };
+        console.log('1st word in list:' + this.state.words[0].name);
+        if (w.trim() !== '' && this.state.words && this.state.words.length > 0 && this.state.words[0].name === w) { console.log("first word is already here, no need to search again");}
+        else if(w.trim()!=='' && w!==prevW) {
             this.SearchWord(w,false);
         }
     }
@@ -74,7 +75,12 @@ export class WordSearch extends Component {
         //if (word === this.state.word2search) return;
         //return;
         console.log('WordSearch Start fetch:');
-        fetch('api/Words/' + word)
+        fetch('api/Words/' + word, {
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': GetTokenHeader()
+                }
+            })
             .then(response => response.json())
             .then(data => {
                 console.log('fetch back');

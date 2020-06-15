@@ -21,7 +21,7 @@ const Admin = ({ cmd,location,history}) => {
                 if (!response.ok) throw new Error("Failed to load:(" + response.status.toString() + ") " + response.statusText);
                 response.text()
             })
-            .then(data => { console.log(data); setResult("Ok"); localStorage.setItem('SimilarWordUser', JSON.stringify(data) ) })
+            .then(data => { console.log(data); setResult("Ok"); })
             .catch((error) => {
                 console.error('Error:', error);
                 setResult(error.message); 

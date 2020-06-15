@@ -21,6 +21,7 @@ namespace WordSimilarityLib
         public string meaningOther { get; set; }        // meaning in other language
         public string soundUrl { get; set; }
         public string exampleSoundUrl { get; set; }
+        public int id { get; set; }
 
         // fields for viewing
         public DateTime viewTime { get; set; }
@@ -83,6 +84,35 @@ namespace WordSimilarityLib
             totalViewed = word.totalViewed;
 
         }
+        public static double WordCompare(string word1, string word2)
+        {
+            if (string.IsNullOrWhiteSpace(word1)) return 0;
+            if (string.IsNullOrWhiteSpace(word2)) return 0;
+            // same word
+            if (word1 == word2) return 1.0;
+            // contains
+            if (word1.Contains(word2)) return word2.Length * 1.0 / word1.Length;
+            if (word2.Contains(word1)) return word1.Length * 1.0 / word2.Length;
+
+            // same characters
+            string s1 = String.Concat(word1.OrderBy(c => c));
+            string s2 = String.Concat(word2.OrderBy(c => c));
+            if (s1 == s2) return 0.85;
+
+            // check similarity from start and end
+            int sameFront = 0;
+            for (int i = 0; i < word1.Length && i < word2.Length; i++)
+                if (word1[i] == word2[i]) sameFront++;
+                else break;
+
+            int sameBack = 0;
+            for (int i = word1.Length - 1, j = word2.Length - 1; i >= sameFront && j >= sameFront; i--, j--)
+                if (word1[i] == word2[j]) sameBack++;
+                else break;
+
+            return (sameFront + sameBack) * 1.0 / Math.Max(word1.Length, word2.Length);
+        }
+
 
     }
     public class WordDictionary

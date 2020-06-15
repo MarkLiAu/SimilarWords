@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using WordSimilarityLib;
 using System.IO;
+using System.Security.Claims;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -23,11 +24,17 @@ namespace SimilarWordWeb.Controllers
 
 
         // GET api/<controller>/5
+        [Authorize]
         [HttpGet("{name}")]
         public List<Word> Get(string name)
         {
             try
             {
+                WordStudyModel wsModel = new WordStudyModel();
+                wsModel.GetAuthorizedUser((ClaimsIdentity)User.Identity);
+
+                if (wsModel._db != null) return wsModel.FindSimilarWords(name);
+
                 WordDictionary wd = new WordDictionary();
                 if (WordDictionary.WordList.Count <= 0)
                     wd.ReadFile(Path.Combine(Directory.GetCurrentDirectory(), @"data\WordSimilarityList.txt"));
@@ -42,7 +49,7 @@ namespace SimilarWordWeb.Controllers
             }
             catch (Exception ex)
             {
-                return new List<Word>() { new Word(name,-1,ex.Message+ex.StackTrace) };
+                return new List<Word>() { new Word(name, -1, ex.Message + ex.StackTrace) };
             }
         }
 
@@ -79,6 +86,12 @@ namespace SimilarWordWeb.Controllers
         {
             try
             {
+
+                WordStudyModel wsModel = new WordStudyModel();
+                wsModel.GetAuthorizedUser((ClaimsIdentity)User.Identity);
+
+                if (wsModel._db != null) return wsModel.UpdateWordPart(word,"meaning");
+
                 WordDictionary wd = new WordDictionary();
                 if (WordDictionary.WordList.Count() <= 0)
                     wd.ReadFile(Path.Combine(Directory.GetCurrentDirectory(), @"data\WordSimilarityList.txt"));

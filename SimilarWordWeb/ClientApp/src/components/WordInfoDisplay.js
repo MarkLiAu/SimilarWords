@@ -91,7 +91,7 @@ const WordInfoDisplay = ({ word,hideEditButton, handleWordClicked=null}) => {
 
 const WordReviewInfo = ({ word }) => {
     let infoList = [];
-    infoList.push({ title: 'Total viewed', value: word.totalViewed + (word.totalViewed<=0 && word.viewInterval>=-1? ' (in memory list)':'') });
+    infoList.push({ title: 'Total viewed', value: word.totalViewed + (word.totalViewed<=0 && word.viewInterval>=-1? ' (in study list)':'') });
     //if (word.totalViewed > 0)
     {
         infoList.push({ title: 'Start Time', value: new Date(word.startTime).toLocaleString() });
