@@ -116,6 +116,7 @@ namespace WordSimilarityLib
                 else if (c.Type == ClaimTypes.GivenName) userProfile.FirstName = c.Value;
                 else if (c.Type == ClaimTypes.Surname) userProfile.LastName = c.Value;
             }
+            if (userProfile.DeckId < 1) userProfile.DeckId = 1;
             _user = userProfile;
             return userProfile;
         }
@@ -150,6 +151,117 @@ namespace WordSimilarityLib
             _user.DeckName = "Top 10000 Word";
             return _db.CreateDeck(_user, wordList, shared);
         }
+
+
+
+
+
+        /// <summary>
+        /// study
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+
+        public string StartNewItem(string name)
+        {
+            List<Word> originList = _db.Getwords(_user.Id, _user.DeckId, name);
+            if (originList.Count <= 0) return "Error: can't find word: " + name;
+            Word w = originList[0];
+            if (w.viewInterval != int.MinValue) return "Error: already started word:"+name;        // already started
+
+            w.viewTime = DateTime.Now;
+            w.viewInterval = -1;
+            w.totalViewed = 0;
+            w.startTime = DateTime.Now;
+
+            UpdateWordPart(w,"memory");
+//            AddMemoryLog(w);
+
+            return "OK";
+
+        }
+
+        public string UpdateMemoryItem(Word wordNew)
+        {
+            if (wordNew.viewInterval == -1) return StartNewItem(wordNew.name);
+
+            List<Word> originList = _db.Getwords(_user.Id, _user.DeckId, wordNew.name);
+            if (originList.Count <= 0) return "Error: can't fine word:"+wordNew.name;
+            Word w = originList[0];
+
+            if (w.viewInterval < 0) w.startTime = DateTime.Now;   // this is 1st time view
+
+            w.viewTime = DateTime.Now;
+            w.viewInterval = wordNew.viewInterval;
+            w.easiness = wordNew.easiness;
+            if (w.totalViewed < 0) w.totalViewed = 1;
+            else w.totalViewed++;
+
+            //            if (w.startTime == DateTime.MinValue) w.startTime = w.viewTime;     // something wrong
+
+            UpdateWordPart(w,"memory");
+//            AddMemoryLog(w);
+
+            return "OK";
+        }
+
+        public List<Word> getViewList()
+        {
+
+            List<Word> result = new List<Word>();
+
+            List<Word> originList = _db.Getwords(_user.Id, _user.DeckId);
+            if (originList.Count <= 0) return result;
+
+            int newItemCount = 0;
+            foreach (var w in originList)
+                if (w.is1stViewedToday()) newItemCount++;
+
+            foreach (var word in originList)
+            {
+                if (word.isNewItem())
+                {
+                    if (newItemCount >= _user.MaxNewWord) continue;
+                    result.Add(new Word(word));
+                    newItemCount++;
+                }
+                else if (word.isDue())
+                {
+                    result.Add(new Word(word));
+                }
+            }
+
+            // calculate next interval
+            foreach (var w in result)
+            {
+                w.viewInterval = CalculateNextInterval(w);
+            }
+            return result;
+        }
+
+
+        // calculate next interval
+        public int CalculateNextInterval(Word word)
+        {
+            int newVal = word.viewInterval;
+            if (word.viewInterval < 0)
+            {
+                newVal = 0;
+            }
+            else if (word.viewInterval == 0)
+            {
+                if (word.totalViewed <= 0) newVal = 0;  // first time viewed
+                else newVal = 1;
+            }
+            else
+            {
+                double v = word.viewInterval * 1.618;
+                newVal = Convert.ToInt32(v);
+                if (newVal < 1) newVal = 1;
+            }
+            return newVal;
+        }
+
 
     }
 }
