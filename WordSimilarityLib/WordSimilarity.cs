@@ -113,6 +113,26 @@ namespace WordSimilarityLib
             return (sameFront + sameBack) * 1.0 / Math.Max(word1.Length, word2.Length);
         }
 
+        public bool isNewItem()
+        {
+            return viewInterval == -1;
+        }
+
+        public bool isDue()
+        {
+            if (viewInterval <= -1) return false;     // not start yet, also exclude new word (==-1)
+            //if (word.viewInterval==0 && word.totalViewed == 1 && word.viewTime.AddMinutes(5) > DateTime.Now) return true;     // first time, due after 5 minutes
+            if (DateTime.Now.Hour >= 6 && viewTime.AddDays(viewInterval) <= DateTime.Today.AddHours(23)) return true; // in the morning, 
+            return viewTime.AddDays(viewInterval) <= DateTime.Now;
+        }
+
+        // check is the word is 1st time viewed today
+        public bool is1stViewedToday()
+        {
+            if (viewInterval <= -1) return false;     // not start yet, also exclude new word (==-1)
+            return startTime >= DateTime.Today;
+        }
+
 
     }
     public class WordDictionary

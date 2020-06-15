@@ -23,6 +23,7 @@ const UserLogin = ({ name, location,history }) => {
             .then(user => {
                 console.log(user);
                 if (user.id >= 0) {
+                    if (user.DeckId < 1) user.DeckId = 1;
                     localStorage.setItem('SimilarWordUser', JSON.stringify(user));
                     history.push('/');
                 }

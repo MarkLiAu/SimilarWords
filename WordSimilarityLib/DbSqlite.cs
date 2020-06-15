@@ -236,6 +236,7 @@ namespace WordSimilarityLib
             data.viewTime = Convert.ToDateTime(dr[idx++]);
             data.viewInterval = Convert.ToInt32(dr[idx++]);
             data.easiness = Convert.ToInt32(dr[idx++]);
+            data.totalViewed = Convert.ToInt32(dr[idx++]);
             wordList.Add(data);
         }
 
@@ -273,9 +274,9 @@ namespace WordSimilarityLib
 
         public Word InsertWord(int userid, int deckid, Word word)
         {
-            string cmdString = "INSERT INTO words (userid, deckid, name, frequency, pronounciation, similar_words, meaning, start_time, study_time, interval, easiness) "
-                            + $" VALUES ({userid},{deckid},'{word.name}','{word.frequency}','{word.pronounciation}','{word.similarWords}','{word.meaningShort}','{word.startTime.ToString()}','{word.viewTime.ToString()}',{word.viewInterval},{word.easiness}  ) ";
-            ExecuteNonQuery(cmdString);
+            string cmdString = "INSERT INTO words (userid, deckid, name, frequency, pronounciation, similar_words, meaning, start_time, study_time, interval, easiness,total_viewed) "
+                            + $" VALUES ({userid},{deckid},'{word.name.Replace("'","''")}','{word.frequency}','{word.pronounciation.Replace("'", "''")}','{word.similarWords.Replace("'", "''")}','{word.meaningShort.Replace("'", "''")}','{word.startTime.ToString()}','{word.viewTime.ToString()}',{word.viewInterval},{word.easiness},{word.totalViewed}  ) ";
+            int rc=ExecuteNonQuery(cmdString);
             word.id = GetLastRowId();
             return word;
         }
@@ -284,10 +285,9 @@ namespace WordSimilarityLib
         {
             if (word.id <= 0) return InsertWord(userid, deckid, word);
 
-            string cmdString = $"UPDATE words SET name='{word.name}', frequency={word.frequency}, pronounciation='{word.pronounciation}', similar_words='{word.similarWords}', meaning='{word.meaningShort}', start_time='{word.startTime}', study_time='{word.viewTime}', interval={word.viewInterval}, easiness={word.easiness}  "
+            string cmdString = $"UPDATE words SET name='{word.name.Replace("'", "''")}', frequency={word.frequency}, pronounciation='{word.pronounciation.Replace("'", "''")}', similar_words='{word.similarWords.Replace("'", "''")}', meaning='{word.meaningShort.Replace("'", "''")}', start_time='{word.startTime}', study_time='{word.viewTime}', interval={word.viewInterval}, easiness={word.easiness},total_viewed={word.totalViewed}  "
                             + $" WHERE id= {word.id} AND userid = {userid} AND deckid={deckid} ";
-            ExecuteNonQuery(cmdString);
-            word.id = GetLastRowId();
+            int rc=ExecuteNonQuery(cmdString);
             return word;
         }
 
@@ -298,7 +298,7 @@ namespace WordSimilarityLib
                 user.DeckId = CreateDeck(user, shared);
             }
 
-            string[] columns = new string[] { "userid", "deckid", "name", "frequency", "pronounciation", "similar_words", "meaning", "start_time", "study_time", "interval", "easiness" };
+            string[] columns = new string[] { "userid", "deckid", "name", "frequency", "pronounciation", "similar_words", "meaning", "start_time", "study_time", "interval", "easiness","total_viewed" };
 
             System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
             sw.Start();
@@ -336,6 +336,7 @@ namespace WordSimilarityLib
                             else if (p.ParameterName == "$study_time") command.Parameters[c].Value = d.Value.viewTime;
                             else if (p.ParameterName == "$interval") command.Parameters[c].Value = d.Value.viewInterval;
                             else if (p.ParameterName == "$easiness") command.Parameters[c].Value = d.Value.easiness;
+                            else if (p.ParameterName == "$total_viewed") command.Parameters[c].Value = d.Value.totalViewed;
                             else command.Parameters[c].Value = "";
 
                         }
@@ -357,7 +358,7 @@ namespace WordSimilarityLib
             ExecuteNonQuery(cmdString);
             cmdString = "CREATE TABLE IF NOT EXISTS decks ( id INTEGER PRIMARY KEY, name TEXT ,  ownerid INT , userid INT, max_new_word INT, shared INT ) ";
             ExecuteNonQuery(cmdString);
-            cmdString = "CREATE TABLE IF NOT EXISTS words ( id INTEGER PRIMARY KEY, userid INT, deckid INT, name TEXT,  frequency INT ,   pronounciation TEXT , similar_words TEXT,  meaning TEXT, start_time TEXT, study_time TEXT, interval INT, easiness INT ) ";
+            cmdString = "CREATE TABLE IF NOT EXISTS words ( id INTEGER PRIMARY KEY, userid INT, deckid INT, name TEXT,  frequency INT ,   pronounciation TEXT , similar_words TEXT,  meaning TEXT, start_time TEXT, study_time TEXT, interval INT, easiness INT,total_viewed INT ) ";
             ExecuteNonQuery(cmdString);
             cmdString = "CREATE TABLE IF NOT EXISTS logs ( deck TEXT, name TEXT PRIMARY KEY,  study_time TEXT, interval INT, easiness INT ) WITHOUT ROWID;";
             ExecuteNonQuery(cmdString);

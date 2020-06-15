@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 using WordSimilarityLib;
 using System.IO;
 using System.Text;
+using System.Security.Claims;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -23,6 +24,11 @@ namespace SimilarWordWeb.Controllers
         [HttpGet]
         public IEnumerable<Word> Get()
         {
+            WordStudyModel wsModel = new WordStudyModel();
+            wsModel.GetAuthorizedUser((ClaimsIdentity)User.Identity);
+            if (wsModel._db != null) return wsModel.getViewList();
+
+
             WordDictionary wd = new WordDictionary();
             if (WordDictionary.WordList.Count() <= 0)
                 wd.ReadFile(Path.Combine(Directory.GetCurrentDirectory(), @"data\WordSimilarityList.txt"));
@@ -75,6 +81,10 @@ namespace SimilarWordWeb.Controllers
         {
             try
             {
+                WordStudyModel wsModel = new WordStudyModel();
+                wsModel.GetAuthorizedUser((ClaimsIdentity)User.Identity);
+                if (wsModel._db != null) return wsModel.UpdateMemoryItem(word);
+
                 int interval = word.viewInterval;
                 MemoryFibonacci memoryList = new MemoryFibonacci(@"data\menory_"+memoryMethod+userId+".txt");
                 int rt;
