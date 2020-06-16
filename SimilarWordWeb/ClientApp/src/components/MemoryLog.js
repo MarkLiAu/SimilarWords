@@ -26,7 +26,7 @@ export const MemoryLog = ({ cmd })=> {
             .then(response => response.json())
             .then(data => {
                 console.log('fetch back');
-                setMemLog(data.map(d => { d.viewTime = new Date(d.viewTime).toISOString().slice(0,19).replace("T"," "); return d; }));
+                setMemLog(data.map(d => { d.viewTime = new Date(d.viewTime).toLocaleString(); return d; }));
             });
     }
 
@@ -53,12 +53,12 @@ export const MemoryLog = ({ cmd })=> {
         }
     }
 
-    const ShowLog = ({ log }) => {
+    const ShowLog__NOTUSED = ({ log }) => {
         return (
             log.map((d, idx) => <tr key={idx}>
                 <td>{new Date(d.viewTime).toLocaleString()}</td>
                 <td>{d.name}</td>
-                <td>{d.easiness}</td>
+                <td>{d.easiness} {d.viewTime}{'!'}</td>
                 <td>{d.viewInterval}</td>
             </tr>
             )

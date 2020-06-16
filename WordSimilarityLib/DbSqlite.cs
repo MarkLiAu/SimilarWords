@@ -257,7 +257,7 @@ namespace WordSimilarityLib
         public bool CreateUser(UserProfile user)
         {
             string cmdString = "INSERT INTO users ( email , username , password , firstname, lastname, max_new_word ,deckid, create_time, last_login_time ) "
-                            + $" VALUES ( '{user.Email}', '{user.Username}', '{user.Password}', '{user.FirstName}', '{user.LastName}', '{user.MaxNewWord}', '{user.DeckId}', '{DateTime.UtcNow.ToString()}', '' ) ";
+                            + $" VALUES ( '{user.Email}', '{user.Username}', '{user.Password}', '{user.FirstName}', '{user.LastName}', '{user.MaxNewWord}', '{user.DeckId}', '{DateTime.UtcNow.ToString("o")}', '' ) ";
             ExecuteNonQuery(cmdString);
             user.Id = GetLastRowId();
             return true;
@@ -275,7 +275,7 @@ namespace WordSimilarityLib
         public Word InsertWord(int userid, int deckid, Word word)
         {
             string cmdString = "INSERT INTO words (userid, deckid, name, frequency, pronounciation, similar_words, meaning, start_time, study_time, interval, easiness,total_viewed) "
-                            + $" VALUES ({userid},{deckid},'{word.name.Replace("'","''")}','{word.frequency}','{word.pronounciation.Replace("'", "''")}','{word.similarWords.Replace("'", "''")}','{word.meaningShort.Replace("'", "''")}','{word.startTime.ToString()}','{word.viewTime.ToString()}',{word.viewInterval},{word.easiness},{word.totalViewed}  ) ";
+                            + $" VALUES ({userid},{deckid},'{word.name.Replace("'","''")}','{word.frequency}','{word.pronounciation.Replace("'", "''")}','{word.similarWords.Replace("'", "''")}','{word.meaningShort.Replace("'", "''")}','{word.startTime.ToString("o")}','{word.viewTime.ToString("o")}',{word.viewInterval},{word.easiness},{word.totalViewed}  ) ";
             int rc=ExecuteNonQuery(cmdString);
             word.id = GetLastRowId();
             return word;
@@ -285,7 +285,7 @@ namespace WordSimilarityLib
         {
             if (word.id <= 0) return InsertWord(userid, deckid, word);
 
-            string cmdString = $"UPDATE words SET name='{word.name.Replace("'", "''")}', frequency={word.frequency}, pronounciation='{word.pronounciation.Replace("'", "''")}', similar_words='{word.similarWords.Replace("'", "''")}', meaning='{word.meaningShort.Replace("'", "''")}', start_time='{word.startTime}', study_time='{word.viewTime}', interval={word.viewInterval}, easiness={word.easiness},total_viewed={word.totalViewed}  "
+            string cmdString = $"UPDATE words SET name='{word.name.Replace("'", "''")}', frequency={word.frequency}, pronounciation='{word.pronounciation.Replace("'", "''")}', similar_words='{word.similarWords.Replace("'", "''")}', meaning='{word.meaningShort.Replace("'", "''")}', start_time='{word.startTime.ToString("o")}', study_time='{word.viewTime.ToString("o")}', interval={word.viewInterval}, easiness={word.easiness},total_viewed={word.totalViewed}  "
                             + $" WHERE id= {word.id} AND userid = {userid} AND deckid={deckid} ";
             int rc=ExecuteNonQuery(cmdString);
             return word;
@@ -332,8 +332,8 @@ namespace WordSimilarityLib
                             else if (p.ParameterName == "$pronounciation") command.Parameters[c].Value = d.Value.pronounciation;
                             else if (p.ParameterName == "$similar_words") command.Parameters[c].Value = d.Value.similarWords;
                             else if (p.ParameterName == "$meaning") command.Parameters[c].Value = d.Value.meaningShort;
-                            else if (p.ParameterName == "$start_time") command.Parameters[c].Value = d.Value.startTime;
-                            else if (p.ParameterName == "$study_time") command.Parameters[c].Value = d.Value.viewTime;
+                            else if (p.ParameterName == "$start_time") command.Parameters[c].Value = d.Value.startTime.ToString("o");
+                            else if (p.ParameterName == "$study_time") command.Parameters[c].Value = d.Value.viewTime.ToString("o");
                             else if (p.ParameterName == "$interval") command.Parameters[c].Value = d.Value.viewInterval;
                             else if (p.ParameterName == "$easiness") command.Parameters[c].Value = d.Value.easiness;
                             else if (p.ParameterName == "$total_viewed") command.Parameters[c].Value = d.Value.totalViewed;

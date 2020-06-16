@@ -38,7 +38,7 @@ namespace CommTools
             {
                 if (string.IsNullOrWhiteSpace(_filename)) return;
                 if (level < _level) return;
-                File.AppendAllTextAsync(_filename, $"{DateTime.Now}, {caller}, {lineNumber} : { message}");
+                File.AppendAllTextAsync(_filename, $"{DateTime.Now}, {caller}, {lineNumber} : { message}"+Environment.NewLine);
             }
             catch
             {

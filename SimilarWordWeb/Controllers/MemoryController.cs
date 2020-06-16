@@ -154,7 +154,7 @@ namespace SimilarWordWeb.Controllers
             foreach( var log in memoryFib.logList)
             {
                 sb.AppendLine(log.name+",");
-                sb.AppendLine(log.viewTime.ToLocalTime() + ",");
+                sb.AppendLine(log.viewTime.ToString("o") + ",");
                 sb.AppendLine(log.viewInterval.ToString() + ",");
                 sb.AppendLine(log.easiness.ToString() + ",");
             }

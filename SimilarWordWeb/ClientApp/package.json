@@ -2,7 +2,7 @@
   "name": "similarwordweb",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/words/",
+  "homepage": "/",
   "dependencies": {
     "bootstrap": "^3.4.1",
     "react": "^16.13.1",

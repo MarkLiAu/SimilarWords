@@ -180,12 +180,18 @@ namespace WordSimilarityLib
             return $"OK: now={DateTime.Now}, UTCNow={DateTime.UtcNow}";
         }
 
+
+        public void ResetDb(bool resetUsers = false)
+        {
+
+            _db.ExecuteNonQuery("DELETE FROM decks; DELETE FROM logs; DELETE FROM words");
+            if(resetUsers) _db.ExecuteNonQuery("DELETE FROM users");
+        }
+
         public bool CreateDeck(Dictionary<string,Word> wordList, int shared=0)
         {
-            ConvertLog();
-
             _user.DeckId = -1;
-            _user.DeckName = "Top 10000 Word";
+            _user.DeckName = "Top 10000";
             return _db.CreateDeck(_user, wordList, shared);
         }
 
@@ -230,10 +236,10 @@ namespace WordSimilarityLib
             Word w = originList[0];
             if (w.viewInterval != int.MinValue) return "Error: already started word:"+name;        // already started
 
-            w.viewTime = DateTime.Now;
+            w.viewTime = DateTime.UtcNow;
             w.viewInterval = -1;
             w.totalViewed = 0;
-            w.startTime = DateTime.Now;
+            w.startTime = DateTime.UtcNow;
 
             UpdateWordPart(w,"memory");
             AddStudyLog(w);
@@ -250,9 +256,9 @@ namespace WordSimilarityLib
             if (originList.Count <= 0) return "Error: can't fine word:"+wordNew.name;
             Word w = originList[0];
 
-            if (w.viewInterval < 0) w.startTime = DateTime.Now;   // this is 1st time view
+            if (w.viewInterval < 0) w.startTime = DateTime.UtcNow;   // this is 1st time view
 
-            w.viewTime = DateTime.Now;
+            w.viewTime = DateTime.UtcNow;
             w.viewInterval = wordNew.viewInterval;
             w.easiness = wordNew.easiness;
             if (w.totalViewed < 0) w.totalViewed = 1;
@@ -333,7 +339,7 @@ namespace WordSimilarityLib
 
             int[] counts = new int[10];
 
-            DateTime start_date = DateTime.Now;
+            DateTime start_date = DateTime.UtcNow;
             foreach (var w in wordList)
             {
                 Word word = w;
@@ -362,7 +368,7 @@ namespace WordSimilarityLib
             result.Add(new WordInfo("memory", "reviewed today", (counts[5]).ToString()));
             result.Add(new WordInfo("word", "total words", (wordList.Count).ToString()));
             start_date = new DateTime(start_date.Year, start_date.Month, start_date.Day);
-            result.Add(new WordInfo("memory", "total days", ((DateTime.Now - start_date).Days + 1).ToString()));
+            result.Add(new WordInfo("memory", "total days", ((DateTime.UtcNow - start_date).Days + 1).ToString()));
 
             return result;
         }
@@ -372,7 +378,7 @@ namespace WordSimilarityLib
         public int AddStudyLog(Word word)
         {
             string cmdString = "INSERT INTO logs (userid,deckid, name, study_time, interval, easiness) "
-                             + $" VALUES ({_user.Id},{_user.DeckId}, '{word.name}','{word.viewTime.ToString()}',{word.viewInterval},{word.easiness}  )";
+                             + $" VALUES ({_user.Id},{_user.DeckId}, '{word.name}','{word.viewTime.ToString("o")}',{word.viewInterval},{word.easiness}  )";
             int rc= _db.ExecuteNonQuery(cmdString);
             return rc;
         }

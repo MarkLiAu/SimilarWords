@@ -67,8 +67,11 @@ namespace SimilarWordWeb.Controllers
                     if (WordDictionary.WordList.Count() <= 0)
                         wd.ReadFile(Path.Combine(Directory.GetCurrentDirectory(), @"data\WordSimilarityList.txt"));
 
+                    wsModel.ResetDb();
                     wsModel.CreateDeck(WordDictionary.WordList);
-                    return "OK:" + DateTime.Now.ToString();
+                    wsModel.ConvertLog();
+
+                    return "OK:" + DateTime.Now.ToString()+"utc="+DateTime.UtcNow.ToString();
                 }
                 else if (cmd.ToLower() == "fixmemory_OLD")
                 {
