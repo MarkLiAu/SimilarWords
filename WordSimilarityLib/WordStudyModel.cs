@@ -6,6 +6,41 @@ using System.Security.Claims;
 
 namespace WordSimilarityLib
 {
+    // for dashboard
+    public class WordInfo
+    {
+        public string group { get; set; }
+        public string name { get; set; }
+        public string value { get; set; }
+
+        public WordInfo()
+        {
+            group = name = value = "";
+        }
+        public WordInfo(string g, string n, string v)
+        {
+            group = g;
+            name = n;
+            value = v;
+        }
+    }
+
+
+    public class StudyLog
+    {
+        public int userid { get; set; }
+        public string deckname { get; set; }
+        public string name { get; set; }    // name of the word
+        public DateTime viewTime { get; set; }
+        public int viewInterval { get; set; }
+        public int easiness { get; set; }
+
+        public StudyLog()
+        {
+            name = "";
+        }
+    }
+
 
     public class WordStudyModel 
     {
@@ -175,7 +210,7 @@ namespace WordSimilarityLib
             w.startTime = DateTime.Now;
 
             UpdateWordPart(w,"memory");
-//            AddMemoryLog(w);
+            AddStudyLog(w);
 
             return "OK";
 
@@ -200,7 +235,7 @@ namespace WordSimilarityLib
             //            if (w.startTime == DateTime.MinValue) w.startTime = w.viewTime;     // something wrong
 
             UpdateWordPart(w,"memory");
-//            AddMemoryLog(w);
+            AddStudyLog(w);
 
             return "OK";
         }
@@ -262,6 +297,83 @@ namespace WordSimilarityLib
             return newVal;
         }
 
+        ////////////
+        /// get dashboard data        
+        public List<WordInfo> GetDashboard()
+        {
+            List<WordInfo> result = new List<WordInfo>();
+
+            List<Word> wordList = _db.Getwords(_user.Id, _user.DeckId);
+
+            int[] counts = new int[10];
+
+            DateTime start_date = DateTime.Now;
+            foreach (var w in wordList)
+            {
+                Word word = w;
+                if (word.viewInterval < -1) continue;   // not started yet
+
+
+                if (word.isNewItem())
+                {
+                    counts[1]++;    // new added items, ready for memorying
+                    continue;
+                }
+
+                counts[3]++;    // all other viewed items
+
+                if (word.viewTime.Year > 2000 && word.viewTime < start_date) start_date = word.viewTime;
+
+                if (word.isDue()) counts[2]++;    // already started items, and due to be viewed
+                if (word.is1stViewedToday()) counts[4]++;  // 1st viewed today
+                if (word.viewTime >= DateTime.Today) counts[5]++;   // all words viewed today
+            }
+
+            result.Add(new WordInfo("memory", "New words to view", (counts[1]).ToString()));
+            result.Add(new WordInfo("memory", "old words due", (counts[2]).ToString()));
+            result.Add(new WordInfo("memory", "other viewed words", (counts[3]).ToString()));
+            result.Add(new WordInfo("memory", "new words today", (counts[4]).ToString()));
+            result.Add(new WordInfo("memory", "reviewed today", (counts[5]).ToString()));
+            result.Add(new WordInfo("word", "total words", (wordList.Count).ToString()));
+            start_date = new DateTime(start_date.Year, start_date.Month, start_date.Day);
+            result.Add(new WordInfo("memory", "total days", ((DateTime.Now - start_date).Days + 1).ToString()));
+
+            return result;
+        }
+
+
+        /// strudy log
+        public int AddStudyLog(Word word)
+        {
+            string cmdString = "INSERT INTO logs (userid,deckid, name, study_time, interval, easiness) "
+                             + $" VALUES ({_user.Id},{_user.DeckId}, '{word.name}','{word.viewTime.ToString()}',{word.viewInterval},{word.easiness}  )";
+            int rc= _db.ExecuteNonQuery(cmdString);
+            return rc;
+        }
+
+        public List<StudyLog> GetStudyLog(string count, string name=null)
+        {
+            List<StudyLog> logList = new List<StudyLog>();
+            //cmdString = "CREATE TABLE IF NOT EXISTS decks ( id INTEGER PRIMARY KEY, name TEXT ,  ownerid INT , userid INT, max_new_word INT, shared INT ) ";
+            //cmdString = "CREATE TABLE IF NOT EXISTS logs ( userid INT, deckid INT, name TEXT PRIMARY KEY,  study_time TEXT, interval INT, easiness INT ) WITHOUT ROWID;";
+
+            string cmdString = $"SELECT logs.*, decks.name FROM logs LEFT OUTER JOIN decks ON logs.deckid = decks.id WHERE logs.userid={_user.Id} AND logs.deckid={_user.DeckId} ";
+            if (!string.IsNullOrWhiteSpace(name)) cmdString += " AND name = '{name} ";
+            cmdString += " ORDER BY logs.id DESC LIMIT "+count;
+            List<List<object>> data = _db.GetData(cmdString);
+            foreach(var row in data)
+            {
+                if (row.Count < 8) continue;
+                StudyLog log = new StudyLog();
+                log.name = row[3].ToString();
+                log.viewTime = Convert.ToDateTime(row[4]);
+                log.viewInterval = Convert.ToInt32(row[5]);
+                log.easiness = Convert.ToInt32(row[6]);
+                log.deckname = row[7] != null ? row[7].ToString() : "" ;
+                logList.Add(log);
+            }
+            return logList;
+        }
 
     }
 }

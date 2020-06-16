@@ -21,7 +21,7 @@ const UserMenu = () => {
     <Fragment>
         <LinkContainer to={'/wordmemory'}>
             <NavItem>
-                <Glyphicon glyph='th-list' />Memory
+                <Glyphicon glyph='th-list' />Study
                 </NavItem>
         </LinkContainer>
 
@@ -31,15 +31,15 @@ const UserMenu = () => {
             </LinkContainer>
 
             <LinkContainer to={{ pathname: '/admin/resetmemory', state: { cmd: 'resetmemory' } }} >
-                <MenuItem eventKey={3.2}>Reset Memory</MenuItem>
+                <MenuItem eventKey={3.2}>Reset Study data</MenuItem>
             </LinkContainer>
 
             <LinkContainer to={'/MemoryLog'}>
-                <MenuItem eventKey={3.6}>Memory Log</MenuItem>
+                <MenuItem eventKey={3.6}>Study Log</MenuItem>
             </LinkContainer>
 
                 <LinkContainer to={{ pathname: '/admin/fixmemory', state: { cmd: 'fixmemory' } }} >
-                <MenuItem eventKey={3.8}>Fix Memory data</MenuItem>
+                <MenuItem eventKey={3.8}>Fix Study data</MenuItem>
             </LinkContainer>
 
             <LinkContainer to={{ pathname: '/admin/logout', state: { cmd: 'logout' } }} >

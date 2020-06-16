@@ -360,7 +360,7 @@ namespace WordSimilarityLib
             ExecuteNonQuery(cmdString);
             cmdString = "CREATE TABLE IF NOT EXISTS words ( id INTEGER PRIMARY KEY, userid INT, deckid INT, name TEXT,  frequency INT ,   pronounciation TEXT , similar_words TEXT,  meaning TEXT, start_time TEXT, study_time TEXT, interval INT, easiness INT,total_viewed INT ) ";
             ExecuteNonQuery(cmdString);
-            cmdString = "CREATE TABLE IF NOT EXISTS logs ( deck TEXT, name TEXT PRIMARY KEY,  study_time TEXT, interval INT, easiness INT ) WITHOUT ROWID;";
+            cmdString = "CREATE TABLE IF NOT EXISTS logs (id INTEGER PRIMARY KEY, userid INT, deckid INT, name TEXT,  study_time TEXT, interval INT, easiness INT ) ";
             ExecuteNonQuery(cmdString);
 
             return true;

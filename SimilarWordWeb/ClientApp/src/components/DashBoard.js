@@ -43,7 +43,7 @@ export const DashBoard = ({ history }) => {
 
     return (
         <Fragment>
-            <Link to={'/Wordmemory'} ><button className='btn btn-info btn-sm'> Start Memory </button></Link>
+            <Link to={'/Wordmemory'} ><button className='btn btn-info btn-sm'> Start Study </button></Link>
             {len > 1 ? <Badge style={{ backgroundColor: 'red' }} title={'due today'} >{datalist[1].value}  </Badge> : ''}
             {' '}{len > 3 ? <Badge style={{ backgroundColor: 'orange' }} title={'New viewed today/new waiting'} >{datalist[3].value + ' / ' + datalist[0].value}  </Badge> : ''}
             {' '}{len > 4 ? <Badge style={{ backgroundColor: 'LimeGreen' }} title={'Viewed today/total viewed'} >{datalist[4].value + ' / ' + datalist[2].value+' / '+datalist[6].value+'d'}  </Badge> : ''}

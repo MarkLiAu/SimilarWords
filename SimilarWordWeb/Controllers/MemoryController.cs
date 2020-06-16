@@ -42,7 +42,24 @@ namespace SimilarWordWeb.Controllers
 
         // GET api/<controller>/5
         [HttpGet("{count}")]
-        public List<MemoryLogFibonacci> Get(string count)
+        public List<StudyLog> Get(string count)
+        {
+            try
+            {
+                WordStudyModel wsModel = new WordStudyModel();
+                wsModel.GetAuthorizedUser((ClaimsIdentity)User.Identity);
+
+                return wsModel.GetStudyLog(count) ;
+            }
+            catch (Exception ex)
+            {
+                StudyLog err = new StudyLog();
+                err.name = "ERROR:" + ex.Message + ex.StackTrace;
+                return new List<StudyLog>() { err };
+            }
+        }
+
+        public List<MemoryLogFibonacci> GetForFile(string count)
         {
             try
             {

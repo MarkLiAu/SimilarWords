@@ -6,29 +6,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using System.IO;
 using WordSimilarityLib;
+using System.Security.Claims;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace SimilarWordWeb.Controllers
 {
 
-    public class WordInfo
-    {
-        public string group { get; set; }
-        public string name { get; set; }
-        public string value { get; set; }
-
-        public WordInfo()
-        {
-            group = name = value = "";
-        }
-        public WordInfo(string g, string n,string v)
-        {
-            group = g;
-            name = n;
-            value = v;
-        }
-    }
 
     [Authorize]
     [Route("api/[controller]")]
@@ -40,6 +24,14 @@ namespace SimilarWordWeb.Controllers
         // GET: api/<controller>
         [HttpGet]
         public IEnumerable<WordInfo> Get()
+        {
+            WordStudyModel wsModel = new WordStudyModel();
+            wsModel.GetAuthorizedUser((ClaimsIdentity)User.Identity);
+            if (wsModel._db != null) return wsModel.GetDashboard();
+            else return GetFromFile();
+        }
+
+        public List<WordInfo> GetFromFile()
         {
             List<WordInfo> result = new List<WordInfo>();
 
