@@ -4,14 +4,23 @@ import { Col, Grid, Row, Checkbox, Panel, PanelGroup, Table } from 'react-bootst
 import { GetTokenHeader } from './CommTools';
 import { CSVLink } from 'react-csv'
 import StandardTable from './StandardTable';
+import MemoryLogChart from './MemoryLogChart';
 
 
 export const MemoryLog = ({ cmd })=> {
     const [userInput, setUserInput] = useState('10');
     const [memLog, setMemLog] = useState([]);
+    const [chartData, setChartData] = useState([]);
 
     const InputChanged = (e) => {
         setUserInput(e.target.value);
+    }
+
+    const ProcessData = data => {
+        setMemLog(data.map(d => { d.viewTime = new Date(d.viewTime).toLocaleString(); return d; }));
+        data.map(d => {
+
+        })
     }
 
     const SearchLog = () => {
@@ -26,7 +35,8 @@ export const MemoryLog = ({ cmd })=> {
             .then(response => response.json())
             .then(data => {
                 console.log('fetch back');
-                setMemLog(data.map(d => { d.viewTime = new Date(d.viewTime).toLocaleString(); return d; }));
+                ProcessData(data);
+//                setMemLog(data.map(d => { d.viewTime = new Date(d.viewTime).toLocaleString(); return d; }));
             });
     }
 
@@ -110,7 +120,7 @@ export const MemoryLog = ({ cmd })=> {
                     <button>Download</button>
                 </CSVLink>
             <StandardTable data={memLog} columns={columns} ></StandardTable>
-
+            <MemoryLogChart></MemoryLogChart>
         </div>
     );
 }

@@ -2,3 +2,5 @@
 16/06/2020 3:54:15 PM, CreateDeck, 350 :  load into sqlite, count=10016, time(s):0
 16/06/2020 7:53:15 PM, Main, 21 : SimilarWordWeb Main Start  
 16/06/2020 8:02:51 PM, Main, 21 : SimilarWordWeb Main Start  
+16/06/2020 9:35:22 PM, Main, 21 : SimilarWordWeb Main Start  
+16/06/2020 9:55:58 PM, Main, 21 : SimilarWordWeb Main Start  
