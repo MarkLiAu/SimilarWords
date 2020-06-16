@@ -55,7 +55,7 @@ namespace SimilarWordWeb.Controllers
                 {
                     wd.ReadFile(Path.Combine(Directory.GetCurrentDirectory(), @"data\WordSimilarityList.txt"));
 
-                    return "OK:" + DateTime.Now.ToString();
+                    return "OK:now:" + DateTime.Now.ToString()+", utc="+DateTime.UtcNow.ToString();
                 }
                 else if (cmd.ToLower() == "resetmemory")
                 {
@@ -64,7 +64,9 @@ namespace SimilarWordWeb.Controllers
                 }
                 else if (cmd.ToLower() == "fixmemory")
                 {
-                    wsModel._user.DeckId = -1;
+                    if (WordDictionary.WordList.Count() <= 0)
+                        wd.ReadFile(Path.Combine(Directory.GetCurrentDirectory(), @"data\WordSimilarityList.txt"));
+
                     wsModel.CreateDeck(WordDictionary.WordList);
                     return "OK:" + DateTime.Now.ToString();
                 }

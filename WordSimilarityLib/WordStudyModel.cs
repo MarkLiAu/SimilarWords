@@ -182,12 +182,38 @@ namespace WordSimilarityLib
 
         public bool CreateDeck(Dictionary<string,Word> wordList, int shared=0)
         {
+            ConvertLog();
+
             _user.DeckId = -1;
             _user.DeckName = "Top 10000 Word";
             return _db.CreateDeck(_user, wordList, shared);
         }
 
+        // convert study log from file to sqlite
+        public void ConvertLog()
+        {
+            WordDictionary wd = new WordDictionary();
+            string userId = "markli";
+            string memoryMethod = "fib";
+            MemoryFibonacci memoryFib = new MemoryFibonacci(@"data\menory_" + memoryMethod + userId + ".txt");
 
+            System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
+            sw.Start();
+            memoryFib.ReadMemoryLog();
+            foreach (var log in memoryFib.logList)
+            {
+                Word w = new Word(log.name);
+
+                w.viewTime = log.viewTime;
+                w.easiness = log.easiness;
+                w.viewInterval = log.viewInterval;
+
+                AddStudyLog(w);
+            }
+            sw.Stop();
+            long t = sw.ElapsedMilliseconds / 1000;
+
+        }
 
 
 

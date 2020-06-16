@@ -19,9 +19,9 @@ const Admin = ({ cmd,location,history}) => {
             .then(response => {
                 console.log(response);
                 if (!response.ok) throw new Error("Failed to load:(" + response.status.toString() + ") " + response.statusText);
-                response.text()
+                return response.text()
             })
-            .then(data => { console.log(data); setResult("Ok"); })
+            .then(data => { console.log(data); setResult("Ok:"+data); })
             .catch((error) => {
                 console.error('Error:', error);
                 setResult(error.message); 
