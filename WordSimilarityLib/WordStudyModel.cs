@@ -353,6 +353,7 @@ namespace WordSimilarityLib
                 }
 
                 counts[3]++;    // all other viewed items
+                if(word.totalViewed>0) counts[6] += word.totalViewed;       // total viewed including same word multiple times
 
                 if (word.viewTime.Year > 2000 && word.viewTime < start_date) start_date = word.viewTime;
 
@@ -369,6 +370,7 @@ namespace WordSimilarityLib
             result.Add(new WordInfo("word", "total words", (wordList.Count).ToString()));
             start_date = new DateTime(start_date.Year, start_date.Month, start_date.Day);
             result.Add(new WordInfo("memory", "total days", ((DateTime.UtcNow - start_date).Days + 1).ToString()));
+            result.Add(new WordInfo("memory", "reviewed today", (counts[6]).ToString()));
 
             return result;
         }

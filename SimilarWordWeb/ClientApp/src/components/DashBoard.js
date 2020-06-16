@@ -43,11 +43,11 @@ export const DashBoard = ({ history }) => {
 
     return (
         <Fragment>
-            <Link to={'/Wordmemory'} ><button className='btn btn-info btn-sm'> Start Study </button></Link>
-            {len > 1 ? <Badge style={{ backgroundColor: 'red' }} title={'due today'} >{datalist[1].value}  </Badge> : ''}
-            {' '}{len > 3 ? <Badge style={{ backgroundColor: 'orange' }} title={'New viewed today/new waiting'} >{datalist[3].value + ' / ' + datalist[0].value}  </Badge> : ''}
-            {' '}{len > 4 ? <Badge style={{ backgroundColor: 'LimeGreen' }} title={'Viewed today/total viewed'} >{datalist[4].value + ' / ' + datalist[2].value+' / '+datalist[6].value+'d'}  </Badge> : ''}
-            {' '}{len > 5 ? <Badge style={{ backgroundColor: 'blue' }} title={datalist[5].name} >{datalist[5].value}  </Badge> : ''}
+            <Link to={'/Wordmemory'} ><button className='btn btn-info btn-sm'> Study </button></Link>
+            {' '}{len > 1 ? <Badge style={{ backgroundColor: 'red' }} title={'due today'} >{datalist[1].value }  </Badge> : ''}
+            {' '}{len > 3 ? <Badge style={{ backgroundColor: 'orange' }} title={'New viewed today/Viewed today'} >{datalist[3].value + ' / ' + datalist[4].value }  </Badge> : ''}
+            {' '}{len > 4 ? <Badge style={{ backgroundColor: 'LimeGreen' }} title={'viewed words/total viewed'} >{datalist[2].value + ' / ' + datalist[7].value+' / '+datalist[6].value+'d'}  </Badge> : ''}
+            {' '}{len > 5 ? <Badge style={{ backgroundColor: 'blue' }} title={'new waiting/total words'} >{datalist[0].value + ' / ' + datalist[5].value}  </Badge> : ''}
            </Fragment>
         )
 
