@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 using System.IO;
 using System.Security.Claims;
 
@@ -391,9 +392,11 @@ namespace WordSimilarityLib
             //cmdString = "CREATE TABLE IF NOT EXISTS decks ( id INTEGER PRIMARY KEY, name TEXT ,  ownerid INT , userid INT, max_new_word INT, shared INT ) ";
             //cmdString = "CREATE TABLE IF NOT EXISTS logs ( userid INT, deckid INT, name TEXT PRIMARY KEY,  study_time TEXT, interval INT, easiness INT ) WITHOUT ROWID;";
 
+            string timeBack = DateTime.UtcNow.AddDays(-Convert.ToInt32(count)).ToString("o");
             string cmdString = $"SELECT logs.*, decks.name FROM logs LEFT OUTER JOIN decks ON logs.deckid = decks.id WHERE logs.userid={_user.Id} AND logs.deckid={_user.DeckId} ";
+            cmdString += $" AND study_time>='{timeBack}'";
             if (!string.IsNullOrWhiteSpace(name)) cmdString += " AND name = '{name} ";
-            cmdString += " ORDER BY logs.id DESC LIMIT "+count;
+            cmdString += " ORDER BY logs.id DESC ";
             List<List<object>> data = _db.GetData(cmdString);
             foreach(var row in data)
             {
@@ -404,8 +407,16 @@ namespace WordSimilarityLib
                 log.viewInterval = Convert.ToInt32(row[5]);
                 log.easiness = Convert.ToInt32(row[6]);
                 log.deckname = row[7] != null ? row[7].ToString() : "" ;
-                logList.Add(log);
+                logList.Add(log); 
             }
+
+            // group by viewTime
+            var group = from d in logList
+                        group d by new DateTime(d.viewTime.Year, d.viewTime.Month, d.viewTime.Day) into g
+                        orderby g.Key
+                        select new StudyLog { name = "0", viewTime = g.Key, easiness = g.Count() }
+                        ;
+            logList.AddRange(group);
             return logList;
         }
 

@@ -17,10 +17,8 @@ export const MemoryLog = ({ cmd })=> {
     }
 
     const ProcessData = data => {
-        setMemLog(data.map(d => { d.viewTime = new Date(d.viewTime).toLocaleString(); return d; }));
-        data.map(d => {
-
-        })
+        setMemLog(data.filter(d => d.name !== '0').map(d => { d.viewTime = new Date(d.viewTime).toLocaleString(); return d; }));
+        setChartData(data.filter(d => d.name === '0').map(d => { let r = { viewTime: new Date(d.viewTime).toLocaleDateString("fr-CA"), totalViewed: d.easiness, newViewed: d.viewInterval + 10 } ; return r; }));
     }
 
     const SearchLog = () => {
@@ -119,8 +117,8 @@ export const MemoryLog = ({ cmd })=> {
                     target="_blank" >
                     <button>Download</button>
                 </CSVLink>
+            <MemoryLogChart data={chartData}></MemoryLogChart>
             <StandardTable data={memLog} columns={columns} ></StandardTable>
-            <MemoryLogChart></MemoryLogChart>
         </div>
     );
 }
