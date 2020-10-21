@@ -13,7 +13,8 @@ namespace ConsoleCore
 
             //WordSimilarityLib.SuperMemory2.test();
             // testWordSimilarity();
-            WordCount();
+            //WordCount();
+            WordSimilarityLib.MergeSubtitles.merge(@"C:\temp\Friends subtitles");
             Console.ReadKey();
         }
 
