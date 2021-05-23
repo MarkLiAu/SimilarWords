@@ -161,6 +161,7 @@ namespace WordSimilarityLib
         public UserProfile GetUserProfile(string userKey)
         {
             UserProfile userProfile = _db.GetUserProfile(userKey);
+            if (userProfile == null) return null;
             List<Deck> deckList = _db.GetUserDecks(userProfile.Id);
             if (deckList.Count > 0) userProfile.DeckId = deckList[0].Id;
             return userProfile;
