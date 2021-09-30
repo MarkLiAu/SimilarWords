@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "Similarwords",
+            "database": "C:\\BjProjects\\SimilarWords\\SimilarWordWeb\\data\\SimilarWords.db"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}

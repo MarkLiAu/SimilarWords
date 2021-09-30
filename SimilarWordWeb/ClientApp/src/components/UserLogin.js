@@ -62,7 +62,7 @@ const UserLogin = ({ name, location,history }) => {
     console.log(name);
     return (
         <Fragment>
-            <Form horizontal onSubmit={this.CallUpdateApi} >
+            <Form horizontal onSubmit={CallUpdateApi} >
                 <h3 >Login</h3>
                 <FormField type='text' label="User Name" name="Email" onChangeHandle={handleChange} val={word.Email} ></FormField>
                 <FormField type='text' label="Password" name="Password" onChangeHandle={handleChange} val={word.Password} ></FormField>
