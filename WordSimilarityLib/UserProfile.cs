@@ -19,7 +19,7 @@ namespace WordSimilarityLib
         public int DeckId { get; set; }         // current deck ID
 
         public string DeckName { get; set; }
-        public int MaxNewWord { get; set; }         // maximum new word to study every day
+        public int MaxNewWord { get; set; }         // maximum new word to study every day 
 
         public UserProfile()
         {
