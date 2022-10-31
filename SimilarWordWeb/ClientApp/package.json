@@ -5,19 +5,19 @@
   "homepage": "/",
   "dependencies": {
     "bootstrap": "^3.4.1",
-    "react": "^16.13.1",
+    "react": "^16.14.0",
     "react-bootstrap": "^0.33.1",
     "react-csv": "^2.0.3",
-    "react-dom": "^16.13.1",
+    "react-dom": "^16.14.0",
     "react-router-bootstrap": "^0.24.4",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "^4.0.2",
+    "react-scripts": "^4.0.3",
     "react-table": "^7.1.0",
     "recharts": "^2.0.9",
     "rimraf": "^2.6.2"
   },
   "scripts": {
-    "start": "rimraf ./build && react-scripts start",
+    "start": "rimraf ./build && react-scripts  --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
