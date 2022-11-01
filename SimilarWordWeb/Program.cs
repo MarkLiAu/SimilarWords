@@ -15,9 +15,6 @@ namespace SimilarWordWeb
     {
         public static void Main(string[] args)
         {
-            WordSimilarityLib.WordStudyModel model = new WordSimilarityLib.WordStudyModel();
-            model.CreateDb();
-
             CommTools.Logger.Init(Path.Combine(Directory.GetCurrentDirectory(), @"data\AppLog.txt"), 0);  // level 0 : every thing, level 2: for production
             CommTools.Logger.Log(2, "SimilarWordWeb Main Start  ");
 
