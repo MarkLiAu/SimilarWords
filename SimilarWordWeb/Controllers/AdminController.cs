@@ -57,10 +57,20 @@ namespace SimilarWordWeb.Controllers
 
                     return "OK:now:" + DateTime.Now.ToString()+", utc="+DateTime.UtcNow.ToString();
                 }
-                else if (cmd.ToLower() == "resetmemory")
+                else if (cmd.ToLower() == "resetmemoryOLD")
                 {
                     memoryFib.ClearViewHistory();
                     return "OK:" + DateTime.Now.ToString();
+                }
+                else if (cmd.ToLower() == "resetmemory")
+                {
+                    if (WordDictionary.WordList.Count() <= 0)
+                        wd.ReadFile(Path.Combine(Directory.GetCurrentDirectory(), @"data\WordSimilarityList.txt"));
+
+                    wsModel.ResetDb();
+                    wsModel.CreateDeck(WordDictionary.WordList);
+
+                    return "OK:" + DateTime.Now.ToString() + "utc=" + DateTime.UtcNow.ToString();
                 }
                 else if (cmd.ToLower() == "fixmemory")
                 {
@@ -104,7 +114,8 @@ namespace SimilarWordWeb.Controllers
 
         }
 
-         // DELETE api/<controller>/5
+        // DELETE api/<controller>/5
+        [Authorize]
         [HttpDelete("{name}")]
         public string Delete(string name)
         {

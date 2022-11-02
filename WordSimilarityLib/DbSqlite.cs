@@ -332,11 +332,11 @@ namespace WordSimilarityLib
                             else if (p.ParameterName == "$pronounciation") command.Parameters[c].Value = d.Value.pronounciation;
                             else if (p.ParameterName == "$similar_words") command.Parameters[c].Value = d.Value.similarWords;
                             else if (p.ParameterName == "$meaning") command.Parameters[c].Value = d.Value.meaningShort;
-                            else if (p.ParameterName == "$start_time") command.Parameters[c].Value = d.Value.startTime.ToString("o");
-                            else if (p.ParameterName == "$study_time") command.Parameters[c].Value = d.Value.viewTime.ToString("o");
-                            else if (p.ParameterName == "$interval") command.Parameters[c].Value = d.Value.viewInterval;
-                            else if (p.ParameterName == "$easiness") command.Parameters[c].Value = d.Value.easiness;
-                            else if (p.ParameterName == "$total_viewed") command.Parameters[c].Value = d.Value.totalViewed;
+                            else if (p.ParameterName == "$start_time") command.Parameters[c].Value = DateTime.MinValue.ToString("o");
+                            else if (p.ParameterName == "$study_time") command.Parameters[c].Value = DateTime.MinValue.ToString("o");
+                            else if (p.ParameterName == "$interval") command.Parameters[c].Value = int.MinValue;
+                            else if (p.ParameterName == "$easiness") command.Parameters[c].Value = int.MinValue;
+                            else if (p.ParameterName == "$total_viewed") command.Parameters[c].Value = int.MinValue;
                             else command.Parameters[c].Value = "";
 
                         }
