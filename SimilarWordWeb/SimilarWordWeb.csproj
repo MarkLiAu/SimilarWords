@@ -34,7 +34,7 @@
 
   <ItemGroup>
     <None Update="data\SimilarWords.db">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </None>
     <None Update="data\WordSimilarityList.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

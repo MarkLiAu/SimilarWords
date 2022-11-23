@@ -83,7 +83,7 @@ const EditWord = (props) => {
     console.log(restProps);
 
     return (
-            <Form horizontal onSubmit={CallUpdateApi} >
+            <Form horizontal  >
             <h3 >Edit Word: {word.name}</h3>
                 <FormField type='text' label="Word Name" name="name" onChangeHandle={handleChange}  val={word.name} ></FormField>
                 <FormField type='text' label="Pronounciation" name="pronounciation" onChangeHandle={handleChange}  val={word.pronounciation} ></FormField>
