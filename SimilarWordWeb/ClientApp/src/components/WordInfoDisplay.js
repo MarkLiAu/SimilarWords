@@ -33,7 +33,7 @@ const DisplaySoundLink = ({ name }) => {
 }
 
 
-const WordInfoDisplay = ({ word,hideEditButton, handleWordClicked=null}) => {
+const WordInfoDisplay = ({ word,hideEditButton, handleWordClicked=null, showDetailLevel=9}) => {
     //console.log('WordInfoDisplay:');
     //console.log(word);
     if (!word) return '';
@@ -68,20 +68,23 @@ const WordInfoDisplay = ({ word,hideEditButton, handleWordClicked=null}) => {
             <tr>
                 <td>pronounciation:</td><td>{word.pronounciation}</td>
             </tr>
-                <tr>
-                    <td>Similar words:</td>
-                    <td>
-                        <ShowSimilarWords nameString={word.similarWords} handleClick={handleWordClicked}>  </ShowSimilarWords>
-                    </td>
-                </tr>
+            <tr>
+                <td>Similar words:</td>
+                <td>
+                    <ShowSimilarWords nameString={word.similarWords} handleClick={handleWordClicked}>  </ShowSimilarWords>
+                </td>
+            </tr>
+            <tr>
+                <td>Onine dictionary</td><td><ShowDictLink name={word.name}></ShowDictLink></td>
+            </tr>
+
+            {showDetailLevel > 1 && 
             <tr>
                 <td>meaningShort:</td><td>{word.meaningShort}</td>
             </tr>
-                <WordReviewInfo word={word}></WordReviewInfo>
-                <tr>
-                    <td>Onine dictionary</td><td><ShowDictLink name={word.name}></ShowDictLink></td>
-                </tr>
+            }
 
+            {showDetailLevel > 1 && <WordReviewInfo word={word}></WordReviewInfo>}
                 
 
             </tbody>

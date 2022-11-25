@@ -10,7 +10,7 @@ const WordMemory = () => {
         firstFlag: 0, 
         memoryList: [],
         memoryIdx: 0,
-        showDetail: false,
+        showDetailLevel: 1,
         curWord: { easiness: 0, viewInterval: 0 }
     }
     const [state, setState] = useReducer(
@@ -21,14 +21,8 @@ const WordMemory = () => {
     const setMemoryList = (data) => setState({ memoryList: data });
     const setFirstFlag = (data) => setState({ firstFlag: data });
     const setMemoryIdx = (data) => setState({ memoryIdx: data }) ;
-    const setShowDetail = (data) => setState({ showDetail: data });
+    const setshowDetailLevel = (data) => setState({ showDetailLevel: data });
     const setCurWord = (data) => setState({ curWord: data });
-
-    //const [memoryList, setMemoryList] = useState([]);
-    //const [, setFirstFlag] = useState(0);
-    //const [, setMemoryIdx] = useState(0);
-    //const [, setShowDetail] = useState(false);
-    //const [, setCurWord] = useState({easiness:0,viewInterval:0});
 
     const CallApi = () => {
         fetch('api/memory/', {
@@ -69,7 +63,7 @@ const WordMemory = () => {
                 console.log('word memory after setmemoryIdx, idx=' + state.memoryIdx);
                 ResetCurWord(state.memoryIdx + 1);
             }
-            setShowDetail(false);
+            setshowDetailLevel(1);
         })
     }
 
@@ -104,18 +98,18 @@ const WordMemory = () => {
         console.log(state.curWord);
     }
 
-    const showDetailClicked = () => { setShowDetail(!state.showDetail)}
+    const showDetailClicked = () => { setshowDetailLevel(state.showDetailLevel===1? 9 : 1)}
 
     const backClicked = () => {
         if (state.memoryIdx > 0) {
-            setShowDetail(false);
+            setshowDetailLevel(1);
             setMemoryIdx(state.memoryIdx - 1);
             ResetCurWord(state.memoryIdx - 1);
         }
     }
     const nextClicked = () => {
         if (state.memoryIdx < state.memoryList.length - 1) {
-            setShowDetail(false);
+            setshowDetailLevel(1);
             setMemoryIdx(state.memoryIdx + 1);
             ResetCurWord(state.memoryIdx + 1);
          }
@@ -160,7 +154,7 @@ const WordMemory = () => {
                         <button className='btn' id='btn_detail' onClick={showDetailClicked}>{'Detail...'}</button>
                     
                     </Panel.Body>
-                <WordInfoDisplay word={state.showDetail ? state.memoryList[state.memoryIdx]:null}></WordInfoDisplay>
+                <WordInfoDisplay word={state.memoryList[state.memoryIdx]} showDetailLevel={state.showDetailLevel}></WordInfoDisplay>
                 </Panel>
         );
 }
