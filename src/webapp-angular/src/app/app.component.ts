@@ -9,4 +9,12 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'webapp-angular';
+  health_status = 'checking...';
+
+  async ngOnInit() {
+    debugger;
+    const response = await fetch('http://localhost:7071/api/health');
+    const data = await response.text();
+    this.health_status = data;
+  }
 }
