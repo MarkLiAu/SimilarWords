@@ -1,3 +1,7 @@
 search similar word
 pick words to study
 remind the user to review words based on user's choice
+
+v2: Azure static web app with Angular for frontend and function app for backebd APIs
+v1: dotnet core project with react as client app, using sqlite as storage
+
