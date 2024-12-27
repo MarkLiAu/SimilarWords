@@ -76,7 +76,8 @@
               "buildTarget": "webapp-angular:build:production"
             },
             "development": {
-              "buildTarget": "webapp-angular:build:development"
+              "buildTarget": "webapp-angular:build:development",
+              "proxyConfig": "src/proxy.local.json"
             }
           },
           "defaultConfiguration": "development"
