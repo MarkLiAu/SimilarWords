@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,8 @@ export class AppComponent {
   health_status = 'checking...';
 
   async ngOnInit() {
-    const response = await fetch('http://localhost:7071/api/health');
+    console.log('apiUrl=' + environment.apiUrl);
+    const response = await fetch(environment.apiUrl+ 'health');
     const data = await response.text();
     this.health_status = data;
   }
