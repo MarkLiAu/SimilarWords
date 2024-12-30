@@ -1,0 +1,14 @@
+<p>search works! {{searchText()}}</p>
+
+@if(dataResource.hasValue()) {
+  @for (item of dataResource.value(); track item.id) {
+    <div>id: {{ item.id }}</div>
+    <div>name: {{ item.name }}</div>
+    <div>meaning: {{ item.meaningLong }}</div>
+  } @empty {
+    <div>loading</div>
+  }
+}
+@else if(dataResource.error()) {
+  <div>Failed to seach word, error: {{ dataResource.error() }}</div>
+} 
