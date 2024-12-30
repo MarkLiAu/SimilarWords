@@ -1,0 +1,16 @@
+<mat-toolbar >
+    <a routerLink="/"><img class="logo" alt="logo" src="/similar-words-logo-wide.png"></a>
+    <span class="spacer"></span>
+
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <mat-form-field>
+        <input name="searchText" matInput type="search" [(ngModel)]="searchText" placeholder="Word to search" />
+        <mat-icon matSuffix (click)="onSubmit(f)">search</mat-icon>
+    </mat-form-field>
+   </form>
+
+    <span class="spacer"></span>
+    <button mat-icon-button routerLink="/login">
+        <mat-icon>person</mat-icon>
+    </button>
+</mat-toolbar>

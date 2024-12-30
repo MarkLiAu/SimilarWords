@@ -1,0 +1,28 @@
+@use '@angular/material' as mat;
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+mat-toolbar {
+  display: flex;
+  align-items: center;
+
+  @include mat.toolbar-overrides((
+    container-background-color: var(--mat-sys-primary),
+    container-text-color:  var(--mat-sys-on-primary),
+  ))
+}
+
+button mat-icon {
+  color: var(--mat-sys-on-primary);
+}
+
+mat-form-field {
+  margin-top: 20px;
+}
+
+.logo {
+  height: 35px;
+  margin-top: 10px;
+}
