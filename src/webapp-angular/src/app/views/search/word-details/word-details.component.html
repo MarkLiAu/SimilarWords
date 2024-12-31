@@ -1,0 +1,26 @@
+<div class="title-row">
+  <span class="word-name">{{ word().name }}</span> 
+  <i>{{ word().pronounciation }}</i>
+  @if(word().soundUrl) {
+    <mat-icon>play_circle</mat-icon>
+  }
+</div>
+
+<div>
+  <span class="label">Similar:</span>
+  @for(item of similarWords(); track item){
+    <a routerLink="/search/{{item}}">{{ item }}</a> 
+  }
+</div>
+
+<div>
+  <span class="label">Online:</span>
+  @for(item of dictionaryLinks(); track item.name){
+    <a  href="{{item.url}}">{{ item.name }}</a>
+  }
+</div>
+
+<div>
+  <p>{{ word().meaningShort }}</p>
+  <p>{{ word().meaningLong }}</p>
+</div>

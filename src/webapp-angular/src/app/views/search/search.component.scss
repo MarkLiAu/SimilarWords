@@ -6,3 +6,25 @@ mat-form-field {
 input {
  width: 100%;
 }
+
+.list-container {
+  padding: 24px;
+}
+
+.list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-gap: 16px;
+}
+
+.title {
+  font: var(--mat-sys-headline-small);
+  color: var(--mat-sys-secondary);
+}
+
+app-word-details {
+  background-color: var(--mat-sys-surface);
+  outline: 2px solid var(--mat-sys-outline-variant);
+  border-radius: 10px;
+  padding: 10px;
+}

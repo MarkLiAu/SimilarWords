@@ -1,14 +1,14 @@
-<p>search works! {{searchText()}}</p>
+<div class="title">similar words for {{searchText()}}</div>
+@if(dataResource.error()) {
+  <div>Failed to seach word, error: {{ dataResource.error() }}</div>
+}
 
 @if(dataResource.hasValue()) {
-  @for (item of dataResource.value(); track item.id) {
-    <div>id: {{ item.id }}</div>
-    <div>name: {{ item.name }}</div>
-    <div>meaning: {{ item.meaningLong }}</div>
-  } @empty {
-    <div>loading</div>
-  }
+  <div class="list-container list-grid">
+    @for (item of dataResource.value(); track item.id) {
+      <app-word-details [word]="item"></app-word-details>
+    } @empty {
+      <div>no matching word</div>
+    }
+  </div>
 }
-@else if(dataResource.error()) {
-  <div>Failed to seach word, error: {{ dataResource.error() }}</div>
-} 

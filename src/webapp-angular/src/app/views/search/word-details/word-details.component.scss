@@ -1,0 +1,28 @@
+mat-icon {
+  color: green;
+  vertical-align: middle;
+}
+
+.word-name {
+  font: var(--mat-sys-headline-medium  );
+  color: var(--mat-sys-primary);
+  margin-right: 4px;
+}
+
+.label {
+  color: var(--mat-sys-surface-dim);
+}
+
+a {
+  margin-left: 0.5em;
+}
+
+p {
+  margin: 6px 0px 0px 0px;
+}
+
+.title-row {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
