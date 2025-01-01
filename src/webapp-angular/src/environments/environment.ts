@@ -1,5 +1,5 @@
 export const environment = {
     production: true,
     apiUrl: '/api',
-    useTestData: false
+    useTestData: true
 };

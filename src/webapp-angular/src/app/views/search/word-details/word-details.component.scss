@@ -4,17 +4,19 @@ mat-icon {
 }
 
 .word-name {
-  font: var(--mat-sys-headline-medium  );
+  font: var(--mat-sys-headline-small  );
   color: var(--mat-sys-primary);
-  margin-right: 4px;
+  margin: 0 4px 0 0;
 }
 
 .label {
   color: var(--mat-sys-surface-dim);
+  display: inline-block;
+  width: 5em;
 }
 
 a {
-  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 p {
@@ -25,4 +27,5 @@ p {
   display: flex;
   gap: 4px;
   align-items: center;
+  text-align: center;
 }
