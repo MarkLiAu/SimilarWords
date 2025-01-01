@@ -2,9 +2,9 @@
     "configurations": {
       "app": {
         "appDevserverUrl": "http://localhost:4200",
-        "appLocation": "./webapp-angular",
+        "appLocation": "./src/webapp-angular",
         "run": "npm run start",
-        "apiLocation": "./api-functions"
+        "apiLocation": "./src/api-functions"
       }
     }
   }
