@@ -7,7 +7,7 @@ public class WordDepository(IConfiguration configuration) : IWordDepository
 {
     async Task<IList<Word>> IWordDepository.GetSimilarWordsAsync(string name)
     {
-        string rootPath = Environment.GetEnvironmentVariable("HOME") ?? Directory.GetCurrentDirectory();
+        string rootPath = Directory.GetCurrentDirectory() ?? Environment.GetEnvironmentVariable("HOME") ?? "./";
         string filePath = Path.Combine(rootPath, "site", "wwwroot", "myfile.txt"); // Adjust as needed
         if (File.Exists(filePath))
         {
