@@ -25,6 +25,5 @@ input {
 app-word-details {
   background-color: var(--mat-sys-surface);
   outline: 2px solid var(--mat-sys-outline-variant);
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: 10px 10px 0 0;
 }

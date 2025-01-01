@@ -1,14 +1,16 @@
 import { Component, computed, input } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { Word } from '../../../domain/model/word';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatCardModule } from '@angular/material/card';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { RouterLink } from '@angular/router';
-import { Word } from '../../../domain/model/word';
+import { MatChipsModule } from '@angular/material/chips';
+import {MatBadgeModule} from '@angular/material/badge';
 
 @Component({
   selector: 'app-word-details',
-  imports: [MatIconModule, RouterLink, MatDividerModule, MatCardModule,MatTooltipModule],
+  imports: [MatIconModule, RouterLink, MatDividerModule, MatCardModule,MatTooltipModule,MatChipsModule,MatBadgeModule],
   templateUrl: './word-details.component.html',
   styleUrl: './word-details.component.scss'
 })
@@ -21,6 +23,7 @@ export class WordDetailsComponent {
     { name: "Cambridge", url: `https://dictionary.cambridge.org/dictionary/english/${this.word().name}` },
     { name: "Oxford", url: `https://www.oxfordlearnersdictionaries.com/definition/english/${this.word().name}` },
     { name: "Merriam-Webster", url: `https://www.merriam-webster.com/dictionary/${this.word().name}` },
+    { name: "iCIBA", url: `https://www.iciba.com/word?w=${this.word().name}` },
   ]);
 
   playSound = (url:string|undefined) => {

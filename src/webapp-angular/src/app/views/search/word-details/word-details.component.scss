@@ -1,3 +1,7 @@
+.container {
+  padding: 10px;
+}
+
 mat-icon {
   color: green;
   vertical-align: middle;
@@ -5,18 +9,16 @@ mat-icon {
 
 .word-name {
   font: var(--mat-sys-headline-small  );
-  color: var(--mat-sys-primary);
   margin: 0 4px 0 0;
 }
 
 .label {
   color: var(--mat-sys-surface-dim);
   display: inline-block;
-  width: 5em;
 }
 
 a {
-  margin-right: 0.5em;
+  margin-left: 0.5em;
 }
 
 p {
@@ -28,4 +30,11 @@ p {
   gap: 4px;
   align-items: center;
   text-align: center;
+}
+
+.onine-links {
+  background-color: lightblue; 
+  margin: 5px -10px 5px -10px; 
+  padding: 8px 0px 8px 0px;
+  color: white;
 }
