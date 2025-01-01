@@ -16,7 +16,7 @@ public static class InfrastructureSetup
 
     public static IServiceCollection AddPersistenceSetup(this IServiceCollection services, IConfiguration configuration)
     {
-        services.AddScoped<IWordDepository, WordDepository>();
+        services.AddScoped<IWordDepository, WordDepositoryLocalFile>();
         return services;
     }
     public static IServiceCollection AddApplicationSetup(this IServiceCollection services, IConfiguration configuration)

@@ -1,7 +1,7 @@
 namespace ApplicationCore.WordDictionary;
 public static class WordSimilarityExtensions
 {
-    public static List<Word> FindSimilarWords(this IList<Word> wordDictionary, string name)
+    public static List<Word> FindSimilarWords(this IList<Word> wordList, string name)
     {
         List<Word> result = [];
 
@@ -14,12 +14,12 @@ public static class WordSimilarityExtensions
         };
 
         string nameLowcase = name.ToLower();
-        foreach (var w in wordDictionary)
+        foreach (var w in wordList)
         {
             if (w.Name == nameLowcase) { w1st = w; break; }
         }
             // search the list
-        foreach (var w in wordDictionary)
+        foreach (var w in wordList)
         {
             if (w.Name == nameLowcase) continue; 
             double val = WordSimilarity.CalculateSpellingSimilarity(nameLowcase, w.Name);
@@ -35,11 +35,11 @@ public static class WordSimilarityExtensions
         return result;
     }
 
-    public static string GetRandomWord(this IList<Word> wordDictionary)
+    public static string GetRandomWord(this IList<Word> wordList)
     {
             Random rnd = new Random();
-            int n = rnd.Next(0, wordDictionary.Count - 1);
-            return wordDictionary[n].Name!;
+            int n = rnd.Next(0, wordList.Count - 1);
+            return wordList[n].Name!;
     }
 
         public static void UpdateAllSimilarWords(this IList<Word> WordList)
