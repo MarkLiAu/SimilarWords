@@ -1,3 +1,4 @@
+using Infrastructure;
 using Microsoft.Azure.Functions.Worker.Builder;
 using Microsoft.Extensions.Hosting;
 
@@ -9,5 +10,7 @@ builder.ConfigureFunctionsWebApplication();
 // builder.Services
 //     .AddApplicationInsightsTelemetryWorkerService()
 //     .ConfigureFunctionsApplicationInsights();
+
+builder.Services.AddInfrastructureSetup(builder.Configuration);
 
 builder.Build().Run();
