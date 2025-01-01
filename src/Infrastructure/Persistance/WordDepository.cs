@@ -24,8 +24,8 @@ public class WordDepository(IConfiguration configuration) : IWordDepository
     {
         string rootPath = Environment.GetEnvironmentVariable("HOME") ?? Directory.GetCurrentDirectory();
         string filePath = Path.Combine(rootPath, "site", "wwwroot", "myfile.txt"); // Adjust as needed
-        var files = new DirectoryInfo(rootPath).GetFileSystemInfos();
-        return files.Select(x => new Word(x.FullName)).ToList();
+        var files = Directory.GetFiles(rootPath,"*.*",SearchOption.AllDirectories);
+        return files.Select(x => new Word(x)).ToList();
     }
 
     async Task<int> IWordDepository.UpdateWordAsync(Word word)
