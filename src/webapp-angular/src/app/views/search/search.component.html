@@ -4,7 +4,7 @@
 
 @if(dataResource.hasValue()) {
   <div class="list-container list-grid">
-    @for (item of dataResource.value(); track item.id) {
+    @for (item of dataResource.value(); track item.name) {
       <app-word-details [word]="item"></app-word-details>
     } @empty {
       <div>no matching word</div>

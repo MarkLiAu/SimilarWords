@@ -86,6 +86,7 @@ public class WordDepositoryLocalFile(IConfiguration configuration) : IWordDeposi
                     else if (columns[i].Equals("soundurl", StringComparison.CurrentCultureIgnoreCase)) w.SoundUrl = ss[i];
                     else if (columns[i].Equals("examplesoundurl", StringComparison.CurrentCultureIgnoreCase)) w.ExampleSoundUrl = ss[i];
                 }
+                if(string.IsNullOrWhiteSpace(w.SoundUrl)) w.SoundUrl = $"https://ssl.gstatic.com/dictionary/static/sounds/oxford/{w.Name}--_us_1.mp3";
                 WordList.Add(w);
             }
         }
