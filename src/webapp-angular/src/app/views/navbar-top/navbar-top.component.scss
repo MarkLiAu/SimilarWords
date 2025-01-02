@@ -26,3 +26,17 @@ mat-form-field {
   height: 35px;
   margin-top: 10px;
 }
+
+.circle {
+  width: 24px; /* Width of the circle */
+  height: 24px; /* Height of the circle */
+  font-size: 14px; /* Font size for the text */
+  // font-weight: bold; /* Make the text bold */
+  background-color: #3498db; /* Circle background color */
+  color: white; /* Text color */
+  display: flex; /* Flexbox for centering text */
+  justify-content: center; /* Horizontal alignment */
+  align-items: center; /* Vertical alignment */
+  border-radius: 50%; /* Makes the element a circle */
+  text-align: center; /* Center-align text */
+}

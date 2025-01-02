@@ -11,8 +11,18 @@
 
     <span class="spacer"></span>
     @if(userName) {
-        <span> {{userName}} </span>
-        <mat-icon (click)="logout()">logout</mat-icon>
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="menu for login user">
+            <span class="circle"> {{userName.substring(0,1).toUpperCase()}} </span>
+        </button>
+        <mat-menu #menu="matMenu">
+        <button mat-menu-item disabled>
+            <span>{{userName}}</span>
+        </button>
+        <button mat-menu-item  (click)="logout()">
+            <mat-icon>logout</mat-icon>
+            <span>Logout</span>
+        </button>
+        </mat-menu>
     } @else {
         <mat-icon (click)="login()">person</mat-icon>
     }

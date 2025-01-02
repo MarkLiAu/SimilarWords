@@ -2,6 +2,7 @@ import { Component, computed } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatMenuModule} from '@angular/material/menu';
 import { RouterLink, Router } from '@angular/router';
 import { FormsModule, NgForm } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -11,7 +12,7 @@ import { UserAuthService } from '../../service/user-auth.service';
 
 @Component({
   selector: 'app-navbar-top',
-  imports: [MatToolbarModule, MatButtonModule, MatIconModule, RouterLink, FormsModule, MatFormFieldModule, MatInputModule],
+  imports: [MatToolbarModule, MatButtonModule, MatIconModule, RouterLink, FormsModule, MatFormFieldModule,MatMenuModule, MatInputModule],
   templateUrl: './navbar-top.component.html',
   styleUrl: './navbar-top.component.scss'
 })
