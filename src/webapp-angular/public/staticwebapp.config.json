@@ -1,6 +1,25 @@
 {
+  "trailingSlash": "auto",
+  "routes": [
+    {
+      "route": "/api/*",
+      "methods": ["PUT", "POST", "PATCH", "DELETE"],
+      "allowedRoles": ["authenticated"]
+    },
+    {
+      "route": "/login",
+      "rewrite": "/.auth/login/aad"
+    },
+    {
+      "route": "/logout",
+      "redirect": "/.auth/logout"
+    }
+  ],
   "navigationFallback": {
     "rewrite": "index.html",
-    "exclude": ["/*.{ico,js,map,css}"]
+    "exclude": ["/images/*.{png,jpg,gif}", "/css/*"]
+  },
+  "mimeTypes": {
+    ".json": "text/json"
   }
 }

@@ -10,7 +10,10 @@
    </form>
 
     <span class="spacer"></span>
-    <button mat-icon-button routerLink="/login">
-        <mat-icon>person</mat-icon>
-    </button>
+    @if(userName) {
+        <span> {{userName}} </span>
+        <mat-icon (click)="logout()">logout</mat-icon>
+    } @else {
+        <mat-icon (click)="login()">person</mat-icon>
+    }
 </mat-toolbar>

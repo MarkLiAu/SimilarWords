@@ -1,6 +1,16 @@
 search similar word
-pick words to study
-remind the user to review words based on user's choice
+
+Technologies used:
+Angular 19 for frontend: signal, rxService, Angular material
+Azure functions for backend apis
+Azure static web app for authentication and deployment
+
+to run in VScode:
+$ sta start
+
+
+future works:
+pick words to study and remind the user to review words based on user's choice
 
 v2: Azure static web app with Angular for frontend and function app for backebd APIs
 v1: dotnet core project with react as client app, using sqlite as storage
