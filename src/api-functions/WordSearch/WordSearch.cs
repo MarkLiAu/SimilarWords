@@ -14,15 +14,6 @@ namespace api_functions.WordSearch
             HttpRequest req, string name)
         {
             var result = await wordQuery.SearchSimilarWords(name);
-            var claims  = StaticWebAppsAuth.Parse(req);
-            if (claims.Identity is null || !claims.Identity.IsAuthenticated)
-            {
-                result = result.Select(x=>x).ToList();
-                foreach (var word in result)
-                {
-                    word.SoundUrl=string.Empty;
-                }
-            }   
             return new OkObjectResult(result);
         }
     }
