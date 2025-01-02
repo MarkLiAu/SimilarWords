@@ -1,7 +1,7 @@
 <div class="container">
 
 <div class="title-row" >
-  <span class="word-name">{{ word().name }}</span> 
+  <span class="headline">{{ word().name }}</span> 
   <i>{{ word().pronounciation }}</i>
   @if(word().soundUrl) {
     <mat-icon (click)="playSound(word().soundUrl)">play_circle</mat-icon>
@@ -11,6 +11,7 @@
 
 <div class="onine-links">
   @for(item of dictionaryLinks(); track item.name){
+    &nbsp;
     <a target="_blank" href="{{item.url}}" matTooltip="{{item.name}}">{{ item.name.substring(0,7) }}</a>
   }
 </div>
@@ -23,6 +24,7 @@
 <div>
   <span class="label">Similar:</span>
   @for(item of similarWords(); track item){
+    &nbsp;
     <a routerLink="/search/{{item}}">{{ item }}</a> 
   }
 </div>
