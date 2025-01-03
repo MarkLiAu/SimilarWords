@@ -3,13 +3,46 @@
 }
 
 mat-icon {
-  color: green;
   vertical-align: middle;
 }
 
 .headline {
-  font: var(--mat-sys-headline-small  );
+  font-size: 20px;
   margin: 0 4px 0 0;
+}
+
+.small-gap mat-icon {
+  margin: 0 -12px 0 0;
+}
+
+.color-level-5 
+{
+  color: green;
+}
+.color-level-4
+{
+  color: green;
+}
+.color-level-3 {
+  color: orange;
+}
+.color-level-2 {
+  color: orange;
+}
+.color-level-1 {
+  color: red;
+}
+
+.color-off {
+  color: var(--mat-sys-surface-dim);
+}
+
+.color-on {
+  color: var(--mat-sys-primary);
+}
+
+.right-align {
+  margin-left: auto;
 }
 
 .label {
@@ -29,8 +62,14 @@ p {
 }
 
 .onine-links {
-  background-color: lightblue; 
-  margin: 5px -10px 5px -10px; 
-  padding: 8px 0px 8px 0px;
+  background-color: #3498db; 
+  margin: 4px -10px 4px -10px; 
+  padding: 5px 0px 5px 0px;
   color: white;
+}
+
+.onine-links a {
+  color: white; /* Text color */
+  font-size: 80%;
+  display: inline-block; /* Ensure padding and border apply properly */
 }

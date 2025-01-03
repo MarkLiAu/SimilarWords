@@ -1,29 +1,41 @@
 <div class="container">
 
 <div class="title-row" >
-  <span class="headline">{{ word().name }}</span> 
-  <i>{{ word().pronounciation }}</i>
-  @if(word().soundUrl) {
-    <mat-icon (click)="playSound(word().soundUrl)">play_circle</mat-icon>
+  <span class="headline">{{ word?.name }}</span> 
+  <i>{{ word?.pronounciation }}</i>
+  @if(word?.soundUrl) {
+    <mat-icon (click)="playSound(word?.soundUrl)">volume_up</mat-icon>
   }
-  <mat-chip  style="margin-left: auto;" matTooltip="Frequency">{{word().frequency}}</mat-chip>
+  <span class="small-gap" matTooltip="Frequency: {{word?.frequency}}" >
+    @for(v of getFrequencyStyle; track $index){
+      <mat-icon [ngClass]="v" >noise_control_off</mat-icon>
+    }
+    </span>
+  
+  <span class="right-align">
+    <mat-icon class="color-off">bookmark-outline</mat-icon>
+  </span>
 </div>
+  <!-- <mat-icon >fiber_manual_record</mat-icon>
+  <mat-icon >trip_origin</mat-icon>
+  <mat-icon >radio_button_off</mat-icon>
+  <mat-icon >radio_button_unchecked</mat-icon> -->
 
 <div class="onine-links">
-  @for(item of dictionaryLinks(); track item.name){
+  @for(item of dictionaryLinks; track item.name){
     &nbsp;
     <a target="_blank" href="{{item.url}}" matTooltip="{{item.name}}">{{ item.name.substring(0,7) }}</a>
   }
 </div>
 
 <div>
-  <span>{{ word().meaningShort }}</span>
-  <p>{{ word().meaningLong }}</p>
+  <span>{{ word?.meaningShort??'' }}</span>
+  <p>{{ word?.meaningLong }}</p>
 </div>
 
 <div>
   <span class="label">Similar:</span>
-  @for(item of similarWords(); track item){
+  @for(item of similarWords; track item){
     &nbsp;
     <a routerLink="/search/{{item}}">{{ item }}</a> 
   }
