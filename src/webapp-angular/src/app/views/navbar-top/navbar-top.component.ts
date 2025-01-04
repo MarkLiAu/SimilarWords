@@ -22,6 +22,7 @@ export class NavbarTopComponent {
   icon_url = 'similar-words-logo-wide.png';
 
   onSubmit(f: NgForm) {
+    if(!this.searchText) return;
     const text = this.searchText;
     this.searchText = '';
     this.router.navigate(['/search',text]);
