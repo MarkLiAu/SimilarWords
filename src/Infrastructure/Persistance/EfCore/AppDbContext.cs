@@ -16,6 +16,7 @@ public class AppDbContext : DbContext
     }
 
     public required DbSet<Word> Words { get; set; }
+    public required DbSet<WordStudy> WordStudies { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -24,6 +25,14 @@ public class AppDbContext : DbContext
             builder.ToTable("Words");
             builder.HasKey(w => w.Name);
             builder.Property(w => w.Name).IsRequired().HasMaxLength(100);
+        });
+
+        modelBuilder.Entity<WordStudy>( builder =>
+        {
+            builder.ToTable("WordStudies");
+            builder.HasKey(ws => new { ws.UserName, ws.WordName });
+            builder.Property(ws => ws.UserName).IsRequired().HasMaxLength(200);
+            builder.Property(ws => ws.WordName).IsRequired().HasMaxLength(100);
         });
     }
     

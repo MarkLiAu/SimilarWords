@@ -24,7 +24,13 @@ public static class InfrastructureSetup
         {
             services.AddDbContext<AppDbContext>(options =>
             {
-                options.UseSqlServer(dbConnection);
+                options.UseSqlServer(dbConnection, sqlServerOptionsAction: sqlOptions =>
+                {
+                    sqlOptions.EnableRetryOnFailure(
+                        maxRetryCount: 3,
+                        maxRetryDelay: TimeSpan.FromSeconds(10),
+                        errorNumbersToAdd: null);
+                });
             });
             services.AddScoped<IWordDepository, WordDepositoryEfCoreSql>();
         }
