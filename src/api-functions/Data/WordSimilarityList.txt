@@ -895,7 +895,6 @@ candidate	['kændɪdət]		865	 candidacy	A candidate is someone running for poli
 production	[prə'dʌkʃn]		866	 reproduction protection productive projection introduction product reduction proportion prediction promotion deduction probation	Production is the process of goods being made or manufactured. If people like the cupcakes you sell about school events, you might have to increase production by baking in both your kitchen and your neighbor's.					0	-2147483648	-2147483648	-2147483648	0
 treat	[triːt]		867	 threat treaty great tread retreat	If you've been working hard and living thriftily for months on end, give yourself a treat: take the night off and go out to dinner and a movie.					0	-2147483648	-2147483648	-2147483648	0
 trip	[trɪp]		868	 strip tip trap rip grip trim drip trio	1.  a visit to a place<~>2. to hit something with your foot by accident<~>3. to release a switch, etc.					-8586096925259127985	8	1	4	-8586102006311434991
-3. The circuit breaker trips when too much electricity flows through it 			0		-8586108518835945135	-1	-2147483648			0	-2147483648	-2147483648	-2147483648	0
 evening	['iːvnɪŋ]		869	 opening	The evening is the last part of the day before night falls, just when the sun is starting to go down. Most people eat dinner in the evening.					0	-2147483648	-2147483648	-2147483648	0
 affect	[ə'fekt]		870	 effect affected afflict	Affect is most often used as a verb meaning “to have an impact on,” as in “The tornado barreling towards us will affect our picnic plans.”					0	-2147483648	-2147483648	-2147483648	0
 inside	[ˌɪn'saɪd]		871	 insider	Something that's inside is located near the center or in the interior of a space. The inside of a perfectly baked potato should be fluffy, buttery, warm, and delicious.					0	-2147483648	-2147483648	-2147483648	0
@@ -1395,7 +1394,6 @@ actor	['æktə(r)]		1348	 factor factory reactor tractor	If you act in a play, w
 birth	[bɜːθ]		1349	 berth						0	-2147483648	-2147483648	-2147483648	0
 search	[sɜːtʃ]		1350	 research	To search is to look for something. A search party is a group of people looking for something together. Their search may take a long time. If they're in the army, they might be on a mission to search and destroy.					0	-2147483648	-2147483648	-2147483648	0
 tie	[taɪ]		1351	 Thai time tire tide tile tier	to fasten					-8586096925235683886	8	1	3	-8586102006267771763
- The two teams are tied with two games a piece.			0		-8586109073858441091	1	1			0	-2147483648	-2147483648	-2147483648	0
 democracy	[dɪ'mɒkrəsi]		1352	 democrat democratic	Whether you're talking about your glee club or a powerful nation, the word democracy describes government based on participation of the people, either directly or through elected representatives.					0	-2147483648	-2147483648	-2147483648	0
 eastern	['iːstən]		1353	 Easter nearest earnest western stern						0	-2147483648	-2147483648	-2147483648	0
 primary	['praɪməri]		1354	 primarily	"Primary means basically ""first."" When you vote in a primary, that is the first election in a series. When a matter is of primary concern, it means it's of first importance. Primary school is the first you go to (after nursery school, at least)."					0	-2147483648	-2147483648	-2147483648	0
@@ -2524,7 +2522,6 @@ telescope	['telɪskəʊp]		2438		A telescope is an instrument that is used to vi
 reflection	[rɪ'flekʃn]		2439	 rejection reflective recollection election reflect collection reaction selection reduction	Your reflection is what you see in the mirror. Other things that bounce back at you are also reflections — light waves, sound waves, even your thoughts.					0	-2147483648	-2147483648	-2147483648	0
 revolution	[ˌrevə'luːʃn]		2440	 resolution evolution devolution revolutionary solution revelation	When a new development in an industry changes everything drastically, call it a revolution. The Internet has certainly caused a revolution in the way people lead their lives.					0	-2147483648	-2147483648	-2147483648	0
 strip	[strɪp]		2441	 stripe trip strap striped	1. a long narrow piece of paper, metal, cloth, or land, etc  2. take off clothes 3. to remove something from the surface					-8586096045235872738	5	1	4	-8586101191686095234
-3. to remove everything that covers it			0		0	-1	-2147483648			0	-2147483648	-2147483648	-2147483648	0
 interpret	[ɪn'tɜːprɪt]		2442	 interpreter Internet interpretive	When you interpret something, you make sense of it. You could interpret a graph, a foreign language, or even Mona Lisa's odd smile.					-8586095073178342071	5	0	5	-8586100385391637939
 friendly	['frendli]		2443	 friend	Friendly, describes people who are kind, caring, and make you feel comfortable. You might be new to town, but the people are so friendly that you'll soon feel right at home.					0	-2147483648	-2147483648	-2147483648	0
 tournament	['tʊənəmənt]		2444	 ornament	A tournament refers to a gathering of competitors playing a series of games. There are chess tournaments, golf tournaments, tennis tournaments, and a number of tournaments titled “Tournament of Champions.”					-8586095073013954268	5	0	5	-8586100385329784164
@@ -6059,8 +6056,7 @@ rag	[ræɡ]		5814	 drag rage brag						0	-2147483648	-2147483648	-2147483648	0
 promptly	['prɒmptli]		5815	 prompt	To do something promptly is to do it right away or in a timely fashion, avoiding any delays.					0	-2147483648	-2147483648	-2147483648	0
 reopen	[ˌriː'əʊpən]		5816	 opener						0	-2147483648	-2147483648	-2147483648	0
 expanded	[ɪks'pændɪd]		5817	 expand extended	Something that is expanded has been increased in size. For example, an expanded edition DVD has many more special features than the standard edition.					0	-2147483648	-2147483648	-2147483648	0
-stall	[stɔːl]		5818	 still small tall shall stalk stale install	1. a market stall: A stand, booth, or compartment for the sale of goods in a market or large covered area					-8586094193905623454	2	0	3	-8586095071233938122
-2. engine stop running, typically because of an overload on the engine			0		-8586107954341343894	-1	-2147483648			0	-2147483648	-2147483648	-2147483648	0
+stall	[stɔːl]		5818	 still small tall shall stalk stale install	1. a market stall: A stand, booth, or compartment for the sale of goods in a market or large covered area 2. engine stop running,					-8586094193905623454	2	0	3	-8586095071233938122
 detention	[dɪ'tenʃn]		5819	 detection retention attention intention contention abstention	Detention is a word for confinement or imprisonment, usually for a short time. It's also a punishment where children must stay after school.					0	-2147483648	-2147483648	-2147483648	0
 dedicated	['dedɪkeɪtɪd]		5820	 dedicate dedication	When you are dedicated to something, you are devoted to a cause or ideal, like dedicated volunteers at the animal shelter who show up even in snowstorms and on holidays.					0	-2147483648	-2147483648	-2147483648	0
 talking	['tɔːkɪŋ]		5821	 walking taking						0	-2147483648	-2147483648	-2147483648	0
@@ -6375,7 +6371,6 @@ apt	[æpt]		6116	 tap pat	"Something apt is perfectly appropriate, clever and we
 optimal	['ɒptɪməl]		6117	 optical optional	Something that's optimal is the best or most favorable for a given situation. Flowers? Check. Chocolates? Check. Dinner reservation? Check. Sounds like you have the optimal conditions for a successful anniversary date.					0	-2147483648	-2147483648	-2147483648	0
 simplicity	[sɪm'plɪsəti]		6118	 implicit simplify	"Simplicity is a noun that means ""the quality of being plain."" The simplicity of your prom dress made you stand out in the sea of ruffles and sequins."					0	-2147483648	-2147483648	-2147483648	0
 staple	['steɪpl]		6119	 pastel stable stale startle	1 a small piece of thin wire that is pushed into sheets of paper and bent over to hold them together					-8586093427862489948	2	0	3	-8586094193199646744
-3 the main product that is produced in a country			0		-8586107948364350181	-1	-2147483648			0	-2147483648	-2147483648	-2147483648	0
 absorbed			6119	 absorb						0	-2147483648	-2147483648	-2147483648	0
 canned	[kænd]		6120	 planned						0	-2147483648	-2147483648	-2147483648	0
 plaque	[plæk]		6121	 plague	A plaque is a sign that memorializes a person or event, such as the plaque on a building noting the person it's named after or the year it was built.					0	-2147483648	-2147483648	-2147483648	0
@@ -10002,11 +9997,9 @@ individuality	[ˌɪndɪˌvɪdʒu'æləti]		9270	 individually individualism indi
 captivity	[kæp'tɪvəti]		9271	 creativity	Captivity is the condition of being trapped or confined. Animals that are kept in zoos are in captivity.					0	-2147483648	-2147483648	-2147483648	0
 defeated	[dɪ'fiːt]		9272	 defeat						0	-2147483648	-2147483648	-2147483648	0
 filo	 /ˌfiː.ləʊ ˈpeɪ.stri/		5000	foil film fill file  	also filo pastry;   US phyllo pastry. a type of very thin pastry which is used by placing many layers together					-8586102008139125553	-1	0	0	-8586102008139125531
-a type of very thin pastry which is used by placing many layers together			0		-8586108989146491326	-1	-2147483648			0	-2147483648	-2147483648	-2147483648	0
 scallop	[ˈskɒləp]		8888		a small sea creature that you can eat, with a flat round shell made of two parts that fit together					-8586102008139125509	-1	0	0	-8586102008139125489
 mozzarella	[ˌmɒtsəˈrelə]		8888		a white Italian cheese that is often used on pizza					-8586102008139125468	-1	0	0	-8586102008139125448
 damper	[ˈdæmpə(r)]		8888		1.Damper :  a traditional Australian soda bread;					0	-2147483648	-2147483648	-2147483648	0
-3.A damper : in a piano or similar, makes the sound less loud,  by restricting the movement of the strings.			0		0	-1	-2147483648			0	-2147483648	-2147483648	-2147483648	0
 dill			8888		a herb whose seeds and thin feathery leaves are used in cooking; 茴香					-8586102008139125425	-1	0	0	-8586102008139125404
 condiment	[ˈkɒndɪmənt]		8888		a substance, such as salt, pepper or a sauce, that is added to food to give it extra taste					-8586102008139125383	-1	0	0	-8586102008139125363
 complimentary	[ˌkɒmpləˈmentəri ]		8888		given free to people;  saying that you admire someone or something					-8586102008139125343	-1	0	0	-8586102008139125323

@@ -8,4 +8,9 @@ public class WordQuery(IWordDepository wordDepository) : IWordQuery
         var wordList = await wordDepository.GetSimilarWordsAsync(searchText);
         return wordList;
     }
+
+    public async Task<int> UpdateWordListAsync(IList<Word> wordList)
+    {
+        return await wordDepository.UpdateWordListAsync(wordList);
+    }
 }

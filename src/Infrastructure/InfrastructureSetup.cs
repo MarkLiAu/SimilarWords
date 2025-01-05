@@ -1,5 +1,6 @@
 ﻿using ApplicationCore.WordDictionary;
 using Infrastructure.Persistance;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -16,7 +17,21 @@ public static class InfrastructureSetup
 
     public static IServiceCollection AddPersistenceSetup(this IServiceCollection services, IConfiguration configuration)
     {
-        services.AddScoped<IWordDepository, WordDepositoryLocalFile>();
+        // get connection string from environment variable
+        var dbConnection = Environment.GetEnvironmentVariable("DbConnection");
+        Console.WriteLine($"Connection String: {dbConnection}");
+        if (!string.IsNullOrWhiteSpace(dbConnection) && dbConnection.ToLower().Contains("database.windows.net"))
+        {
+            services.AddDbContext<AppDbContext>(options =>
+            {
+                options.UseSqlServer(dbConnection);
+            });
+            services.AddScoped<IWordDepository, WordDepositoryEfCoreSql>();
+        }
+        else
+        {
+            services.AddScoped<IWordDepository, WordDepositoryLocalFile>();
+        }
         return services;
     }
     public static IServiceCollection AddApplicationSetup(this IServiceCollection services, IConfiguration configuration)

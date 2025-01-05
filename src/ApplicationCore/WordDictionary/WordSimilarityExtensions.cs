@@ -58,4 +58,8 @@ public static class WordSimilarityExtensions
             return string.Join(" ", wordList.Select(w => w.Name));
         }
 
+        public static string[] SplitSimilarWords(string? similarWords)
+        {
+            return similarWords?.Split(' ') ?? [];
+        }
 }

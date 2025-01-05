@@ -3,18 +3,19 @@ using Microsoft.Extensions.Configuration;
 
 namespace Infrastructure.Persistance;
 
-public class WordDepositoryLocalFile(IConfiguration configuration) : IWordDepository
+public class WordDepositoryLocalFile() : IWordDepository
 {
-    private const string WordFileName = "WordSimilarityList.txt";
+    private readonly string WordFileName = Environment.GetEnvironmentVariable("DbConnection") ?? "WordSimilarityList.txt";
     private static List<Word> _wordList = [];
-    async Task<IList<Word>> IWordDepository.GetSimilarWordsAsync(string name)
+
+    public async Task<IList<Word>> GetSimilarWordsAsync(string name)
     {
         await LoadWordListAsync();
         var result = _wordList.FindSimilarWords(name);
         return result;
     }
 
-    async Task<IList<Word>> IWordDepository.GetWordListAsync()
+    public async Task<IList<Word>> GetWordListAsync()
     {
         await LoadWordListAsync();
         return _wordList;
@@ -26,12 +27,12 @@ public class WordDepositoryLocalFile(IConfiguration configuration) : IWordDeposi
         _wordList = await LoadWordListFromFile(WordFileName);
     }
 
-    async Task<int> IWordDepository.UpdateWordAsync(Word word)
+    public async Task<int> UpdateWordAsync(Word word)
     {
         throw new NotImplementedException();
     }
 
-    async Task<int> IWordDepository.UpdateWordListAsync(Word[] wordList)
+    public async Task<int> UpdateWordListAsync(IList<Word> wordList)
     {
         throw new NotImplementedException();
     }
@@ -55,7 +56,8 @@ public class WordDepositoryLocalFile(IConfiguration configuration) : IWordDeposi
     private async Task<List<Word>> LoadWordListFromFile(string fileName, string delimiter = "\t")
     {
         var file = FindFileFullPath(Environment.GetEnvironmentVariable("HOME"), fileName).FirstOrDefault()
-                    ?? FindFileFullPath(Directory.GetCurrentDirectory(), fileName).FirstOrDefault();
+                    ?? FindFileFullPath(Directory.GetCurrentDirectory(), fileName).FirstOrDefault()
+                    ?? FindFileFullPath(Directory.GetCurrentDirectory(), "WordSimilarityList.txt").FirstOrDefault();
 
         if (file is null) return [];
         List<Word> WordList= [];
