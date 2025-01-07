@@ -5,9 +5,9 @@ using Microsoft.Azure.Functions.Worker;
 using Microsoft.Extensions.Logging;
 using SimilarWords.Infrastructure;
 
-namespace api_functions.WordSearch
+namespace api_functions.Functions
 {
-    public class WordSearch(ILogger<WordSearch> logger, IWordQuery wordQuery)
+    public class WordSearchFunctions(ILogger<WordSearchFunctions> logger, IWordQuery wordQuery)
     {
         [Function(nameof(SearchSimilarWordsAsync))]
         public async Task<IActionResult> SearchSimilarWordsAsync([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post",Route ="words/{name}")] 

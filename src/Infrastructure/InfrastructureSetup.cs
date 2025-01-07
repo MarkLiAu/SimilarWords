@@ -1,4 +1,5 @@
 ﻿using ApplicationCore.WordDictionary;
+using ApplicationCore.WordStudyNameSpace;
 using Infrastructure.Persistance;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -42,6 +43,9 @@ public static class InfrastructureSetup
     }
     public static IServiceCollection AddApplicationSetup(this IServiceCollection services, IConfiguration configuration)
     {
+        services.AddScoped<IWordQuery, WordQuery>();
+        services.AddScoped<IWordStudyQuery, WordStudyQuery>();
+        services.AddScoped<IWordStudyUpdate, WordStudyUpdate>();
         services.AddScoped<IWordQuery, WordQuery>();
         return services;
     }
