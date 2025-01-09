@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { environment } from '../../environments/environment';
-import { Word } from '../domain/model/word';
+import { WordStudyModel } from '../domain/model/word';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -12,7 +12,11 @@ export class WordsDataService {
   #http = inject(HttpClient);
   constructor() { }
 
-  searchWords(word: string|undefined): Observable<Word[]> {
-    return this.#http.get<Word[]>(`${this.#baseUrl}/words/${word}`);
+  searchWords(wordName: string|undefined): Observable<WordStudyModel[]> {
+    return this.#http.get<WordStudyModel[]>(`${this.#baseUrl}/words/${wordName}`);
+  }
+
+  bookmarkWord(wordName: string, daysToStudy: number =0) : Observable<number> {
+    return this.#http.post<number>(`${this.#baseUrl}/study/${wordName}?daysToStudy=${daysToStudy}`,null);
   }
 }

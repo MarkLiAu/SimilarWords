@@ -1,4 +1,4 @@
-namespace ApplicationCore.WordDictionary;
+namespace ApplicationCore.WordStudy;
 public class WordSimilarity
 {
     private const double SimilarityThreshold = 0.7;

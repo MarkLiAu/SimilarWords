@@ -7,8 +7,8 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { WordsDataService } from '../../service/words-data.service';
-import { Word } from '../../domain/model/word';
-import { Observable } from 'rxjs';
+import { WordStudyModel } from '../../domain/model/word';
+import { firstValueFrom, Observable } from 'rxjs';
 import { WordDetailsComponent } from "./word-details/word-details.component";
 
 @Component({
@@ -24,5 +24,13 @@ export class SearchComponent {
     request:() => this.searchText(),
     loader:() => this.#dataService.searchWords(this.searchText()),
   })
+
+  async onBookmarkClicked(wordStudy : WordStudyModel) {
+    console.log('onBookmarkClicked in search.component.ts', wordStudy);
+    console.log(wordStudy);
+    const result = await firstValueFrom(this.#dataService.bookmarkWord(wordStudy.wordName!));
+    this.dataResource.reload();
+  }
+
 
 }

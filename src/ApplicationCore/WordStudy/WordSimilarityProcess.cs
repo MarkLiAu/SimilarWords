@@ -1,4 +1,4 @@
-namespace ApplicationCore.WordDictionary;
+namespace ApplicationCore.WordStudy;
 public static class WordSimilarityProcess
 {
     public static List<Word> FindSimilarWords(this IList<Word> wordList, string name)

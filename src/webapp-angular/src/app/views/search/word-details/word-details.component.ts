@@ -1,6 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { Word } from '../../../domain/model/word';
+import { Word, WordStudyModel } from '../../../domain/model/word';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatCardModule } from '@angular/material/card';
@@ -8,44 +8,60 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatChipsModule } from '@angular/material/chips';
 import {MatBadgeModule} from '@angular/material/badge';
 import { NgClass } from '@angular/common';
+import { WordBookmarkComponent } from "../word-bookmark/word-bookmark.component";
 
 @Component({
   selector: 'app-word-details',
-  imports: [NgClass, MatIconModule, RouterLink, MatDividerModule, MatCardModule,MatTooltipModule,MatChipsModule,MatBadgeModule],
+  imports: [NgClass, MatIconModule, RouterLink, MatDividerModule, MatCardModule, MatTooltipModule, MatChipsModule, MatBadgeModule, WordBookmarkComponent],
   templateUrl: './word-details.component.html',
   styleUrl: './word-details.component.scss'
 })
 export class WordDetailsComponent {
-  @Input() word: Word | undefined ;
+  @Input() wordStudy: WordStudyModel | undefined ;
+  @Output() bookmarkClicked = new EventEmitter<boolean>();
   get similarWords() { 
-    return this.word?.similarWords?.trim().split(" ")
+    return this.wordStudy?.word?.similarWords?.trim().split(" ")
   };
+  get word() {
+    return this.wordStudy?.word;
+  }
   get dictionaryLinks() {
-    return this.word ===undefined ? []
-    : [
-    { name: "Collins", url: `https://www.collinsdictionary.com/dictionary/english/${this.word.name}` },
-    { name: "Longman", url: `https://www.ldoceonline.com/dictionary/${this.word.name}` },
-    { name: "Cambridge", url: `https://dictionary.cambridge.org/dictionary/english/${this.word.name}` },
-    { name: "Oxford", url: `https://www.oxfordlearnersdictionaries.com/definition/english/${this.word.name}` },
-    { name: "Merriam-Webster", url: `https://www.merriam-webster.com/dictionary/${this.word.name}` },
-    { name: "iCIBA", url: `https://www.iciba.com/word?w=${this.word.name}` },
+    const name = this.wordStudy?.word?.name;
+    if(!name) return [];
+    return [
+    { name: "Collins", url: `https://www.collinsdictionary.com/dictionary/english/${name}` },
+    { name: "Longman", url: `https://www.ldoceonline.com/dictionary/${name}` },
+    { name: "Cambridge", url: `https://dictionary.cambridge.org/dictionary/english/${name}` },
+    { name: "Oxford", url: `https://www.oxfordlearnersdictionaries.com/definition/english/${name}` },
+    { name: "Merriam-Webster", url: `https://www.merriam-webster.com/dictionary/${name}` },
+    { name: "iCIBA", url: `https://www.iciba.com/word?w=${name}` },
   ]
   };
   get getFrequencyStyle() {
-    return this.word ===undefined || !this.word.frequency ? []
-    : [
-      (this.word.frequency ?? 99999) <= 10000 ? 'color-on' : 'color-off',
-      (this.word.frequency ?? 99999) <= 8000 ? 'color-on' : 'color-off',
-      (this.word.frequency ?? 99999) <= 6000 ? 'color-on' : 'color-off',
-      (this.word.frequency ?? 99999) <= 4000 ? 'color-on' : 'color-off',
-      (this.word.frequency ?? 99999) <= 2000 ? 'color-on' : 'color-off'
+    const word = this.wordStudy?.word;
+    if (!word?.frequency) {
+      return [];
+    }
+
+    return [
+      word.frequency <= 10000 ? 'color-on' : 'color-off',
+      word.frequency <= 8000 ? 'color-on' : 'color-off',
+      word.frequency <= 6000 ? 'color-on' : 'color-off',
+      word.frequency <= 4000 ? 'color-on' : 'color-off',
+      word.frequency <= 2000 ? 'color-on' : 'color-off'
     ];
   }
+
 
   playSound = (url:string|undefined) => {
     if(!url) return;
     let mySound = new Audio(url);
     mySound.play().catch(e=>console.log('failed to play sound'));
   };
+
+  onBookmarkClicked = () => {
+    // buble click to parent component
+    this.bookmarkClicked.emit(true);
+  }
 
 }

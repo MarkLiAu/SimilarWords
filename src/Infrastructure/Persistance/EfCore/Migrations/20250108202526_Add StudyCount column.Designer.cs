@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Persistance.EfCore.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250105103535_Adding WordStudies Table")]
-    partial class AddingWordStudiesTable
+    [Migration("20250108202526_Add StudyCount column")]
+    partial class AddStudyCountcolumn
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -63,7 +63,7 @@ namespace Infrastructure.Persistance.EfCore.Migrations
                     b.ToTable("Words", (string)null);
                 });
 
-            modelBuilder.Entity("ApplicationCore.WordStudy.WordStudy", b =>
+            modelBuilder.Entity("ApplicationCore.WordStudy.WordStudyModel", b =>
                 {
                     b.Property<string>("UserName")
                         .HasMaxLength(200)
@@ -76,18 +76,37 @@ namespace Infrastructure.Persistance.EfCore.Migrations
                     b.Property<int>("DaysToStudy")
                         .HasColumnType("int");
 
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsClosed")
+                        .HasColumnType("bit");
+
                     b.Property<DateTime>("LastStudyTimeUtc")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("StartTimeUtc")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("StudyDaysLog")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("StudyCount")
+                        .HasColumnType("int");
 
                     b.HasKey("UserName", "WordName");
 
+                    b.HasIndex("WordName");
+
                     b.ToTable("WordStudies", (string)null);
+                });
+
+            modelBuilder.Entity("ApplicationCore.WordStudy.WordStudyModel", b =>
+                {
+                    b.HasOne("ApplicationCore.WordStudy.Word", "Word")
+                        .WithMany()
+                        .HasForeignKey("WordName")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Word");
                 });
 #pragma warning restore 612, 618
         }

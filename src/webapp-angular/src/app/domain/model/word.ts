@@ -19,3 +19,14 @@ export class Word {
   startTime: Date | undefined;
 }
 
+export class WordStudyModel {
+  id?: number;
+  userName?: string | null;
+  wordName?: string | null;
+  startTimeUtc?: Date;
+  lastStudyTimeUtc?: Date;
+  studyCount?: number;
+  isClosed?: boolean;
+  daysToStudy?: number; // lastStudyTimeUtc + daysToStudy = nextStudyTimeUtc to remind user to study
+  word?: Word | null;
+}

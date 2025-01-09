@@ -1,7 +1,8 @@
-using ApplicationCore.WordDictionary;
+using ApplicationCore.WordStudy;
 
-namespace ApplicationCore.WordStudyNameSpace;
+namespace ApplicationCore.WordStudy;
 public interface IWordStudyQuery
 {
-    Task<WordStudy> GetWordStudyAsync(string userName, string wordName);
+    Task<IList<WordStudyModel>> SearchSimilarWords(string searchText, string? userName = null);
+    Task<WordStudyModel> GetWordStudyAsync(string userName, string wordName);
 }

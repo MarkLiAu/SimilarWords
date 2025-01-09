@@ -4,8 +4,8 @@
 
 @if(dataResource.hasValue()) {
   <div class="list-container list-grid">
-    @for (item of dataResource.value(); track item.name) {
-      <app-word-details [word]="item"></app-word-details>
+    @for (item of dataResource.value(); track item.wordName) {
+      <app-word-details (bookmarkClicked)="onBookmarkClicked(item)" [wordStudy]="item"></app-word-details>
     } @empty {
       <div>no matching word</div>
     }

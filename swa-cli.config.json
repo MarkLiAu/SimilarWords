@@ -4,7 +4,7 @@
         "appDevserverUrl": "http://localhost:4200",
         "appLocation": "./src/webapp-angular",
         "run": "npm run start",
-        "apiLocation": "./src/api-functions"
+        "apiLocationzz": "./src/api-functions"
       }
     }
   }

@@ -24,7 +24,7 @@ namespace Infrastructure.Persistance.EfCore.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("ApplicationCore.WordDictionary.Word", b =>
+            modelBuilder.Entity("ApplicationCore.WordStudy.Word", b =>
                 {
                     b.Property<string>("Name")
                         .HasMaxLength(100)

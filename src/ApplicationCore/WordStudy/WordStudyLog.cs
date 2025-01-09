@@ -1,4 +1,4 @@
-namespace ApplicationCore.WordStudyNameSpace;
+namespace ApplicationCore.WordStudy;
 public class WordStudyLog
 {
     public int Id { get; set; }

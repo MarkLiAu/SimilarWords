@@ -1,5 +1,5 @@
-﻿using ApplicationCore.WordDictionary;
-using ApplicationCore.WordStudyNameSpace;
+﻿using ApplicationCore.WordStudy;
+using ApplicationCore.WordStudy;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
@@ -17,7 +17,7 @@ public class AppDbContext : DbContext
     }
 
     public required DbSet<Word> Words { get; set; }
-    public required DbSet<WordStudy> WordStudies { get; set; }
+    public required DbSet<WordStudyModel> WordStudies { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -28,7 +28,7 @@ public class AppDbContext : DbContext
             builder.Property(w => w.Name).IsRequired().HasMaxLength(100);
         });
 
-        modelBuilder.Entity<WordStudy>( builder =>
+        modelBuilder.Entity<WordStudyModel>( builder =>
         {
             builder.ToTable("WordStudies");
             builder.HasKey(ws => new { ws.UserName, ws.WordName });

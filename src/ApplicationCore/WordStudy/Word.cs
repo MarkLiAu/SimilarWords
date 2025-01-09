@@ -1,4 +1,4 @@
-namespace ApplicationCore.WordDictionary;
+namespace ApplicationCore.WordStudy;
 public class Word
 {
     public string? Name { set; get; }

@@ -1,5 +1,5 @@
-﻿using ApplicationCore.WordDictionary;
-using ApplicationCore.WordStudyNameSpace;
+﻿using ApplicationCore.WordStudy;
+using ApplicationCore.WordStudy;
 using Microsoft.Extensions.Configuration;
 
 namespace Infrastructure.Persistance;
@@ -96,17 +96,22 @@ public class WordDepositoryLocalFile() : IWordDepository
         return WordList;
     }
 
-    public Task<WordStudy> GetWordStudyAsync(string userName, string wordName)
+    public Task<WordStudyModel> GetWordStudyAsync(string userName, string wordName)
     {
         throw new NotImplementedException();
     }
 
-    public Task<IList<WordStudy>> GetAllWordStudyAsync(string userName)
+    public Task<IList<WordStudyModel>> GetAllWordStudyAsync(string userName)
     {
         throw new NotImplementedException();
     }
 
-    public Task<int> UpsertWordStudyAsync(WordStudy wordStudy)
+    public Task<int> UpsertWordStudyAsync(WordStudyModel wordStudy)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task<IList<WordStudyModel>> GetMultipleWordStudyAsync(string userName, IEnumerable<string> wordList)
     {
         throw new NotImplementedException();
     }

@@ -1,5 +1,4 @@
-using ApplicationCore.WordDictionary;
-using ApplicationCore.WordStudyNameSpace;
+using ApplicationCore.WordStudy;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Functions.Worker;
@@ -8,7 +7,7 @@ using SimilarWords.Infrastructure;
 
 namespace api_functions.Functions;
 
-public class WordStudyFunctions(ILogger<WordStudy> logger, IWordStudyUpdate wordStudyUpdate)
+public class WordStudyFunctions(ILogger<WordStudyModel> logger, IWordStudyUpdate wordStudyUpdate)
 {
     [Function(nameof(UpdateWordStudyAsync))]
     public async Task<IActionResult> UpdateWordStudyAsync([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post",Route ="study/{name}")] 
@@ -21,9 +20,7 @@ public class WordStudyFunctions(ILogger<WordStudy> logger, IWordStudyUpdate word
             {
                 return new StatusCodeResult(StatusCodes.Status401Unauthorized);
             }
-            WordStudy wordStudy = new(claims.Identity.Name!, name);
-            wordStudy.DaysToStudy = daysToStudy;
-            var result = await wordStudyUpdate.UpdateWordStudyAsync(wordStudy);
+            var result = await wordStudyUpdate.UpdateWordStudyAsync(claims.Identity.Name!, name, daysToStudy);
             return new OkObjectResult(result);
         }
         catch(Exception ex)

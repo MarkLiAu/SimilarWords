@@ -12,10 +12,15 @@
     }
     </span>
   
-  <span class="right-align">
-    <mat-icon class="color-off">bookmark-outline</mat-icon>
-  </span>
-</div>
+    <span class="right-align">
+      @if(wordStudy?.isClosed) {
+        <mat-icon (click)="onBookmarkClicked()" class="color-off">bookmark-outline</mat-icon>
+      }
+      @else {
+        <mat-icon matBadge="{{wordStudy?.studyCount}}" aria-hidden="false" matTooltip="Studied Times:{{wordStudy?.studyCount}}" class="color-on">bookmark</mat-icon>
+      }
+    </span>
+    </div>
   <!-- <mat-icon >fiber_manual_record</mat-icon>
   <mat-icon >trip_origin</mat-icon>
   <mat-icon >radio_button_off</mat-icon>

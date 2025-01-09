@@ -1,4 +1,4 @@
-using ApplicationCore.WordDictionary;
+using ApplicationCore.WordStudy;
 using Infrastructure.Persistance;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -8,7 +8,7 @@ using SimilarWords.Infrastructure;
 
 namespace api_functions.Functions
 {
-    public class WordAdminFunctions(ILogger<WordAdminFunctions> logger, IWordQuery wordQuery)
+    public class WordAdminFunctions(ILogger<WordAdminFunctions> logger, IWordStudyUpdate wordStudyUpdate)
     {
         [Function(nameof(WordDbSetupAsync))]
         public async Task<IActionResult> WordDbSetupAsync([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post",Route ="v1/admin/dbsetup")] 
@@ -17,7 +17,7 @@ namespace api_functions.Functions
             var fileService = new WordDepositoryLocalFile();
             var wordList = await fileService.GetWordListAsync();
             wordList.UpdateAllSimilarWords();
-            var result = await wordQuery.UpdateWordListAsync(wordList.ToList());
+            var result = await wordStudyUpdate.UpdateWordListAsync(wordList.ToList());
             return new OkObjectResult(result);
         }
     }

@@ -1,4 +1,4 @@
-namespace ApplicationCore.WordStudyNameSpace;
+namespace ApplicationCore.WordStudy;
 public static class WordStudyProcess
 {
     // calculate next study date

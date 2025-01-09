@@ -25,7 +25,7 @@ namespace Infrastructure.Persistance.EfCore.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("ApplicationCore.WordDictionary.Word", b =>
+            modelBuilder.Entity("ApplicationCore.WordStudy.Word", b =>
                 {
                     b.Property<string>("Name")
                         .HasMaxLength(100)
@@ -63,7 +63,7 @@ namespace Infrastructure.Persistance.EfCore.Migrations
                     b.ToTable("Words", (string)null);
                 });
 
-            modelBuilder.Entity("ApplicationCore.WordStudyNameSpace.WordStudy", b =>
+            modelBuilder.Entity("ApplicationCore.WordStudy.WordStudy", b =>
                 {
                     b.Property<string>("UserName")
                         .HasMaxLength(200)
@@ -93,7 +93,7 @@ namespace Infrastructure.Persistance.EfCore.Migrations
                     b.ToTable("WordStudies", (string)null);
                 });
 
-            modelBuilder.Entity("ApplicationCore.WordStudyNameSpace.WordStudyLog", b =>
+            modelBuilder.Entity("ApplicationCore.WordStudy.WordStudyLog", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -125,16 +125,16 @@ namespace Infrastructure.Persistance.EfCore.Migrations
                     b.ToTable("WordStudyLog");
                 });
 
-            modelBuilder.Entity("ApplicationCore.WordStudyNameSpace.WordStudyLog", b =>
+            modelBuilder.Entity("ApplicationCore.WordStudy.WordStudyLog", b =>
                 {
-                    b.HasOne("ApplicationCore.WordStudyNameSpace.WordStudy", null)
+                    b.HasOne("ApplicationCore.WordStudy.WordStudy", null)
                         .WithMany("WordStudyLogs")
                         .HasForeignKey("WordStudyUserName", "WordStudyWordName")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("ApplicationCore.WordStudyNameSpace.WordStudy", b =>
+            modelBuilder.Entity("ApplicationCore.WordStudy.WordStudy", b =>
                 {
                     b.Navigation("WordStudyLogs");
                 });

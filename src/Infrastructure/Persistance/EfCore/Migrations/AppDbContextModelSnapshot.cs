@@ -22,7 +22,7 @@ namespace Infrastructure.Persistance.EfCore.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("ApplicationCore.WordDictionary.Word", b =>
+            modelBuilder.Entity("ApplicationCore.WordStudy.Word", b =>
                 {
                     b.Property<string>("Name")
                         .HasMaxLength(100)
@@ -60,7 +60,7 @@ namespace Infrastructure.Persistance.EfCore.Migrations
                     b.ToTable("Words", (string)null);
                 });
 
-            modelBuilder.Entity("ApplicationCore.WordStudyNameSpace.WordStudy", b =>
+            modelBuilder.Entity("ApplicationCore.WordStudy.WordStudyModel", b =>
                 {
                     b.Property<string>("UserName")
                         .HasMaxLength(200)
@@ -85,55 +85,25 @@ namespace Infrastructure.Persistance.EfCore.Migrations
                     b.Property<DateTime>("StartTimeUtc")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("StudyCount")
+                        .HasColumnType("int");
+
                     b.HasKey("UserName", "WordName");
+
+                    b.HasIndex("WordName");
 
                     b.ToTable("WordStudies", (string)null);
                 });
 
-            modelBuilder.Entity("ApplicationCore.WordStudyNameSpace.WordStudyLog", b =>
+            modelBuilder.Entity("ApplicationCore.WordStudy.WordStudyModel", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("ScheduledStudyTimeUtc")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("StudyTimeUtc")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("WordStudyId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("WordStudyUserName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<string>("WordStudyWordName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(100)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("WordStudyUserName", "WordStudyWordName");
-
-                    b.ToTable("WordStudyLog");
-                });
-
-            modelBuilder.Entity("ApplicationCore.WordStudyNameSpace.WordStudyLog", b =>
-                {
-                    b.HasOne("ApplicationCore.WordStudyNameSpace.WordStudy", null)
-                        .WithMany("WordStudyLogs")
-                        .HasForeignKey("WordStudyUserName", "WordStudyWordName")
+                    b.HasOne("ApplicationCore.WordStudy.Word", "Word")
+                        .WithMany()
+                        .HasForeignKey("WordName")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
 
-            modelBuilder.Entity("ApplicationCore.WordStudyNameSpace.WordStudy", b =>
-                {
-                    b.Navigation("WordStudyLogs");
+                    b.Navigation("Word");
                 });
 #pragma warning restore 612, 618
         }

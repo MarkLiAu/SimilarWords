@@ -1,7 +1,10 @@
-using ApplicationCore.WordDictionary;
+using ApplicationCore.WordStudy;
 
-namespace ApplicationCore.WordStudyNameSpace;
+namespace ApplicationCore.WordStudy;
 public interface IWordStudyUpdate
 {
-    Task<int> UpdateWordStudyAsync(WordStudy wordStudy);
+    Task<int> UpdateWordStudyAsync(WordStudyModel wordStudy);
+    Task<int> UpdateWordStudyAsync(string userName, string wordName, int daysToStudy);
+
+    Task<int> UpdateWordListAsync(IList<Word> wordList);
 }

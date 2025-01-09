@@ -1,25 +1,28 @@
-﻿using ApplicationCore.WordDictionary;
-using ApplicationCore.WordStudyNameSpace;
+﻿using ApplicationCore.WordStudy;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Persistance;
 
 public class WordDepositoryEfCoreSql(AppDbContext appDbContext) : IWordDepository
 {
-    public async Task<IList<WordStudy>> GetAllWordStudyAsync(string userName)
+    public async Task<IList<WordStudyModel>> GetAllWordStudyAsync(string userName)
     {
         return await appDbContext.WordStudies.Where(ws => ws.UserName == userName).ToListAsync();
     }
 
-    public async Task<WordStudy?> GetWordStudyAsync(string userName, string wordName)
+    public async Task<WordStudyModel?> GetWordStudyAsync(string userName, string wordName)
     {
-        return await appDbContext.WordStudies.FirstOrDefaultAsync(ws => ws.UserName == userName && ws.WordName == wordName);
+        return await appDbContext.WordStudies.FirstOrDefaultAsync(ws => ws.UserName == userName && ws.WordName == wordName && !ws.IsClosed);
     }
 
-    public async Task<int> UpsertWordStudyAsync(WordStudy wordStudy)
+    public async Task<IList<WordStudyModel>> GetMultipleWordStudyAsync(string userName, IEnumerable<string> wordList)
     {
-        var existingWordStudy = await appDbContext.WordStudies
-            .FirstOrDefaultAsync(ws => ws.UserName == wordStudy.UserName && ws.WordName == wordStudy.WordName);
+        return await appDbContext.WordStudies.Where(ws => ws.UserName == userName && !ws.IsClosed && wordList.Contains(ws.WordName)).ToListAsync();
+    }
+
+    public async Task<int> UpsertWordStudyAsync(WordStudyModel wordStudy)
+    {
+        var existingWordStudy = await GetWordStudyAsync(wordStudy.UserName!, wordStudy.WordName!);
 
         if (existingWordStudy == null)
         {
