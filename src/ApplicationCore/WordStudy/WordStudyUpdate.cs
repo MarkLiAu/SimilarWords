@@ -16,14 +16,17 @@ public class WordStudyUpdate(IWordDepository wordDepository): IWordStudyUpdate
         var wordStudy = await wordDepository.GetWordStudyAsync(userName, wordName);
         if (wordStudy == null)
         {
+            // bookmark the word
             wordStudy = new WordStudyModel(userName, wordName);
             wordStudy.LastStudyTimeUtc = DateTime.UtcNow; 
             wordStudy.StartTimeUtc = wordStudy.LastStudyTimeUtc;
             wordStudy.IsClosed = false;
             wordStudy.StudyCount=0;
+            wordStudy.DaysToStudyHistory=string.Empty;
         }
         else
         {
+            wordStudy.DaysToStudyHistory += $"{wordStudy.DaysToStudy}/{(DateTime.UtcNow - wordStudy.LastStudyTimeUtc).TotalDays.ToString("0.00")}/{daysToStudy}, ";
             wordStudy.LastStudyTimeUtc = DateTime.UtcNow; 
             wordStudy.StudyCount++;
         }

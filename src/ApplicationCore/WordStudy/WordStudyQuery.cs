@@ -42,10 +42,11 @@ public class WordStudyQuery(IWordDepository wordDepository) : IWordStudyQuery
         return result;
     }
 
-    private static bool IsWordDue(WordStudyModel wordStudy, int hoursToStudyNewWord=2)
+    private static bool IsWordDue(WordStudyModel wordStudy)
     {
-        return wordStudy.StudyCount>1 && wordStudy.LastStudyTimeUtc.AddDays(wordStudy.DaysToStudy)>=DateTime.UtcNow
-         || wordStudy.StudyCount==1 && wordStudy.LastStudyTimeUtc.AddHours(hoursToStudyNewWord)>=DateTime.UtcNow;
+        int hoursToStudyNewWord=2;
+        return wordStudy.StudyCount>1 && wordStudy.LastStudyTimeUtc.AddDays(wordStudy.DaysToStudy)<=DateTime.UtcNow
+         || wordStudy.StudyCount==1 && wordStudy.LastStudyTimeUtc.AddHours(hoursToStudyNewWord)<=DateTime.UtcNow;
     }
 
     private async Task MergeUserStudyRecordAsync(List<WordStudyModel> wordStudyList)
