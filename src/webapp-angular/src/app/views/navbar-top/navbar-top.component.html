@@ -13,7 +13,7 @@
     @if(userName) {
         <!-- User word study ovewrview -->
          <div class="study-info" matTooltip="{{numWordsToStudy}} words to study({{numNewWordsToStudy}} new)">
-            <button mat-fab matBadge="{{numNewWordsToStudy}}" matBadgeColor="warn">34{{numWordsToStudy}}</button>
+            <button mat-fab matBadge="{{numNewWordsToStudy}}" matBadgeColor="warn">{{numWordsToStudy}}</button>
          </div>
         <!-- User icon and menu -->
         <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="menu for login user">
