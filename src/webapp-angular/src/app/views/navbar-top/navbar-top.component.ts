@@ -21,6 +21,7 @@ import { WordsDataService } from '../../service/words-data.service';
 })
 export class NavbarTopComponent {
   constructor(private router: Router, private userService: UserAuthService, private responsive: BreakpointObserver) { }
+  headerTitle = '';
   wordsDataServise = inject(WordsDataService);
   searchText = '';
   icon_url = 'similar-words-logo-wide.png';
@@ -34,7 +35,7 @@ export class NavbarTopComponent {
 
   ngOnInit() {
     this.responsive.observe(Breakpoints.HandsetPortrait).subscribe(result => {
-        this.icon_url = result.matches ?  'similar-words-logo.png' : 'similar-words-logo-wide.png';
+        this.headerTitle = result.matches ?  '' : 'Similar Words';
     });
   }
 
