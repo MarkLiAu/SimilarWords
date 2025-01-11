@@ -9,6 +9,7 @@ public class WordStudyModel
     public int StudyCount { get; set; }
     public bool IsClosed { get; set; } = true;
     public int DaysToStudy { get; set; }    // LastStudyTimeUtc + DaysToStudy = NextStudyTimeUtc to remind user to study
+    public string DaysToStudyHistory { get; set; }=""; // comma separated list of days to study history, 1st one can be 0 meaning within 1 day, default is 2 hours
 
     virtual public Word? Word { get; set; }
 

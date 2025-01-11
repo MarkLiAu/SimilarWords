@@ -34,6 +34,11 @@ public class WordStudyQuery(IWordDepository wordDepository) : IWordStudyQuery
         if(newWordCount<newWordsToStudy)
             result.AddRange(allStudyWords.Where(ws => ws.StudyCount==0).Take(newWordsToStudy - newWordCount));
         await MergeWordRecordAsync(result);
+
+        foreach(var wordStudy in result) 
+        {
+            wordStudy.DaysToStudy = CalculateDaysToStudy(wordStudy);
+        }
         return result;
     }
 
@@ -72,6 +77,13 @@ public class WordStudyQuery(IWordDepository wordDepository) : IWordStudyQuery
             wordStudy.Word=w;
         }
 
+    }
+
+    private static int CalculateDaysToStudy(WordStudyModel wordStudy)
+    {
+        return wordStudy.StudyCount<=0? 0
+                : wordStudy.StudyCount==1 ? 1
+                :  (int)Math.Round(wordStudy.DaysToStudy*1.6);
     }
 
 }

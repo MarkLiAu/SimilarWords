@@ -13,11 +13,11 @@
     <span class="spacer"></span>
     @if(userName) {
         <!-- User word study ovewrview -->
-         <div class="study-info" matTooltip="{{numWordsToStudy}} words to study({{numNewWordsToStudy}} new)">
+         <div class="study-info" routerLink="/study" matTooltip="{{numWordsToStudy}} words to study({{numNewWordsToStudy}} new)">
             <button mat-fab matBadge="{{numNewWordsToStudy}}" matBadgeColor="warn">{{numWordsToStudy}}</button>
          </div>
         <!-- User icon and menu -->
-        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="menu for login user">
+        <button mat-icon-button [matMenuTriggerFor]="menu" matTooltip="{{userName}}" aria-label="menu for login user">
             <mat-icon>menu</mat-icon>
         </button>
         <mat-menu #menu="matMenu">

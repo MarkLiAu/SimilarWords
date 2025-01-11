@@ -10,7 +10,7 @@ import { MatInputModule } from '@angular/material/input';
 import { WordsDataService } from '../../service/words-data.service';
 import { WordStudyModel } from '../../domain/model/word';
 import { firstValueFrom, Observable } from 'rxjs';
-import { WordDetailsComponent } from "./word-details/word-details.component";
+import { WordDetailsComponent } from '../shared/word-details/word-details.component';
 
 @Component({
   selector: 'app-search',
@@ -29,7 +29,7 @@ export class SearchComponent {
   async onBookmarkClicked(wordStudy : WordStudyModel) {
     console.log('onBookmarkClicked in search.component.ts', wordStudy);
     console.log(wordStudy);
-    const result = await firstValueFrom(this.#dataService.bookmarkWord(wordStudy.wordName!));
+    const result = await firstValueFrom(this.#dataService.UpdateWordStudy(wordStudy.wordName!));
     this.dataResource.reload();
   }
 

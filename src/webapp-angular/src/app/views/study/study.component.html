@@ -1,1 +1,34 @@
-<p>study feature coming soon!</p>
+@if(!authData.value()?.clientPrincipal) {
+  <div>Please login to study your bookmarked words</div>
+}
+@else if(studyData.isLoading()) {
+  <div><mat-progress-spinner mode="indeterminate" diameter="30"></mat-progress-spinner></div>
+}
+@else if(studyData.error()) {
+  <div>Failed to load word list, error: {{ studyData.error() }}</div>
+}
+@else if(studyData.value()!.length===0) {
+  <div>Great! no words to study now. </div>
+}
+@else {
+  <div class="container">
+    <div class="header">
+      <i class="material-icons" (click)="prevWord()">arrow_back</i>
+      <span>{{idx()+1}}/{{studyData.value()!.length}}</span>
+      <i class="material-icons" (click)="nextWord()">arrow_forward</i>
+      <span class="spacer"></span>
+      <i class="material-icons" (click)="decreaseDaysAdjust()">keyboard_arrow_down</i>
+      <button mat-flat-button (click)="onSubmitStudy()"> {{ studyMessage() }}</button>
+      <i class="material-icons" (click)="increaseDaysAdjust()">keyboard_arrow_up</i>
+      <span class="spacer"></span>
+      <button mat-icon-button (click)="toggleWordExplanation()" matTooltip="Toggle word explanation" aria-label="Toggle icon">
+        <mat-icon>{{ showWordExplanation ? 'toggle_on' : 'toggle_off' }}</mat-icon> 
+      </button>
+
+    </div>
+    <div class="details">
+      <app-word-details [wordStudy]="studyData.value()![idx()]"></app-word-details>
+    </div>
+  </div>
+}
+

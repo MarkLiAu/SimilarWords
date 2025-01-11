@@ -12,7 +12,6 @@ import { MatInputModule } from '@angular/material/input';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { UserAuthService } from '../../service/user-auth.service';
 import { WordsDataService } from '../../service/words-data.service';
-
 @Component({
   selector: 'app-navbar-top',
   imports: [MatToolbarModule, MatButtonModule, MatIconModule, RouterLink, FormsModule,MatTooltipModule,MatBadgeModule, MatFormFieldModule,MatMenuModule, MatInputModule],

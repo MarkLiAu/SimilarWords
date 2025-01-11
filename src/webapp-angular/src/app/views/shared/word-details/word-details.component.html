@@ -1,6 +1,6 @@
 <div class="container">
 
-<div class="title-row" >
+<div class="title-row content-padding" >
   <span class="headline">{{ word?.name }}</span> 
   <i>{{ word?.pronounciation }}</i>
   @if(word?.soundUrl) {
@@ -20,30 +20,34 @@
         <mat-icon matBadge="{{wordStudy?.studyCount}}" aria-hidden="false" matTooltip="Studied Times:{{wordStudy?.studyCount}}" class="color-on">bookmark</mat-icon>
       }
     </span>
-    </div>
+</div>
   <!-- <mat-icon >fiber_manual_record</mat-icon>
   <mat-icon >trip_origin</mat-icon>
   <mat-icon >radio_button_off</mat-icon>
   <mat-icon >radio_button_unchecked</mat-icon> -->
-
-<div class="onine-links">
+<div class="onine-links content-padding">
   @for(item of dictionaryLinks; track item.name){
     &nbsp;
     <a target="_blank" href="{{item.url}}" matTooltip="{{item.name}}">{{ item.name.substring(0,7) }}</a>
   }
 </div>
 
-<div>
+<div class="content-padding">
   <span>{{ word?.meaningShort??'' }}</span>
   <p>{{ word?.meaningLong }}</p>
 </div>
 
-<div>
+<mat-divider></mat-divider>
+
+<div class="content-padding">
   <span class="label">Similar:</span>
   @for(item of similarWords; track item){
     &nbsp;
     <a routerLink="/search/{{item}}">{{ item }}</a> 
   }
 </div>
+
+
+
 </div>
 

@@ -21,7 +21,7 @@ export class WordsDataService {
     return this.#http.get<WordStudyModel[]>(`${this.#baseUrl}/words/${wordName}`);
   }
 
-  bookmarkWord(wordName: string, daysToStudy: number =0) : Observable<number> {
+  UpdateWordStudy(wordName: string, daysToStudy: number =0) : Observable<number> {
     return this.#http.post<number>(`${this.#baseUrl}/study/${wordName}?daysToStudy=${daysToStudy}`,null);
   }
 }

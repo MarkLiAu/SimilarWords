@@ -8,11 +8,10 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatChipsModule } from '@angular/material/chips';
 import {MatBadgeModule} from '@angular/material/badge';
 import { NgClass } from '@angular/common';
-import { WordBookmarkComponent } from "../word-bookmark/word-bookmark.component";
 
 @Component({
   selector: 'app-word-details',
-  imports: [NgClass, MatIconModule, RouterLink, MatDividerModule, MatCardModule, MatTooltipModule, MatChipsModule, MatBadgeModule, WordBookmarkComponent],
+  imports: [NgClass, MatIconModule, RouterLink, MatDividerModule, MatCardModule, MatTooltipModule, MatChipsModule, MatBadgeModule],
   templateUrl: './word-details.component.html',
   styleUrl: './word-details.component.scss'
 })

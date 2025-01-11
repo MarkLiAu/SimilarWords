@@ -1,10 +1,13 @@
+@use '@angular/material' as mat;
+
 .container {
-  padding: 10px;
+  padding: 0px;
 }
 
 mat-icon {
   vertical-align: middle;
 }
+
 
 .headline {
   font-size: 20px;
@@ -58,22 +61,25 @@ p {
   margin: 6px 0px 0px 0px;
 }
 
+.content-padding {
+  padding: 0px 6px 0px 6px;
+}
+
 .title-row {
   display: flex;
   gap: 4px;
   align-items: center;
   text-align: center;
+  padding-top: 6px;
 }
 
 .onine-links {
-  background-color: #3498db; 
-  margin: 4px -10px 4px -10px; 
+  background-color: var(--mat-sys-surface-dim); 
+  margin: 4px 0px 4px 0px; 
   padding: 5px 0px 5px 0px;
-  color: white;
 }
 
 .onine-links a {
-  color: white; /* Text color */
   font-size: 80%;
   display: inline-block; /* Ensure padding and border apply properly */
 }
