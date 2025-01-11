@@ -1,8 +1,10 @@
 @if(dataResource.error()) {
   <div>Failed to seach word, error: {{ dataResource.error() }}</div>
 }
-
-@if(dataResource.hasValue()) {
+@else if(dataResource.isLoading()) {
+  <div><mat-progress-spinner mode="indeterminate" diameter="30"></mat-progress-spinner></div>
+}
+@else if(dataResource.hasValue()) {
   <div class="list-container list-grid">
     @for (item of dataResource.value(); track item.wordName) {
       <app-word-details (bookmarkClicked)="onBookmarkClicked(item)" [wordStudy]="item"></app-word-details>

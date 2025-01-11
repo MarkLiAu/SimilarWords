@@ -14,7 +14,7 @@
   
     <span class="right-align">
       @if(wordStudy?.isClosed) {
-        <mat-icon (click)="onBookmarkClicked()" class="color-off">bookmark-outline</mat-icon>
+        <mat-icon (click)="onBookmarkClicked()" class="color-off" matTooltip="Add to study list">bookmark-outline</mat-icon>
       }
       @else {
         <mat-icon matBadge="{{wordStudy?.studyCount}}" aria-hidden="false" matTooltip="Studied Times:{{wordStudy?.studyCount}}" class="color-on">bookmark</mat-icon>
