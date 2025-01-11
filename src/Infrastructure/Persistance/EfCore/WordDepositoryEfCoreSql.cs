@@ -5,9 +5,9 @@ namespace Infrastructure.Persistance;
 
 public class WordDepositoryEfCoreSql(AppDbContext appDbContext) : IWordDepository
 {
-    public async Task<IList<WordStudyModel>> GetAllWordStudyAsync(string userName)
+    public async Task<IList<WordStudyModel>> GetUserWordStudyListAsync(string userName)
     {
-        return await appDbContext.WordStudies.Where(ws => ws.UserName == userName).ToListAsync();
+        return await appDbContext.WordStudies.Where(ws => ws.UserName == userName && !ws.IsClosed).ToListAsync();
     }
 
     public async Task<WordStudyModel?> GetWordStudyAsync(string userName, string wordName)
@@ -19,6 +19,12 @@ public class WordDepositoryEfCoreSql(AppDbContext appDbContext) : IWordDepositor
     {
         return await appDbContext.WordStudies.Where(ws => ws.UserName == userName && !ws.IsClosed && wordList.Contains(ws.WordName)).ToListAsync();
     }
+
+    public async Task<IList<Word>> GetMultipleWordSAsync(IEnumerable<string> wordList)
+    {
+        return await appDbContext.Words.Where(w => wordList.Contains(w.Name)).ToListAsync();
+    }
+
 
     public async Task<int> UpsertWordStudyAsync(WordStudyModel wordStudy)
     {

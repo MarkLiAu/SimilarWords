@@ -5,4 +5,5 @@ public interface IWordStudyQuery
 {
     Task<IList<WordStudyModel>> SearchSimilarWords(string searchText, string? userName = null);
     Task<WordStudyModel> GetWordStudyAsync(string userName, string wordName);
+    Task<IList<WordStudyModel>> GetUserCurrentWordStudyListAsync(string userName);
 }

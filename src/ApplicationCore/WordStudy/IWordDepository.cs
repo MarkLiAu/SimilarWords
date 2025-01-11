@@ -9,7 +9,8 @@ public interface IWordDepository
     Task<int> UpdateWordListAsync(IList<Word> wordList);
 
     Task<WordStudyModel?> GetWordStudyAsync(string userName, string wordName);
+    Task<IList<Word>> GetMultipleWordSAsync(IEnumerable<string> wordList);
     Task<IList<WordStudyModel>> GetMultipleWordStudyAsync(string userName, IEnumerable<string> wordList);
-    Task<IList<WordStudyModel>> GetAllWordStudyAsync(string userName);
+    Task<IList<WordStudyModel>> GetUserWordStudyListAsync(string userName);
     Task<int> UpsertWordStudyAsync(WordStudyModel wordStudy);
 }
