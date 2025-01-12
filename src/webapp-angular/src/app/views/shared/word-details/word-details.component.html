@@ -33,8 +33,10 @@
 </div>
 
 <div class="content-padding">
+  @if(!hideMeaning()) {
   <span>{{ word?.meaningShort??'' }}</span>
   <p>{{ word?.meaningLong }}</p>
+  }
 </div>
 
 <mat-divider></mat-divider>
@@ -47,6 +49,13 @@
   }
 </div>
 
+@if(wordStudy?.studyCount) {
+  <mat-divider></mat-divider>
+  <div class="study-history">
+  <label>Total study times: {{wordStudy?.studyCount}}, </label>
+  <label>Last time studied: {{wordStudy?.lastStudyTimeUtc|date:'yyyy-MM-dd HH:mm:ss'}}</label>
+</div>
+}
 
 
 </div>

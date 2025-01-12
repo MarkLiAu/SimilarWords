@@ -22,12 +22,12 @@
       <i class="material-icons" (click)="increaseDaysAdjust()">keyboard_arrow_up</i>
       <span class="spacer"></span>
       <button mat-icon-button (click)="toggleWordExplanation()" matTooltip="Toggle word explanation" aria-label="Toggle icon">
-        <mat-icon>{{ showWordExplanation ? 'toggle_on' : 'toggle_off' }}</mat-icon> 
+        <mat-icon>{{ hideMeaningToggle ? 'toggle_off' : 'toggle_on' }}</mat-icon> 
       </button>
 
     </div>
     <div class="details">
-      <app-word-details [wordStudy]="studyData.value()![idx()]"></app-word-details>
+      <app-word-details [wordStudy]="studyData.value()![idx()]" [hideMeaning]="hideMeaningToggle"></app-word-details>
     </div>
   </div>
 }

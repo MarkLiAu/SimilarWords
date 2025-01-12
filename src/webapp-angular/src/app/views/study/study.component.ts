@@ -33,9 +33,9 @@ export class StudyComponent {
       return days <= 0 ? 'Next study in 2 hours' :`Study in ${days} days`;
     });
 
-  showWordExplanation = false;
+  hideMeaningToggle = true;
   toggleWordExplanation() {
-    this.showWordExplanation = !this.showWordExplanation
+    this.hideMeaningToggle = !this.hideMeaningToggle
   }
 
   nextWord() {

@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, computed, effect, EventEmitter, input, Input, Output, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Word, WordStudyModel } from '../../../domain/model/word';
 import { MatIconModule } from '@angular/material/icon';
@@ -8,16 +8,20 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatChipsModule } from '@angular/material/chips';
 import {MatBadgeModule} from '@angular/material/badge';
 import { NgClass } from '@angular/common';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-word-details',
-  imports: [NgClass, MatIconModule, RouterLink, MatDividerModule, MatCardModule, MatTooltipModule, MatChipsModule, MatBadgeModule],
+  imports: [NgClass, DatePipe, MatIconModule, RouterLink, MatDividerModule, MatCardModule, MatTooltipModule, MatChipsModule, MatBadgeModule],
   templateUrl: './word-details.component.html',
   styleUrl: './word-details.component.scss'
 })
 export class WordDetailsComponent {
   @Input() wordStudy: WordStudyModel | undefined ;
   @Output() bookmarkClicked = new EventEmitter<boolean>();
+  // @Input() hideMeaning = false;
+  hideMeaning = input();
+  
   get similarWords() { 
     return this.wordStudy?.word?.similarWords?.trim().split(" ")
   };
