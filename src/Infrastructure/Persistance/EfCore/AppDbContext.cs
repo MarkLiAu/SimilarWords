@@ -1,5 +1,4 @@
 ﻿using ApplicationCore.WordStudy;
-using ApplicationCore.WordStudy;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
