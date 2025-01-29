@@ -1,5 +1,4 @@
 ﻿using ApplicationCore.WordStudy;
-using ApplicationCore.WordStudy;
 using Infrastructure.Persistance;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;

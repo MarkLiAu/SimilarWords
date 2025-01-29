@@ -66,7 +66,6 @@ public class WordDepositoryEfCoreSql(AppDbContext appDbContext) : IWordDepositor
     async Task<int> IWordDepository.UpdateWordListAsync(IList<Word> wordList)
     {
         if (wordList is null || wordList.Count == 0) return 0;
-        var ll = wordList.Where(x=>x.Name!.Length>100).ToList();
         appDbContext.Words.AddRange(wordList);
         return await appDbContext.SaveChangesAsync();
     }

@@ -7,4 +7,5 @@ public interface IWordStudyUpdate
     Task<int> UpdateWordStudyAsync(string userName, string wordName, int daysToStudy);
 
     Task<int> UpdateWordListAsync(IList<Word> wordList);
+    Task<int> SetupWordDbAsync();
 }

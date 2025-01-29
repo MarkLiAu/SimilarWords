@@ -1,28 +1,20 @@
 namespace ApplicationCore.WordStudy;
 public static class WordSimilarityProcess
 {
-    public static List<Word> FindSimilarWords(this IList<Word> wordList, string name)
+    public static List<Word> CalculateSimilarWords(this IList<Word> wordList, string name, int maxFrequency = 10000)
     {
         List<Word> result = [];
 
         SortedList<string, Word> matchList = [];
 
         // find the word first
-        Word w1st = new(name)
-        {
-            MeaningShort = "(not found)"
-        };
+        Word w1st = wordList.FirstOrDefault(x => x.Name == name) 
+                ?? new(name) { MeaningShort = "(not found)" };
 
-        string nameLowcase = name.ToLower();
-        foreach (var w in wordList)
+        // search the list
+        foreach (var w in wordList.Where(x=>x.Frequency<=maxFrequency && string.Compare(x.Name, name, true) != 0))
         {
-            if (w.Name == nameLowcase) { w1st = w; break; }
-        }
-            // search the list
-        foreach (var w in wordList)
-        {
-            if (w.Name == nameLowcase) continue; 
-            double val = WordSimilarity.CalculateSpellingSimilarity(nameLowcase, w.Name);
+            double val = WordSimilarity.CalculateSpellingSimilarity(name.ToLower(), w.Name!.ToLower());
             var val2 = WordSimilarity.CalculatePronounciationSimilarity(w1st.Pronounciation, w.Pronounciation);
             if (val2 > val) val = val2;
             if (val < 0.7) continue;
@@ -42,24 +34,25 @@ public static class WordSimilarityProcess
             return wordList[n].Name!;
     }
 
-        public static void UpdateAllSimilarWords(this IList<Word> WordList)
+    public static void UpdateAllSimilarWords(this IList<Word> WordList, int maxFrequency = 10000)
+    {
+        foreach (var w in WordList)
         {
-            foreach (var w in WordList)
-            {
-                if(w.Name == null) continue;
-                List<Word> list = WordList.FindSimilarWords(w.Name);
-                if (list.Count <= 1) continue;
-                w.SimilarWords = JoinSimilarWords(list);
-            }
+            if(w.Name == null) continue;
+            List<Word> list = WordList.CalculateSimilarWords(w.Name, maxFrequency)
+                .Where(x=>string.Compare(x.Name, w.Name, true) != 0).ToList();
+            w.SimilarWords = list.Count < 1 ? "" : JoinSimilarWords(list);
+            Console.WriteLine($"word: {w.Name}, frequency: {w.Frequency}, similar words: {w.SimilarWords}");
         }
+    }
 
-        public static string JoinSimilarWords(IList<Word> wordList)
-        {
-            return string.Join(" ", wordList.Select(w => w.Name));
-        }
+    public static string JoinSimilarWords(IList<Word> wordList)
+    {
+        return string.Join(" ", wordList.Select(w => w.Name));
+    }
 
-        public static string[] SplitSimilarWords(string? similarWords)
-        {
-            return similarWords?.Split(' ') ?? [];
-        }
+    public static string[] SplitSimilarWords(string? similarWords)
+    {
+        return similarWords?.Split(' ') ?? [];
+    }
 }

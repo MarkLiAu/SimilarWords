@@ -10,7 +10,7 @@ public class WordDepositoryLocalFile() : IWordDepository
     public async Task<IList<Word>> GetSimilarWordsAsync(string name)
     {
         await LoadWordListAsync();
-        var result = _wordList.FindSimilarWords(name);
+        var result = _wordList.CalculateSimilarWords(name);
         return result;
     }
 
