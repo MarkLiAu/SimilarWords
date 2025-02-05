@@ -1,8 +1,10 @@
 ﻿using ApplicationCore.WordStudy;
 using Infrastructure.Persistance;
+using Infrastructure.WordExplanation;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Refit;
 
 namespace Infrastructure;
 
@@ -44,6 +46,11 @@ public static class InfrastructureSetup
     {
         services.AddScoped<IWordStudyQuery, WordStudyQuery>();
         services.AddScoped<IWordStudyUpdate, WordStudyUpdate>();
+        services.AddScoped<IWordStudyAdmin, WordStudyAdmin>();
+
+        services.AddRefitClient<IGeminiApi>()
+            .ConfigureHttpClient(c => c.BaseAddress = new Uri(Environment.GetEnvironmentVariable("GeminiAi:ApiBaseUrl") ?? throw new NullReferenceException("no GeminiAi:ApiBaseUrl setup")));
+        services.AddScoped<IWordExplanationQuery, GeminiAiQuery>();
         return services;
     }
 

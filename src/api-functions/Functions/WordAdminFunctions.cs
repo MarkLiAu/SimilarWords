@@ -8,13 +8,13 @@ using SimilarWords.Infrastructure;
 
 namespace api_functions.Functions
 {
-    public class WordAdminFunctions(ILogger<WordAdminFunctions> logger, IWordStudyUpdate wordStudyUpdate)
+    public class WordAdminFunctions(ILogger<WordAdminFunctions> logger, IWordStudyAdmin wordStudyAdmin)
     {
         [Function(nameof(WordDbSetupAsync))]
         public async Task<IActionResult> WordDbSetupAsync([HttpTrigger(AuthorizationLevel.Function, "get", "post",Route ="v1/admin/dbsetup")] 
             HttpRequest req)
         {
-            var result = await wordStudyUpdate.SetupWordDbAsync();
+            var result = await wordStudyAdmin.SetupWordDbAsync();
             return new OkObjectResult(result);
         }
     }
