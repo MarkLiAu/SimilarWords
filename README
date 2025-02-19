@@ -1,17 +1,29 @@
-search similar word
+# search similar word
 
-Technologies used:
+## Technologies used:
 Angular 19 for frontend: signal, rxService, Angular material
 Azure functions for backend apis
 Azure static web app for authentication and deployment
 
-to run in VScode:
-$ sta start
+## to run in VScode:
+cd src/Devops
+npm install -g @azure/static-web-apps-cli
+swa start --api-location ./src/api-functions
+
+## database upgration
+// set DBconnection env in powershell
+$env:DbConnection="Server=tcp:azsqledge,1433;Initial Catalog=SimilarWords;Connection Timeout=30;TrustServerCertificate=True;User=aa;Password=aa;"
+
+cd src
+cd Infrastructure
+dotnet ef migrations add "InitialCreate" --output-dir Persistance\Migrations -s ..\api-functions\
+dotnet ef database update -s ..\api-functions
 
 
-future works:
+## future works:
 pick words to study and remind the user to review words based on user's choice
 
+2025.2.16: added api-webapi as backend to replace function app to host non-Azure 
 v2: Azure static web app with Angular for frontend and function app for backebd APIs
 v1: dotnet core project with react as client app, using sqlite as storage
 
