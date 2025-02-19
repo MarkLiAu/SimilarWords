@@ -10,7 +10,7 @@ public class WordDepositoryLocalFile() : IWordDepository
     public async Task<IList<Word>> GetSimilarWordsAsync(string name)
     {
         await LoadWordListAsync();
-        var result = _wordList.FindSimilarWords(name);
+        var result = _wordList.CalculateSimilarWords(name);
         return result;
     }
 
@@ -78,8 +78,8 @@ public class WordDepositoryLocalFile() : IWordDepository
                 {
                     if (ss[i].Trim() == "") continue;
                     ss[i] = ss[i].Replace("<~>", "\n");
-                    if (columns[i].Equals("pronounciation", StringComparison.CurrentCultureIgnoreCase)) w.Pronounciation = ss[i];
-                    else if (columns[i].Equals("pronounciationam", StringComparison.CurrentCultureIgnoreCase)) w.PronounciationAm = ss[i];
+                    if (columns[i].Equals("pronounciation", StringComparison.CurrentCultureIgnoreCase)) w.Pronunciation = ss[i];
+                    else if (columns[i].Equals("pronounciationam", StringComparison.CurrentCultureIgnoreCase)) w.PronunciationAm = ss[i];
                     else if (columns[i].Equals("frequency", StringComparison.CurrentCultureIgnoreCase)) w.Frequency = Convert.ToInt32(ss[i]);
                     else if (columns[i].Equals("similarwords", StringComparison.CurrentCultureIgnoreCase)) w.SimilarWords = ss[i];
                     else if (columns[i].Equals("meaningshort", StringComparison.CurrentCultureIgnoreCase)) w.MeaningShort = ss[i];

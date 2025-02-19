@@ -15,8 +15,8 @@ public class AppDbContext : DbContext
     {
     }
 
-    public required DbSet<Word> Words { get; set; }
-    public required DbSet<WordStudyModel> WordStudies { get; set; }
+    public DbSet<Word> Words { get; set; }
+    public DbSet<WordStudyModel> WordStudies { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

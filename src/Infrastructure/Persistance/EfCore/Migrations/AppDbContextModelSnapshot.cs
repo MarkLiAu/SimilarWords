@@ -28,6 +28,9 @@ namespace Infrastructure.Persistance.EfCore.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
+                    b.Property<string>("Example")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("ExampleSoundUrl")
                         .HasColumnType("nvarchar(max)");
 
@@ -37,22 +40,28 @@ namespace Infrastructure.Persistance.EfCore.Migrations
                     b.Property<int>("Id")
                         .HasColumnType("int");
 
+                    b.Property<DateTime>("LastUpdatedUtc")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("MeaningLong")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("MeaningShort")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Pronounciation")
+                    b.Property<string>("Pronunciation")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("PronounciationAm")
+                    b.Property<string>("PronunciationAm")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SimilarWords")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SoundUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Type")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Name");

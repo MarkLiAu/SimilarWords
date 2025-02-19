@@ -66,8 +66,24 @@ public class WordDepositoryEfCoreSql(AppDbContext appDbContext) : IWordDepositor
     async Task<int> IWordDepository.UpdateWordListAsync(IList<Word> wordList)
     {
         if (wordList is null || wordList.Count == 0) return 0;
-        var ll = wordList.Where(x=>x.Name!.Length>100).ToList();
-        appDbContext.Words.AddRange(wordList);
-        return await appDbContext.SaveChangesAsync();
+        var oldList = appDbContext.Words.ToList();
+
+        // split into chuncks of 1000
+        var chunkSize = 10;
+        var batches = wordList.Chunk(chunkSize);
+        var count=0;
+        foreach (var batch in batches)
+        {
+            try
+            {
+                await appDbContext.Words.AddRangeAsync(batch);
+                count+= await appDbContext.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+        return count;
     }
 }
