@@ -1,0 +1,10 @@
+{
+    "configurations": {
+      "app": {
+        "appDevserverUrl": "http://localhost:4200",
+        "appLocation": "../webapp-angular",
+        "run": "npm run start",
+        "apiLocationzzz": "../api-functions"
+      }
+    }
+  }
