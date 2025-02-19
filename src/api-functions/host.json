@@ -1,6 +1,5 @@
 {
     "version": "2.0",
-    "functionTimeout": "10:50:00",
     "logging": {
         "applicationInsights": {
             "samplingSettings": {
