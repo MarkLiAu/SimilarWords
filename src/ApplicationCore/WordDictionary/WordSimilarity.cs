@@ -1,4 +1,4 @@
-namespace ApplicationCore.WordStudy;
+namespace ApplicationCore.WordDictionary;
 public class WordSimilarity
 {
     private const double SimilarityThreshold = 0.7;
@@ -45,7 +45,7 @@ public class WordSimilarity
     public static double CalculateWordSimilarity(Word word1, Word word2)
     {
         var result = CalculateSpellingSimilarity(word1.Name, word2.Name);
-        var pronounciationSimilarity = CalculatePronounciationSimilarity(word1.Pronunciation, word2.Pronunciation);
+        var pronounciationSimilarity = CalculatePronounciationSimilarity(word1.Pronounciation, word2.Pronounciation);
         if( pronounciationSimilarity > result) result = pronounciationSimilarity;
         return result;
     }
@@ -79,7 +79,7 @@ public class WordSimilarity
         {
             if (w.Name == nameLowcase) continue; 
             double val = CalculateSpellingSimilarity(nameLowcase, w.Name);
-            var val2 = CalculatePronounciationSimilarity(w1st.Pronunciation, w.Pronunciation);
+            var val2 = CalculatePronounciationSimilarity(w1st.Pronounciation, w.Pronounciation);
             if (val2 > val) val = val2;
             if (val < 0.7) continue;
             matchList.Add((1 - val).ToString("0.000000") + w.Frequency.ToString("00000"), w);     // sort by compare Val and frequency

@@ -38,4 +38,5 @@ public class WordStudyUpdate(IWordDepository wordDepository): IWordStudyUpdate
     {
         return await wordDepository.UpdateWordListAsync(wordList);
     }
+
 }
