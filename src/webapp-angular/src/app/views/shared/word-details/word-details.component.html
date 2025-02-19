@@ -2,7 +2,7 @@
 
 <div class="title-row content-padding" >
   <span class="headline">{{ word?.name }}</span> 
-  <i>{{ word?.pronounciation }}</i>
+  <i>{{ word?.pronunciation }}</i>
   @if(word?.soundUrl) {
     <mat-icon (click)="playSound(word?.soundUrl)">volume_up</mat-icon>
   }
@@ -36,6 +36,7 @@
   @if(!hideMeaning()) {
   <span>{{ word?.meaningShort??'' }}</span>
   <p>{{ word?.meaningLong }}</p>
+  <p><i>{{ word?.example }}</i></p>
   }
 </div>
 

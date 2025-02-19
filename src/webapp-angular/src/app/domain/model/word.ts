@@ -1,11 +1,12 @@
 export class Word {
   name!: string;
-  pronounciation: string | undefined;          // British
-  pronounciationAm: string | undefined;        // American
+  pronunciation: string | undefined;          // British
+  pronunciationAm: string | undefined;        // American
   frequency: number | undefined;
   similarWords: string | undefined;
   meaningShort: string | undefined;
   meaningLong: string | undefined;
+  example: string | undefined;
   meaningOther: string | undefined;            // meaning in other language
   soundUrl: string | undefined;
   exampleSoundUrl: string | undefined;
