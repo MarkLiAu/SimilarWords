@@ -16,6 +16,10 @@ public class WordStudyQuery(IWordDepository wordDepository) : IWordStudyQuery
         if(string.IsNullOrWhiteSpace(userName) && System.Diagnostics.Debugger.IsAttached) userName = "mark-local-test";
 
         var wordList = await wordDepository.GetSimilarWordsAsync(searchText);
+        foreach(var word in wordList.Where(x=>string.IsNullOrWhiteSpace(x.SoundUrl)))
+        {
+            word.SoundUrl=$"https://ssl.gstatic.com/dictionary/static/sounds/oxford/{word.Name}--_us_1.mp3";
+        }
 
         var wordStudyList = wordList.Select(word => new WordStudyModel(userName, word)).ToList();
 
