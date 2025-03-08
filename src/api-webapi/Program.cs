@@ -24,6 +24,9 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+app.UseStaticFiles();
+app.MapFallbackToFile("index.html"); // Serve index.html for unmatched routes
+
 app.MapControllers();
 
 app.Run();
