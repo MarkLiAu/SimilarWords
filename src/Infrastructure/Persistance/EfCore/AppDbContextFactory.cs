@@ -1,3 +1,4 @@
+using Infrastructure;
 using Infrastructure.Persistance;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
@@ -8,10 +9,13 @@ public class AppDbContextFactory : IDesignTimeDbContextFactory<AppDbContext>
 {
     public AppDbContext CreateDbContext(string[] args)
     {
-        var dbConnection = Environment.GetEnvironmentVariable("DbConnection");
+        var dbConnection = Environment.GetEnvironmentVariable("DbConnection") ?? throw new Exception("DbConnection is not set");
 
         var builder = new DbContextOptionsBuilder<AppDbContext>();
-        builder.UseSqlServer(dbConnection);
+        if (InfrastructureSetup.IsMsSqlConnection(dbConnection))
+            builder.UseSqlServer(dbConnection);
+        else if (InfrastructureSetup.IsMysqlConnection(dbConnection))
+            builder.UseMySql(dbConnection, ServerVersion.AutoDetect(dbConnection));
 
         return new AppDbContext(builder.Options);
     }

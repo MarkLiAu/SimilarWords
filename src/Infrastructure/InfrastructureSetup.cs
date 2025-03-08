@@ -21,9 +21,10 @@ public static class InfrastructureSetup
     {
         // get connection string from environment variable
         var dbConnection = Environment.GetEnvironmentVariable("DbConnection")
-                ?? configuration.GetValue<string>("DbConnection");
+                ?? configuration.GetValue<string>("DbConnection")
+                ?? throw new Exception("DbConnection is not set");
         Console.WriteLine($"Connection String: {dbConnection}");
-        if (!string.IsNullOrWhiteSpace(dbConnection) && dbConnection.ToLower().Contains("server=tcp:"))
+        if (IsMsSqlConnection(dbConnection))
         {
             services.AddDbContext<AppDbContext>(options =>
             {
@@ -34,6 +35,14 @@ public static class InfrastructureSetup
                         maxRetryDelay: TimeSpan.FromSeconds(10),
                         errorNumbersToAdd: null);
                 });
+            });
+            services.AddScoped<IWordDepository, WordDepositoryEfCoreSql>();
+        }
+        else if (IsMysqlConnection(dbConnection))
+        {
+            services.AddDbContext<AppDbContext>(options =>
+            {
+                options.UseMySql(dbConnection, ServerVersion.AutoDetect(dbConnection));
             });
             services.AddScoped<IWordDepository, WordDepositoryEfCoreSql>();
         }
@@ -53,6 +62,19 @@ public static class InfrastructureSetup
             .ConfigureHttpClient(c => c.BaseAddress = new Uri("http://localhost" ?? throw new NullReferenceException("no GeminiAi:ApiBaseUrl setup")));
         services.AddScoped<IWordExplanationQuery, GeminiAiQuery>();
         return services;
+    }
+
+    public static bool IsMsSqlConnection(string dbConnection)
+    {
+        return dbConnection.Contains("mssql", StringComparison.OrdinalIgnoreCase)
+                ||dbConnection.Contains("1433", StringComparison.OrdinalIgnoreCase);
+    }
+
+    public static bool IsMysqlConnection(string dbConnection)
+    {
+        return dbConnection.Contains("mysql", StringComparison.OrdinalIgnoreCase)
+                ||dbConnection.Contains("3306", StringComparison.OrdinalIgnoreCase)
+                ||dbConnection.Contains("mariadb", StringComparison.OrdinalIgnoreCase);
     }
 
 }
