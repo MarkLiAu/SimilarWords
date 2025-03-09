@@ -1,0 +1,49 @@
+# Ignore .NET build outputs
+**/bin/
+**/obj/
+
+# Ignore NuGet packages and cache
+.nuget/
+**/packages/
+
+# Ignore npm dependencies
+**/node_modules/
+
+# Ignore local development files
+.vscode/
+.idea/
+*.user
+*.suo
+*.lock
+
+# Ignore Docker files
+Dockerfile*
+docker-compose*
+.dockerignore
+
+# Ignore logs and diagnostics
+**/*.log
+**/*.trx
+
+# Ignore test results
+**/TestResults/
+
+# Ignore local environment files
+**/.env
+**/.env.local
+**/.env.development
+**/.env.production
+
+**/appsettings.Development.json
+
+# Ignore Azure and CI/CD files
+.azure/
+.github/
+.gitlab-ci.yml
+.git/
+.gitignore
+
+# Ignore miscellaneous files
+*.swp
+*.swo
+.DS_Store
