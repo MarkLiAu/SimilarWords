@@ -12,6 +12,8 @@ import { MatInputModule } from '@angular/material/input';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { UserAuthService } from '../../service/user-auth.service';
 import { WordsDataService } from '../../service/words-data.service';
+import { AuthService } from '../../auth-oidc/auth.service';
+
 @Component({
   selector: 'app-navbar-top',
   imports: [MatToolbarModule, MatButtonModule, MatIconModule, RouterLink, FormsModule,MatTooltipModule,MatBadgeModule, MatFormFieldModule,MatMenuModule, MatInputModule],
@@ -19,7 +21,9 @@ import { WordsDataService } from '../../service/words-data.service';
   styleUrl: './navbar-top.component.scss'
 })
 export class NavbarTopComponent {
-  constructor(private router: Router, private userService: UserAuthService, private responsive: BreakpointObserver) { }
+  constructor(private router: Router
+    , private auth: AuthService
+    , private responsive: BreakpointObserver) { }
   headerTitle = '';
   wordsDataServise = inject(WordsDataService);
   searchText = '';
@@ -39,19 +43,17 @@ export class NavbarTopComponent {
   }
 
   login() {
-    window.location.href = '/login';
+    this.auth.login();
   }
 
   logout() {
-    window.location.href = '/logout';
-  }
-
-  get userAuthData() {
-    return this.userService.userAuthData;
+    this.auth.logout();
   }
 
   get userName() {
-    return this.userAuthData.value()?.clientPrincipal?.userDetails;
+
+    return this.auth.userProfile?.email;
+    // return this.userAuthData.value()?.clientPrincipal?.userDetails;
   }
 
   // get number of words to study

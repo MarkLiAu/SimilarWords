@@ -1,4 +1,5 @@
 using ApplicationCore.WordStudy;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -7,6 +8,7 @@ namespace api_webapi.Controllers;
 
 [ApiController]
 [Route("[controller]")]
+[Authorize]
 public class WordAdminController(ILogger<WordAdminController> logger, IWordStudyAdmin wordStudyAdmin) : ControllerBase
 {
 

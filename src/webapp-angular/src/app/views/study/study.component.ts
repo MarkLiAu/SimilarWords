@@ -7,9 +7,9 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms'; // For ngModel
 import { WordDetailsComponent } from '../shared/word-details/word-details.component';
-import { UserAuthService } from '../../service/user-auth.service';
 import { MatIconModule } from '@angular/material/icon';
 import { firstValueFrom } from 'rxjs';
+import { AuthService } from '../../auth-oidc/auth.service';
 @Component({
   selector: 'app-study',
   imports: [WordDetailsComponent, MatProgressSpinnerModule, MatIconModule,MatTooltipModule, MatButtonModule, MatInputModule, MatFormFieldModule,FormsModule],
@@ -19,8 +19,8 @@ import { firstValueFrom } from 'rxjs';
 })
 export class StudyComponent {
   // authorization
-  authService = inject(UserAuthService);
-  authData = this.authService.userAuthData;
+  authService = inject(AuthService);
+  isAuthenticated = this.authService.isAuthenticated;
   // study data
   #wordsDataService = inject(WordsDataService);
   studyData = this.#wordsDataService.userWordStudyData;

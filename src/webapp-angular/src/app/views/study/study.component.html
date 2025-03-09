@@ -1,4 +1,4 @@
-@if(!authData.value()?.clientPrincipal) {
+@if(!isAuthenticated) {
   <div>Please login to study your bookmarked words</div>
 }
 @else if(studyData.isLoading()) {

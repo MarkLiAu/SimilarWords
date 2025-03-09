@@ -10,5 +10,6 @@ services:
       - "6080:8080"
     environment:
       - DbConnection=${DbConnection}
+      - OidcJwt__Authority=${OidcJwt__Authority}
       - GeminiAi__ApiBaseUrl=your_gemini_api_url
 

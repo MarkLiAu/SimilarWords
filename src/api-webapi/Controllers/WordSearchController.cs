@@ -1,4 +1,6 @@
+using System.Security.Claims;
 using ApplicationCore.WordStudy;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -15,7 +17,10 @@ public class WordSearchController(ILogger<WordStudyController> logger, IWordStud
     {
         try
         {
-            var userName = User.Identity?.Name;
+            var userName = User.Identity?.Name
+                    ?? User.FindFirst("preferred_username")?.Value
+                    ?? User.FindFirst(ClaimTypes.Name)?.Value ;
+
             if(string.IsNullOrWhiteSpace(userName) && System.Diagnostics.Debugger.IsAttached) userName = "mark-local-test";
 
             var result = await wordStudyQuery.SearchSimilarWords(name, userName);
