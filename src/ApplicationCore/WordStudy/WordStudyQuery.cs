@@ -75,6 +75,12 @@ public class WordStudyQuery(IWordDepository wordDepository) : IWordStudyQuery
     {
         if(wordStudyList.Count<=0) return;
         var wordList = await wordDepository.GetMultipleWordSAsync(wordStudyList.Select(x=>x.WordName!).ToList());
+
+        foreach(var word in wordList.Where(x=>string.IsNullOrWhiteSpace(x.SoundUrl)))
+        {
+            word.SoundUrl=$"https://ssl.gstatic.com/dictionary/static/sounds/oxford/{word.Name}--_us_1.mp3";
+        }
+
         foreach(var wordStudy in wordStudyList)
         {
             var w = wordList.FirstOrDefault(x=>x.Name == wordStudy.WordName);
