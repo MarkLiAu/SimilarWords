@@ -15,7 +15,8 @@ export class AuthService {
   private configureAuth() {
     this.oauthService.configure(authConfig);
     this.oauthService.loadDiscoveryDocumentAndTryLogin();  
-  }
+      // Setup automatic silent refresh
+    this.oauthService.setupAutomaticSilentRefresh();}
 
   login() {
     this.oauthService.initLoginFlow();
